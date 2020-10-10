@@ -19,9 +19,110 @@
 {{IGEM_TopBar}}
 {{Fudan}}
 <html>         -->
-<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/bootstrap.min.css&action=raw&ctype=text/css">
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@media print {
+    #FudanFooter{display: none}
+}
+@media screen {
+    #FudanFooter {
+      background-color: #804000;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+        content: normal;
+        margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+        position: absolute;
+        bottom: 5%;
+        z-index: 10;
+        display: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+        color: #b0bec5; /* blue-grey lighten-3 */
+        padding-left: 1rem;
+    }
+    #FudanFooter #footerNavList ul {
+        font-size: 13px;
+        line-height: 14px;
+        border-top: solid 2px;
+        color: inherit;
+        text-decoration: none;
+        padding-top: 5px;
+    }
+    #FudanFooter #footerNavList div {
+        color: #b0bec5; /* blue-grey lighten-3 */
+    }
+    #FudanFooter #footerNavList div:hover {
+        color: white;
+    }
+    #FudanFooter #footerNavList a {
+        color: inherit;
+    }
+    #FudanFooter #footerNavList a:hover {
+        text-decoration: underline;
+    }
+    #FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+        color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+        border-top: solid white 2px;
+    }
+    #FudanFooter #footerNavList li {
+        padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+        font-size: 20px;
+    }
+    #footerNavList > div > div {
+        padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #acknowledgementPhoto {
+        width: 100%;
+        position: relative;
+    }
+    #acknowledgementPhoto > div {
+        width: 100%;
+        position: relative;
+        vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+        position: relative;
+        padding: 0 10px;
+        margin: 10px 0;
+        overflow: hidden;
+        text-align: center;
+        bottom: 0;
+    }
+    #acknowledgementPhoto img {
+        width: 100%;
+    }
+    #FudanFooter img {
+        margin: 5px 0;
+    }
+    #FudanFooter div.row {
+        margin: 5px 0;
+        padding: 0;
+    }
+    #FudanFooter div.row > img {
+        padding: 0 2%;
+    }
+    #FudanFooter #sponsor {
+        margin-top: 35px;
+    }
+</style>
 <header>
-  <div style="display:block;background:#804000;height:190px;padding:0;margin:0;border:0">
+  <div id="FudanDivWrapper" style="display:block;background:#804000;height:190px;padding:0;margin:0;border:0">
     <a href="/Team:Fudan" target="_self">
       <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan logo" style="position:absolute;left:60px;top:10px;z-index:999;width:170px" />
     </a>
@@ -114,106 +215,13 @@
 </article>
 
 <footer>
-  <div class="Home-box">
-  <div class="row">
-        <div class="col-xl-9">
-            <div class="row">
-            <div class="col-xl-3 col-xs-6 wow fadeInUp">
-                <div class="foot-box"> <a href="/Team:Fudan/Judging" class="label"><div>Judging</div></a></div>
-            </div>
-
-            <div class="col-xl-3 col-xs-6 wow fadeInUp">
-                <div class="foot-box">
-                    <a href="/Team:Fudan/Description#Project" class="label"><div>Project</div></a>
-                    <ul>
-                        <li><a href="/Team:Fudan/Description" class="page">Description</a></li>
-                        <li><a href="/Team:Fudan/Sustainable" class="page">Sustainable</a></li>
-                        <li><a href="/Team:Fudan/Design" class="page">Design</a></li>
-                        <li><a href="/Team:Fudan/Poster" class="page">Poster</a></li>
-                    </ul>
-
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-xs-6  wow fadeInUp">
-                <div class="foot-box">
-                    <a href="/Team:Fudan/Engineering" class="label"><div>Engineering</div></a>
-                    <ul>
-                        <li><a href="/Team:Fudan/Model" class="page">Model</a></li>
-                        <li><a href="/Team:Fudan/Safety" class="page">Safety</a></li>
-                        <li><a href="/Team:Fudan/Proof_Of_Concept" class="page">Proof Of Concept</a></li>
-                    </ul>
-
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-xs-6  wow fadeInUp">
-                <div class="foot-box">
-                    <a href="/Team:Fudan/Human_Practices" class="label"><div>HP</div></a>
-                    <ul>
-                        <li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated HP</a></li>
-                        <li><a href="/Team:Fudan/Education" class="page">Education</a></li>
-                        <li><a href="/Team:Fudan/Inclusion" class="page">Inclusion</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-        <div class="row mb-3 pt-4">
-            <div class="col-xl-3 col-xs-6 wow fadeInUp">
-                <div class="foot-box"> <a href="/Team:Fudan/Proof_Of_Concept" class="label"><div>Results</div></a></div>
-                <ul>
-                        <li><a href="/Team:Fudan/Demonstrate">Demonstrate</a></li>
-                        <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
-                        <li><a href="/Team:Fudan/Notebook">Notebook</a></li>
-                </ul>
-            </div>
-
-            <div class="col-xl-3  col-xs-6 wow fadeInUp">
-                <div class="foot-box">
-                    <a href="/Team:Fudan/Parts" class="label"><div>Parts</div></a>
-                    <ul>
-                        <li><a href="/Team:Fudan/Parts#Improved">Improved</a></li>
-                        <li><a href="/Team:Fudan/Parts#Basic">Basic</a></li>
-                        <li><a href="/Team:Fudan/Parts#Composite">Composite</a></li>
-                        <li><a href="/Team:Fudan/Parts#Collection">Collection</a></li>
-                </ul>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-xs-6  wow fadeInUp">
-                <div class="foot-box">
-                    <a href="/Team:Fudan/Entrepreneurship" class="label"><div>Entrepreneur</div></a>
-                    <ul>
-                        <li><a href="/Team:Fudan/Entrepreneurship" class="page">Entrepreneurship</a></li>
-                        <li><a href="/Team:Fudan/Implementation" class="page">Implementation</a></li>
-                    </ul>
-
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-xs-6  wow fadeInUp">
-                <div class="foot-box">
-                    <a href="/Team:Fudan/Attribution" class="label"><div>Attribution</div></a>
-                    <ul>
-                        <li><a href="/Team:Fudan/Team" class="page">Team</a></li>
-                        <li><a href="/Team:Fudan/Contribution" class="page">Contribution</a></li>
-                        <li><a href="/Team:Fudan/Collaborations" class="page">Collaborations</a></li>
-                        <li><a href="/Team:Fudan/Acknowledgment" class="page">Acknowledgment</a></li>
-                        <li><a href="/Team:Fudan/Partnership" class="page">Partnership</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="col-xl-3  wow fadeInUp">
+        <!--div class="col-xl-3  wow fadeInUp">
             <div class="foot-box2">
                 <p>Sponsor:</p>
                 <a target="_blank" href="http://www.yfc.cn/"><img src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg" alt="YF fund logo" width="30%"></a>
                 <a target="_blank" href="https://www.fudan.edu.cn/en/"><img src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg" alt="Fudan" width="35%"></a>
                 <div class="contact">
-                    <!-- img src="https://2020.igem.org/wiki/images/7/71/T--Fudan--vdivider_yellow.svg" alt="divider" -->
+                    <img src="https://2020.igem.org/wiki/images/7/71/T--Fudan--vdivider_yellow.svg" alt="divider">
                     <div class="contact-info">
                         <p style="font-size:40px;font-family:Pristina;">Contact:</p>
                         <p>Location: 2005 Songhu Road, Shanghai, China</p>
@@ -223,44 +231,44 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div -->
 
-    <div class="floatingBtn"> <a href="#FudanTSIdivWrapper" class="btn"> <i class="fa fa-angle-up" style="font-size:48px;line-height:45px"></i> </a></div>
+    <div class="floatingBtn"> <a href="#FudanDivWrapper" class="btn"> <img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow"> </a></div>
 
-    <div class="page-footer blue-grey darken-1">
+    <div id="FudanFooter" class="page-footer">
       <div class="container"><div class="row">
-        <div class="col m3 s12 row">
-          <a href="https://2019.igem.org/Team:Fudan-TSI"><img alt="2019 Team:Fudan-TSI logo white" class="col s3 m6 l3" style="position:relative; padding: 0.45em 0.3rem; margin:-0.15rem 0; left: -0.45rem;" src="https://2019.igem.org/wiki/images/0/0f/T--Fudan-TSI--LogoGrey.gif"> </a>
+        <div id="sponsor" class="col m3 s12 row">
+          <a href="/Team:Fudan"><img alt="2020 Team:Fudan logo" class="col s3 m6 l3" style="position:relative; padding: 0.45em 0.3rem; margin:-0.15rem 0; left: -0.25rem;" src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg"> </a>
           <a href="http://www.fudan.edu.cn/en/" target="_blank"><img class="col s3 m6 l3" alt="Fudan University" src="https://2018.igem.org/wiki/images/f/f7/T--Fudan--schoolLogo.png"> </a>
-          <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l3" style="margin-bottom: 4%;/* fig should be smaller, 2018 ht */" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
-          <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l3" style="padding: 0.15rem 0.9rem;" alt="Yunfeng Capital" src="https://2018.igem.org/wiki/images/e/e2/T--Fudan--yunfengLogo.png"> </a>
+          <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l3" style="margin-bottom: 4%;" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+          <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l3" style="padding: 0.5rem 1.1rem;" alt="Yunfeng Capital" src="https://2018.igem.org/wiki/images/e/e2/T--Fudan--yunfengLogo.png"> </a>
 
           <h3 class="col s12" style="text-align:left;font-size:12.5px">Bone appetite: <i>make calcium supplement sustainable</i></h3>
         </div>
-        <div class="col m9 s12 row">
+        <div id="footerNavList" class="col m9 s12 row">
           <div class="col s12 l6 row">
             <div class="col s12 m4">
-              <span><a href="/Team:Fudan/Description">Project</a></span>
-              <ul><li><a href="/Team:Fudan/Description">Background</a></li>
+              <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+              <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+                <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
                 <li><a href="/Team:Fudan/Design">Design</a></li>
                 <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
                 <li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
-                <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
-                <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
             </ul></div>
             <div class="col s12 m4">
               <span><a href="/Team:Fudan/Results">Results</a></span>
-                <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+              <ul><li><a href="/Team:Fudan/Engineering">Engineering</a></li>
                 <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
                 <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
                 <li><a href="/Team:Fudan/Model">Modeling</a></li>
-                <li><a href="/Team:Fudan/Notebook">Notebook</a></li>
+                <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
             </ul></div>
             <div class="col s12 m4">
-              <span><a href="/Team:Fudan/Model">xxxx</a></span>
-              <ul><li><a href="/Team:Fudan/Model">xxxx</a></li>
-                <li><a href="/Team:Fudan/Software">xxxx</a></li>
-                <li><a href="/Team:Fudan/Hardware">xxxx</a></li>
+              <span><a href="#">2-min&nbsp;video</a></span>
+              <ul><li><a href="#">Presentation</a></li>
+                <li><a href="/Team:Fudan/Poster">Poster</a></li>
+                <li><a href="/Team:Fudan/Notebook">Notebook</a></li>
+                <li><a href="/Team:Fudan/Safety">Safety</a></li>
             </ul></div>
           </div>
           <div class="col s12 l6 row">
@@ -272,11 +280,10 @@
                 <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
             </ul></div>
             <div class="col s12 m4">
-              <span><a href="/Team:Fudan/Human_Practices">Human&nbsp;practices</a></span>
-              <ul><li><a href="/Team:Fudan/Education">Education</a></li>
-                <li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+              <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+              <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+                <li><a href="/Team:Fudan/Education">Education</a></li>
                 <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
-                <li><a href="/Team:Fudan/Safety">Safety</a></li>
                 <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
             </ul></div>
             <div class="col s12 m4">
@@ -284,19 +291,22 @@
               <ul><li><a href="/Team:Fudan/Team">Members</a></li>
                 <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
                 <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+                <li><a href="/Team:Fudan/Acknowledgment">Acknowledgment</a></li>
                 <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
             </ul></div>
             <div class="col s12 m4">&nbsp;</div>
           </div>
         </div>
       </div></div>
-      <div class="footer-copyright"><div class="container"><div class="contactUS row">
+      <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
         <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
         <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
         <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
         <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
-      </div></div></div>
+      </div></div></div-->
     </div>
+
+
 
     <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="divider">
 
@@ -316,9 +326,5 @@
         </div>
   </div></div>
 </footer>
-
-<a href="#"><div class="back-to-top">
-  <img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow">
-</div></a>
 
 </html>
