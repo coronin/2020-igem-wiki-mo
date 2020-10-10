@@ -17,9 +17,8 @@ class MyRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                                 ).replace('/wiki/index.php?title=Template:Fudan/', '/')
             self.path = self.path.replace('&action=raw&ctype=text/javascript', ''
                                 ).replace('/wiki/index.php?title=Template:Fudan/', '/')
-        else:
-            # extensionless page serving
-            self.path = self.path.split('/Team:Fudan/')[1]+'.html'
+        elif self.path.startswith('/Team:Fudan/'):
+            self.path = self.path.split('Team:Fudan')[1] + '.html'
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 Handler = MyRequestHandler
