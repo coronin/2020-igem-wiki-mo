@@ -1,0 +1,26 @@
+/*  Part table styles */
+table.pgrouptable {
+	font-family: arial;
+	background-color: #F0F0F0;
+	color: #000;
+	font-size:  11px;
+	line height: 11px;
+	width: 100%;
+	text-align:left;
+	border: 2px solid #222;
+	border-collapse: collapse;
+}
+table.pgrouptable thead th {
+	border: 1px solid rgb(61,61,61);
+	padding: 3px 5px 3px 3px;
+	background-color: #CCC;
+	text-align: left;
+}
+table.pgrouptable td {
+	border: 1px solid rgb(61,61,61);
+	background-color: #F0F0F0;
+	color: #000;
+	padding: 3px;
+	font-size: 11px;
+	line-height: 12px;
+}
