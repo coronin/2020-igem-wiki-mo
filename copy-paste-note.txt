@@ -12,3 +12,34 @@ THINGS AFTER HUGE SPACE (line 20) must remove --> after the <html> tag
 
 
 pay attention to the js in Template:Fudan , which deletes top_bar items and adjusts css
+
+
+
+
+
+<html>
+<!-- JAVASCRIPT  -->
+<SCRIPT>
+$(document).ready(function() {
+
+	function navigation_minus_three(){
+	  //var team_name = wgPageName;
+	  $('#navigation').find('a').each(function() {
+if ($(this).attr("href").endsWith('Plant') ) {
+  $(this).parent().remove();
+} else if ($(this).attr("href").endsWith('Software') ) {
+  $(this).parent().remove();
+} else if ($(this).attr("href").endsWith('Hardware') ) {
+  $(this).parent().remove();
+} else {
+  console.log( $(this).attr("href") );
+}
+	  });
+	}
+
+$('.top_bar').click(function(){
+  navigation_minus_three();
+});
+
+});
+</SCRIPT>

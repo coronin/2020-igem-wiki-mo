@@ -9,19 +9,196 @@
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
 <div class="igem_content_wrapper">
 <div class="igem_column_wrapper">
-
-
-
-
-
-
-
 <!--
+                   REMEMBER TO REMOVE THE TEXT RIGHT ARROW
+                   ////////////
+
+
+
+
+
 {{IGEM_TopBar}}
 {{Fudan}}
-<html>         -->
+<html>             -->
 <link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
-<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/Fudan-css.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    #FudanLogoWrapper {
+      display: block;
+      background: #804000;
+      height: 60px;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      right: 20px;
+      top: 68px;  /* 18+40 */
+      z-index: 999;
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding: 80px 0;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f7/T--Fudan--title_background.png');
+      background-repeat: no-repeat;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      background-repeat: no-repeat;
+      height: 400px;
+      margin-bottom: -82px;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #fff5e3;
+      text-align: center;
+      margin: 200px auto 0 auto;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #fff5e3;
+      text-decoration: none;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      z-index: 10;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      line-height: 14px;
+      border-top: solid 2px;
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList div {
+      color: #ffc86e;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: inherit;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    #FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+
+  }
+}
+</style>
 <header>
   <div id="FudanLogoWrapper">
     <a href="#FudanTitleWrapper" target="_self">
@@ -33,7 +210,7 @@
   </div>
 </header>
 <article>
-  <h1>Overview</h1>
+  <h1>one short line to summarize the entire page</h1>
   <div class="column full_size">
     <p>Our project aims at converting engineered probiotic under current research
                     into a calcium supplement ready for the market. Our product targets seniors suffering
@@ -133,15 +310,15 @@
 
 <!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
 
-<footer id="FudanFooter" class="page-footer">
+<footer class="page-footer" id="FudanFooter">
   <div class="container"><div class="row">
     <div class="col m3 s12 row"
          style="margin-top:4rem" >
-      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l3" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
-      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l3" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
-      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l3" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
       <h3 class="col s12"
-          style="text-align:left;font-size:12.5px;margin:0">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
     </div>
     <div id="footerNavList" class="col m9 s12 row">
       <div class="col s12 l6 row">
@@ -202,24 +379,27 @@
     <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
   </div></div></div-->
 
-  <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----" style="padding-left:5px">
+  <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----" style="padding-left:5px;margin-bottom:2rem">
 
-  <div class="foot-ico wow fadeInUp">
-    <div class="twitter">
-        <a target="_blank" href="https://twitter.com/fudan_igem" class="bottom-twitter">
-          <img src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg  " alt="twitter"></a>
+  <div class="row">
+    <div class="col s2">&nbsp;</div>
+    <div class="col s2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter"></a>
       </div>
-      <div class="ig">
-        <a target="_blank" href="https://www.instagram.com/igem_fudan2020/"><img src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+    <div class="col s2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
       </div>
-      <div class="weibo">
-          <a target="_blank" href="https://weibo.com/u/6299186826"><img src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+    <div class="col s2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
       </div>
-      <div class="wechat">
-          <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect"><img src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat"></a>
+    <div class="col s2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat"></a>
       </div>
-  </div></div>
-
+  </div>
+  <br/><br/>
 </footer>
-
-</html>
+</div></div>
