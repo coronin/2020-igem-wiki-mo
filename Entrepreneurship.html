@@ -37,14 +37,18 @@
     div.bar_button.main_page, div.bar_button.general_menu {
       height: 40px !important;
     }
-    #FudanLogoWrapper {
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    /*#FudanLogoWrapper {
       display: block;
       background: #804000;
       height: 60px;
       padding: 0;
       margin: 0;
       border: 0;
-    }
+    }*/
     #FudanLogoWrapper img {
       position: fixed;
       right: 20px;
@@ -58,8 +62,9 @@
       padding: 80px 0;
       margin: 0;
       border: 0;
-      background-image: url('https://2020.igem.org/wiki/images/f/f7/T--Fudan--title_background.png');
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
       background-repeat: no-repeat;
+      background-position: top center;
     }
     #FudanSignature {
       background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
