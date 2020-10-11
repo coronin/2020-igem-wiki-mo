@@ -21,10 +21,9 @@ pay attention to the js in Template:Fudan , which deletes top_bar items and adju
 <!-- JAVASCRIPT  -->
 <SCRIPT>
 $(document).ready(function() {
-
-  function navigation_minus_three(){
-    //var team_name = wgPageName;
+  function navigation_minus_three() {
     $('#navigation').find('a').each(function() {
+
 if ($(this).attr("href").endsWith('Plant') ) {
   $(this).parent().remove();
 } else if ($(this).attr("href").endsWith('Software') ) {
@@ -37,9 +36,26 @@ if ($(this).attr("href").endsWith('Plant') ) {
     });
   }
 
+  function active_based_href() {
+    $('#footerNavList').find('a').each(function() {
+
+if ($(this).attr("href").startsWith('/'+wgPageName) ) {
+  $(this).css({'color':'white'}); // .active
+}
+
+    });
+  }
+
 $('.top_bar').click(function(){
   navigation_minus_three();
 });
 
+$(window).scroll(function(){
+  var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height(), winW = $(window).width();
+  if  ((wintop/(docheight-winheight)) > 0.75) {
+    active_based_href();
+  }
+  $('#FudanLoader').width( winW*wintop/(docheight-winheight) );
+});
 });
 </SCRIPT>

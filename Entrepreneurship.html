@@ -10,8 +10,8 @@
 <div class="igem_content_wrapper">
 <div class="igem_column_wrapper">
 <!--
-                   REMOVE THE TEXT RIGHT ARROW
-                   ////////////
+                      REMOVE THE TEXT RIGHT ARROW
+                      ////////////
 
 
 
@@ -19,7 +19,7 @@
 
 {{IGEM_TopBar}}
 {{Fudan}}
-<html>             -->
+<html>                -->
 <link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
 <style>
 @font-face {
@@ -34,6 +34,9 @@
     #FudanFooter{display:none}
 }
 @media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
     #FudanLogoWrapper {
       display: block;
       background: #804000;
@@ -148,13 +151,13 @@
     #FudanFooter #footerNavList a:hover {
       text-decoration: underline;
     }
-    #FudanFooter #footerNavList div.active,
+    /*#FudanFooter #footerNavList div.active,
     #FudanFooter #footerNavList div.active a {
       color: white;
     }
     #FudanFooter #footerNavList div.active ul {
       border-top: solid white 2px;
-    }
+    }*/
     #FudanFooter #footerNavList li {
       padding: 3px 0 6px 3px;
     }
@@ -287,33 +290,13 @@
   </div>
 
   <div class="column full_size"><div id="FudanSignature">
-      <p>Signature: <a href="/Team:Fudan/Attribution#MoEmily" class="authors">Emily</a>,
-                    <a href="/Team:Fudan/Attribution#WeiZY" class="authors">Ziyuan</a>
+      <p>Signature: <a href="/Team:Fudan/Attributions#MoEmily" class="authors z-depth-2">Emily</a>,
+                    <a href="/Team:Fudan/Attributions#WeiZY" class="authors z-depth-2">Ziyuan</a>
         </p>
   </div></div>
 
   <div class="clear"></div><!-- MUST HAVE -->
 </article>
-
-        <!--div class="col-xl-3  wow fadeInUp">
-            <div class="foot-box2">
-                <p>Sponsor:</p>
-                <a target="_blank" href="http://www.yfc.cn/"><img src="" alt="YF fund logo" width="30%"></a>
-                <a target="_blank" href="https://www.fudan.edu.cn/en/"><img src="" alt="Fudan" width="35%"></a>
-                <div class="contact">
-                    <img src="https://2020.igem.org/wiki/images/7/71/T--Fudan--vdivider_yellow.svg" alt="divider">
-                    <div class="contact-info">
-                        <p style="font-size:40px;font-family:Pristina;">Contact:</p>
-                        <p>Location: 2005 Songhu Road, Shanghai, China</p>
-                        <a href="mailto:igem@fudan.edu.cn">Email: igem@fudan.edu.cn</a>
-                        <p>Phone: +86 21 31246500</p>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div -->
-
-
 
 <!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
 
@@ -411,4 +394,9 @@
   </div>
   <br/><br/>
 </footer>
-</div></div>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:9px;width:100%;float:left">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>
