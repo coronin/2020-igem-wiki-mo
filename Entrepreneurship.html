@@ -68,6 +68,7 @@
       height: 462.47px;
       margin-bottom: -25px;
       position: relative;
+      z-index: 0;
     }
     #FudanSignature p {
       font-family: Pristina;
@@ -75,7 +76,7 @@
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff5e3;
+      color: white;
       position: absolute;
       bottom: 1rem;
       width: 100%; /* MUST FOR TEXT CENTER */
@@ -87,7 +88,7 @@
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #fff5e3;
+      color: white;
       text-decoration: none;
     }
     #FudanFooter {
@@ -117,7 +118,6 @@
     #acknowledgementPhoto span {
       position: absolute;
       bottom: 5%;
-      z-index: 10;
       display: none;
       color: #fff;
       background: rgba(255, 255, 255, 0.86);
@@ -131,22 +131,33 @@
       font-size: 13px;
       font-weight: normal;
       line-height: 14px;
-      border-top: solid 2px;
+      /*border-top: solid 2px;*/
       color: inherit;
       text-decoration: none;
       padding-top: 5px;
     }
-    #FudanFooter #footerNavList div {
-      color: #ffc86e;
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
     }
     #FudanFooter h3 {
       color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
     }
     #FudanFooter #footerNavList div:hover {
       color: white;
     }
     #FudanFooter #footerNavList a {
-      color: inherit;
+      color: #ffc86e;
     }
     #FudanFooter #footerNavList a:hover {
       text-decoration: underline;
@@ -304,9 +315,9 @@
   <div class="container"><div class="row">
     <div class="col m3 s12 row"
          style="margin-top:4rem" >
-      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
-      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
-      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
       <h3 class="col s12"
           style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
     </div>
@@ -377,19 +388,19 @@
     <div class="col m2 hide-on-small-only">&nbsp;</div>
     <div class="col s3 m2">
       <a target="_blank" href="https://twitter.com/fudan_igem">
-        <img src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter"></a>
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter"></a>
       </div>
     <div class="col s3 m2">
       <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
-        <img src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
       </div>
     <div class="col s3 m2">
       <a target="_blank" href="https://weibo.com/u/6299186826">
-        <img src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
       </div>
     <div class="col s3 m2">
       <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
-        <img src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat"></a>
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat"></a>
       </div>
   </div>
   <br/><br/>

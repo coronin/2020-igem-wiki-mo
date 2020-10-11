@@ -6,7 +6,7 @@ START WITH THE FOLLOWING
 <html>
 
 
-THINGS AFTER HUGE SPACE (line 20) must remove --> after the <html> tag
+THINGS AFTER HUGE SPACE (line 20) must remove --> after the <html> tag, starting without empty line in the box
 
 
 
