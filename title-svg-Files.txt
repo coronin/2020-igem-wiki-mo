@@ -1,33 +1,33 @@
 collaborations 
-https://2020.igem.org/File:T--Fudan--title_collaborations.svg
+
 attributions 
-https://2020.igem.org/File:T--Fudan--title_attributions.svg
+
 parts 
-https://2020.igem.org/File:T--Fudan--title_parts.svg
+
 sustainable 
 https://2020.igem.org/File:T--Fudan--title_sustainable.svg
 improvement 
 https://2020.igem.org/File:T--Fudan--title_improvement.svg
 engineering 
-https://2020.igem.org/File:T--Fudan--title_engineering.svg
+
 contribution 
-https://2020.igem.org/File:T--Fudan--title_contribution.svg
+
 description 
 https://2020.igem.org/File:T--Fudan--title_description.svg
 design 
 https://2020.igem.org/File:T--Fudan--title_design.svg
 proof of concept 
-https://2020.igem.org/File:T--Fudan--title_proofofconcept.svg
+
 model 
-https://2020.igem.org/File:T--Fudan--title_model.svg
+
 safety 
-https://2020.igem.org/File:T--Fudan--title_safety.svg
+
 demonstrate 
 https://2020.igem.org/File:T--Fudan--title_demonstrate.svg
 measurement 
-https://2020.igem.org/File:T--Fudan--title_measurement.svg
+
 notebook 
-https://2020.igem.org/File:T--Fudan--title_notebook.svg
+
 basic parts 
 https://2020.igem.org/File:T--Fudan--basicparts.svg
 composite parts 
@@ -35,23 +35,23 @@ https://2020.igem.org/File:T--Fudan--compositeparts.svg
 new parts 
 https://2020.igem.org/File:T--Fudan--newparts.svg
 parts collection 
-https://2020.igem.org/File:T--Fudan--partscollection.svg
+
 education 
-https://2020.igem.org/File:T--Fudan--title_education.svg
+
 integrated HP 
-https://2020.igem.org/File:T--Fudan--title_integratedHP.svg
+
 inclusion 
-https://2020.igem.org/File:T--Fudan--title_inclusion.svg
+
 entrepreneurship 
-https://2020.igem.org/File:T--Fudan--title_entrepreneurship.svg
+
 implementation 
 https://2020.igem.org/File:T--Fudan--title_implementation.svg
 team members 
-https://2020.igem.org/File:T--Fudan--title_teammembers.svg
+
 authors 
 https://2020.igem.org/File:T--Fudan--title_authors.svg
 acknowledgement 
-https://2020.igem.org/File:T--Fudan--title_acknowledgement.svg
+
 partnership 
-https://2020.igem.org/File:T--Fudan--title_partnership.svg
+
 
