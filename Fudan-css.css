@@ -1,595 +1,164 @@
-div.FudanDIV {
-    margin: 0;
-    padding: 0;
-}
 
-.FudanDIV header {
-    height: 190px;
-    background: #804000;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media print {
+    #FudanFooter{display:none}
 }
-
-.FudanDIV .logo {
-    position: absolute;
-    left: 60px;
-    top: 10px;
-    z-index: 999;
-}
-
-.FudanDIV .top-links {
-    text-align: right;
-}
-
-.FudanDIV .top-links a {
-    font-size: 12px;
-    color: #50596C;
-    display: inline-flex;
-    align-items: center;
-    height: 48px;
-}
-
-.FudanDIV article {
-    background-color: #dcf0f0;
-    overflow: hidden;
-}
-
-.FudanDIV .heading {
-    display: block;
-    background-image: url('https://2020.igem.org/wiki/images/f/f7/T--Fudan--title_background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-position: -20px -10px;*/
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-.FudanDIV .headercontent {
-    position: absolute;
-    margin-left: 44%;
-    margin-top: 4%;
-    font-family: GermaniaOne Regular;
-    font-size: 60px;
-    color: #FFF4E1;
-    color: rgb(255, 244, 225);
-}
-
-.FudanDIV .Home-box {
-    padding: 0 60px;
-}
-
-.FudanDIV .Home-box1,
-.FudanDIV .Home-box2 {
+@media screen {
+    #FudanLogoWrapper {
+      display: block;
+      background: #804000;
+      height: 60px;
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      right: 20px;
+      top: 68px;  /* 18+40 */
+      z-index: 999;
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding: 80px 0;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f7/T--Fudan--title_background.png');
+      background-repeat: no-repeat;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      background-repeat: no-repeat;
+      height: 400px;
+      margin-bottom: -82px;
+    }
+    #FudanSignature p {
+      text-align: center;
+      margin: 200px auto 0 auto;
+      color: white;
+    }
+    #FudanSignature a {
+      color: white;
+      text-decoration: none;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      z-index: 10;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      line-height: 14px;
+      border-top: solid 2px;
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList div {
+      color: #ffc86e;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: inherit;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    #FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+    }
+    #FudanFooter img {
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+    #FudanFooter div.row > img {
+      padding: 0 2%;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    margin: 115px auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
 
-.FudanDIV .user-img {
-    width: 35%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9;
-}
-
-.FudanDIV .Box-Main {
-    width: 80%;
-    position: relative;
-}
-
-.FudanDIV .Box-Main div {
-    width: 80%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 10%;
-}
-
-.FudanDIV .Box-Main div p {
-    font-family: Century Gothic;
-    font-size: 42px;
-    font-weight: 400;
-    color: #1d0e05;
-}
-
-.FudanDIV .Box-Main div p a {
-    font-weight: bold;
-    color: #7F2A2A;
-    font-size: 32px;
-}
-
-.FudanDIV .more {
-    font-weight: bold;
-    font-family: Century Gothic;
-    font-size: 30px;
-    color: #7F2A2A;
-    text-decoration: underline;
-    float: right;
-}
-
-.FudanDIV .Home-box2 {
-    justify-content: flex-start;
-}
-
-.FudanDIV .Home-box2 .user-img {
-    top: 0;
-    right: 0;
-    left: auto;
-}
-
-.FudanDIV .Home-box2 .Box-Main div {
-    left: 0;
-    right: auto;
-}
-
-.FudanDIV .Home-box3 {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.FudanDIV .Home-box3 div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-.FudanDIV .Home-box3 div img {
-    margin: 10% auto;
-}
-
-.FudanDIV .content {
-    background-size: cover;
-    background-color: #DCF0F0;
-    /* light blue */
-    box-sizing: border-box;
-    padding: 0;
-    text-align: left;
-    width: 100%;
-    font-size: 20px;
-}
-
-.FudanDIV .flex-content-graph {
-    display: grid;
-    /*@@@@ grid-template-columns: repeat(2,1fr); */
-}
-
-.FudanDIV .flex-content {
-    display: inline-block;
-}
-
-.FudanDIV .graph {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.FudanDIV .flex-graph {
-    display: table-cell;
-    max-width: 100%;
-    margin-left: 10px;
-    vertical-align: middle;
-    height: 100%;
-}
-
-.FudanDIV .flex-graph img {
-    vertical-align: middle;
-    height: 100%;
-}
-
-.FudanDIV .table1 table {
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 auto;
-    border-color: #402000;
-    box-shadow: 3px 3px 10px;
-}
-
-.FudanDIV .table1 th {
-    background-color: rgba(255, 244, 225, 0.8);
-}
-
-.FudanDIV .authors {
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    font-size: 26px;
-}
-
-.FudanDIV footer {
-    background: #402000;
-    padding: 50px 0;
-    overflow: hidden;
-}
-
-.FudanDIV .foot-box {
-    text-align: center;
-}
-
-.FudanDIV .foot-box li {
-    padding: 7px 0;
-    text-align: center;
-}
-
-.FudanDIV .foot-box li a {
-    text-decoration: underline;
-    color: #FFF4E1;
-    margin: 10px auto;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.FudanDIV .contact {
-    display: inline-flex;
-    margin-top: 110px;
-    text-align: left;
-}
-
-.FudanDIV .contact-info {
-    display: grid;
-    /*@@@@ grid-template-rows:repeat(4,1fr); */
-    /*4 rows of info*/
-    padding-left: 20px;
-    max-height: 200px;
-    margin: 0;
-}
-
-.FudanDIV .label:hover {
-    color: #402000;
-}
-
-.FudanDIV .label {
-    display: inline-block;
-    background: #FFC864;
-    border-style: solid;
-    border-radius: 30px;
-    padding: 5% 15%;
-    font-size: 25px;
-    margin: auto;
-    text-align: center;
-    box-shadow: black 8px 8px 5px;
-    font-weight: bold;
-    color: #402000;
-    text-decoration: none;
-}
-
-.FudanDIV .page {
-    text-align: center;
-}
-
-.FudanDIV .page:hover {
-    color: #FFC864;
-    transition: color 200ms ease-in-out;
-}
-
-.FudanDIV .sponsor {
-    margin-right: 11%;
-    display: inline-block;
-    font-family: Pristina;
-    font-size: 40px;
-    color: #FFF4E1;
-    float: right;
-}
-
-.FudanDIV .sponsortext {
-    line-height: 3px;
-}
-
-.FudanDIV .contact-info p,
-a {
-    color: #FFF4E1;
-    margin: 0;
-    font-weight: bold;
-    font-size: large;
-}
-
-.FudanDIV .foot-box2 {
-    display: inline-block;
-    font-family: Pristina;
-    font-size: 40px;
-    color: #FFF4E1;
-}
-
-.FudanDIV .foot-ico {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.FudanDIV .foot-ico div img {
-    width: 150px;
-}
-
-.FudanDIV .foot-ico div:hover {
-    opacity: 0.7;
-}
-
-.FudanDIV ul,
-li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.FudanDIV a,
-button {
-    cursor: pointer;
-}
-
-.FudanDIV input {
-    outline: none;
-}
-
-.FudanDIV a:hover {
-    text-decoration: none;
-}
-
-.FudanDIV img {
-    max-width: 100%;
-}
-
-.FudanDIV body {
-    font-family: "Arial";
-    overflow-x: hidden;
-}
-
-.FudanDIV .xclose {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    display: none;
-    background: rgba(0, 0, 0, .6);
-}
-
-.FudanDIV .Home-box3 {
-    margin-bottom: -12px;
-}
-
-.FudanDIV .back-to-top {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    background: #FFC864;
-    bottom: 40px;
-    right: 50px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    border-radius: 50%;
-    font-size: 22px;
-}
-
-.FudanDIV .label:hover {
-    background: #fff;
-}
-
-@media (max-width: 1640px) {
-    .FudanDIV .logo {
-        width: 300px;
-    }
-    .FudanDIV .container {
-        max-width: 1200px;
-    }
-}
-
-@media (max-width: 1540px) {
-    .FudanDIV .col-xs-6 {
-        width: 48%;
-    }
-    .FudanDIV .label div {
-        width: 150px;
-    }
-    .FudanDIV .label {
-        padding: 15px 20px;
-    }
-    .FudanDIV .Box-Main div p {
-        font-size: 28px;
-    }
-    .FudanDIV .logo {
-        width: 200px;
-        left: 20px;
-        top: 25px;
-    }
-    .FudanDIV .container {
-        max-width: 1000px;
-    }
-}
-
-
-/*@media (max-width: 1279px) {
-}*/
-
-@media (max-width:1150px) {
-    .FudanDIV .col-xs-6 {
-        width: 48%;
-    }
-    .FudanDIV .foot-box2 a img {
-        margin: 10px;
-    }
-    .FudanDIV .logo {
-        width: 150px;
-        left: 20px;
-        top: 30px;
-    }
-    .FudanDIV .label div {
-        width: 150px;
-    }
-    .FudanDIV .label {
-        padding: 5px 20px;
-    }
-    .FudanDIV .user-img {
-        width: 20%;
-    }
-    .FudanDIV .Box-Main div {
-        width: 90%;
-    }
-    .FudanDIV .Box-Main {
-        width: 90%;
-    }
-    .FudanDIV .Box-Main div p {
-        font-size: 24px;
-    }
-    .FudanDIV .headercontent {
-        margin-left: 38%;
-    }
-}
-
-@media (max-width: 991px) {
-    .FudanDIV .heading img {
-        width: 50%;
-    }
-    .FudanDIV .flex-content-graph {
-        display: inline-block;
-    }
-    .FudanDIV .flex-content {
-        display: inline-block;
-    }
-    .FudanDIV .flex-graph {
-        display: block;
-        width: 100%;
-        padding-right: 5%;
-        padding-bottom: 3%;
-    }
-    .FudanDIV .foot-box2 {
-        margin-left: 15%;
-    }
-    .FudanDIV .foot-box2 a img {
-        width: 80%;
-    }
-    .FudanDIV .contact {
-        margin-top: 0;
-        margin-left: 22%;
-    }
-    .FudanDIV .Home-box3 {
-        margin-bottom: -4px;
-    }
-    .FudanDIV .contact-info p:nth-child(1) {
-        font-size: 30px !important;
-    }
-    .FudanDIV .foot-box2 img:nth-child(2) {
-        width: 30%;
-    }
-    .FudanDIV .foot-box2 {
-        font-size: 26px;
-        display: flex;
-    }
-    .FudanDIV .foot-ico div img {
-        width: 100px;
-    }
-    .FudanDIV .user-img {
-        width: 40%;
-    }
-    .FudanDIV .Box-Main {
-        width: 100%;
-    }
-    .FudanDIV .Home-box {
-        padding: 0 5px;
-    }
-    .FudanDIV .Box-Main div p a,
-    .FudanDIV .more {
-        font-size: 16px !important;
-    }
-    .FudanDIV .Home-box1,
-    .FudanDIV .Home-box2 {
-        margin: 50px 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .FudanDIV .xclose {
-        display: block;
-    }
-    .FudanDIV header {
-        height: 120px;
-    }
-    .FudanDIV .logo {
-        width: 150px;
-        height: 150px;
-        left: 10px;
-        top: -14px;
-    }
-    .FudanDIV .Box-Main div {
-        padding: 5%;
-    }
-    .FudanDIV .Box-Main div p {
-        font-size: 14px;
-    }
-    .FudanDIV .user-img {
-        position: relative;
-        margin: 10px auto;
-    }
-    .FudanDIV .Box-Main div {
-        width: 100%;
-    }
-    .FudanDIV .headercontent {
-        margin-left: 44%;
-        font-size: 35px;
-    }
-    .FudanDIV .content {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 767px) {
-    .FudanDIV .heading img {
-        width: 70%;
-    }
-    .FudanDIV .col-xs-6 {
-        width: 48%;
-    }
-    .FudanDIV .foot-box li a {
-        font-size: 18px;
-    }
-    .FudanDIV .contact-info {
-        font-size: small;
-    }
-    .FudanDIV .contact {
-        margin-left: 0;
-    }
-    .FudanDIV .label div {
-        width: 150px;
-    }
-    .FudanDIV .foot-ico div img {
-        width: 70px;
-    }
-    .FudanDIV .label {
-        padding: 1% 5%;
-    }
-    .FudanDIV .Home-box3 div img {
-        width: 35%;
-    }
-    .FudanDIV .xclose {
-        display: block;
-    }
-    .FudanDIV header {
-        height: 120px;
-    }
-    .FudanDIV .logo {
-        width: 150px;
-        height: 150px;
-        left: 10px;
-        top: -14px;
-    }
-    .FudanDIV .content-background {
-        font-size: 10px;
-    }
-    .FudanDIV .authors {
-        font-size: 20px;
-    }
+  }
 }

@@ -6,4 +6,9 @@ START WITH THE FOLLOWING
 <html>
 
 
-THINGS AFTER HUGE SPACE must remove --> after the <html> tag
+THINGS AFTER HUGE SPACE (line 20) must remove --> after the <html> tag
+
+
+
+
+pay attention to the js in Template:Fudan , which deletes top_bar items and adjusts css

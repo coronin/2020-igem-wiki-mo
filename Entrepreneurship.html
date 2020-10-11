@@ -12,139 +12,26 @@
 
 
 
+
+
+
+
 <!--
 {{IGEM_TopBar}}
 {{Fudan}}
 <html>         -->
 <link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
-<style>
-@media print {
-    #FudanFooter{display: none}
-}
-@media screen {
-    #FudanFooter {
-      background-color: #804000;
-      padding-top: 0;
-    }
-    #FudanFooter div {
-      box-sizing: border-box;
-    }
-    #FudanFooter .container {
-      width: 90%;
-    }
-    #FudanFooter ul {
-      margin: 0;
-      padding: 0;
-    }
-    #FudanFooter li {
-      list-style: none;
-    }
-    #FudanFooter a {
-      text-decoration: none;
-    }
-    #FudanFooter h3:before {
-        content: normal;
-        margin: 10px 0 10px 0;
-    }
-    #acknowledgementPhoto span {
-        position: absolute;
-        bottom: 5%;
-        z-index: 10;
-        display: none;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.86);
-    }
-    #FudanFooter #footerNavList {
-        color: #ffc86e;
-        padding-left: 1rem;
-    }
-    #FudanFooter #footerNavList ul {
-        font-size: 13px;
-        line-height: 14px;
-        border-top: solid 2px;
-        color: inherit;
-        text-decoration: none;
-        padding-top: 5px;
-    }
-    #FudanFooter #footerNavList div {
-        color: #ffc86e;
-    }
-    #FudanFooter h3 {
-        color: #ffc86e;
-    }
-    #FudanFooter #footerNavList div:hover {
-        color: white;
-    }
-    #FudanFooter #footerNavList a {
-        color: inherit;
-    }
-    #FudanFooter #footerNavList a:hover {
-        text-decoration: underline;
-    }
-    #FudanFooter #footerNavList div.active,
-    #FudanFooter #footerNavList div.active a {
-        color: white;
-    }
-    #FudanFooter #footerNavList div.active ul {
-        border-top: solid white 2px;
-    }
-    #FudanFooter #footerNavList li {
-        padding: 3px 0 6px 3px;
-    }
-    #footerNavList span {
-        font-size: 20px;
-    }
-    #footerNavList > div > div {
-        padding-left: 1.2rem;
-    }
-    #FudanFooter div.footer-copyright {
-        font-size: 13px;
-        line-height: 15px;
-    }
-    #acknowledgementPhoto {
-        width: 100%;
-        position: relative;
-    }
-    #acknowledgementPhoto > div {
-        width: 100%;
-        position: relative;
-        vertical-align: top;
-    }
-    #acknowledgementPhoto div.row > div {
-        position: relative;
-        padding: 0 10px;
-        margin: 10px 0;
-        overflow: hidden;
-        text-align: center;
-        bottom: 0;
-    }
-    #acknowledgementPhoto img {
-        width: 100%;
-    }
-    #FudanFooter img {
-        margin: 5px 0;
-    }
-    #FudanFooter div.row {
-        margin: 5px 0;
-        padding: 0;
-    }
-    #FudanFooter div.row > img {
-        padding: 0 2%;
-    }
-</style>
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/Fudan-css.css&action=raw&ctype=text/css">
 <header>
-  <div id="FudanDivWrapper" style="display:block;background:#804000;height:190px;padding:0;margin:0;border:0">
-    <a href="/Team:Fudan" target="_self">
-      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan logo" style="position:absolute;left:60px;top:10px;z-index:999;width:170px" />
+  <div id="FudanLogoWrapper">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
     </a>
   </div>
-  <div style="display:block;text-align:center;padding:0;margin:0;border:0;
-              background-image: url('https://2020.igem.org/wiki/images/f/f7/T--Fudan--title_background.png');
-              background-repeat: no-repeat">
+  <div id="FudanTitleWrapper">
     <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--title_entr.svg" alt="entrepreneurship" style="width:45%">
   </div>
 </header>
-
 <article>
   <h1>Overview</h1>
   <div class="column full_size">
@@ -212,17 +99,16 @@
   <div class="column half_size">
     <img src="https://2020.igem.org/wiki/images/0/00/T--Fudan--calcium_intake_graph.svg" alt="calcium intake graph">
   </div>
-  <div class="clear extra_space"></div>
+  <div class="clear"></div>
   <div class="column full_size">
     <p>The target user of our product is the elderly group. The reason why the elderly need calcium is mainly due to changes in hormone levels when they age. Elderly with calcium deficiency are prone to osteoporosis, increasing the risk of fractures. Globally, there are more than 200 million diagnosed with osteoporosis, and Asia has a high incidence rate of osteoporosis. In China alone, about 70 million people over 50 years of age suffer from osteoporosis, and those in their 40’s are also in great risks.</p>
   </div>
-  <div class="clear"></div>
-  <div class="column full_size">
-      <img alt="sealed envelope" src="https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg">
-      <!--p>Signature: <a href="/Team:Fudan/Attribution#MoEmily" class="authors">Emily</a>,
+  <div class="column full_size" id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attribution#MoEmily" class="authors">Emily</a>,
                     <a href="/Team:Fudan/Attribution#WeiZY" class="authors">Ziyuan</a>
-        </p-->
+        </p>
   </div>
+  <div class="clear"></div><!-- MUST HAVE -->
 </article>
 
         <!--div class="col-xl-3  wow fadeInUp">
@@ -243,15 +129,19 @@
         </div>
     </div -->
 
-    <div class="floatingBtn"> <a href="#FudanDivWrapper" class="btn"> <img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow"> </a></div>
+
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
 
 <footer id="FudanFooter" class="page-footer">
   <div class="container"><div class="row">
-    <div style="margin-top:4rem;" class="col m3 s12 row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
       <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l3" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
       <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l3" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
       <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l3" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
-      <h3 class="col s12" style="text-align:left;font-size:12.5px;margin:0">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+      <h3 class="col s12"
+          style="text-align:left;font-size:12.5px;margin:0">Bone appetite: <i>make calcium supplement sustainable</i></h3>
     </div>
     <div id="footerNavList" class="col m9 s12 row">
       <div class="col s12 l6 row">
@@ -261,31 +151,30 @@
             <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
             <li><a href="/Team:Fudan/Design">Design</a></li>
             <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
-            <li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="#">Video</a></li>
         </ul></div>
         <div class="col s12 m4">
           <span><a href="/Team:Fudan/Results">Results</a></span>
-          <ul><li><a href="/Team:Fudan/Engineering">Engineering</a></li>
-            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
             <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
             <li><a href="/Team:Fudan/Model">Modeling</a></li>
             <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
         </ul></div>
+      </div>
+      <div class="col s12 l6 row">
         <div class="col s12 m4">
           <span><a href="/Team:Fudan/Parts">Parts</a></span>
           <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;parts</a></li>
             <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;parts</a></li>
             <li><a href="/Team:Fudan/Improve">Improvement</a></li>
             <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
-        </ul></div>
-      </div>
-      <div class="col s12 l6 row">
-        <div class="col s12 m4">
-          <span><a href="#">Video</a></span>
-          <ul><li><a href="#">Presentation</a></li>
-            <li><a href="/Team:Fudan/Poster">Poster</a></li>
-            <li><a href="/Team:Fudan/Notebook">Notebook</a></li>
-            <li><a href="/Team:Fudan/Safety">Safety</a></li>
         </ul></div>
         <div class="col s12 m4">
           <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
@@ -313,7 +202,7 @@
     <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
   </div></div></div-->
 
-  <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="divider">
+  <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----" style="padding-left:5px">
 
   <div class="foot-ico wow fadeInUp">
     <div class="twitter">
