@@ -41,19 +41,13 @@
     #mw-content-text > div.menu_container {
       z-index: 2;
     }
-    /*#FudanLogoWrapper {
-      display: block;
-      background: #804000;
-      height: 60px;
-      padding: 0;
-      margin: 0;
-      border: 0;
-    }*/
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
     #FudanLogoWrapper img {
       position: fixed;
-      right: 20px;
-      top: 68px;  /* 18+40 */
-      z-index: 999;
+      left: -1%;
+      top: 58px;  /* 18+40 */
       width: 170px;
     }
     #FudanTitleWrapper {
@@ -63,14 +57,15 @@
       margin: 0;
       border: 0;
       background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
       background-repeat: no-repeat;
       background-position: top center;
     }
     #FudanSignature {
       background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
       background-repeat: no-repeat;
       background-position: bottom center;
-      height: 462.47px;
       margin-bottom: -25px;
       position: relative;
       z-index: 0;
@@ -95,6 +90,7 @@
       -moz-osx-font-smoothing: grayscale;
       color: white;
       text-decoration: none;
+      padding: 5px;
     }
     #FudanFooter {
       background-color: #804000;
@@ -224,7 +220,7 @@
 }
 </style>
 <header>
-  <div id="FudanLogoWrapper">
+  <div id="FudanLogoWrapper" style="opacity:0.01">
     <a href="#FudanTitleWrapper" target="_self">
       <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
     </a>
@@ -306,8 +302,8 @@
   </div>
 
   <div class="column full_size"><div id="FudanSignature">
-      <p>Signature: <a href="/Team:Fudan/Attributions#MoEmily" class="authors z-depth-2">Emily</a>,
-                    <a href="/Team:Fudan/Attributions#WeiZY" class="authors z-depth-2">Ziyuan</a>
+      <p>Signature: <a href="/Team:Fudan/Attributions#MoEmily" class="z-depth-2">Emily</a>
+                    <a href="/Team:Fudan/Attributions#WeiZY" class="z-depth-2">Ziyuan</a>
         </p>
   </div></div>
 
@@ -413,6 +409,6 @@
 
 <!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
 
-<div class="progress" style="position:fixed;top:9px;width:100%;float:left">
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
   <div class="determinate" style="width:1%" id="FudanLoader"></div>
 </div>
