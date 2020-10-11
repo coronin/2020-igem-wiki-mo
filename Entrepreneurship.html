@@ -10,7 +10,7 @@
 <div class="igem_content_wrapper">
 <div class="igem_column_wrapper">
 <!--
-                   REMEMBER TO REMOVE THE TEXT RIGHT ARROW
+                   REMOVE THE TEXT RIGHT ARROW
                    ////////////
 
 
@@ -61,8 +61,10 @@
     #FudanSignature {
       background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
       background-repeat: no-repeat;
-      height: 400px;
-      margin-bottom: -82px;
+      background-position: bottom center;
+      height: 462.47px;
+      margin-bottom: -25px;
+      position: relative;
     }
     #FudanSignature p {
       font-family: Pristina;
@@ -71,8 +73,10 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       color: #fff5e3;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
       text-align: center;
-      margin: 200px auto 0 auto;
     }
     #FudanSignature a {
       font-family: Pristina;
@@ -122,6 +126,7 @@
     }
     #FudanFooter #footerNavList ul {
       font-size: 13px;
+      font-weight: normal;
       line-height: 14px;
       border-top: solid 2px;
       color: inherit;
@@ -155,6 +160,7 @@
     }
     #footerNavList span {
       font-size: 20px;
+      font-weight: normal;
     }
     #footerNavList > div > div {
       padding-left: 1.2rem;
@@ -195,7 +201,6 @@
   }
   @media only screen and (max-width: 1100px) {
     .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
-
   }
 }
 </style>
@@ -280,11 +285,13 @@
   <div class="column full_size">
     <p>The target user of our product is the elderly group. The reason why the elderly need calcium is mainly due to changes in hormone levels when they age. Elderly with calcium deficiency are prone to osteoporosis, increasing the risk of fractures. Globally, there are more than 200 million diagnosed with osteoporosis, and Asia has a high incidence rate of osteoporosis. In China alone, about 70 million people over 50 years of age suffer from osteoporosis, and those in their 40’s are also in great risks.</p>
   </div>
-  <div class="column full_size" id="FudanSignature">
+
+  <div class="column full_size"><div id="FudanSignature">
       <p>Signature: <a href="/Team:Fudan/Attribution#MoEmily" class="authors">Emily</a>,
                     <a href="/Team:Fudan/Attribution#WeiZY" class="authors">Ziyuan</a>
         </p>
-  </div>
+  </div></div>
+
   <div class="clear"></div><!-- MUST HAVE -->
 </article>
 
@@ -348,8 +355,8 @@
       <div class="col s12 l6 row">
         <div class="col s12 m4">
           <span><a href="/Team:Fudan/Parts">Parts</a></span>
-          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;parts</a></li>
-            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;parts</a></li>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
             <li><a href="/Team:Fudan/Improve">Improvement</a></li>
             <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
         </ul></div>
@@ -379,23 +386,25 @@
     <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
   </div></div></div-->
 
-  <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----" style="padding-left:5px;margin-bottom:2rem">
-
   <div class="row">
-    <div class="col s2">&nbsp;</div>
-    <div class="col s2">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
       <a target="_blank" href="https://twitter.com/fudan_igem">
         <img src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter"></a>
       </div>
-    <div class="col s2">
+    <div class="col s3 m2">
       <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
         <img src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
       </div>
-    <div class="col s2">
+    <div class="col s3 m2">
       <a target="_blank" href="https://weibo.com/u/6299186826">
         <img src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
       </div>
-    <div class="col s2">
+    <div class="col s3 m2">
       <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
         <img src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat"></a>
       </div>

@@ -22,9 +22,9 @@ pay attention to the js in Template:Fudan , which deletes top_bar items and adju
 <SCRIPT>
 $(document).ready(function() {
 
-	function navigation_minus_three(){
-	  //var team_name = wgPageName;
-	  $('#navigation').find('a').each(function() {
+  function navigation_minus_three(){
+    //var team_name = wgPageName;
+    $('#navigation').find('a').each(function() {
 if ($(this).attr("href").endsWith('Plant') ) {
   $(this).parent().remove();
 } else if ($(this).attr("href").endsWith('Software') ) {
@@ -34,8 +34,8 @@ if ($(this).attr("href").endsWith('Plant') ) {
 } else {
   console.log( $(this).attr("href") );
 }
-	  });
-	}
+    });
+  }
 
 $('.top_bar').click(function(){
   navigation_minus_three();
