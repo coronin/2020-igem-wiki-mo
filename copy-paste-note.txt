@@ -23,26 +23,29 @@ pay attention to the js in Template:Fudan , which deletes top_bar items and adju
 $(document).ready(function() {
   function navigation_minus_three() {
     $('#navigation').find('a').each(function() {
-
-if ($(this).attr("href").endsWith('Plant') ) {
-  $(this).parent().remove();
-} else if ($(this).attr("href").endsWith('Software') ) {
-  $(this).parent().remove();
-} else if ($(this).attr("href").endsWith('Hardware') ) {
-  $(this).parent().remove();
-} else {
-  console.log( $(this).attr("href") );
-}
+      if ($(this).attr("href").endsWith('Plant') ) {
+        $(this).parent().remove();
+      } else if ($(this).attr("href").endsWith('Software') ) {
+        $(this).parent().remove();
+      } else if ($(this).attr("href").endsWith('Hardware') ) {
+        $(this).parent().remove();
+      } else {
+        console.log( $(this).attr("href") );
+      }
     });
   }
 
   function active_based_href() {
     $('#footerNavList').find('a').each(function() {
-
-if ($(this).attr("href").startsWith('/'+wgPageName) ) {
-  $(this).css({'color':'white'}); // .active
-}
-
+      if ( $(this).attr('href') === '#') {
+        // Video
+        $(this).attr('href', 'https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba');
+      }
+      if ($(this).attr("href").startsWith('/'+wgPageName) ) {
+        // .active
+        $(this).css({'color':'white'});
+        $(this).parent().css({'border-left':'2px dotted white', 'padding-left':'2px', 'margin-left':'-2px'});
+      }
     });
   }
 
@@ -60,3 +63,4 @@ $(window).scroll(function(){
 });
 });
 </SCRIPT>
+
