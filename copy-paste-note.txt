@@ -59,6 +59,7 @@ $(window).scroll(function(){
     active_based_href();
   }
   $('#FudanLoader').width( winW*wintop/(docheight-winheight) );
+  $('#FudanLogoWrapper').css({'z-index':'999'});
   $('#FudanLogoWrapper').css('opacity', wintop/(docheight-winheight) );
 });
 });

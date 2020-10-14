@@ -1,0 +1,1133 @@
+<html>
+<head>
+<style>
+.navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+    color: black !important;
+    font-weight: 600;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: black !important;
+    background-color: rgb(250,226,180) !important;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.15)!important;
+}
+
+    li:hover .dropdown-menu {
+        display: block;
+    }
+.dropdown-menu {
+    top: 80%;
+}
+
+#bgcolor a:link{color: white !important;}
+#bgcolor a:visited{color: white !important;}
+#bgcolor a:hover{color: rgb(250,226,180) !important;}
+#bgcolor a:active{color: white !important;}
+
+#bgcolor #bgcolor2 a:link{color: black !important;}
+#bgcolor #bgcolor2 a:visited{color: black !important;}
+#bgcolor #bgcolor2 a:hover{color: rgb(250,226,180) !important;}
+#bgcolor #bgcolor2 a:active{color: black !important;}
+
+a:visited {
+    color: rgb(104,88,91) !important;
+}
+a {
+    color: rgb(104,88,91) !important;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: rgb(104,88,91) !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #007bff;
+}
+
+@font-face {
+  font-family: 'arciform';
+  src:url('https://2019.igem.org/File:T--Fudan--arciform.OTF') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#top_title{
+display:none;
+}
+#content{
+margin:0;
+width:100%;
+}
+
+.container0 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #354250;
+
+}
+a.nav-link{
+padding:2px 16px;
+
+}
+
+p {
+font-size:16px !important;
+text-align: left !important;
+font-family: arciform !important;
+font-weight:300 !important;
+}
+
+h4{
+  font-size:25px;
+line-height:26px;
+padding-top:16px;
+  padding-bottom:8px !important;
+font-family:sofia;
+font-weight: 700  !important;
+margin-bottom: 0.8em !important;
+}
+
+h5{
+  font-size:21px;
+line-height:26px;
+padding-top:16px;
+  padding-bottom:8px !important;
+font-family:sofia;
+font-weight: 400  !important;
+margin-bottom: 0.8em !important;
+}
+
+
+
+
+
+.scene {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.sky {
+    height: 200px;
+    background: #8cc9dc;
+}
+.sky-inner {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+}
+.title {
+    height: 100%;
+    min-height: 200px;
+}
+img.logo {
+    margin-top: 52px;
+    max-width: 197px;
+    max-height: 170px;
+}
+img.rightF{
+top:15%;
+height:50%;
+right:5%;
+}
+img.leftWord{
+    left: 5%;
+    top: 20%;
+height:50%;
+}
+.title img {
+    height: 80%;
+}
+img {
+    position: absolute;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+.bottle {
+    position: absolute;
+    margin-top: 40px;
+    max-width: 95px;
+    max-height: 120px;
+    right: 0;
+    z-index: 2;
+    top: 10%;
+    width: 73.17px;
+    background: url(https://2019.igem.org/wiki/images/6/6c/T--Fudan--Home14.png) no-repeat 0 0;
+}
+img.bottleEmpty {
+    margin-top: 40px;
+    max-width: 95px;
+    max-height: 120px;
+    right: 0;
+    z-index: 1;
+}
+.scroll-message {
+    position: absolute;
+    left: 160px;
+    color: #FFFFFF;
+    top: 40px;
+}
+
+.scroll-message:after {
+    content: url(https://2019.igem.org/wiki/images/a/a3/T--Fudan--Home3.png);
+    position: relative;
+    top: 75px;
+    left: 10px;
+    opacity: 0.8;
+}
+
+.ribbon-message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #f1f1ea;
+    width: 40%;
+    position: absolute;
+    left: 32%;
+    top: 60%;
+    margin-top: -67px;
+    padding: 17px 17px 17px 17px;
+    height: 137px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.ribbon-message:before {
+    content: url(https://2019.igem.org/wiki/images/e/e5/T--Fudan--Home4.png);
+    width: 27px;
+    height: 137px;
+    position: absolute;
+    left: -27px;
+    top: 0;
+}
+
+.ribbon-message:after {
+    content: url(https://2019.igem.org/wiki/images/d/de/T--Fudan--Home5.png);
+    width: 28px;
+    height: 137px;
+    position: absolute;
+    right: -27px;
+    top: 0;
+}
+
+.bedroom-floor {
+    height: 100%;
+    background: rgb(255,169,181)
+}
+.floor-inner {
+    width: 1000px;
+    height: 94%;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 3% 0;
+    position: relative;
+}
+img.desk {
+    max-width: 1000px;
+    max-height: 130px;
+    height: 60%;
+    top: 44%;
+    z-index: 1;
+    left: 15%;
+
+}
+
+img.nipple {
+    max-width: 1200px;
+    max-height: 130px;
+    z-index: 2;
+    width: 65.5%;
+    top: 44%;
+}
+img.nipple2 {
+    max-width: 1000px;
+    max-height: 130px;
+    z-index: 2;
+    left: 20.6%;
+    width: 65.5%;
+    top: 74%;
+}
+img.feeder {
+    max-width: 1000px;
+    max-height: 130px;
+    z-index: 2;
+    width: 65.5%;
+    top: 44%;
+}
+img.feeder2 {
+    max-width: 1000px;
+    max-height: 130px;
+    z-index: 2;
+    width: 65.5%;
+    top: 74%;
+}
+
+img.lacZ {
+width: 250px;
+    top: 55%;
+    left: 10%;
+}
+img.lactose {
+width: 500px;
+    top: 10%;
+    left: 2%;
+}
+img.intest {
+    height: 600px;
+    width: 300px;
+    left: 70%;
+    top: 14%;
+}
+img.light{
+height:100%;
+width:100%;
+}
+img.info{
+    top: 30%;
+    height: 45%;
+}
+
+img.intest10{
+    height: 80%;
+    top: 14%;
+    left: 65%;
+}
+img.stage{
+    height: 90%;
+    top: 7%;
+    left: 9%;
+}
+img.lastbg{
+    height: 100%;
+    width: 100%;
+}
+.bathroom-wall {
+    height: 100%;
+    background: rgb(244,218,133);
+    min-height: 300px;
+}
+
+.wardrobe-wall {
+    height: 100%;
+    background: rgb(244,218,133);
+    min-height: 300px;
+}
+.kitchen-wall {
+    height: 100%;
+    background: rgb(255,249,133);
+    min-height: 300px;
+}
+.last-wall {
+    height: 75%;
+    background: rgb(255,227,232);
+    min-height: 300px;
+}
+.last-floor {
+    height: 25%;
+    background: rgb(27,31,59);
+    min-height: 300px;
+}
+
+.scene {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+.click-through {
+    pointer-events: none;
+}
+.character-container {
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+.character-container-inner {
+    width: 1000px;
+    height: 94%;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 3% 0;
+    position: relative;
+}
+
+
+</style>
+
+<link href="https://2019.igem.org/wiki/index.php?title=Template:Fudan/bootstrapCSS&amp;action=raw&amp;ctype=text/css" rel="stylesheet" />
+
+<link href='https://fonts.googleapis.com/css?family=Concert+One' rel='stylesheet' type='text/css'>
+
+<link href="https://2019.igem.org/wiki/index.php?title=Template:Fudan/customCSS&amp;action=raw&amp;ctype=text/css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="60" class="scrollspy-example-2" style=position:relative;overflow:auto;">
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg fixed-top" style="opacity:0.1!important; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;background-color:rgb(104,88,91);">
+    <a class="navbar-brand col-2 mt-2" href="#"><img style="height: 50px;position: fixed;top: 2%;" src="https://2019.igem.org/wiki/images/2/29/T--Fudan--NAVLOGO.png" style="height:50px;"></img></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " style="margin-left: 11%; margin-top: 0.8%;font-size: 17px;" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active" id="bgcolor">
+                <a class="nav-link" href="https://2019.igem.org/Team:Fudan">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown" id="bgcolor">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarProject" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Project
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="bgcolor2">
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Description">Description</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Design">Design</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Model">Model</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Safety">Safety</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Demonstrate">Demonstrate</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" id="bgcolor">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarResults" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Experiment
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="bgcolor2">
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Notebook">Notebook</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Results">Results</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" id="bgcolor">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarParts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Parts
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="bgcolor2">
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Overview">Overview</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Part_Collection">Part Collection</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Improve">Improved Parts</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Measurement">Measurement</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" id="bgcolor">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarHuman" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Human
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="bgcolor2">
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Human_Practices">Integrated Human Practice</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/HP_Supplement">HP Supplement</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Collaborations">Collaborations</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" id="bgcolor">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarTeam" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Team
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="bgcolor2">
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Team">Team</a>
+                    <a class="dropdown-item" href="https://2019.igem.org/Team:Fudan/Attributions">Attributions</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+<div id="skrollr-body">
+
+
+          <div class="container0"
+            data-18699="display:block"
+            data-18700="display:block"
+          >
+
+            <!-- Scene 1: Drinking -->
+            <div class="scene"
+                data-2700="top: 0%"
+                data-3700="top: -100%; display: block;"
+                data-3701="display: none;"
+            >
+
+                <div class="sky"
+                    data-0="background: rgb(104,88,91);"
+                    data-1000="background: rgb(244,218,133);"
+                >
+                    <div class="sky-inner">
+                        <div class="title">
+                            <!--[if lt IE 8]>
+                                <p class="chromeframe" style="font-family: arciform;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+                            <![endif]-->
+                            <img src="https://2019.igem.org/wiki/images/6/64/T--Fudan--Home100.png" alt="logo" class="logo">
+
+                            <div alt="bottle" class="bottle"
+                                data-0="height: 120px;"
+                                data-1300="height: 0px;"
+                            ></div>
+                            <img src="https://2019.igem.org/wiki/images/3/3c/T--Fudan--Home15.png" alt="bottle" class="bottleEmpty"
+                                data-2000="top: 10%;"
+                                data-3000="top: -100%;"
+                            >
+                            <div class="scroll-message ie-hide"
+                              data-0="opacity: 1;"
+                              data-100="opacity: 0;"
+                            >Scroll Down!</div>
+                            <!--[if lt IE 9]>
+                            <div class="scroll-message"
+                              data-0="display: block;"
+                              data-100="display: none;"
+                            >Scroll Down!</div>
+                            <![endif]-->
+                            <div class="ribbon-message ie-hide" style="font-family: arciform;"
+                               data-1100="opacity: 0;"
+                               data-1200="opacity: 1;"
+                            >
+                            In China, <strong>10.03%</strong> of babies have primary lactose intolerance, while <strong>53.97%</strong> of them have secondary lactose intolerance(often happens after gastrointestinal disorders). But baby can't live a life without milk...
+                            </div>
+                            <!--[if lt IE 9]>
+                            <div class="ribbon-message" style="font-family: arciform;"
+                               data-1100="display: none;"
+                               data-1200="display: block;"
+                            >
+                            In China, <strong>10.03%</strong> of babies have primary lactose intolerance, while <strong>53.97%</strong> of them have secondary lactose intolerance(often happens after gastrointestinal disorders). But baby can't live a life without milk...
+                            </div>
+                            <![endif]-->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bedroom-floor">
+                      <div class="floor-inner">
+
+
+                     </div>
+
+
+                </div>
+
+            <!-- End Scene 1 -->
+            </div>
+
+
+
+
+            <!-- Scene 2: Crying -->
+            <div class="scene"
+                data-2700="top: 100%;"
+                data-3700="top: 0%;"
+                data-7700="top: 0%"
+                data-8700="top: -100%; display: block;"
+                data-8701="display: none;"
+            >
+
+               <div class="bathroom-wall">
+                        <img src="https://2019.igem.org/wiki/images/3/38/T--Fudan--Home33.png" alt="lactose" class="lactose"
+                            data-4499="display:none;"
+                            data-4500="display:block; opacity:0;"
+                            data-4650="display:block; opacity:1; "
+                            data-5250="display:block; opacity:1; "
+                            data-5400="display:block; opacity:0; "
+                        >
+                        <img src="https://2019.igem.org/wiki/images/6/61/T--Fudan--Home30.png" alt="lacZ" class="lacZ"
+                            data-4750="display:none;"
+                            data-4751="display:block; opacity:0;"
+                            data-4850="display:block; opacity:1; "
+                            data-4950="display:block; opacity:1; "
+                            data-5100="display:block; opacity:0; "
+                        >
+                        <img src="https://2019.igem.org/wiki/images/b/ba/T--Fudan--Home31.png" alt="lacZ" class="lacZ"
+                            data-5100="display:none;"
+                            data-5101="display:block; opacity:0;"
+                            data-5250="display:block; opacity:1; "
+                            data-5900="display:block; opacity:1; "
+                            data-6000="display:block; opacity:0.5; "
+                        >
+                        <img src="https://2019.igem.org/wiki/images/e/e8/T--Fudan--Home32.png" alt="lactose" class="lactose"
+                            data-5400="display:none;"
+                            data-5401="display:block; opacity:0;"
+                            data-5550="display:block; opacity:1; "
+                            data-5900="display:block; opacity:1; "
+                            data-6000="display:block; opacity:0.5; "
+                        >
+                        <img src="https://2019.igem.org/wiki/images/3/31/T--Fudan--Home34.png" alt="lactose" class="lactose"
+                            data-5650="display:none;"
+                            data-5651="display:block; opacity:0;"
+                            data-5800="display:block; opacity:1; "
+                            data-5900="display:block; opacity:1; "
+                            data-6000="display:block; opacity:0.5; "
+                        >
+
+                            <div class="ribbon-message" style="top: 20%; padding: 15px 15px 15px 15px; font-family: arciform;"
+                               data-6200="display: none;"
+                               data-6201="display: block;opacity:0"
+                               data-6300="display: block;opacity:1"
+                            >
+                            <strong>Lactose</strong> is a common ingredient in breast milk. <strong>Lactase</strong> breaks it down into galactose and glucose.Lactose intolerance is caused by a lack of the enzyme lactase, which can't break down lactose into half undigested lactose. When lactose enters the lower reaches of the intestinal tract, it will be broken down into gas by miscellaneous bacteria, leading to <strong>diarrhea</strong>.
+                            </div>
+                        <img src="https://2019.igem.org/wiki/images/3/38/T--Fudan--Home70.png" alt="intest" class="intest"
+                               data-6200="display: none;"
+                               data-6201="display: block;opacity:0"
+                               data-6300="display: block;opacity:1"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/4/44/T--Fudan--Home71.png" alt="intest" class="intest"
+                               data-6400="display: none;"
+                               data-6401="display: block;opacity:0;"
+                               data-6475="display: block;opacity:1;"
+                               data-6550="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/5/51/T--Fudan--Home73.png" alt="intest" class="intest"
+                               data-6550="display: none;"
+                               data-6551="display: block;opacity:0;"
+                               data-6625="display: block;opacity:1;"
+                               data-6700="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/7/79/T--Fudan--Home74.png" alt="intest" class="intest"
+                               data-6700="display: none;"
+                               data-6701="display: block;opacity:0;"
+                               data-6775="display: block;opacity:1;"
+                               data-6850="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/5/58/T--Fudan--Home75.png" alt="intest" class="intest"
+                               data-6850="display: none;"
+                               data-6851="display: block;opacity:0;"
+                               data-6925="display: block;opacity:1;"
+                               data-7000="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/a/ae/T--Fudan--Home76.png" alt="intest" class="intest"
+                               data-7000="display: none;"
+                               data-7001="display: block;opacity:0;"
+                               data-7075="display: block;opacity:1;"
+                               data-7150="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/0/0c/T--Fudan--Home77.png" alt="intest" class="intest"
+                               data-7150="display: none;"
+                               data-7151="display: block;opacity:0;"
+                               data-7225="display: block;opacity:1;"
+                               data-7300="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/2/25/T--Fudan--Home78.png" alt="intest" class="intest"
+                               data-7300="display: none;"
+                               data-7301="display: block;opacity:0;"
+                               data-7375="display: block;opacity:1;"
+                               data-7450="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/1/17/T--Fudan--Home72.png" alt="intest" class="intest"
+                               data-7450="display: none;"
+                               data-7451="display: block;opacity:0;"
+                               data-7550="display: block;opacity:1;"
+                        >
+
+               </div>
+
+
+
+            </div>
+
+
+            <!-- Scene 3: Nissle helps -->
+            <div class="scene"
+                data-7700="top: 100%;"
+                data-8700="top: 0%;"
+                data-10500="top: 0%;"
+                data-11500="top: -100%; display: block;"
+                data-11501="display: none;"
+            >
+
+                <div class="wardrobe-wall">
+                    <div class="wall-inner">
+                        <img src="https://2019.igem.org/wiki/images/7/75/T--Fudan--Home80.png" alt="light" class="light"
+                               data-8700="display: none;"
+                               data-8701="display: block;top:-100%;"
+                               data-9400="display: block;top:0%;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/a/af/T--Fudan--Home82.png" alt="info" class="info"
+                               data-9800="display: none;"
+                               data-9801="display: block;right:-100%;"
+                               data-10000="display: block;right:12%;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/d/da/T--Fudan--Home83.png" alt="info" class="info"
+                               data-10000="display: none;"
+                               data-10001="display: block;right:-100%;"
+                               data-10100="display: block;right:12%;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/b/b4/T--Fudan--Home81.png" alt="info" class="info"
+                               data-10100="display: none;"
+                               data-10101="display: block;right:-100%;"
+                               data-10200="display: block;right:12%;"
+                        >
+                    </div>
+                </div>
+
+
+
+            </div>
+
+           https://2019.igem.org/wiki/images/0/08/T--Fudan--Home101.png
+
+            <!-- Scene 4: How work -->
+           <div class="scene"
+                data-10500="top: 100%;"
+                data-11500="top: 0%;"
+                data-16900="top: 0%;"
+                data-17900="top: -100%; display: block;"
+                data-17901="display: none;"
+           >
+
+               <div class="kitchen-wall">
+                   <div class="kitchen-wall-inner">
+                        <img src="https://2019.igem.org/wiki/images/0/08/T--Fudan--Home101.png" alt="intest10" class="intest10"
+                               data-10500="display: none;"
+                               data-10501="display: block;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/9/94/T--Fudan--Home102.png" alt="stage" class="stage"
+                               data-11600="display: none;"
+                               data-11601="display: block;left:-100%;"
+                               data-11750="display: block;left:9%;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/5/51/T--Fudan--Home103.png" alt="stage" class="stage"
+                               data-11750="display: none;"
+                               data-11751="display: block;left:-100%;"
+                               data-11900="display: block;left:9%;"
+                               data-12150="display: block;"
+                               data-12151="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/4/40/T--Fudan--Home104.png" alt="stage" class="stage"
+                               data-12000="display: none;"
+                               data-12001="display: block;opacity:0;"
+                               data-12150="display: block;opacity:1;"
+                               data-12700="display: block;opacity:1;"
+                               data-12850="display: block;opacity:0;"
+                               data-12851="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/c/c8/T--Fudan--Home105.png" alt="stage" class="stage"
+                               data-12150="display: none;"
+                               data-12151="display: block;left:-100%;"
+                               data-12300="display: block;left:9%;"
+                               data-12700="display: block;opacity:1;"
+                               data-12850="display: block;opacity:0;"
+                               data-12851="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/7/79/T--Fudan--Home106.png" alt="intest10" class="intest10" style="z-index:300"
+                               data-12300="display: none;"
+                               data-12301="display: block;top:-100%"
+                               data-12450="display: block;top:14%;"
+                               data-12700="display: block;opacity:1;"
+                               data-12850="display: block;opacity:0;"
+                               data-12851="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/9/92/T--Fudan--Home107.png" alt="intest10" class="intest10"
+                               data-12150="display: none;"
+                               data-12151="display: block;opacity:0;"
+                               data-12300="display: block;opacity:1;"
+                               data-12700="display: block;opacity:1;"
+                               data-12850="display: block;opacity:0;"
+                               data-12851="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/9/9e/T--Fudan--Home108.png" alt="stage" class="stage"
+                               data-12700="display: none;"
+                               data-12701="display: block;opacity:0;"
+                               data-12850="display: block;opacity:1;"
+                               data-13700="display: block;opacity:1;"
+                               data-13850="display: block;opacity:0;"
+                               data-13851="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/b/be/T--Fudan--Home109.png" alt="stage" class="stage"
+                               data-12700="display: none;"
+                               data-12701="display: block;left:-100%;"
+                               data-12850="display: block;left:9%;"
+                               data-13700="display: block;opacity:1;"
+                               data-13850="display: block;opacity:0;"
+                               data-13851="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/6/61/T--Fudan--Home110.png" alt="intest10" class="intest10"
+                               data-12750="display: none;"
+                               data-12751="display: block;opacity:0;"
+                               data-12900="display: block;opacity:1;"
+
+                        >
+                        <img src="https://2019.igem.org/wiki/images/7/70/T--Fudan--Home111.png" alt="intest10" class="intest10"
+                               data-12950="display: none;"
+                               data-12951="display: block;opacity:0;"
+                               data-13100="display: block;opacity:1;"
+                               data-13200="display: block;opacity:1;"
+                               data-13350="display: block;opacity:0;"
+                               data-13351="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/c/c3/T--Fudan--Home112.png" alt="intest10" class="intest10"
+                               data-13350="display: none;"
+                               data-13351="display: block;opacity:0;"
+                               data-13500="display: block;opacity:1;"
+                               data-13700="display: block;opacity:1;"
+                               data-13850="display: block;opacity:0;"
+                               data-13851="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/3/35/T--Fudan--Home113.png" alt="stage" class="stage"
+                               data-13700="display: none;"
+                               data-13701="display: block;opacity:0;"
+                               data-13850="display: block;opacity:1;"
+                               data-15000="display: block;opacity:1;"
+                               data-15001="display: block;opacity:0;"
+                               data-15150="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/2/26/T--Fudan--Home114.png" alt="stage" class="stage"
+                               data-13700="display: none;"
+                               data-13701="display: block;left:-100%;"
+                               data-13850="display: block;left:9%;"
+                               data-15000="display: block;opacity:1;"
+                               data-15001="display: block;opacity:0;"
+                               data-15150="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/8/8c/T--Fudan--Home115.png" alt="intest10" class="intest10"
+                               data-13700="display: none;"
+                               data-13701="display: block;opacity:0;"
+                               data-13850="display: block;opacity:1;"
+                               data-14000="display: block;opacity:1;"
+                               data-14150="display: block;opacity:0;"
+                               data-14650="display: block;opacity:0;"
+                               data-14800="display: block;opacity:1;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/0/0b/T--Fudan--Home116.png" alt="intest10" class="intest10"
+                               data-14150="display: none;"
+                               data-14151="display: block;opacity:0;"
+                               data-14300="display: block;opacity:1;"
+                               data-14500="display: block;opacity:1;"
+                               data-14650="display: block;opacity:0;"
+                               data-14651="display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/b/b3/T--Fudan--Home117.png" alt="stage" class="stage"
+                               data-15000="display: none;"
+                               data-15001="display: block;opacity:0;"
+                               data-15150="display: block;opacity:1;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/2/22/T--Fudan--Home118.png" alt="stage" class="stage"
+                               data-15000="display: none;"
+                               data-15001="display: block;left:-100%;"
+                               data-15150="display: block;left:9%;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/b/bc/T--Fudan--Home119.png" alt="intest10" class="intest10"
+                               data-15000="display: none;"
+                               data-15001="display: block;opacity:0;"
+                               data-15150="display: block;opacity:1;"
+                               data-15500="display: block;opacity:1;"
+                               data-15650="display: block;opacity:0;"
+                               data-15800="display: block;opacity:0;"
+                               data-15950="display: block;opacity:1;"
+                               data-16200="display: block;opacity:1;"
+                               data-16350="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/c/cf/T--Fudan--Home120.png" alt="intest10" class="intest10"
+                               data-15250="display: none;"
+                               data-15251="display: block;opacity:0;"
+                               data-15400="display: block;opacity:1;"
+                               data-15650="display: block;opacity:1;"
+                               data-15800="display: block;opacity:0;"
+                               data-15950="display: block;opacity:0;"
+                               data-16100="display: block;opacity:1;"
+                               data-16350="display: block;opacity:1;"
+                               data-16500="display: block;opacity:0;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/f/f1/T--Fudan--Home121.png" alt="intest10" class="intest10"
+                               data-15500="display: none;"
+                               data-15501="display: block;opacity:0;"
+                               data-15650="display: block;opacity:1;"
+                               data-15800="display: block;opacity:1;"
+                               data-15950="display: block;opacity:0;"
+                               data-16200="display: block;opacity:0;"
+                               data-16350="display: block;opacity:1;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/a/a0/T--Fudan--Home122.png" alt="intest10" class="intest10"
+                               data-16600="display: none;"
+                               data-16601="display: block;opacity:0;"
+                               data-16750="display: block;opacity:1;"
+                        >
+
+                   </div>
+
+               </div>
+
+
+           </div>
+
+
+
+            <!-- Scene 5: final -->
+           <div class="scene"
+                data-16900="top: 100%;"
+                data-17900="top: 0%;"
+           >
+
+               <div class="last-wall">
+                   <div class="last-wall-inner">
+                       <img src="https://2019.igem.org/wiki/images/5/54/T--Fudan--Home200.png" alt="lastbg" class="lastbg"
+                               data-16900="display: none;"
+                               data-16901="display: block;"
+                        >
+                       <img src="https://2019.igem.org/wiki/images/7/73/T--Fudan--Home201.png" alt="leftWord" class="leftWord"
+                               data-18000="display: none;"
+                               data-18001="display: block;left:-100%;"
+                               data-18150="display: block;left:5%;"
+                        >
+                       <img src="https://2019.igem.org/wiki/images/3/35/T--Fudan--Home202.png" alt="rightF" class="rightF"
+                               data-18250="display: none;"
+                               data-18251="display: block;right:-100%;"
+                               data-18400="display: block;right:5%;"
+                        >
+                       <img src="https://2019.igem.org/wiki/images/e/e8/T--Fudan--Home203.png" alt="rightF" class="rightF"
+                               data-18300="display: none;"
+                               data-18301="display: block;right:-100%;"
+                               data-18410="display: block;right:5%;"
+                        >
+                       <img src="https://2019.igem.org/wiki/images/a/ab/T--Fudan--Home204.png" alt="leftWord" class="leftWord"
+                               data-18550="display: none;"
+                               data-18551="display: block;left:-100%;"
+                               data-18700="display: block;left:5%;"
+                        >
+                   </div>
+
+               </div>
+
+               <div class="last-floor" style="opacity:0.1!important;">
+                       <div style="height:100%;width:100%"
+                               data-16900="display: none;"
+                               data-16901="display: block;"
+                            >
+                              <div class="row" style="height:40%;width:100%">
+                                <div class="col-4">
+                                  <div class="row">
+                                   <div class="col-4">
+                                      <div style="font-family: 'Concert One';color: white;font-size: 30px;
+    margin-top: 10%;
+    margin-left: 10%;">Navigation</div>
+                                   </div>
+                                   <div class="col-8">
+
+<div class="row" style="margin-top:10%">
+<div class="col-4" style="height: 60px">
+<a href="https://2019.igem.org/Team:Fudan/Design"><img style="height: 60px;" src="https://2019.igem.org/wiki/images/d/de/T--Fudan--DownDesign.png"></img></a>
+</div>
+<div class="col-4" style="height: 60px">
+<a href="https://2019.igem.org/Team:Fudan/Results"><img style="height: 60px;" src="https://2019.igem.org/wiki/images/0/0c/T--Fudan--DownResult.png"></img></a>
+</div>
+<div class="col-4" style="height: 60px">
+<a href="https://2019.igem.org/Team:Fudan/Team"><img style="height: 60px;" src="https://2019.igem.org/wiki/images/7/73/T--Fudan--DownTeam.png"></img></a>
+</div>
+</div>
+<div class="row" style="margin-top:5%">
+<div class="col-4" style="height: 60px">
+<a href="https://2019.igem.org/Team:Fudan/Demonstrate"><img style="height: 60px;" src="https://2019.igem.org/wiki/images/b/be/T--Fudan--DownDemon.png"></img></a>
+</div>
+<div class="col-4" style="height: 60px">
+<a href="https://2019.igem.org/Team:Fudan/Model"><img style="height: 60px;" src="https://2019.igem.org/wiki/images/5/56/T--Fudan--DownModel.png"></img></a>
+</div>
+<div class="col-4"style="height: 60px">
+<a href="https://2019.igem.org/Team:Fudan/Human_Practices"><img style="height: 60px;" src="https://2019.igem.org/wiki/images/5/52/T--Fudan--DownHP.png"></img></a>
+</div>
+</div>
+                                   </div>
+                                  </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="row">
+                                   <div class="col-4">
+                                      <div style="font-family: 'Concert One';color: white;font-size: 30px;
+    margin-top: 10%;
+    margin-left: 10%;">Contact</div>
+                                   </div>
+                                   <div class="col-8">
+
+<img style="height: 350%;margin-top: 10%;" src="https://2019.igem.org/wiki/images/7/73/T--Fudan--HomeFinalOK.png"></img>
+
+                                  </div>
+                                   </div>
+                                </div>
+                                <div class="col-4">
+                                  <div class="row">
+                                   <div class="col-4">
+                                      <div style="font-family: 'Concert One';color: white;font-size: 30px;
+    margin-top: 10%;
+    margin-left: 10%;">Sponsor</div>
+                                   </div>
+                                   <div class="col-8">
+
+<div class="row" style="margin-top:10%">
+<div class="col-4" style="height: 60px">
+<img style="height: 60px;" src="https://2019.igem.org/wiki/images/e/e2/T--Fudan--yunfengLogo.png"></img>
+</div>
+<div class="col-4" style="height: 60px">
+<img style="height: 60px;" src="https://2019.igem.org/wiki/images/f/f7/T--Fudan--schoolLogo.png"></img>
+</div>
+<div class="col-4" style="height: 60px">
+<img style="height: 60px;" src="https://2019.igem.org/wiki/images/0/0d/T--Fudan--Sponsor4.png"></img>
+</div>
+</div>
+<div class="row" style="margin-top:5%">
+<div class="col-4" style="height: 60px">
+<img style="height: 60px;" src="https://2019.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"></img>
+</div>
+<div class="col-4" style="height: 60px">
+<img style="height: 60px;" src="https://2019.igem.org/wiki/images/6/67/T--Fudan--Sponsor5.png"></img>
+</div>
+<div class="col-4"style="height: 60px">
+<img style="height: 60px;" src="https://2019.igem.org/wiki/images/b/b9/T--Fudan--Sponsor6.png"></img>
+</div>
+</div>
+
+                                   </div>
+                                  </div>
+                                </div>
+        <div class="row justify-content-center" style="margin-left: 35%">
+            <div class="col col-md-auto text-center">
+                <small class="text-muted" style="font-size: 13px;">This page is produced by &#169;2019 Fudan IGEM Team, designed by Xuan zitao &amp; Ju Kaiyi. All rights reserved.
+                </small>
+            </div>
+        </div>
+                            </div>
+                       </div>
+               </div>
+           </div>
+
+
+
+
+
+                         <div class="scene click-through" data-start="top: 0%;">
+              <div class="character-container">
+                <div class="character-container-inner">
+                    <img src="https://2019.igem.org/wiki/images/5/5b/T--Fudan--Home11.png" alt="Desk" class="desk"
+                            data-3550="top: 44%; display: block; opacity:1;"
+                            data-3600="top: 44%; display: block; opacity:0;"
+                            data-3701="display: none"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/4/45/T--Fudan--Home12.png" alt="Nipple" class="nipple"
+                            data-1300="right: 20%; display: block;"
+                            data-2700="right: -100%; display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/4/43/T--Fudan--Home10.png" alt="Feeder" class="feeder"
+                            data-1699="display: none;"
+                            data-1700="left: -100%; display: block;"
+                            data-2700="left: 15.5%; display: block;"
+                            data-3550="display: block; opacity:1;"
+                            data-3600="display: block; opacity:0;"
+                            data-3701="display: none"
+                        >
+
+                        <img src="https://2019.igem.org/wiki/images/5/5b/T--Fudan--Home11.png" alt="Desk" class="desk"
+                            data-3550="top: 74%; display: block; opacity:1;"
+                            data-3600="top: 74%; display: block; opacity:0;"
+                            data-3701="display: none"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/4/45/T--Fudan--Home12.png" alt="Nipple" class="nipple2"
+                            data-1300="left: 14.8%; display: block;"
+                            data-2700="left: -100%; display: none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/4/43/T--Fudan--Home10.png" alt="Feeder" class="feeder2"
+                            data-1699="display: none;"
+                            data-1700="right: -100%; display: block;"
+                            data-2700="right: 19%; display: block;"
+                            data-3550="display: block; opacity:1;"
+                            data-3600="display: block; opacity:0;"
+                            data-3701="display: none"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/5/5d/T--Fudan--Home20.png" alt="Desk" class="desk"
+                            data-3200="top: 74%; display: none;"
+                            data-3201="top: 74%; display: block;"
+                            data-3800="max-width: 1000px;max-height: 130px; top: 74%; left: 15%"
+                            data-4300="max-width: 1400px;max-height: 300px; top: 55%; left: -23%"
+                            data-5900="display:block; opacity:1; "
+                            data-6000="display:block; opacity:0.5; "
+                            data-7600="display:block; opacity:0.5; "
+                            data-7700="display:block; opacity:1; "
+                            data-9500="display:block; opacity:1; "
+                            data-9600="display:block; opacity:0; "
+                            data-9601="display:none;"
+                        >
+                        <img src="https://2019.igem.org/wiki/images/1/12/T--Fudan--Home10000.png" alt="Desk" class="desk" style="max-width: 1400px;max-height: 300px; top: 55%; left: -23%"
+                            data-9600="display: none;"
+                            data-9601="display:block; opacity:0; "
+                            data-9700="display:block; opacity:1; "
+                data-10500="top: 55%;"
+                data-11500="top: -100%; display: block;"
+                data-11501="display: none;"
+                        >
+
+                  </div>
+              </div>
+            </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://2019.igem.org/wiki/index.php?title=Template:Fudan/jquery&amp;action=raw&amp;ctype=text/javascript"></script>
+<script src="https://2019.igem.org/wiki/index.php?title=Template:Fudan/popper&amp;action=raw&amp;ctype=text/javascript"></script>
+<script src="https://2019.igem.org/wiki/index.php?title=Template:Fudan/bootstrap&amp;action=raw&amp;ctype=text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://2019.igem.org/wiki/index.php?title=Template:Fudan/skrollr&amp;action=raw&amp;ctype=text/javascript"></script>
+<script>
+    // 一定要在页面文档全部加载完成之后，再进行初始化skrollr
+    window.onload=function(){
+        var s=skrollr.init({
+            smoothScrolling: true,
+            scale: 2,
+            easing: 'swing'
+          });
+    }
+
+</script>
