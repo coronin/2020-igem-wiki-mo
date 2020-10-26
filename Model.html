@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/0igem.css">
+  <title>Model</title>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<div class="igem_content_wrapper">
+<div class="igem_column_wrapper">
+<!--
+                      REMOVE THE TEXT RIGHT ARROW
+                      ////////////
+
+
+
+
+
+{{IGEM_TopBar}}
+{{Fudan}}
+<html>                -->
+<html>
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/b/b8/T--Fudan--title_model.svg" alt="model" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+  <h1>Simulate the Bacteria Quorum Sensing Process</h1>
+  <div class="column full_size">
+    <p>
+This year, we constructed two models to simulate the bacteria quorum sensing process and Kill Switch. For the quorum-sensing model, we used the Gillespie algorithm in random simulation to simulate the physiological processes at macro and micro levels. Specifically, we described Acyl-homoserine lactone's concentration accurately by monitoring both production and diffusion, which is first-of-its-kind to reveal details of the process, and developed originally by us. We further improved the model from 19Fudan team to better model the quorum sensing process for various bacteria growing stages. For the stage change caused by the anti-microbial peptide (mcbA), we provided explanations to its observed dynamic stability. For the Kill Switch model, based on the experimental data from 19BNU team, we improved the logistic equation, adjusted the promoter properties according to more suitable literature references, and made sensitivity analysis – and we obtain better and more insightful results. </p>
+  </div>
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+  <h2>1. Bacteria Quorum Sensing Process</h2>
+  <div class="column full_size">
+    <p>
+In the first model, we describe the quorum sensing process in three parts. In Model 1.1, we discuss the change of AHL concentration in a single cell. AHL is produced in bacteria and transported to the surrounding environment through free diffusion. Since the number of molecules in a single section is small and random, we adopted Gillespie algorithm to simulate the trend of molecule numbers under the random process. In model 1.2, we followed the discussion in 1.1. To know when the quorum sensing switch is turned on, it is necessary to know polymer concentration formed by AHL and LuxR when AHL concentration is high enough. Our results demonstrate that polymer concentration remains dynamically stable even in a single cell, which guarantees our system's stable operation. In Model 1.3, we discuss the role of antimicrobial peptide circuits. Since the loop will open when the concentration of AHL increases and will close when the concentration is low enough, it forms a dynamic equilibrium. We use a phase diagram to describe this steady state.</p>
+  </div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h3>1.1 AHL in a Cell</h3>
+ <div class="column full_size">
+<p>
+In this model, we simulate changes in the number of AHL in a cell. As mentioned above, AHL is generated inside the cell and transported out by free diffusion. In the initial stage, for AHL's concentration outside the bacteria is approximately 0,  free diffusion is basically not inhibited and only related to AHL's concentration inside the cell. We believe that the main physiological processes about AHL are as follows.
+</p>
+<p>
+Firstly, the expression of LuxI and LuxR:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/e/e2/T--Fudan--model1_1.png" alt="1_1" style="width:100%">
+    </div>
+</div>
+
+ <div class="column full_size">
+<p>
+Then,the degradation of LuxI and LuxR:
+</p></div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/7/70/T--Fudan--model1_2.png" alt="1_2" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+The production of AHL and its diffusion outside the cell:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--model1_3.png" alt="1_3" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+Lastly, the combination and dissociationof AHL and LuxR:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/6/6c/T--Fudan--model1_4.png" alt="1_4" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size">
+<div class="highlight decoration_background decoration_A_top">
+  <p>
+    A key point of Gillespie Algorithm is to describe the system in matrix.
+    </p>
+</div>
+
+<p>
+In this matrix, each row is one substance, and each column is one reaction. The reactants per molecule are represented by -1, and the products per molecule are represented by 1. Set the order of the reactants to LuxI, LuxR AHLprecursor, AHL, RA, reaction sequence in the order listed above, then the matrix should be:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/2/23/T--Fudan--model1_5.png" alt="1_5" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+After each reaction, the https://2020.igem.org/wiki/images/7/70/T--Fudan--model1_2.pngnumber of molecules changes by the number of a column. What column is that? The probability is proportional to the rate of reaction. So let's figure out the rates of all the reactions.
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/4/4b/T--Fudan--model1_6.png" alt="1_6" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+So the probability is as follows:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/1/1b/T--Fudan--model1_7.png" alt="1_7" style="width:100%">
+    </div>
+</div>
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/e/e5/T--Fudan--model1_8.png" alt="1_8" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+According to probability theory, the time interval between each reaction follows the exponential distribution, and the parameter is the sum rate.
+</p>
+<p>
+The current molecule number will change after each reaction, so that this algorithm can be repeated.In this certain progress,we can see that AHL molecule number is changed as follows (We provide 2 simulated results to gain better understanding):
+</p></div>
+
+<div class="column half_size"><p>
+<img src="https://2020.igem.org/wiki/images/b/b0/T--Fudan--model1_9.png"  alt="1_9"  />
+</p></div>
+<div class="column half_size"><p>
+<img src="https://2020.igem.org/wiki/images/5/56/T--Fudan--model1_10.png"  alt="1_10"  />
+</p></div>
+
+<div class="column full_size">
+<div class="highlight decoration_background decoration_B_full">
+  <p>
+The result shows that at the early stage of colonization, AHL will be rapidly produced and diffused to a high concentration, leading to the generation of RA and the initiation of quorum sensing.
+    </p>
+</div>
+<p>
+Noted: this is just AHL in a single cell. We should keep in mind that <i>E. coli</i> also completes the colonization process at the same time.
+</p>
+</div>
+
+ <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h3>1.2 RA, the Switch</h3>
+
+  <div class="column full_size">
+   <p>In the previous model, we have discussed the rapid emergence and spread of AHL during breeding. When the concentration of AHL is high enough, the net diffusion rate can be almost zero. At this point, the intracellular reaction occurs that is identical to model 1.1 except for diffusion. Therefore, we used the same simulation method and considered the situation before the secretion of antimicrobial peptides. We obtain the changes of RA in a cell number. Since the process is still random, we provide the results of two simulations.</p>
+  </div>
+
+<div class="column half_size"><p>
+<img src="https://2020.igem.org/wiki/images/d/d3/T--Fudan--model1_11.png"  alt="1_11" />
+</p></div>
+<div class="column half_size"><p>
+<img src="https://2020.igem.org/wiki/images/a/ac/T--Fudan--model1_12.png"  alt="1_12" />
+</p></div>
+
+<div class="column full_size">
+<div class="highlight decoration_background decoration_B_full"><p>
+As you can see, although the number of molecules varies, it ends up being relatively stable. This proves that our system has a self-steady state regulating quorum sensing state.
+</p>
+</div></div>
+
+   <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h3>1.3 Engineering Bacteria Number Circulation</h3>
+<div class="column full_size">
+   <p>
+As the quorum sensing switch is turned on, the antimicrobial peptides begin to kill engineering bacteria, and the number of engineering bacteria decreases. Subsequently, the concentration of AHL decreases, resulting in a decrease in RA concentration and a partial shutdown of the quorum sensing switch. Our system ensures that engineering bacteria are neither too many to affect the gut environment nor too few to function properly. We will describe this process in terms of differential equations and explain it in terms of phase diagrams.
+</p>
+<p>
+For AHL, the increase in the number of engineered bacteria will slow down the net degradation rate of AHL, which can be described as follows:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/5/54/T--Fudan--model1_13.png" alt="1_13" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+As for engineering bacteria, there is a net growth under no other conditions. However, the increase in AHL concentration will eventually lead to a rise in antimicrobial peptides. Furthermore, antimicrobial peptides will increase the survival pressure of engineering bacteria. So we can describe the process as follows:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/1/16/T--Fudan--model1_14.png" alt="1_14" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+We set k<sub>A-N</sub>to 1, and obtain the following two results.The first is a phase diagram and the second is a concentration-time diagram.
+</p></div>
+
+<div class="column half_size"><p>
+<img src="https://2020.igem.org/wiki/images/b/b6/T--Fudan--model1_15.png"  alt="1_15" />
+</p></div>
+<div class="column half_size"><p>
+<img src="https://2020.igem.org/wiki/images/0/02/T--Fudan--model1_16.png"  alt="1_16" />
+</p></div>
+
+<div class="column full_size">
+<div class="highlight decoration_background decoration_B_full"><p>
+From the two phases, we see our system can operate dynamically.
+</p>
+<p>
+From the second phase, we can see that the phase change of AHL lags behind the number of engineering bacteria. This tells us that the concentration of AHL has a time-delay effect, which is the essential reason why the system remains steady.
+</p>
+</div></div>
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h2>2. Kill Switch</h2>
+<div class="column full_size"><p>
+In the modeling of kill Switch, we adopted the following ideas: First, we cooperated with the 19BNU team and adopted the data they tested. We found that without kill-switch, the colony number curve was similar to the logistic equation. Through data fitting, we obtained the parameters of the logistic equation. When kill-switch exists, <i>in vitro</i>, the toxin will increase the competitive pressure, causing parameters' change. Due to the improvement of a more efficient promoter, the competitive pressure caused by toxin can further increase when our design is adopted, and we performed sensitivity analysis here. Due to the abnormal part of the experimental data, we also selected the experimental data by referring to the literature and will explain the reasons for these anomalies.
+</p></div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h3>2.1 Logistic Equation</h3>
+<div class="column full_size"><p>
+Let's discuss logistic equation first. In this equation,the population change is caused by two factors: reproduction and competition. The reproductive rate (r) is proportional to the number of bacteria，and the competition rate (K) is proportional to the number of bacteria in the quadratic term. The equation and its solution are as follows.
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/6/64/T--Fudan--model2_2.png" alt="2_2" style="width:100%">
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<h3>2.2 Control Group</h3>
+<div class="column full_size"><p>
+We can fairly consider that density in control group fits logistic equation. We fit the experimental data as follows.
+</p>
+</div>
+
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="https://2020.igem.org/wiki/images/b/b6/T--Fudan--model2_1.png" alt="2_1" style="width:100%">
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<h3>2.3 Experiment Group and Improvement</h3>
+<div class="column full_size"><p>
+Now let's consider the case when kill-switch is turned on.Competitive pressure sharply increases,casing a change in the equation above, in which α indicates additional pressure.
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/0/00/T--Fudan--model2_3.png" alt="2_3" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+Furthermore, with an improvement in RNA thermometer, the toxin-antitoxin system express better in our design.Consider the expression partition k<sub>new</sub> and k<sub>old</sub>.The equation of our system will be:
+</p>
+</div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/5/54/T--Fudan--model2_4.png" alt="2_4 style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size"><p>
+We visualize it here.
+</p>
+</div>
+
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="https://2020.igem.org/wiki/images/2/25/T--Fudan--model2_6.png" alt="2_6" style="width:100%">
+    </div>
+</div>
+
+<div class="column full_size">
+<div class="highlight decoration_background decoration_B_full">
+  <p>The result shows that our Kill Switch reacts stronger in a smaller temperature range. It's clear that our improvement did a good job, thus improve the safety.    </p>
+</div>
+<p><br/><br/>However, when looking at experiment data, we see some abnormal increase throughout time. Here are some possible reasons.
+                </p>
+                <ol>
+                    <li>Toxin-antitoxin plasmid lost nts</li>
+                    <li>The cellular repair mechanism</li>
+<li>Cell detoxification</li>
+
+                </ol></div>
+
+<div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h2>Modeling and Our Project</h2>
+<div class="column full_size"><p>
+Our models do an excellent job of filling in the gaps when were challenging to implement. Firstly, since web-lab experiments cannot be carried out until recently, our model simulates the change of the number of molecules in the engineering bacteria and the process of quorum sensing. Furthermore, we prove that it is feasible to realize the dynamic balance of engineering bacteria quantity through quorum sensing in project design. Our design excellence in the Kill-Switch model is demonstrated by visualizing a better kill rate caused by RNA Thermometer parameters change. As a result, our model fits in well with the project.
+</p></div>
+
+<div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h2>Parameters Used for Simulation and Regression</h2>
+  <div class="column full_size">
+<table class="striped">
+<tr>
+<th> Signal </th> <th> Meaning </th> <th> Value. </th>
+</tr>
+<tr>
+<td> α<sub>con</sub> </td> <td> Gene production rate </td> <td> 0.0167 nM/s </td>
+</tr>
+<tr>
+<td> μ </td> <td> Degradation rate </td> <td> 0.0038 /s </td>
+</tr>
+<tr>
+<td> α<sub>AHL</sub> </td> <td> AHL production rate </td> <td> 0.167 nM/s </td>
+</tr>
+<tr>
+<td> k<sub>on</sub> </td> <td> AHL and LuxR combination rate </td> <td> 0.03 nM-1/s </td>
+</tr>
+<tr>
+<td> k<sub>off</sub> </td> <td> RA disposition rate </td> <td> 0.167 nM/s </td>
+</tr>
+<tr>
+<td> k<sub>dif</sub> </td> <td> AHL transfer rate between invitro and invivio </td> <td> 1.83 /s </td>
+</tr>
+<tr>
+<td> r </td> <td> Bacteria growth rate </td> <td> 0.079 /s </td>
+</tr>
+<tr>
+<td> K </td> <td> Bacteria competition rate </td> <td> 1.663e-04 /s </td>
+</tr>
+<tr>
+<td> α </td> <td> Additional competition rate </td> <td> 1.013 /s </td>
+</tr>
+<tr>
+<td> k<sub>A-N</sub> </td> <td> Bacteria density decrease caused by AHL </td> <td> 1 /s </td>
+</tr>
+<tr>
+<td> k<sub>new</sub> </td> <td> New RNA thermometer expression rate </td> <td> 0.102360391 </td>
+</tr>
+<tr>
+<td> k<sub>old</sub> </td> <td> Old RNA thermometer expression rate </td> <td> 0.394639 </td>
+</tr>
+</table>
+  </div>
+<div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
+
+<div class="column full_size"><p style="text-align:center">
+See our codes at <a href="https://github.com/Isabel-Jiang/2020-model" target="_blank">https://github.com/Isabel-Jiang/2020-model</a>!
+</p></div>
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#JiangXH" class="z-depth-2">Xiaohui</a>
+        </p>
+  </div></div>
+
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>
