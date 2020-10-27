@@ -1,367 +1,133 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <script src="/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/0igem.css">
+  <title>Entrepreneurship</title>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<div class="igem_content_wrapper">
+<div class="igem_column_wrapper">
+<!--
+                      REMOVE THE TEXT RIGHT ARROW
+                      ////////////
+
+
+
+
+
+{{IGEM_TopBar}}
+{{Fudan}}
+<html>                -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <style>
-.navbar-light .navbar-brand {
-    color: rgba(0, 0, 0, 0.9);
-    color: black !important;
-    font-weight: 600;
+* {
+    padding:0;
+    margin:0;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: black !important;
-    background-color: rgb(250,226,180) !important;
-    box-shadow: 0 .3rem .5rem rgba(0,0,0,.15)!important;
+html, body {
+    height:100%;
 }
 
-    li:hover .dropdown-menu {
-        display: block;
-    }
-.dropdown-menu {
-    top: 80%;
+.skrollr-desktop body {
+    height:100% !important;
 }
 
-#bgcolor a:link{color: white !important;}
-#bgcolor a:visited{color: white !important;}
-#bgcolor a:hover{color: rgb(250,226,180) !important;}
-#bgcolor a:active{color: white !important;}
-
-#bgcolor #bgcolor2 a:link{color: black !important;}
-#bgcolor #bgcolor2 a:visited{color: black !important;}
-#bgcolor #bgcolor2 a:hover{color: rgb(250,226,180) !important;}
-#bgcolor #bgcolor2 a:active{color: black !important;}
-
-a:visited {
-    color: rgb(104,88,91) !important;
-}
-a {
-    color: rgb(104,88,91) !important;
-}
-.dropdown-item:hover, .dropdown-item:focus {
-  background-color: rgb(104,88,91) !important;
-}
-
-.dropdown-item.active, .dropdown-item:active {
-  background-color: #007bff;
-}
-
-@font-face {
-  font-family: 'arciform';
-  src:url('https://2019.igem.org/File:T--Fudan--arciform.OTF') format('otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-#top_title{
-display:none;
-}
-#content{
-margin:0;
-width:100%;
-}
-
-.container0 {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: #354250;
-
-}
-a.nav-link{
-padding:2px 16px;
-
+body {
+    font-family:sans-serif;
 }
 
 p {
-font-size:16px !important;
-text-align: left !important;
-font-family: arciform !important;
-font-weight:300 !important;
+    margin:1em 0;
 }
 
-h4{
-  font-size:25px;
-line-height:26px;
-padding-top:16px;
-  padding-bottom:8px !important;
-font-family:sofia;
-font-weight: 700  !important;
-margin-bottom: 0.8em !important;
+.parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
 }
 
-h5{
-  font-size:21px;
-line-height:26px;
-padding-top:16px;
-  padding-bottom:8px !important;
-font-family:sofia;
-font-weight: 400  !important;
-margin-bottom: 0.8em !important;
+.parallax-image-wrapper-50 {
+    height:50%;
+    top:-50%;
 }
 
-
-
-
-
-.scene {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-}
-.sky {
-    height: 200px;
-    background: #8cc9dc;
-}
-.sky-inner {
-    width: 1000px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    min-height: 200px;
-    overflow: hidden;
-}
-.title {
-    height: 100%;
-    min-height: 200px;
-}
-img.logo {
-    margin-top: 52px;
-    max-width: 197px;
-    max-height: 170px;
-}
-img.rightF{
-top:15%;
-height:50%;
-right:5%;
-}
-img.leftWord{
-    left: 5%;
-    top: 20%;
-height:50%;
-}
-.title img {
-    height: 80%;
-}
-img {
-    position: absolute;
-}
-img {
-    vertical-align: middle;
-}
-img {
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-}
-.bottle {
-    position: absolute;
-    margin-top: 40px;
-    max-width: 95px;
-    max-height: 120px;
-    right: 0;
-    z-index: 2;
-    top: 10%;
-    width: 73.17px;
-    background: url(https://2019.igem.org/wiki/images/6/6c/T--Fudan--Home14.png) no-repeat 0 0;
-}
-img.bottleEmpty {
-    margin-top: 40px;
-    max-width: 95px;
-    max-height: 120px;
-    right: 0;
-    z-index: 1;
-}
-.scroll-message {
-    position: absolute;
-    left: 160px;
-    color: #FFFFFF;
-    top: 40px;
+.parallax-image-wrapper-100 {
+    height:100%;
+    top:-100%;
 }
 
-.scroll-message:after {
-    content: url(https://2019.igem.org/wiki/images/a/a3/T--Fudan--Home3.png);
-    position: relative;
-    top: 75px;
-    left: 10px;
-    opacity: 0.8;
+.parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
 }
 
-.ribbon-message {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    background: #f1f1ea;
-    width: 40%;
-    position: absolute;
-    left: 32%;
-    top: 60%;
-    margin-top: -67px;
-    padding: 17px 17px 17px 17px;
-    height: 137px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 22px;
+.parallax-image-50 {
+    height:200%;
+    top:-50%;
 }
 
-.ribbon-message:before {
-    content: url(https://2019.igem.org/wiki/images/e/e5/T--Fudan--Home4.png);
-    width: 27px;
-    height: 137px;
-    position: absolute;
-    left: -27px;
-    top: 0;
+.parallax-image-100 {
+    height:100%;
+    top:0;
 }
 
-.ribbon-message:after {
-    content: url(https://2019.igem.org/wiki/images/d/de/T--Fudan--Home5.png);
-    width: 28px;
-    height: 137px;
-    position: absolute;
-    right: -27px;
-    top: 0;
+.parallax-image.skrollable-between {
+    display:block;
 }
 
-.bedroom-floor {
-    height: 100%;
-    background: rgb(255,169,181)
-}
-.floor-inner {
-    width: 1000px;
-    height: 94%;
-    min-height: 400px;
-    margin: 0 auto;
-    padding: 3% 0;
-    position: relative;
-}
-img.desk {
-    max-width: 1000px;
-    max-height: 130px;
-    height: 60%;
-    top: 44%;
-    z-index: 1;
-    left: 15%;
-
+.no-skrollr .parallax-image-wrapper {
+    display:none !important;
 }
 
-img.nipple {
-    max-width: 1200px;
-    max-height: 130px;
-    z-index: 2;
-    width: 65.5%;
-    top: 44%;
-}
-img.nipple2 {
-    max-width: 1000px;
-    max-height: 130px;
-    z-index: 2;
-    left: 20.6%;
-    width: 65.5%;
-    top: 74%;
-}
-img.feeder {
-    max-width: 1000px;
-    max-height: 130px;
-    z-index: 2;
-    width: 65.5%;
-    top: 44%;
-}
-img.feeder2 {
-    max-width: 1000px;
-    max-height: 130px;
-    z-index: 2;
-    width: 65.5%;
-    top: 74%;
+#skrollr-body {
+    height:100%;
+    overflow:visible;
+    position:relative;
 }
 
-img.lacZ {
-width: 250px;
-    top: 55%;
-    left: 10%;
-}
-img.lactose {
-width: 500px;
-    top: 10%;
-    left: 2%;
-}
-img.intest {
-    height: 600px;
-    width: 300px;
-    left: 70%;
-    top: 14%;
-}
-img.light{
-height:100%;
-width:100%;
-}
-img.info{
-    top: 30%;
-    height: 45%;
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
 }
 
-img.intest10{
-    height: 80%;
-    top: 14%;
-    left: 65%;
-}
-img.stage{
-    height: 90%;
-    top: 7%;
-    left: 9%;
-}
-img.lastbg{
-    height: 100%;
-    width: 100%;
-}
-.bathroom-wall {
-    height: 100%;
-    background: rgb(244,218,133);
-    min-height: 300px;
+.skrollr .gap {
+    background:transparent !important;
 }
 
-.wardrobe-wall {
-    height: 100%;
-    background: rgb(244,218,133);
-    min-height: 300px;
-}
-.kitchen-wall {
-    height: 100%;
-    background: rgb(255,249,133);
-    min-height: 300px;
-}
-.last-wall {
-    height: 75%;
-    background: rgb(255,227,232);
-    min-height: 300px;
-}
-.last-floor {
-    height: 25%;
-    background: rgb(27,31,59);
-    min-height: 300px;
+.gap-50 {
+    height:50%;
 }
 
-.scene {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-}
-.click-through {
-    pointer-events: none;
-}
-.character-container {
-    width: 100%;
-    height: 100%;
-    top: 0%;
-}
-.character-container-inner {
-    width: 1000px;
-    height: 94%;
-    min-height: 400px;
-    margin: 0 auto;
-    padding: 3% 0;
-    position: relative;
+.gap-100 {
+    height:100%;
 }
 
+.header, .content {
+    background:#fff;
+    padding:1em;
 
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.content-full {
+    height:100%;
+}
+
+#done {
+    height:100%;
+}
 </style>
 
 <link href="https://2019.igem.org/wiki/index.php?title=Template:Fudan/bootstrapCSS&amp;action=raw&amp;ctype=text/css" rel="stylesheet" />

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/0igem.css">
+  <title>copy only below huge spaces</title>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<div class="igem_content_wrapper">
+<div class="igem_column_wrapper">
+<!--
+                      仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
+                      ////////////
+
+
+
+
+
+{{IGEM_TopBar}}
+{{Fudan}}
+<html>                -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/e/eb/T--Fudan--title_safety.svg" alt="safety" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+  <h1>Safety</h1>
+  <div class="column full_size">
+    <p>Safety is always the most primary issue to consider, especially for projects in which potential consumers are the vulnerable elderly. The risks for everyone who has access to engineered probiotic from production to consumption should be carefully identified and managed.</p>
+  </div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+  <h2>Laboratory Safety</h2>
+    <div class="column full_size" >
+    <p>The Fudan team is fully compliant with the safety and security policies of the iGEM. Safety has been carefully and thoroughly considered throughout our project design and experimental operation.</p></div>
+   <div class="clear"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+  <h4>Safety training</h4>
+  <div class="column full_size" >
+   <p>All members of our team have taken online courses in biosafety, such as hazardous chemicals, laboratory waste, special equipment safety, accident handling, and passed the laboratory safety examination required by the Assets and Security Department of our university before we entering the lab.</p>
+  </div>
+   <div class="clear"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+<h4>Lab work</h4>
+  <div class="column full_size" >
+  <p>Our experiments were all performed in the laboratory of Prof. Liang Cai in the School of Life Sciences, which is qualified for Biosafety Level 2. For safety equipment, the lab has biosafety cabinets allowing us to carry out most experiments safely. There is a cabinet to store the hazardous reagents, the key of which only Prof. Cai has, and have a dedicated refrigerator for iGEM to store our experimental materials including plasmids and primers. Fire extinguishers, fire hydrants, emergency spray, and other safety facilities are also available in the lab to deal with different accidental situations.</p>
+
+ <p>As the supervisor of the lab, Prof. Cai also provided us with systematic safety guidelines and in-field training before we started the lab affair. Every time we conducted our experiments, at least one senior student was present overseeing our daily experimental operations following all the guidelines. Some of the guidelines were as follows: </p>
+
+                <ol>
+                    <li>The experimental bench and the rest of the area should be strictly separated. Everyone performing experiments must wear Lab -gown and nitrile gloves before getting into the experimental area. Masks should also be wearing to prevent <i>E. coli</i> from being taken in. Lab -gown, gloves and any other used personal protective equipment must not be taken out of the experimental area.</li>
+                    <li> Experiments using hazardous chemicals like Ethidium Bromide should be conducted on a special bench. While conducting, experimenters must wear an additional pair of nitrile gloves to protect themselves and avoid contaminating the inner gloves.</li>
+                    <li>If wanting to use the high-handed sterilization pan, students should ask the supervisor or other senior students to operate instead. </li>
+                    <li>The last person to leave the lab should make sure that water, electricity, and the air conditioner are shut down, and lock all the doors and windows before leaving.</li>
+                </ol></p>
+   <div class="clear"></div>
+  <h4>Avoid contamination</h4>
+  <div class="column full_size" >
+  <p>All kinds of wastes were disposed of following the laboratory waste disposal policy strictly. Normal laboratory wastes are collected and emptied regularly. Contaminative and toxic waste was separately stored according to their chemical properties waiting for specialists to treat. All containers in contact with bacteria were sterilized before and after use. Experiments that might cause bacteria contamination are performed in Biosafety cabinets. Our culture medium and plates were sealed and preserved in separate refrigerators. Besides, our genetic materials were provided directly from Prof. Cai’s lab or ordered from a local biotechnology company, so there was no transfer or shipment problem involved. We have always transferred our information and experimental data with great deliberation.</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h2>Project design</h2>
+  <div class="column full_size" >
+   <p>Most of the organisms and parts we have chosen were widely used and we made throughout safety assessment on them before finally decided to use. And we also introduced several devices to guarantee the safety of both users and the environment.</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h4>Nissle 1917</h4>
+  <div class="column full_size" >
+  <p>We chose <i>E. coli</i> Nissle 1917 as the main chassis to take effect in our project. <i>E. coli</i> Nissle 1917 has a history of 100 years as a licensed medicinal probiotic and is one of the most intensively investigated bacterial strain used in a probiotic preparation today. Its biosafety and effect have since been extensively shown in numerous trials[1]. Neither the gene of prominent virulence or the production of toxins have been found in Nissle 1917 and this strain also has proven to lack immunotoxic properties[2]. What’s more, Nissle has the ability to express several fitness factors, such as microcins, adhesins and iron uptake systems that facilitate their colonization within the host[3]. In addition, Nissle is in Group 1 and has been handled properly in the Safety Level 2 laboratory. To summarize, Nissle 1917 proves to be the perfect chassis for our project. Unfortunately, due to the limited time, we only verified the designed polypeptide chain can be expressed and function normally in <i>E. coli</i>. We hoped to consummate experiments Nissle 1917 in the future.</p>
+   </div>
+   <div class="clear"></div>
+   <h4><i>E. coli</i></h4>
+  <div class="column full_size" >
+  <p><i>E. coli</i> strain DH5α and BL21 have been used to carry out molecular cloning and obtain the designed plasmids in our project. They are non-pathogenic and can hardly survive in the natural environment. Both strains are in Group 1 and have been handled properly in the Safety Level 2 laboratory.</p>
+   </div>
+   <div class="clear"></div>
+  <h4>Kill Switch</h4>
+  <div class="column full_size" >
+  <p>Although our project remained at an experimental stage, no usage outside the lab or clinical trials were applied, we devised some approaches to avoid potential problems. In order to ensure our engineered probiotic will not jeopardize the environment or users, this year, we integrated two kinds of Kill Switches into our project.</br>
+To deprive of the survivability of engineered Nissle in the environment when excreted from the human intestine, we introduced the first Kill Switch. The first Kill Switch is a cold triggered Kill Switch, consisting of a toxin-antitoxin system as a major functional part and an RNA thermometer to regulate it. (Click <a target="_blank" href="https://2020.igem.org/Team:Fudan/Design">here</a> to see the detailed design.)  And bacteria escaped from Kill Switch could be eliminated by the complementary automatic toilet cleaner.</p></div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/2/25/T--Fudan--img_ks4.svg" alt="cold triggered MazF/MazE Kill Switch under body temperature(37℃)" />
+  </div>
+
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--img_ks3.svg" alt="cold triggered MazF/MazE Kill Switch outside the body(30℃)" />
+  </div>
+
+  <div class="column full_size" >
+<h6>Fig. 1 cold triggered MazF/MazE Kill Switch under body temperature(37℃) and outside the body(30℃)</h6></div>
+
+
+ <div class="column full_size" >
+  <p>The second Kill Switch is an L-arabinose-activated promoter followed by a translational inhibitor MazF made by 19BNU_China (<a target="_blank" href="http://parts.igem.org/Part:BBa_K3036005">BBa_K3036005</a>). It is introduced to enable users to eliminate the engineered bacteria at will, meanwhile, it won’t upset native intestinal flora. Whenever users want to stop using our probiotic, they can intake an L-arabinose tablet which has easy access to a health food store. </p>
+   </div>
+   <div class="clear"></div>
+  <h4>Future expectation</h4>
+  <div class="column full_size" >
+  <p>Antibiotics resistance gene present a safety concern and is forbidden in probiotic consumption. However, it has been paid relatively less attention by previous iGEM teams working on probiotics. Antibiotics resistance gene is the most commonly used Selective marker gene. While encoded on the plasmid, it has the possibility to transfer to intestinal flora in the host and hurries the development of antibiotic-resistant strains [4]. Our project remains at an experimental stage that won’t implement experiments in vivo and we took the huge expenditures of both cost and time into consideration, we still used antibiotics resistance genes to make screenings.
+For a commercialization plan in the future, we may try recombinase-mediated DNA insertion (RMDI) to replace antibiotics resistance genes to screen [5] or insert our genetic circuits into the genome to inhibit the horizontal transfer directly.</p>
+ </div>
+ <div class="column full_size"><!-- 全幅面的文字内容，上面是否留白可选 -->
+   </div>
+   <div class="clear"></div>
+
+  <h2>Safety during the COVID-19</h2>
+  <div class="column full_size">
+   </div>
+   <div class="clear"></div>
+  <h4>Project implementation during the pandemic</h4>
+  <p>Given the outbreak of the COVID-19 pandemic, we made extra efforts to protect ourselves and our communities. We strictly complied with all guidance from our university and local government the whole time. The first thing we ought to consider was to guarantee team members’ own health and safety. On account of no admittance to campus by the university, we converted our meetings to online remote conferences. Members that got back to school to carry out wet lab experiments have obtained the permission of the university. Though our university is located in a very low-risk area, we wore masks carefully whenever in public occasions to prevent infection. In the meantime, the physical condition of every team member was closely monitored by the “Hello Fudan” applet.</p>
+  <h4>HP and education during pandemic</h4>
+  <p>During this particular time, we especially emphasize social distancing and focus on online interactions. In integrated human practice, we used an online questionnaire to investigate the public about osteoporosis awareness and calcium absorption. To better access the old, our target group, considering their weakness and lack of internet skills, we guide the young to help the aged in their family finish it. Besides, we use e-mails to connect with the osteoporosis field clinician and relevant professors, changing face-to-face interviews with the WeChat voice call. Aiming to engage current osteoporosis issues, we investigated published surveys, combining them with the 2018 China guideline for diagnosis and treatment of senile osteoporosis to analyze the current situation. We cooperate with Tianjin university Team for education, creating an online life science summer camp for middle school students. To avoid public education events, we design an online audio course and textbook to introduce basic biology knowledge.</p>
+</div>
+<div class="extra_space clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <div class="column full_size">
+    <p>We have paid high attention to safety issues on project design, project implementation and health precaution during the COVID-19 pandemic following the instruction of the Safety and Security Community. Our project was accomplished successfully without bringing potential risks to ourselves, our communities and the environment.</p>
+  </div>
+
+<div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+<h2>Reference</h2>
+  <div class="column full_size">
+                    <p>[1] Ulrich Sonnenborn, Escherichia coli strain Nissle 1917—from bench to bedside and back: history of a special Escherichia coli strain with probiotic properties, FEMS Microbiology Letters, Volume 363, Issue 19, October 2016, fnw212, https://doi.org/10.1093/femsle/fnw212</br>
+                    [2] Behnsen, Judith et al. “Probiotics: properties, examples, and specific applications.” Cold Spring Harbor perspectives in medicine vol. 3,3 a010074. 1 Mar. 2013, doi:10.1101/cshperspect.a010074</br>
+                    [3] Yu, Xiaoli et al. “Bioengineered Escherichia coli Nissle 1917 for tumour-targeting therapy.” Microbial biotechnology vol. 13,3 (2020): 629-636. doi:10.1111/1751-7915.13523</br>
+                    [4] Overgaard M , Borch J , Gerdes K . RelB and RelE of Escherichia coli Form a Tight Complex That Represses Transcription via the Ribbon–Helix–Helix Motif in RelB[J]. Journal of Molecular Biology, 2009, 394(2):0-196.</br>
+                    [5] Andreas Bøggild, Sofos N, Andersen K R, et al. The Crystal Structure of the Intact E. coli ReIBE Toxin-Antitoxin Complex Provides the Structural Basis for Conditional Cooperativity[J]. Structure, 2012, 20(10):1641-1648.</br>
+                    [6] de Melo Pereira, G.V., et al., How to select a probiotic? A review and update of methods and criteria. Biotechnology Advances, 2018. 36(8): p. 2060-2076.</br>
+                    [7] Turan, S., et al., Recombinase-Mediated Cassette Exchange (RMCE): Traditional Concepts and Current Challenges. Journal of Molecular Biology, 2011. 407(2): p. 193-221.</p>
+</div>
+<div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#ZhangJQ" class="z-depth-2">Jingqi</a>
+        </p>
+  </div></div>
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>
