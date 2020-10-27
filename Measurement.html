@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/0igem.css">
+  <title>Measurement</title>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<div class="igem_content_wrapper">
+<div class="igem_column_wrapper">
+<!--
+                      仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
+                      ////////////
+
+
+
+
+
+{{IGEM_TopBar}}
+{{Fudan}}
+<html>                -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/4/4b/T--Fudan--title_measurement.svg" alt="measurement" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+  <h1>Trace calcium ion measured by <u>CaAss</u></h1>
+<div class="column full_size">
+<p> The elderly in China lack a feasible means to monitor blood calcium status, but calcium deficiency leads to many diseases and severely reduces the quality of life. The blood calcium measurement in hospitals is complicated and consumes a large amount of blood. Here we present our CaAss (short from Calcium Assistant), for everyone to easily and reliably measure their own blood calcium by spectrophotometer. We provided a step-by-step protocol to ensure that everyone could replicate our experimental setup, and make subsequent improvements if interested. Our CaAss is very robust. We have carefully examined the major substances in the blood, including serum proteins, sugars, and magnesium ions, and none of them interferes with our CaAss. Also, we examined the effect of osmotic pressure on our CaAss, mimicking several diseases conditions. The chemicals and instruments used in our CaAss are all common and no safety hazards, and generally available in laboratories. In addition, we brought our CaAss to a new level – using the app Phyphox to avoid the usage of a spectrophotometer. The initial results are very promising. Ultimately, blood calcium measurement should take the format as blood glucose measurement, using a glucometer, but with our CaAss test strips. Our CaAss is ready for use in all kinds of projects that need to measure trace calcium ion.</p>
+</div>
+
+<div class="clear extra_space"></div>
+
+<h2> Measurement background </h2>
+<div class="column full_size">
+<p> Our project is dedicated to solving the problem of calcium deficiency in the elderly. For the elderly in Asia, calcium problem is severe. Many older people have the problem of insufficient calcium intake. Still, more massive older people have not realized this problem. As we all know, calcium deficiency caused by osteoporosis is also a significant threat to the old's health and safety. Simultaneously, according to our previous business surveys, for the elderly, some older people intake excessive calcium supplements, which raise the risk of high blood calcium concentration. Long-term high blood calcium is associated with some of the elderly's symptoms, such as loss of appetite, emotional indifference, fragile, bone pain, joint pain, constipation, <i>etc</i>.</p>
+<p> Unfortunately, the lack of a better assessment of their calcium in the elderly and blood calcium concentration is a crucial reference index. Still, conventional blood calcium testing is part of the biochemical tests, complicated, and pumping blood very much, need 5 ml venous blood. Therefore, we are committed to improving the way of simple blood calcium detection. For the elderly to provide a more simple and less blood-cost calcium detection way, the elderly can test his blood calcium. We'll call it CaAss.</p>
+</div>
+
+<div class="clear"></div>
+<h2> Blood calcium and blood glucose measurement</h2>
+<div class="column full_size">
+<p> We were comparing the method of blood sugar measurement and blood calcium. We found a way to determine the concentration of trace calcium by MTB.</p>
+
+<table>
+<tr>
+<th></th><th> Blood glucose：Light reflection </th><th> Blood calcium：MTB </th>
+</tr>
+<tr>
+<th> The chemical principle </th><td> The formation of red quinone substances by glucose under the action of enzymes affects absorbance. </td><td> Serum calcium ions combine with methylthymol blue in an alkaline solution to form a blue compound. </td>
+</tr>
+<tr>
+<th> The measurement principle </th><td> We used a detector to detect the intensity of the reflected light on the paper's reflective surface, and the power of this reflected light is converted into a glucose concentration. </td><td> We can determine it by spectrophotometry. </td>
+</tr>
+</table>
+
+<p> Based on the MTB method to measure trace calcium ions, we carried out experiments to verify the scheme and further improved the investigation.
+</p>
+
+</div>
+
+<div class="clear extra_space"></div>
+
+<h2> Development Log </h2>
+<div class="column full_size">
+<p> First, we refer to the existing literature to measure the linearity about calcium ion concentration and absorbance of solutions containing only pure calcium ion and obtain the following data. The MTB method requires two kinds of solution, one has the MTB and the other one provides the alkaline environment. We must mix them by equal volume to make an application solution and add the calcium ions solution or sample to it. Then we can measure the absorbance of the solution and convert it to the calcium ions concentration. The components of the two solutions are shown here.</p>
+</div>
+
+<div class="column half_size">
+<p>Solution 1</p>
+<table>
+<tr>
+<th>component</th><th>concentration</th>
+</tr>
+<tr>
+<td>MTB</td><td>0.2375 mmol/L</td>
+</tr>
+<tr>
+<td>8-Hydroxyquinoline</td><td>28 mmol/L</td>
+</tr>
+<tr>
+<td>HCl</td><td>0.15 mol/L</td>
+</tr>
+<tr>
+<td>Urea</td><td>3 mol/L</td>
+</tr>
+</table>
+</div>
+
+<div class="column half_size">
+<p>Solution 2</p>
+<table class="striped">
+<tr>
+<th>component</th><th>concentration</th>
+</tr>
+<tr>
+<td>Ethanolamine</td><td>200 ml/L</td>
+</tr>
+<tr>
+<td>Urea</td><td>3mol/L</td>
+</tr>
+</table>
+<p>Note: We use urea as a cosolvent.</p>
+</div>
+
+<div class="column full_size">
+<p>We used distilled water as a blank solution. It can be seen that the concentration range of 0-20 μM calcium ion conforms to Beale's law, while the concentration of blood calcium ion is usually within 2-4mmol/L. And you can get the protocol of this measurement at <a href="/Team:Fudan/Experiments">/Team:Fudan/Experiments</a>.
+</p>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/a/a3/T--Fudan--yicunanxian.png" alt="yicunanxian of calcium intake"/>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/e/e7/T--Fudan--yicunan.png" alt="yicunan of calcium intake"/>
+</div>
+
+<div class="clear"></div>
+
+<div class="column full_size">
+<p> We have put some chemicals in the system to create interference, and test the robustness of our measurement. We use 8-hydroxyquinoline to prevent the effect of magnesium ion and urea to avoid the protein. We do some experiments to test its capacity of resisting disturbance and obtained the following data. And we can see there is no obvious difference according to the quantification.
+</p>
+</div>
+
+<div class="column full_size">
+<img src="https://2020.igem.org/wiki/images/8/87/T--Fudan--zongganrao.png" alt="zongganrao, calcium intake"/>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--mgganrao.png" alt="mgganrao, calcium intake"/>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/7/7c/T--Fudan--sucrose.png" alt="sucrose, calcium intake"/>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/3/39/T--Fudan--serumprotein.png" alt="serumprotein, calcium intake"/>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/6/6d/T--Fudan--PEG.png" alt="PEG, calcium intake"/>
+</div>
+
+<div class="clear extra_space"></div>
+
+<div class="column half_size">
+<p><br/><br/>Unfortunately, our application solution is unstable and will change color in a few hours and enormously overnight. Coincidentally, in one experiment, we used triethanolamine to replace ethanolamine as the essential solution component. After the next day, we found that the solution was the same color. Then we measured the transmittance of every sample to confirm its stability and determined its Beer's law of calcium ions.</p>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/f/f1/T--Fudan--wendingxing.png" alt="map of calcium intake"/>
+</div>
+
+<div class="column full_size">
+<table class="striped">
+<tr>
+<th></th><th>0</th><th>1h</th><th>2h</th><th>3h</th><th>6h</th><th>12h</th><th>24h</th><th>48h</th><th>168h</th>
+</tr>
+<tr>
+<td>1</td><td>17%</td><td>17.5%</td><td>18%</td><td>18%</td><td>18%</td><td>17.5%</td><td>19%</td><td>22%</td><td>28%</td>
+</tr>
+<tr>
+<td>2</td><td>17.5%</td><td>18%</td><td>18%</td><td>18%</td><td>18.5%</td><td>17%</td><td>18.5%</td><td>22%</td><td>29%</td>
+</tr>
+<tr>
+<td>3</td><td>17%</td><td>18.5%</td><td>18.5%</td><td>18.5%</td><td>18.5%</td><td>17.5%</td><td>18%</td><td>21.5%</td><td>28%</td>
+</tr>
+</table>
+
+<p> We prepared many application solutions at the same time. After placing them for different periods, we add
+100 mM calcium ion solutions respectively to determine the light transmittance. As shown in the figure, the solution's effect was relatively stable within 24 hours and began to deteriorate 48 hours later. Thus, the mixture can be kept for at least 24 hours.</p>
+</div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/1/12/T--Fudan--sanyichunan.png" alt="map of calcium intake"/>
+</div>
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/2/2f/T--Fudan--quansanyicunan.png" alt="map of calcium intake"/>
+</div>
+
+<div class="column full_size">
+<p> After the improvement of using triethanolamine, we re-determined the linearity and use the application solution without calcium ion as a blank solution. We also figure out the range of calcium ion concentration that can be measured, which is larger than the system range of ethanolamine. And it proves that the ratio of application liquid to sample can be further reduced.</p>
+</div>
+
+<div class="clear extra_space"></div>
+
+<h2> A possible hardware (early stage development)</h2>
+<div class="column full_size">
+<p> We tried to use only LED cubes and a mobile phone software <i>phyphox</i> to make our own spectrophotometer, and measured the calcium ion concentration. The app phyphox can collect the information about the light intensity, although the initial data is promising, we can still see the data change significantly when we turn on the LED light. We tried to analyze it to see if the absorbance remains linear with the calcium concentration.</p>
+</div>
+
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/8/87/T--Fudan--chanpian.png" alt="map of calcium intake"/>
+</div>
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/5/56/T--Fudan--chanpianyiqi.png" alt="map of calcium intake"/>
+</div>
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/7/73/T--Fudan--shezhikaideng.png" alt="map of calcium intake"/>
+</div>
+
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/d/da/T--Fudan--phyphox.png" alt="map of calcium intake"/>
+</div>
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/5/5e/T--Fudan--hardwaredata.png" alt="map of calcium intake"/>
+</div>
+<div class="column third_size">
+<p> We made simple sample slides, using LED cubes as the light source, using mobile phones to collect information. The overall layout is very similar to a microscope.</p>
+
+<p> As shown in the figure, the light intensity obtained by the mobile phone's light sensor is converted to absorbance for analysis. Although the mobile phone measurement is not stable, and the error is relatively large, we can still observe that the data obtained by micro measurements are linear.
+</p>
+</div>
+
+<div class="clear extra_space"></div>
+<div class="column full_size">
+<h2>Reference</h2>
+<p>[1] Ripoll JP. Determination du calcium serique par une technique utilisant le bleu demethylthymol [Colorimetric determination of calcium in serum using methylthymol blue]. Clin Chim Acta. 1976 Oct 1;72(1):133-9. French. doi: 10.1016/0009-8981(76)90044-9. </p>
+<p>[2] 卢道旭, 王棠海. 改良甲基百里酚蓝血清钙微量测定法[J]. 陕西医学检验, 1994, 009(001):23-24.</p>
+</div>
+<div class="clear extra_space"></div>
+
+<div class="column full_size">
+<h2>Summary</h2>
+<p>The calcium ion measurement we developed has the following advantages:</p>
+<div class="highlight decoration_background">
+<ul>
+<li> The instrumental requirement is minimal. We only need to use the spectrophotometer; and we even design a hardware consisting of LED light source and a mobile phone with the <i>phyphox</i> app.</li>
+<li> Easy to operate. The entire measurement process only needs to prepare the solutions, mix and measure the A620 absorbance. </li>
+<li> Do measure trace calcium. The blood level of calcium is only a few micromoles per liter, still within the linear range of our method. The potential user who is taking Bone Pill may have an increase of blood calcium - similar to blood glucose measurement, CaAss monitors the increase rather decrease of the signal.</li>
+<li> The required sample volume is small. Altough the interference experiments were done with 1~2 ml of sample, we have test and confirmed our method only needs fifty microliters (50 μL) of samples, while the traditional biochemical test in the hospital requires at least 5 ml of blood.</li>
+</ul>
+</div>
+<p> The principle of our project is similar to the blood glucose measurement. We envision that we can develop test strips and instruments to help the elderly measure blood calcium in the future. We can even put these products on the market, please visit <a href="/Team:Fudan/Experiments">/Team:Fudan/Experiments</a> for more details.</p>
+<p>
+  Due to its simplicity and the trace nature of the system, our CaAss can be applied to various iGEM projects that need to determine calcium ions.
+</p>
+</div>
+
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#WeiZY" class="z-depth-2">Ziyuan</a>
+        </p>
+  </div></div>
+
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>
