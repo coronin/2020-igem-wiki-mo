@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/0igem.css">
+  <title>Human Practices</title>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<div class="igem_content_wrapper">
+<div class="igem_column_wrapper">
+<!--
+                      仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
+                      ////////////
+
+
+
+
+
+{{IGEM_TopBar}}
+{{Fudan}}
+<html>                -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 14rem; /*12*/
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m1 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m10">
+      <img src="https://2020.igem.org/wiki/images/c/c6/T--Fudan--title_integratedHP.svg" alt="human practices" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+  <h1>Combine World with Bone health</h1>
+  <div class="column full_size">
+    <p>Integrated Human Practice connects the world and our project. Inspired by the bone disease of old people, our project centers on osteoporosis and calcium absorption to constitute <i>Bone Appetite</i>. We constantly improve our design and execution by the feedbacks of public engagement, to make sure our project is good and responsible for the old, the whole human, the world.</p>
+  </div>
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+  <h2>Outline and Overview</h2>
+  <div class="column full_size">
+    <img src="https://2020.igem.org/wiki/images/6/62/T--Fudan--flowchart_hp.svg" alt="Integration of Human Practice and Bone Appetide Project" />
+    <h6>Figure 1. Integration of Human Practice and Bone Appetide project</h6>
+
+<p>Social surveys and Public engagement are the core of our Integrated Human Practices. When we gained our inspiration for bone health, we turned to social surveys and the critical stakeholders for the priority. Besides, picture and design our whole project according to their feedbacks.</p>
+
+  </div>
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h2>Social Surveys</h2>
+   <div class="column full_size">
+    <p>Considering the COVID-19 pandemic, our team specially design an online questionnaire to do relevant social surveys. Due to our care about bone health and osteoporosis, we used widely social study to investigate public awareness and dig the potential need. For the old who has a hard availability of smartphone and the Internet, we visit the elderly community and senior home under the premise of keeping enough social distance and well protective measures. </p>
+<img src="https://2020.igem.org/wiki/images/a/a9/T--Fudan--questionnairess.png" alt="The questionnaire of social surveys" />
+<h6>Figure 2. The questionnaire of social surveys</h6></div>
+
+ <div class= "column half_size">
+<h4>Public general knowledge</h4>
+  <p>The online surveys mainly direct at the people under 60 years old. We analyzed their knowledge of osteoporosis and daily calcium supplement situation. The result showed that the public has a strong awareness of osteoporosis and bone health along with the growing of age. For respondents aged 40 to 60, more than half of them are taking or have taken calcium supplements health care products. </p></div>
+
+  <div class="column half_size">  <br/><br/><br/>
+<img src="https://2020.igem.org/wiki/images/9/95/T--Fudan--hp_chart3.png" alt="Calcium supplements situation of respondents aged 40 to 60"  />
+<h6>Figure 3. Calcium supplements situation of respondents aged 40 to 60</h6></div>
+
+  <div class="column half_size"><img src="https://2020.igem.org/wiki/images/1/1b/T--Fudan--hp_chart1.png" alt="Surrounding osteoporosis knowledge with different ages"/>
+    <h6>Figure 4a. Surrounding osteoporosis knowledge with different ages</h6></div>
+
+  <div class="column half_size"><img src="https://2020.igem.org/wiki/images/e/e3/T--Fudan--hp_chart2.png" alt="Surrounding osteoporosis knowledge with different ages"/>
+    <h6>Figure 4b. Surrounding osteoporosis knowledge with different ages</h6>
+</div>
+
+   <div class="column half_size">
+  <h4>Interviews with old people</h4>
+  <p>We believe the best suitable way to know the awareness message from the old is talking face to face. Connected with the largest student public-service association of Fudan University, we cooperated with “The Home of Elderly” project, which aims at satisfy the need of the old. We interviewed dozens of aged people over 60 years old in a Shanghai elderly community. Then we were surprised by their extremely low awareness of osteoporosis and lack of calcium supplement.</p> </div>
+
+  <div class="column half_size">
+  <br/><br/><br/>
+<img src="https://2020.igem.org/wiki/images/1/1b/T--Fudan--oldcommunity.jpg" style="width:90%" alt="Interview the old in community"/><h6>Figure 5. Our teammate interview the old in the community</h6></div>
+
+
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<div class="highlight decoration_background decoration_B_top">
+  <p id="Integrated">
+   The series of effective surveys provide us the reality of public awareness of calcium supplements and reveal the elderly’s problem. The evidence from the statistics analysis helped us to unearth the education need of the elderly. <b>Specially, we came up with an idea of educating the younger generation and instructing them to educate their grandparents.</b></p>
+<p>Bone health is a serious problem for the old. They have a severe need for Calcium supplements. <b>We wanted to know the current treatment of osteoporosis and everyday health care products for Calcium supplement in this case.</b> We carried our thought to interview several key stakeholders and discuss the method to achieve them. Given the outbreak of the COVID-19 pandemic, we took action mainly in online form.</p></div>
+
+
+ <div class="clear extra_space"></div>
+
+  <h2>Online Public Engagement</h2>
+
+<h4>Dr. Dongying Qiu and Weiying Ren</h4>
+Deputy chief physician of Geriatrics Department of, Zhongshan Hospital, Fudan University.
+
+<div class="column two_thirds_size">
+<p>We consulted clinical physicians about the current osteoporosis treatment situation and FRAX (WHO Fracture Risk Assessment Tool), which is considered underestimating the Chinese population’s risk. They provided us plenty of important messages. </p>
+<p>First, the consultation rate of osteoporosis was quite low, owing to the old’s low awareness. </p>
+<p>Second, different assessment tools match various application scope. Guidelines for the diagnosis and management of primary osteoporosis provided by the Chinese Society of Osteoporosis and Bone Mineral Research are used in the clinic but still has question and limitation.</p>
+<p>What’s more, we exhibited our project design and education for older people to them, which gained great admiration. Dr.Qiu shared his own educational experience to instruct us. He suggested we should be careful with our expression, which needs to be scientific.
+</p></div>
+
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/7/7e/T--Fudan--Dr.Dongying_Qiu.jpg" alt="qiu dongying" style="width:38%" />
+<img src="https://2020.igem.org/wiki/images/6/69/T--Fudan--Dr.Weiying_Ren.jpg" alt="ren weiying" style="width:45%" /></div>
+
+ <div class="clear"></div>
+
+<h4>Dr. Wei Hong</h4>
+Deputy chief physician of Osteoporosis Department, East China Hospital affiliated to Fudan University
+<div class="column two_thirds_size">
+<p>Dr. Hong is a professor in the area of osteoporosis who also makes an effort to educate patients.
+We discussed the design of the assessment tool and how to improve the current treatment and recovery method. Dr.Hong pointed out the self-assessment tool's difficulty because of the lack of a database that big enough. We learned that the community is the most effective way to carry out education and recovery introduction. The direct contact with the old helps continuous supervision of treatment progress.
+</p></div>
+
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/4/4b/T--Fudan--Dr.Wei_Hong.jpg" alt="wei hong" style="width:60%"/></div>
+
+<div class="clear"></div>
+<div class="highlight decoration_background decoration_B_top">
+<p>The pool assessment tool and low osteoporosis rate reminded us of the difficulty for the old's bone health. To better guarantee more comprehensive bone health, we tried to achieve an effective Calcium supplement method. We analyzed the current way and relevant health care products market. We came up with some questions and existed difficulty: </p><ol>
+<li>Patients usually forget to take supplements, especially for the old. </li>
+<li>Calcium absorption rate drops as the amount of calcium intake increases.</li> </ol>
+<p>Current market is in urgent need of a supplement method that ensures a high calcium absorption rate over a long period of time. This will avoid frequent intake of a large amount of supplement pills and the precipitation of calcium oxalate. We decided to design a <b>high and sustainable Calcium absorption nutrition</b>. </p></div>
+
+<div class="clear"></div>
+<h4>Senior home staff and care workers</h4>
+Xinguang Senior Home, Shanghai
+<div class="clear"></div>
+<div class="column two_thirds_size">
+<p>In Xinguang senior home, they have nearly 100 elders aged 60 to 100. We interviewed their staff about the bone health of the old. They  reflected several severe fractures caused by osteoporosis and pointed their general bad bone health.
+</p></div>
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/7/7a/T--Fudan--seniorhome.jpg" alt="senior home" style="width:80%"/></div>
+ <div class="clear"></div>
+
+<div class="highlight decoration_A_full"><p>We designed a peptide (CaAP) containing a series of short peptides that can promote calcium absorption. We let probiotics express and secrete this peptide in the intestine to promote calcium absorption in the intestine.</p></div>
+
+<h4>Prof. Jinzhong Lin</h4>
+School of Life Sciences Fudan University
+  <div class="clear"></div>
+<div class="column two_thirds_size">
+<p>
+We discussed with Professor Lin, who is engaged in prokaryotic expression work at the Fudan University Academy of Sciences. The concept of quorum sensing system described was proposed by Fudan 2019. To help engineered bacteria be competitive enough in the intestine, MccB17 needed better expressed. We thought about using the high-copy plasmids to express MccB17, but they are more challenging to regulate and respond sensitively and extensively to increase engineered bacteria's expression burden.<br/>
+
+<div class="highlight decoration_background decoration_A_top"><p>Prof. Lin suggested us to use low-copy plasmids to reduce the expression burden of engineered bacteria. We tried to keep the main part of MccB17 (McbABCD) a relatively low expression and high express the immune part (McbEFG) to achieve high secretion of MccB17.</p></div>
+</div>
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/8/84/T--Fudan--jinzhonglin.png" alt="lin jinzhong" style="width:50%"/></div>
+
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
+
+
+  <h2>Collaboration</h2>
+  <div class="column third_size">
+ <img src="https://2020.igem.org/wiki/images/9/93/T--Fudan--TJU.jpg" alt="TJU" /></div>
+  <div class="column third_size">
+<img src = "https://2020.igem.org/wiki/images/a/a6/T--Fudan--SCU.jpg" alt="SCU" />
+  </div>
+  <div class="column third_size">
+    <p>We collaborate with team TJU held an online summer camp for high school students to introduced the relevant principles and concepts of synthetic biology and shared the concept of iGEM as well as our project. More details at
+<a href="/Team:Fudan/Collaborations">/Team:Fudan/Collaborations</a>.</p>
+  </div>
+
+<div class="clear"></div>
+
+   <h4>Model</h4>
+<div class="column full_size">
+
+<p>We establish two models: quorum sensing process and Kill Switch. We refer to the model and data of 2019Fudan team and use the random process to describe it more clearly to model the quorum sensing process in stages and levels. In the kill switch section, we use the 19BNU team’s data, improve the logistic equation, adjust the promoter properties, and make a sensitivity analysis. We can see good results through it.
+More details at
+<a href="/Team:Fudan/Model#killswitch">/Team:Fudan/Model</a>.</p></div>
+
+<div class = "clear"></div>
+
+ <h4>Kill Switch design</h4>
+ <div class="column full_size"> <p>We contacted Mr. Feng in BNU, a member of 19BNU-China and very experienced in kill switches, discussing the kill switch and safety issue of antibiotics resistance gene design. </p></div>
+<div class = "column two_thirds_size">
+<img src="https://2020.igem.org/wiki/images/2/26/T--Fudan--BNU2.jpg" alt="BNU2" /></div>
+<div class = "column third_size">
+<p>We discussed whether the glucose-starvation promotor (BBa_K3036003 from 19BNU-China) would be a suitable response system for our kill switch and hope to obtain their plasmids as a control group directly to save time for constructing it from the beginning.
+Mr. Feng didn’t consider glucose concentration as a distinct signal to trigger glucose response that existed both inside and outside the body. The difference between the two conditions was not very significant. And he also recommended we search some literature on toxin/antitoxin systems. They probably were ideal candidates for carrying eliminating function.</p></div>
+
+<div class = "clear"></div>
+
+<div class = "column full_size">
+<p>After search the advantages of the toxin/antitoxin system, we decided to undergo an overhaul of our kill switch. This consultation helped us summarize the idea of designing a kill switch that kill switch circuit can be divided into two core components: judging whether bacteria leave the set condition and the other component to kill the bacteria when it leaves the set condition. </p>
+
+<p>Antibiotics resistance genes encoded on a plasmid can transfer to the host’s intestinal flora and hurries the development of antibiotic-resistant strains. To improve our product’s safety factor, we wanted to insert our genetic circuits into the genome to inhibit the horizontal transfer. Mr. Feng told us that verifying genome insertion in experiments would take a significant amount of time and was unlikely to be done within a few months. Using plasmids in the experimental stage is still a preferable way. He commended that multi-copy insertion could be designed as the final form of the product.
+</p> </div>
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h2>Education</h2>
+
+  <div class="column full_size">
+    <h4>Educate the old through younger generation.</h4>
+<p>Educating the elderly helps the old keep health and protects them from fraud and mis-information. We used a previous unexplored education approach to educate biologic knowledge to the old. Our main strategy is educating the younger generation and instructing them how to educate their grandparents. Compared with traditional education strategies, our approach offers emotional support from the younger generation and is comfortable for the old.In addition, we combined osteoporosis prevention with traditional Chinese art Crosstalk, and taught it to the old living in a nursing home. In summary, we made brave and compelling attempts to implement science communication between the younger generation and the long-neglected social communities - the old.</p>
+<p>To educate the youth, we have held online summer camps for high school students to pass on aged care, in addition to synthetic biology which we have been teaching in the past several years. We developed an online audio course on basic biology knowledge, which could been listened by both the youth and the old. </p>
+
+<p>More details at <a href="/Team:Fudan/Education">/Team:Fudan/Education</a>.</p>
+  </div>
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h2> Commercialization analysis</h2>
+  <div class="column two_thirds_size">
+    <img src="https://2020.igem.org/wiki/images/b/b4/T--Fudan--timeline.jpg" alt="commercialization timeline" />
+  </div>
+  <div class="column third_size">
+    <p> We made the market investigations and pitched our commercial plan to potential commercial investors. During these interactions, we improved our existing design for CaAP, and we came up with the CaAsst test strip product, which later got support by our pilot experiments. More details at <a href="/Team:Fudan/Entrepreneurship"> /Team:Fudan/Entrepreneurship</a>.</p></div>
+ <div class="clear"></div>
+
+  <div class="column full_size">
+<p>
+<b>1. Commercial consult.</b> We contacted factories about our product's cost, more specifically, about the cost of producing pills from lab benches to packages ready for the market.We scheduled several in-person and online appointments with professional investors in the biochemical industry and corresponded with them back and forth to polish our business plan. We also obtained a letter of intent from them, paving ways for future collaboration. Besides, we asked for advice from peers in the Fudan school of management about our marketing strategies and shaped our business plan to target our potential users more effectively.</p>
+
+<p><b>2. CaAsst developing.</b> To obtain more professional feedback and get our projects wider public known, we participated in the Fanhai Bei innovation competition and won a third-class prize. According  the judges' feedback, we modified our business model and found that older people in China lacked an easy method to assess their calcium status. Therefore, we developed our Measurement project CaAsst to provide a solution for the old people to measure their blood calcium status in a portable way. More details at <a href="/Team:Fudan/Measurement">/Team:Fudan/Measurement</a></p></div>
+
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 因为马上最后一幅，建议extra_space -->
+
+<div class="column full_size">
+
+<h2>Summary</h2>
+<p>Our project focus on reducing the impact of osteoporosis, trying search the way to making world better. </p>
+<div class="highlight decoration_background">
+<ol>
+<li> Analyzed the whole ages surveys to investigate public awareness and the current suffering situation of the old people.</li>
+<li> Interviewed various stakeholders, including clinicians, professors and care workers to gather the limits of current treatments and used these feedbacks to design our project. </li>
+<li> Connected with members of 19BNU and 19Fudan to gain their valuable insights and outline our wet lab experiments.</li>
+<li> Made the market investigations and pitched our commercial plan to potential commercial investors.</li>
+<li> In order to educate the aged people more effectively, we communicated with care workers and created instructional materials on care given.</li>
+</ol>
+</div>
+<p> During these interactions, we improved our existing design for CaAP, and we came up with the CaAsst test strip product, which later got support by our pilot experiments.Our team successfully integrated Human Practice to design and improve our Bone Appetite project. </p>
+</div>
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#LiXR" class="z-depth-2">Xinran</a>
+                    <a href="/Team:Fudan/Attributions#ZhangJQ" class="z-depth-2">Jingqi</a>
+        </p>
+  </div></div>
+
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>

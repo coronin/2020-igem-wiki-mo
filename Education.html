@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/0igem.css">
+  <title>Education</title>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<div class="igem_content_wrapper">
+<div class="igem_column_wrapper">
+<!--
+                      仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
+                      ////////////
+
+
+
+
+
+{{IGEM_TopBar}}
+{{Fudan}}
+<html>                -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/c/cd/T--Fudan--title_education.svg" alt="education" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+  <h1>For the elderly</h1>
+  <div class="column full_size">
+    <p>Educating the elderly helps the old keep health and protects them from fraud and misinformation. We used a previous unexplored education approach to educate biologic knowledge to the old. Our main strategy is educating the younger generation and instructing them how to educate their grandparents. Compared with traditional education strategies, our approach offers emotional support from the younger generation and is comfortable for the old. In countries like Japan, Korea, Singapore, and China, where the bond between grandparents and grandkids is incredibly tight, our approach is undoubtedly effective.</p>
+<br/>
+<p>
+To educate the youth, we have held online summer camps for high school students to pass on aged care, in addition to synthetic biology which we have been teaching in the past several years. We developed an online audio course on basic biology knowledge, which could be listened to by both the youth and the old. In addition, we combined osteoporosis prevention with traditional Chinese art crosstalk and taught it to the old living in a nursing home (we self as the youth). Also, we wrote Xiàng Sheng (a popular traditional art in China) and other outreach materials for people to use. In summary, we made brave and compelling attempts to implement science communication between the younger generation and the long-neglected social communities - the old. </p>
+  </div>
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+  <h3>Why did we focus on education for the elderly</h3>
+  <div class="column full_size">
+     <p>With the rapid development of technology and society, the older generation is gradually lagging behind society. Besides, the aging ratio is increasing in China. The old is facing fraud, misinformation, and diseases. Lifelong education has become an urgent need for them. However, senior university is not available for everyone, and thus many older adults from rural areas in China are under the situation that they do not even know that they are sick. We dedicated ourselves to exploring more education approaches, trying to bring high-quality education for the old and help them prevent disease and enjoy their lives.</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h2>Trying to find approaches suitable for the old</h2>
+  <div class="column half_size">
+  <h3>The voice of biology</h3>
+
+    <p>With the increasing age, the old suffer gradual sight loss; by comparison, their hearing will maintain at an acceptable level. So we produced a free online audio course on basic biology knowledge. We explained several elementary concepts through clear and straightforward expression, including but not limited to protein, gene, and virus. We emphasized and introduced the COVID-19 outbreak in 2020 to inform the old relative knowledge to protect them from the pandemic. Till today, more than 1000 people have listened to our program. For most episodes, 100+ people listen to one episode in 24 hours.
+</p>
+<br/>
+<p>Simultaneously, we wrote a synchronize textbook with an extra-large font size to help those with impaired hearing get familiar with the knowledge. The textbook's content is the same as our online course, and we send it out for free. We are trying our best to bring biology knowledge to the special and important social community.</p>
+  </div>
+
+  <div class="column half_size">
+     <img style="display: table-cell; text-align:center; vertical-align: middle;" src="https://2020.igem.org/wiki/images/1/1d/T--Fudan--%E5%85%AC%E4%BC%97%E5%8F%B7%E5%9B%BE.png" alt="user count">
+<h6>Figure 1. The number from left to right means separately: the number of new message; the number of new followers of our WeChat public account; the number of followers of our WeChat puublic account </h6>
+  </div>
+
+<div class="column half_size">
+<embed src="https://2020.igem.org/wiki/images/c/c6/T--Fudan--Textbook_for_the_old.pdf" width="100%" height="600px" type="application/pdf">  </embed>
+<h6>File 1. Our textbook with extra-large font size</h6>
+</div>
+
+<div class="column half_size">
+<embed src="https://2020.igem.org/wiki/images/c/c1/T--Fudan--The_pdf_version_of_The_Voice_of_Biology.pdf" width="100%" height="600px" type="application/pdf">  </embed>
+<h6>File 2. The pdf and the website shows the same episodes. Audio resources are only available through the link.</h6>
+</div>
+
+<div class="column full_size">
+<p><a target="_blank" href="http://ll028.cn/JqPC3s">The audio files of our course.</a></p>
+</div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h3>Brand new education: emotional company and intellectual education </h3>
+  <div class="column full_size">
+    <p>After talking to the old, we discovered that the traditional education approach works low efficiently. Thus, we focus on the emotional need of the old and developed a previously unexplored education method. Our primary strategy is to inform the younger generation and to instruct them on educating their grandparents. The old are more willing to accept these new concepts and are accompanied by their family. Compared with traditional education strategies, our approach offers emotional support from the younger generation and is comfortable for the old. In countries like Japan, Korea, Singapore, and China, where the bond between grandparents and grandkids is incredibly tight, our approach is undoubtedly significant. We wrote a textbook for the young and explained how to impart the older generation knowledge. </p>
+<embed src="https://2020.igem.org/wiki/images/8/8b/T--Fudan--Textbook_for_the_young.pdf" width="100%" height="600px" type="application/pdf"></embed>
+<p>
+At the same time, we went to the nursing house and introduced osteoporosis and its symptom to these local elders. We taught them how to prevent osteoporosis during their daily life and wished them good health. To make the knowledge more acceptable, we combine the basic knowledg with crosstalk, a traditional art favored by many old people. We also taught them a elegant traditional sport-Mu’Lan’Shan which combine Kung Fu and dance. It helps prevent orsteoperosis effectively.</p>
+  </div>
+
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img style="width:120%;" src="https://2020.igem.org/wiki/images/2/21/T--Fudan--Our_team_member_visiting_the_nursing_house.png" alt="senior home visit" >
+  </div>
+</div>
+<div class="clear"></div>
+<div class="column full_size" style="text-align: center">
+<h6>Figure 2. Our group member in the nursing house educating the old about osteoperosis</h6>
+</div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h3>Combining with the tradition</h3>
+<div class="column full_size"><p>We combined synthetic biology with a traditional Chinese art-Xiangsheng. We introduce the concept of parts and basic synthetic biology concepts to the old.</p>
+<embed src="https://2020.igem.org/wiki/images/2/29/T--Fudan--The_draft_of_our_crosstalk.pdf" width="100%" height="600px"></embed>
+<h6>File 3. The pdf is the draft of our crosstalk.</h6>
+<!-- i>The draft of our crosstalk</i -->
+</div>
+
+<div class="column full_size"><p>We also introduced them Mu’Lan’Shan, a traditional Chinese sport that combined Kung Fu and dancing, and taught them how to strengthen their body by practicing Mu’Lan’Shan regularly.</p>
+<embed src="https://2020.igem.org/wiki/images/9/9e/T--Fudan--Video_of_our_team_member_performing_Mu%27Lan%27Shan.mp4" width="100%" height="600px"></embed>
+<p>One of our member is performing Mu’Lan’Shan for the old.</p></div>
+
+
+ <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+<div class="column full_size">
+  <h2>Preparing for the future</h2>
+  <h3>Pass on the aged caring</h3></div>
+  <div class="column full_size">
+  <p>To cultivate students interested in synthetic biology, we collaborate with Tianjin university to hold a two-day online summer camp. About 30 high school students from all over China took part in our project. We introduced several standard technologies used in synthetic biology and what synthetic biology can do. We also present them with our topic this year and appeal to them to pay attention to the old mental and physical health. All of the students spoke highly of the summer camp, and two of them won our 'The star for future' prize.</p>
+  </div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/a/af/T--Fudan--The_star_for_future_prize.png" alt="summer camp satisfaction survey">
+<p>The certification achievements of our summer camp</p>
+  </div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/8/89/T--Fudan--Feedback_of_summer_camp.png" alt="certificate" style="width:100%">
+<p><i>We required the students to grade their feeling for the summer camp from 0 to 11.11 is ‘Very good,’ and 0 is ‘Very bad.’ Most students gave an 11. (Blue represents 0 and black represents 11) </i></p>
+  </div>
+
+  <div class="clear extra_space"></div>
+  <h3>The future education of synthetic biology</h3>
+  <div class="column full_size">
+  <p>We hoped to raise students' interests in synthetic biology and encourage more college students to choose biology as their major. Hence, we collaborate with Zhejiang University and the University of Science and Technology of China and invite three professors to lecture for the freshman and sophomore. Meanwhile, we launched a column which interprets essays in Chinese on our Wechat public account and encourages them to choose biology as their major. We also invited 20+ sophomore to visit the biology lab, and our team advisor invited them to join us and enjoy synthetic biology with us.</p>
+  </div>
+
+
+
+   <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/6/69/T--Fudan--Screenshot_of_lecture%28ZJU%29.png" alt="summer camp satisfaction survey">
+<p>Screenshot of the lecture<br/>
+<a target="_blank" href="http://ii088.cn/UiTWyl">Click here for the video of the lecture</a></p>
+  </div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/thumb/b/b0/T--Fudan--Team_advisor_introducing_the_lab.jpeg/1600px-T--Fudan--Team_advisor_introducing_the_lab.jpeg" alt="certificate" style="width:100%">
+<p>Our team advisor (in black) introducing the lab for the sophomores in Fudan University</p>
+  </div>
+
+
+          <div class="clear extra_space"></div>
+<div class="highlight decoration_background">
+<h3>Highlights of our education</h3>
+                <ul>
+                    <li>An influential online audio course for the old</li>
+                    <li>Brand new education approach to educate the old</li>
+                    <li>Combining education with traditional Chinese art</li>
+                    <li>Passing on the aged care</li>
+                    <li>Cultivating more students interested in synthetic biology</li>
+                </ul>
+</div>
+
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+
+
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#YaoYY" class="z-depth-2">Yiyang</a>
+        </p>
+  </div></div>
+
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>

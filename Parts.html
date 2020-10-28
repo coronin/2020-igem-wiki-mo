@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="/0igem.css">
+  <title>Parts</title>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<div class="igem_content_wrapper">
+<div class="igem_column_wrapper">
+<!--
+                      仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
+                      ////////////
+
+
+
+
+
+{{IGEM_TopBar}}
+{{Fudan}}
+<html>                -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/0/01/T--Fudan--title_parts.svg" alt="parts" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+
+  <div class="column full_size">
+    <p>The specially designed and constructed parts of our project are shown below.<br/>
+       Our <a href="#Basic">best basic part</a> is <a href="http://parts.igem.org/Part:BBa_K3606000" target="_blank">BBa_K3606000</a>, and our <a href="#Composite">best composite part</a> is <a href="http://parts.igem.org/Part:BBa_K3606029" target="_blank">BBa_K3606029</a>.</p>
+<h4>Team:Fudan Parts Table</h4>
+  </div>
+
+<!-- 本页面特殊的 groupparts 自动生成表格，需要先关掉html再打开 -->
+</html>
+<groupparts>iGEM20 Fudan</groupparts>
+<html>
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+  <h2 id="Basic">Basic Part: <a href="http://parts.igem.org/cgi/partsdb/part_info.cgi?part_name=BBa_K3606000" target="_blank">BBa_K3606000</a></h2>
+  <div class="column full_size">
+    <img src="http://parts.igem.org/wiki/images/f/f4/T--Fudan--CaAP.png" />
+  </div>
+  <div class="column full_size">
+    <p>CaAP (Calcium Absorption Peptide) is an artificially designed peptide to promote calcium absorption of intestinal epithelial cells. The sequence design of CaAP is based on calcium-binding peptides, a class of oligopeptides capable of chelating calcium, which have been found in hen egg yolk, cow milk casein, whey, soy, wheat germ and tilapia fish, etc. and are capable of facilitating calcium uptake in Caco-2 cells. Moreover, the biosafety of the peptides used in our design can be guaranteed as the MTT assay have shown their absence of cytotoxicity<sup>[1]</sup>.</p>
+    <p>The whole sequence of CaAP contains 5 different calcium-binding peptides: GPAGPHGPVG, FDHIVY, YQEPVIAPKL<sup>[1]</sup>, NDEELNK<sup>[2]</sup>, and DHTKE<sup>[3]</sup>, Among these peptides, GPAGPHGPVG, FDHIVY, YQEPVIAPKL and NDEELNK function by forming calcium-peptide complex through Asp and Glu residues<sup>[1,2]</sup>. As for DHTKE, it interacts with the bivalent calcium ion by carboxyl oxygen and amino nitrogen of Asp and Glu as well as the imidazole nitrogen atoms of His residue<sup>[3]</sup>.</p>
+    <p>To efficiently express CaAP in the engineered strains (<i>E. coli</i>) and allow them to play a role when secreted into the extracellular space, sequences of the 5 mentioned oligopeptides are linked together through FR junctions (Phe-Arg). Hence, they could be expressed in the form of a whole peptide in the engineered bacteria and later cleaved into functional oligopeptides in the presence of digestive enzymes in the intestinal lumen.</p>
+    <p>We also added 6x-His tag to the C terminal of CaAP for its purification and characterization (we have confirmed this by Ni-NTA agarose beads pull-down).</p>
+
+    <p>Besides successful expression in the engineered strains (<i>E. coli</i>), the secretion of CaAP from bacteria to intestine is of vital importance as well. Five signal peptides are selected to mediate CaAP translocation through the bacterial inner membrane, including NSP4, OmpA, DsbA, PelB, PhoA. They are all composed of a N-domain of about 2-10 amino acids, a hydrophobic H-domain of about 10–20 amino acids and a C-domain allowing for the cleavage of the signal peptidase after secretion. By adding a signal peptide signal peptide to the N terminus of CaAP, CaAP can be eventually secreted into the lumen of digestive tract and display its robust function of aiding calcium absorption.</p>
+    <p>The 5 signal peptides are listed below. Our initial test show that OmpA-CaAP (BBa_K3606083) has the best secretion, while PhoA-CaAP has the highest over-expression after IPTG induction (BBa_K3606084).<p>
+<table>
+<tr>
+<th> Signal Peptide </th> <th> Number for Registry </th>
+</tr>
+<tr>
+<td> NSP4 </td> <td> BBa_K3606042 </td>
+</tr>
+<tr>
+<td> OmpA </td> <td> BBa_K3606043 </td>
+</tr>
+<tr>
+<td> DsbA </td> <td> BBa_K3606030 </td>
+</tr>
+<tr>
+<td> PelB </td> <td> BBa_K208004 </td>
+</tr>
+<tr>
+<td> PhoA </td> <td> BBa_K808028 </td>
+</tr>
+</table>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <div class="column full_size">
+  <h4>References for the Basic Part</h4>
+
+<p>[1] Three Newly Isolated Calcium-Chelating Peptides from Tilapia Bone Collagen Hydrolysate Enhance Calcium Absorption Activity in Intestinal Caco-2 Cells. Wanwen Liao, Hui Chen, Wengang Jin, Zhennai Yang, Yong Cao, and Jianyin Miao. Journal of Agricultural and Food Chemistry 2020 68 (7), 2091-2098. </p>
+<p>[2] In vitro digestion profile and calcium absorption studies of a sea cucumber ovum derived heptapeptide–calcium complex. Pengbo Cui, Songyi Lin, Ziqi Jin, Beiwei Zhu, Liang Song and Na Sun. Food Funct., 2018,9, 4582-4592.</p>
+<p>[3] An Exploration of the Calcium-Binding Mode of Egg White Peptide, Asp-His-Thr-Lys-Glu, and In Vitro Calcium Absorption Studies of Peptide–Calcium Complex. Na Sun, Ziqi Jin, Dongmei Li, Hongjie Yin, and Songyi Lin. Journal of Agricultural and Food Chemistry 2017 65 (44), 9782-9789. </p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h2 id="Composite">Composite Part: <a href="http://parts.igem.org/Part:BBa_K3606029" target="_blank">BBa_K3606029</a> </h2>
+
+<div class="column full_size">
+    <img src="https://2020.igem.org/wiki/images/e/ea/T--Fudan--img_mcbabcdefg.png" />
+
+<p>McbABCDEFG is a full functional gene cluster that produces microcin B17 (MccB17), a kind of antimicrobial peptide. In order to realize the regulation of its secretion, we divided it into two parts: McbABCD is an antibiotic coding gene cluster responsible for the maturation of MccB17. McbEFG is an immunity system coding gene cluster with efflux and immunity related protein. In our design, when the number of engineered bacteria is low, both McbABCD and McbEFG will be expressed and MccB17 will kill surrounding bacterial. </p>
+
+<p>We have successfully cloned these two parts into pFAB plasmid. To be more detail, we used a constitutive promoter P2 to drive McbABCD and PtetR to drive McbEFG (place the later in reverse) on the same vector. The recombinant plasmid was transformed into DH5a for expression and their antibacterial effects were measured.</p>
+
+<p>In order to prove that McbABCDEFG does have an effective antibacterial effect, we designed the following experiments.</p>
+
+<h4>IPTG induced GFP expression was supressed</h4>
+
+<p>We mixed WT <i>E. coli</i> (expressing GFP driven by Plac) and <i>E. coli</i> with mcbABCD-(mcbEFG-PtetR) in different ratios (5:7, 20:7, 50:7), and measured the OD value of the bacteria two hours after adding an inducer, which can be used to reflect the antibacterial effect of antimicrobial peptides. We followed the same method as above to mix WT E. coli and <i>E. coli</i> with only mcbABCD as the control group, induced and measured the OD value. (More details on the <a target="_blank" href="https://2020.igem.org/Team:Fudan/Results ">steps of this experiment</a>.)</p>
+ </div>
+
+<div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/1/16/T--Fudan--5mix7.jpeg" />
+<h6>Figure 1. MEFL/particle for different P2 and P2AD when the ratio of mixure (WT:Px=5:7)</h6>
+  </div>
+ <div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/b/b6/T--Fudan--20mix7.jpeg" />
+<h6>Figure 2. MEFL/particle for different P2 and P2AD when the ratio of mixure (WT:Px=20:7)</h6>
+  </div>
+ <div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/8/89/T--Fudan--50mix7.jpeg" />
+<h6>Figure 3. MEFL/particle for different P2 and P2AD when the ratio of mixure (WT:Px=50:7)</h6>
+  </div>
+
+  <div class="column full_size">
+<p> Our data has been calibrated with the Excel data analysis template provided by the <a href="https://2019.igem.org/Team:Fudan-TSI" target="_blank">19Fudan-TSI</a>, where MEFL stands for the absolute units of Fluorescent Intensity for Green Fluorescent proteins and particle stands for the absolute units of cell count, so that our y axis represents fluorescent intensity per cell under iGEM standard.
+</p>
+<p>We could see an overall decrease of GFP expression in nearly all groups cocultured with P2 or P2AD than the control group which only contains WT, indicating that the antimicrobial peptide (MccB17) encoded by mcbABCD does have a negative effect on over microbial. In this case, the living status of WT cells and its function in creating GFP is strongly restricted by the toxic environment, proving that our part mcbABCD has worked successfully.
+</p>
+<p>While inside each paired group, there clearly are a better inhibition effect in P2 group than P2AD group, as the MEFL/particle is much lower in the P2 group than the P2AD group when driven by certain promoters. This shows that the immunity function of mcbEFG is working successfully, as the <i>E. coli</i> expressing mcbEFG can help the engineered strain to survive with efflux exporting the toxic peptide, as well as better killing off other strains to gain survival advantage.
+</p>
+</div>
+<div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/b/b9/T--Fudan--AUP21.jpeg" />
+<h6>Figure 4. Calculated bacteria counts at different time after mixing (Px:WT=1:1)</h6>
+  </div>
+
+  <div class="column half_size">
+<h4>The growth doubling of WT bacteria was supressed</h4>
+<p> Our data has been calibrated as above. In this chart, Calculated Bacteria Counts stands for the relative increase of OD, which represents the total number of cells, and MERL, which represents the total number of WT cells. As we have screened out P2 in front, here we used the mixture ratio of P2(P2AD):WT=1:1 to find out more detailed effect that antimicrobial peptide expressing system can exert.
+</p>
+<p>We could see the population increase are not significant in total over time, yet WT grows rather fast at first in the P2AD group, indicating its lack of immunity part mcbEFG can lead to the early death of engineered <i>E. coli</i> expressing mcbABCD. Thus shows less restrain on the WT cells. Yet, as mccb17 accumulates, a clear decrease can be observed when time extends in both P2 and P2AD, proving our antimicrobial peptide expressing system are working to help the engineered <i>E. coli</i>. gain better survival advantage.
+</p>
+  </div>
+
+<div class="clear extra_space"></div>
+<div class="highlight decoration_background">
+<h2>Highlights of our Basic and Composite parts</h2>
+                <ul>
+                    <li>A novel peptide that binds to Calcium ion - CaAP</li>
+                    <li>We show OmpA-CaAP has the best secretion, and Ni-NTA could be used to enrich CaAP via its 6x-His tag</li>
+                    <li>14 different promoters drive CaAP expression are available for future examination</li>
+                    <li>Expressing mcbEFG from the reverse strand of the plasmid</li>
+                    <li>P1 driven mcbABCD and PtetR driven mcbEFG has the best supression in our initial tests (IPTG induction and growth time course)</li>
+                    <li>LuxPR driven tetR (the third module in the same plasmid) will bring quarum sensing into the supression</li>
+                </ul>
+</div>
+
+<div class="clear"></div>
+
+
+<div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#WeiZY" class="z-depth-2">Mingwei</a>
+                    <a href="/Team:Fudan/Attributions#ZhangZR" class="z-depth-2">Zhenru</a>
+                    <a href="/Team:Fudan/Attributions#ZhangZR" class="z-depth-2">Gaochen</a>
+        </p>
+  </div></div>
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>
