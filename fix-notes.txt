@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col s2 m3 l4">&#160;</div>
+  <div class="col s8 m6 l4">
+    <img src="https://2020.igem.org/wiki/images/e/e2/T--Fudan--model1_1.png" alt="1_1" style="width:100%">
+    </div>
+</div>
+
+
+
+
+<div class="column full_size"><div class="highlight decoration_background decoration_B_full">
+
+
+
+
+512x288
+https://2020.igem.org/wiki/images/e/e6/T--Fudan--index12.svg
+https://2020.igem.org/wiki/images/a/a5/T--Fudan--index13.svg
+https://2020.igem.org/wiki/images/f/fd/T--Fudan--index14.svg
+
+
+
+
+<div class="row">
+  <div class="col s6 m4 l3">
+<img src="https://2020.igem.org/wiki/images/e/e2/T-1.png" alt="1 1" style="width:100%">
+  </div>
+  <div class="col s6 m8 l9">
+<p>sad aasd easdf aeefsaeafassefasdf</p>
+    </div>
+</div>
+
+
+
+
+BBa_K3606919  Composite  P13 driven mcbABCD and PtetR driven mcbEFG
+BBa_K3606920  Composite  P12 driven mcbABCD and PtetR driven mcbEFG
