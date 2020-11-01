@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <script src="/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="/0igem.css">
-  <title>Design</title>
+  <title>Description</title>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
 <div class="igem_content_wrapper">
@@ -17,3 +17,505 @@
 
 
 
+{{IGEM_TopBar}}
+{{Fudan}}
+<html -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--title_design.svg" alt="design" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+  <h1>Using intestinal probiotics to promote calcium absorption</h1>
+  <div class="highlight decoration_background decoration_A_top">
+    <p>CaAP is a Calcium Absorption Peptide we designed, containing a series of short peptides that can promote calcium absorption. We let probiotics express and secrete this peptide in the intestine to promote calcium absorption. By introducing LuxI/LuxR quorum sensing system, bacteria can first gain population advantage by expressing antimicrobial peptides, thereby colonizing and forming flora in the intestine. When the number of bacteria reaches a certain level, the antimicrobial peptide secretion system will be turned off and the secretion of CaAPs will be turned on. In this case, the antimicrobial peptides will not be secreted out but will inhibit itself so that the number of flora can be maintained in a stable range. Meanwhile, CaAPs will be continuously expressed and secreted, combined with calcium ions in the intestine, and promote the absorption of calcium ions by epithelial cells. </p></div>
+
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+  <h2>Inspiration form Social Background and Literature Research</h2>
+<div class="column full_size">
+<p>Calcium is a mineral necessary for the body to maintain healthy bones. Bone loss can lead to metabolic bone diseases, such as osteoporosis. This situation often occurs in the elderly population, especially in China. The calcium intake of the Chinese elderly commonly cannot meet the Nutrition Society's recommended standards, because vegetables account for a large proportion of the traditional diet. More severely, vegetables are rich in oxalate that cause calcium precipitation and impede calcium from absorbing. </p>
+
+<p>So, we hope to develop a stable and sustainable endogenous drug delivery method that can assist calcium absorption, therefore truly improve the quality of life and health of human beings, especially for the elderly, promoting the progress of SDG Goal3: Good health and well-being.</p>
+
+<p>Recently, people have attracted great interest in enhancing calcium solubility and subsequent calcium absorption by food substances (especially peptides). Combining calcium with peptides to prevent calcium precipitation can effectively increase calcium absorption in the body. So far, Calcium-binding peptides have been found and selected in various food sources, including egg yolks, cow cheese protein, soybeans, wheat germ, and so on.  One of the most widely known is the casein phosphopeptides (CPPs) in milk. CPPs can promote calcium absorption by chelating calcium with phosphoserine residues, so protein kinases are required. However, given that protein kinases play an essential role in signal transduction, and they may not be able to fold and function correctly in the chassis, it is challenging to phosphorylate peptides in bacteria. Therefore, we choose short peptides without phosphoserine residues to promote calcium absorption. </p></div>
+ <div class="clear extra_space"></div>
+
+ <h2>Calcium Absorption Peptide (CaAP)</h2>
+  <div class="column full_size">
+<p> CaAP consists of several peptides that can enhance intestinal calcium absorption by binding calcium to Asp and Glu residues and also lacking phosphoserine residues. Through literature search and database screening, currently selected peptides are GPAGPHGPVG, FDHIVY, YQEPVIAPKL<sup>[1]</sup>, NDEELNK<sup>[2]</sup>, DHTKE<sup>[3]</sup>.  Experiments have determined these peptides can promote higher calcium absorption.</p>
+  </div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+
+  <h4>  GPAGPHGPVG, FDHIVY, and YQEPVIAPKL</h4>
+  <div class="column half_size">
+    <p>GPAGPHGPVG, FDHIVY, and YQEPVIAPKL are derived from tilapia collagen hydrolysate. In terms of safety, the MTT test showed that among the three short peptides, YQEPVIAPKL at six tested concentrations had no cytotoxicity. In the concentration range of 25 to 500μg/mL, neither GPAGPHGPVG nor FDHIVY affects cell viability.</p>
+<p>Use the o-cresol-catechol colorimetric method to verify their calcium chelating activity. The calcium chelating activity of GPAGPHGPVG, FDHIVY, and YQEPVIAPKL respectively reached 18.80±0.49, 35.73±0.74, 28.4±0.94 mg/g, indicating that the FDFDY peptide with the shortest sequence has more calcium chelating sites. For these peptides, the composition and the peptide sequence may play an essential role in the calcium chelating activity. Except for the binding site of casein phosphopeptide (CPP) “Ser(p)-Ser(p)-Ser(p)-Glu-Glu,” the most likely calcium-binding sites are Asp(D) and Glu(E )carboxyl. Besides, due to the δ-N of the imidazole ring of His(H) and the ε-amino nitrogen of Lys(K), necessary amino acids such as His(H) and Lys(K) have a significant contribution to the calcium-binding activity of the peptide.</p>
+<p>The results further showed that compared with adding calcium and phosphorus, adding GPAGPHGPVG, FDHIVY, and YQEPVIAPKL respectively increased calcium transport by 89±9, 202±12, and 130±7%. As the transport time increases, the difference in calcium transport induced by each peptide becomes more evident. FDHIVY has the most significant effect on calcium transport, followed by YQEPVIAPKL and then GPAGPHGPVG. This result is consistent with their calcium chelating activity. Previous findings indicate that peptide chelating activity is necessary to promote calcium absorption in the Caco-2 cell monolayer.</p>
+ <p>Calcium absorption peptides with high biological activity are believed to affect calcium absorption by interacting with membranes and opening specific calcium channels. The most suitable peptide structure can bind calcium for transport and release ions quickly. calcium may be absorbed after being released from the peptide, or it may be absorbed in the form of calcium peptide chelate.</p>
+  </div>
+  <div class="column half_size">
+  <img src="https://2020.igem.org/wiki/images/archive/5/5e/20201027220036%21T--Fudan--img_design_1.svg" alt="map of calcium intake" />
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h4>  NDEELNK</h4>
+  <div class="column full_size">
+  <p>Asn-Asp-Glu-Glu-Leu-Asn-Lys (NDEELNK) The peptide is derived from the trypsin hydrolysate of sea cucumber eggs. This peptide can spontaneously bind calcium at a stoichiometric ratio of 1:1, and the calcium-binding site may involve the carboxyl oxygen and amino nitrogen atoms of two glutamic acids and one aspartic acid residues in the NDEELNK peptide. Besides, it is reported in the literature that the DEELNK-calcium complex undergoes decomposition and self-aggregation in a smaller-sized grid during the digestive process of the gastrointestinal tract, which may help to absorb calcium across the Caco-2 cell monolayer.</p>
+  </div>
+
+<div class="row">
+  <div class="col s2 m3 l3"> </div>
+  <div class="col s8 m6 l6">
+    <img src="https://2020.igem.org/wiki/images/archive/9/92/20201027220923%21T--Fudan--img_design_2.svg" alt="map of calcium intake" />
+ </div>
+</div>
+
+  <div class="clear"></div>
+
+  <h4>  DHTKE</h4>
+  <div class="column full_size">
+  <p>Asp-His-Thr-Lys-Glu (DHTKE) pentapeptide comes from the hydrolysis of egg white. This peptide can spontaneously bind calcium at a stoichiometric ratio of 1:1, and the calcium-binding site corresponds to the carboxyl oxygen, amino nitrogen, and imidazole nitrogen atoms of the DHTKE peptide. Besides, Caco-2 cells were used in vitro to study the DHTKE-calcium complex's effect on improving calcium absorption. Compared with the control without calcium, the results show that the DHTKE-calcium complex can promote the penetration of calcium into the cytoplasm and further increase the Caco-2 cell monolayer's calcium absorption by more than seven times.</p></div>
+
+<div class="row">
+  <div class="col s2 m3 l2"></div>
+  <div class="col s8 m6 l8">
+    <img src="https://2020.igem.org/wiki/images/archive/3/35/20201027220253%21T--Fudan--img_design_3.svg" alt="1_1" style="width:100%">
+    </div>
+</div>
+
+
+
+  <div class="column full_size">
+  <p>The five peptides are connected by FR linkers to form a short peptide that promotes calcium absorption so that it can be cleaved and hydrolyzed by digestive tract proteases.</p>
+  </div>
+  <div class="clear extra_space"></div>
+
+  <h2>Signal peptide</h2>
+  <div class="column full_size">
+  <p>To enable CAAP to be secreted into the intestinal environment, we plan to add a signal peptide to the N segment of CAAP to guide the extracellular environment's secretion. Our candidates are NSP4, OmpA, DsbA, PelB, PhoA. We hope to obtain a suitable signal peptide through comparison so that CaAP can be efficiently secreted into the periplasm.</p>
+<p>The entire designed gene fusion fragment length is about 500 bp, and the gene loop is organized as follows.</p></div>
+
+<div class="row">
+  <div class="col s2 m3 l3"></div>
+  <div class="col s8 m6 l6">
+    <img src="https://2020.igem.org/wiki/images/d/d6/T--Fudan--img_caap.svg" alt="1_1" style="width:100%">
+    </div>
+</div>
+
+
+<div class="column third_size"></div>
+  <div class="clear extra_space"></div>
+
+  <h2>Quorum sensing and antimicrobial peptide expressing system</h2>
+  <div class="column full_size">
+  <p>Based on previous work, We decided to use luxI/luxR and TetR to construct a quorum sensor system with the antimicrobial peptide microcin B17 (MccB17) expression system to achieve the "on" and "off" effects of controlling the growth of engineered bacteria (schematic diagram).</p>
+
+<p>MccB17 is a short peptide microcin produced by an endogenous plasmid found in <i>Escherichia coli </i>. It acts on DNA topoisomerase and gyrase, preventing bacterial from DNA replication and transcription and promoting double-strand breaks. McbABCDEFG jointly completes the expression, processing, and secretion of MccB17. </p><p>Among them, mcbA expresses the main structure of the antimicrobial peptide, and mcbBCD is responsible for the post-translational modification of the antimicrobial peptide. McbEF expresses the channel protein to secrete the peptide antibiotic. McbG is accountable for the immunity against MccB17. McbEFG is all related to  <i>E. coli </i>'s immunity while self-producing microcin.</p><p>TldD/tldE is a metalloprotease that is ubiquitous in bacteria. When the surrounding bacteria absorb MccB17 produced by  <i>Escherichia coli </i>, TldD/tldE will activate it and kill the bacteria.</p>
+<div class="row">
+  <div class="col s2 m3 l3"></div>
+  <div class="col s8 m6 l6">
+    <img src="https://2020.igem.org/wiki/images/3/38/T--Fudan--img_mcbabcdefg.svg" alt="1_1" style="width:100%">
+    </div>
+</div>
+<p>In our antimicrobial peptide expressing system, McbABCD is under the control of a constitutive promoter, but PtetR regulates the expression of McbEFG. When the number of engineered bacteria in the intestine is small, few dimers are formed by the expression products of luxI and luxR genes, which cannot effectively activate the luxpR promoter. Thus, TetR and CaAP expression systems are both silent. However, McbEFG is expressed and transports MccB17, which can inhibit the growth of surrounding bacteria.
+</p><p>When the number of bacteria increases to a certain extent, the dimers formed by the products of luxI and luxR will accumulate and effectively activate luxpR. At this time, tetR is turned on, and PtetR is off. As a result, McbEFG stops expressing, and the CaAP system begins to work. Since the population number has reached a certain level, the engineered bacteria can express CaAP more efficiently. Meanwhile, MccB17 is still continuously expressed but cannot be effectively effluxed, which will cause the toxins to gradually accumulate in the engineered bacteria and prevent them from continuously unrestricted proliferation.</p></div>
+
+  <div class="column full_size">
+  <div class="highlight decoration_background decoration_B_full">
+<p>To achieve better expression efficiency, we have made an improvement in this system by optimizing the expression of an antimicrobial peptide. We rearranged the gene structure and regulation system and took a unique idea to create a new promoter fusion. As ptetR has been studied thoroughly and is well-characterized, we created promoter fusion of pl and tetO. Not only is it regulated by tetR and anhydrotetracycline, but it also inherits the expression level of pl. This method also allows us to create the desired promoter simpler.</p>
+  </div>
+  </div>
+
+
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/9/90/T--Fudan--img_qs1.svg" alt="map of calcium intake" />
+  </div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/d/d3/T--Fudan--img_qs2.svg" alt="map of calcium intake" />
+  </div>
+  <div class="clear"></div>
+
+<h4>Problems of this system in the past</h4>
+  <div class="column full_size">
+     <p>The concept of quorum sensing system described above was proposed by Fudan 2019. Since MccB17 plays a vital role in the entire quorum sensing system, the better the MccB17 is expressed, the faster the engineered bacteria will achieve the balance of quorum sensing. However, we found that the expression level of MccB17 tested by Team Fudan 2019 last year was so low that the engineered bacteria cannot be competitive enough in the intestine.</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h4>Improving the system</h4>
+  <div class="column full_size">
+      <p>To solve the problem, we have proposed some improvement plans. We thought about using the high-copy plasmids to express MccB17, but they are more difficult to regulate and respond sensitively, and will greatly increase the expression burden of engineered bacteria.
+</p><p>
+By researching the literature and talking with Teacher Lin(iHP), who is engaged in prokaryotic expression work at the Fudan University Academy of Sciences, we decided to use low-copy plasmids to reduce the expression burden of engineered bacteria. We tried to keep the main part of MccB17 (McbABCD) a relatively low expression and high express the immune part (McbEFG) to achieve high secretion of MccB17.
+</p><p>
+The highly expressed channel proteins and immune proteins will export more MccB17 and reduce the accumulation of antimicrobial peptides in the engineered bacteria cells, thereby inducing them to produce more antimicrobial peptides.
+</p><p>
+Lin also recommended a series of promoters from a kit which contains combinations of specific constitutive bacterial promoters that vary in strength to us in order to have the expression of mcbABCD in better performance.</p>
+<p>For more methods and information about its results please check <a target="_blank" href="https://2020.igem.org/Team:Fudan/Results "> here</a>.
+  </div>
+<div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h2>Kill Switch</h2>
+  <div class="column full_size">
+    <p>In order to ensure our engineered probiotic will not jeopardize the environment or users, this year, we integrated two kinds of Kill Switches into our project. The major kind of Kill Switch is cold triggered toxin/antitoxin Kill Switch to deprive of the survivability of engineered Nissle in the environment when excreted from the human intestine. After carefully considering, we finally selected the toxin/ antitoxin system from killer systems and RNA thermometer from the response systems.</p>
+
+<p>The toxin/antitoxin system is a mature and stable system that is extensively applied both inside and outside the iGEM competition. By regulating the strength of RBS, we could achieve a state that toxin is totally neutralized and guarantee the security of the host. Here we first chose RelE/RelB system of type II TA systems but replace it with MazF/MazE system later. RNA thermometers are apparent outstandingly because of their appropriate reaction temperature range, high sensitivity and high efficiency. Moreover, they do not rely on extra proteins or are affected by food intake. Here we selected NoChill- 06 which presents to be the most sensitive and efficient one. So, our Kill Switch consists of a toxin-antitoxin system and an RNA thermometer NoChill-06 to regulate it to deprive of the survivability of engineered Nissle in the environment when excreted from the human intestine. </p>
+
+</div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/2/25/T--Fudan--img_ks4.svg" alt="cold triggered MazF/MazE Kill Switch under body temperature(37℃)" /></div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--img_ks3.svg" alt="cold triggered MazF/MazE Kill Switch outside the body(30℃)" />
+  </div>
+  <div class="column full_size">
+<p>The antitoxin MazE is liable and expressed at a relatively high level. The MazF toxin is constitutively co-expressed with the antitoxin under the control of an RNA thermometer No-Chill 06. Under the body temperature (37℃)，No-Chill 06 unfolds and exposes its ribosome binding site (RBS) to express. MazE and MazF neutralize each other by protein-protein interaction and form a stable complexity in a one-to-two ratio. When the bacteria encounter a cold shock(30℃), MazE is degraded rapidly by an ATP-dependent serine protease ClpAP and releases MazF. The toxin MazF acts as a site-specific endoribonuclease to almost all cellular mRNAs, therefore resulting in cell growth arrest and finally cell death <sup>[4]</sup>. The antitoxin MazE is liable and expressed at a relatively high level. The MazF toxin is constitutively co-expressed with the antitoxin under the control of an RNA thermometer No-Chill 06. Under the body temperature (37℃)，No-Chill 06 unfolds and exposes its ribosome binding site (RBS) to express. MazE and MazF neutralize each other by protein-protein interaction and form a stable complexity in a one-to-two ratio. When the bacteria encounter a cold shock(30℃), MazE is degraded rapidly by an ATP-dependent serine protease ClpAP and releases MazF. The toxin MazF acts as a site-specific endoribonuclease to almost all cellular mRNAs, therefore resulting in cell growth arrest and finally cell death <sup>[4]</sup>.</p>
+<p>Click <a target="_blank" href="https://2020.igem.org/Team:Fudan/Engineering">here</a> to see our detailed consideration of Kill Switch in the engineering page.</p >
+</div>
+
+
+
+
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 因为马上最后一幅，建议extra_space -->
+
+<h6>References</h6>
+  <div class="column full_size">
+<p>
+[1] Three Newly Isolated Calcium-Chelating Peptides from Tilapia Bone Collagen Hydrolysate Enhance Calcium Absorption Activity in Intestinal Caco-2 Cells. Wanwen Liao, Hui Chen, Wengang Jin, Zhennai Yang, Yong Cao, and Jianyin Miao. Journal of Agricultural and Food Chemistry 2020 68 (7), 2091-2098. DOI: 10.1021/acs.jafc.9b07602</br>
+[2] In vitro digestion profile and calcium absorption studies of a sea cucumber ovum derived heptapeptide–calcium complex. Pengbo Cui, Songyi Lin, Ziqi Jin, Beiwei Zhu, Liang Song and Na Sun. Food Funct., 2018,9, 4582-4592. DOI: 10.1039/C8FO00910D.</br>
+[3] An Exploration of the Calcium-Binding Mode of Egg White Peptide, Asp-His-Thr-Lys-Glu, and In Vitro Calcium Absorption Studies of Peptide–Calcium Complex. Na Sun, Ziqi Jin, Dongmei Li, Hongjie Yin, and Songyi Lin. Journal of Agricultural and Food Chemistry 2017 65 (44), 9782-9789. DOI: 10.1021/acs.jafc.7b03705</br>
+[4]  Yamaguchi, Y., Inouye, M. Regulation of growth and death in  <i>Escherichia coli </i> by toxin–antitoxin systems. Nat Rev Microbiol 9, 779–790 (2011). https://doi.org/10.1038/nrmicro2651
+</p>
+  </div>
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#TianSZ" class="z-depth-2">Shizheng</a>
+        </p>
+  </div></div>
+
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>

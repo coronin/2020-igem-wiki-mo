@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <script src="/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="/0igem.css">
-  <title>Entrepreneurship</title>
+  <title>Description</title>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
 <div class="igem_content_wrapper">
 <div class="igem_column_wrapper">
 <!--
-                      REMOVE THE TEXT RIGHT ARROW
+                      仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
                       ////////////
 
 
@@ -19,7 +19,7 @@
 
 {{IGEM_TopBar}}
 {{Fudan}}
-<html>                -->
+<html -->
 <link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
 <style>
 @font-face {
@@ -40,6 +40,9 @@
     #mw-content-text > div.top_bar,
     #mw-content-text > div.menu_container {
       z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
     }
     #FudanLogoWrapper img {
       z-index: 999;
@@ -223,12 +226,16 @@
       <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
     </a>
   </div>
-  <div id="FudanTitleWrapper">
-    <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--title_entr.svg" alt="entrepreneurship" style="width:45%">
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--title_entr.svg" alt="entrepreneurship" style="width:100%">
+      </div>
   </div>
+  <div class="clear"></div>
 </header>
 <article>
-  <h1>one short line to summarize the entire page</h1>
+  <h1>This is how we converted our idea into a product.</h1>
   <div class="column full_size">
     <p>Our project aims at converting engineered probiotic under current research
                     into a calcium supplement ready for the market. Our product targets seniors suffering
@@ -236,67 +243,140 @@
                     calcium absorption rate with the help of probiotic colonization in the human intestines.
                     Our product is highly efficient and does not require frequent intake.   </p>
   </div>
-  <div class="clear extra_space"></div>
-  <h2>Bottleneck</h2>
-  <div class="column two_thirds_size">
-    <img src="https://2020.igem.org/wiki/images/8/8b/T--Fudan--map_2.svg" alt="map of calcium intake" />
-  </div>
-  <div class="column third_size">
-    <p>China has an estimated 70 million osteoporosis patients as of 2006, and more than 200 million people
-                    with lost bone mass. Despite the lack of recent epidemiological data, it is estimated that the number of
-                    those with osteoporosis and loss of bone mass in China has far exceeded the above figures. Calcium intake
-                    is a relatively good way to relieve the symptoms of osteoporosis. At the same time, children and the pregnant
-                    also require a great amount of calcium supplements.</p>
-  </div>
   <div class="clear"></div>
   <div class="column full_size">
-                    <p>However, for the Chinese population, the bottlenecks are
-                    as follows:
-                </p>
-                <ol>
-                    <li>insufficient daily calcium intake and patients usually forget to take supplements</li>
-                    <li>calcium-supplementing pills don’t have great taste</li>
-                    <li>The body's absorption rate of calcium decreases as calcium intake increases</li>
-                    <li>Vegetables contain oxalic acid, which will combine with calcium and precipitate as calcium oxalate, leading to stone formation in the body.</li>
-                </ol>
-                <p>
-                    However, the currently popular calcium supplement method on the market is either to adjust diet or to consume a lot of calcium supplementing pills. For the elderly, they suffer from poor memory or neglect the importance of calcium pills, often forgetting to consume the supplement; for children, they often refuse to take calcium pills or to maintain some diet high in calcium, thus requiring the "liquid calcium" method to ensure sufficient calcium intake. However, this will reduce the amount of other food taken by children, which is does not promote healthy growth in the long term; for pregnant women, some studies have shown that insufficient activity will also cause a large loss of calcium and their glomerular filtration ability will enhance as the pregnancy progresses, thus the frequency of urination will increase as well. The above factors combined, a large amount of urine calcium will be excreted, and calcium deficiency will occur without timely calcium supplementation. Therefore, adjusting the diet structure and supplementing calcium pills are not the best universal methods to a wide population.
-                </p><p>
-                    Overall, it’s obvious that the current market is in urgent need for a supplement method that ensures high calcium absorption rate over a long period of time. This will avoid frequent intake of large amount of supplement pills and the precipitation of calcium oxalate. Our product is perfect for tackling these drawbacks.
-                    </p>
-  </div>
-  <div class="clear extra_space"></div>
-  <h2>Product Analysis</h2>
-  <div class="column full_size">
-                <p>Our product is a genetically engineered probiotic which can colonize the intestine and secrete a short peptide. This short peptide increases the amount of soluble calcium by binding to calcium ions, thus increasing the absorption rate of calcium in the intestine and achieves the goal of calcium supplementation.</p>
-                <p>Firstly, the product is designed for oral use and our target user is the elderly. We worked to a great extent to ensure the safety of our product:</p>
-                <ol>
-                    <li>The product chassis is probiotic and does not produce substances harmful to the human body;</li>
-                    <li>The short peptides secreted are natural short peptides in sea cucumber tissues, which are not harmful to the human body;</li>
-                    <li>The expression level of short peptides has a threshold, preventing any excessive calcium absorption that might lead to hypercalcemia;</li>
-                    <li>There is a kill switch in the probiotic, and the probiotic will commit suicide upon leaving the human intestinal environment.</li>
-                </ol>
+<h2> Background & Bottleneck:</h2>
+<div class="highlight decoration_B_full">
+<h2 style="margin-top:0px;text-align:center;">"Seniors’ bone health matters to all members of society."</h2>
+</div>
+<div class="column half_size">
+<p> Nana fractured her hips at the age of 81. She had a hip replacement surgery at the doctor’s recommendation. But everything has changed. Her six children first took turns to take care of her but soon found the amount of work overwhelming. Complaints were bubbling in each family. The siblings eventually pitched in to hire a full-time nurse to stay with her 24/7 as Chinese families and the seniors themselves almost always prefer staying home for cultural and financial reasons. Grandchildren found Nana’s temper starting to deteriorate along with her appetite. They found a big chunk of their lives missing when no one could pick them up after school or check their homework. </p>
+</br>
+<p>This mirrors what is happening in families across China. China has an estimated 70 million osteoporosis patients as of 2006 and more than 200 million people with lost bone mass.<sup>[1]</sup>
+Seniors are vital cogs in a thriving society, and deteriorating quality of life is just a small consequence of fractured bones: working adults will experience immediate emotional, physical and financial burden, children will lose companionship, family activities start to become inconvenient. <span><b>In short, seniors’ bone health matters to all members of the society.</b></span></p>
+</div>
+<div class="column half_size">
+<div class="row">
+  <div class="col s2 m3 l2"></div>
+  <div class="col s8 m6 l6">
+    <img src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--puzzle.png" alt="puzzle" style="width:100%"/>
+    </div>
+</div>
+</div>
+</div>
+<div class="column full_size">
+<p> Despite the lack of recent epidemiological data, it is estimated that the number of those with osteoporosis and loss of bone mass in China has far exceeded the above figures. Calcium intake is a relatively good way to relieve the symptoms of osteoporosis. At the same time, children and the pregnant population also require a significant amount of calcium supplements. However, for the Chinese population, the bottlenecks are as follows:
+</p>
+<ol>
+<li> Insufficient daily calcium intake </li>
+<li> Patients usually forget to take supplements </li>
+<li> Calcium supplement pills' unfavorable taste </li>
+<li> Calcium absorption rate drops as the amount of calcium intake increases </li>
+<li> Vegetables contain oxalic acid, which will combine with calcium and precipitate as calcium oxalate, leading to stone formation in the body. </li>
+</ol>
+<p> However, the currently popular calcium supplement method on the market is to either adjust diet or consume many calcium supplement pills. The elderly suffer from poor memory or neglect the importance of calcium pills, often forgetting to consume the supplement. Children often refuse to take calcium pills or maintain some diet high in calcium, thus requiring the "liquid calcium" method to ensure sufficient calcium intake. However, this will reduce the amount of other food taken by children, which does not promote healthy growth in the long term. Some studies have shown that insufficient activity will also cause a considerable loss of calcium for pregnant women, and their glomerular filtration ability will enhance as the pregnancy progresses. Thus the frequency of urination will increase as well. The above factors combined, a large amount of urine calcium will be excreted, and calcium deficiency will occur without timely calcium supplementation. Therefore, adjusting the diet structure and supplementing calcium pills are not the best universal methods for the vast population.</p>
+<p> Overall, it’s evident that the current market is in urgent need of a supplement method that ensures a high calcium absorption rate over a long period of time. This will avoid frequent intake of a large amount of supplement pills and the precipitation of calcium oxalate. Our product is perfect for tackling these drawbacks.
+</p>
+</div>
+<div class="clear"></div>
+<div class="column full_size">
+<h2> Market analysis </h2>
+<div class="highlight decoration_B_full">
+<h2 style="margin-top:0px;text-align:center;">“The national calcium market will reach 20 billion in 2020.”</h2>
+</div>
+</div>
+<div class="clear extra_space"></div>
+<div class="column full_size">
+<p> The Chinese Dietetic Society states that calcium requirements for infants and young children increase with age, from 300mg/day to 800mg/day, and calcium requirement for adolescents reaches 1000mg/day. The amount of calcium adults require is 800mg/day. For those over 50 years of age, this figure reaches 1000mg/day.<sup>[2]</sup> The amount of calcium required by pregnant women and breastfeeding also increases accordingly. However, several nationwide nutrition surveys have shown that residents' calcium intake in most areas of China is highly insufficient, only meeting about half of the required intake, with the small exception of some coastal and pastoral areas (Figure 1).<sup>[3]</sup></p>
+<p>The target user of our product is the elderly group. The reason why the elderly need calcium is mainly due to changes in hormone levels when they age. The elderly with calcium deficiency are prone to osteoporosis, increasing the risk of fractures. Globally, more than 200 million are diagnosed with osteoporosis, and Asia has a high incidence rate of osteoporosis. <span><b>In China alone, about 70 million people over 50 years of age suffer from osteoporosis, and those in their 40’s are also at great risks.</b></span><sup>[1]</sup> In response, the "Healthy China 2030" Planning Outline launches a special action titled "healthy bones". This will not only urge the society to pay more attention to bone health, but also means drastic growth of the calcium market. Relevant research estimates that <span><b>the national calcium market will reach 20 billion in 2020.</b></span><sup>[3]</sup> Fast-growing demand  combined with favorable economic policies equates to a booming market for us to explore.</p>
+</div>
+<div class="column half_size">
+<p> According to our survey, most consumers are using some sort of calcium supplement product. 37% of the respondents personally know over three seniors who experienced falls and fractures, 41% know one to three seniors with described conditions. This further proves that seniors' bone health is a growing issue in our society. The results of another survey showed that the main factors consumers consider when purchasing calcium supplements are: product effectiveness (58.8%); product quality (51.5%); calcium absorption rate (47.8%); price (45.8%) and brand (28.3%). This indicates that a large amount of consumers value effectiveness and quality of the products over price. This means that we have a large potential market in China.</p>
+</div>
+<div class="column half_size">
+</br>
+<img src="https://2020.igem.org/wiki/images/2/24/T--Fudan--entre_stat1.svg" alt=" figure” />
+<div class="clear"></div>
+<i>Figure 1. Actual vs. recommended monthly calcium intake</i>
 
-                <p>
-                Based on relevant research, the product is expected to increase calcium absorption by about 100%. In this case, the daily calcium absorption of the elderly can reach the level recommended by the Nutrition Society in China.
-            </p>
-            <p>Compared with other calcium supplement products such as calcium pills, this product has its unique advantages.
-            </p>
-            <p>Calcium pills are still exogenous calcium supplements. The amounts of calcium absorbed from calcium pills differ amongst individuals, making it difficult to ensure the effect of calcium supplementation, and there is a risk of excessive calcium supplementation. Our product takes into account the dietary habits of Chinese people, calculates the amount of calcium absorption required and set an absorption threshold value to ensure sufficient calcium absorption while ensuring safety.
-            </p>
-            <p>From the user’s perspective, calcium pills need to be taken daily, which is very inconvenient for the elderly who need regular calcium supplementation. At the same time, the experience of taking many calcium pills is not great; our probiotic colonizes the intestines and functions within it, meaning that our product has a long-term effect. In theory, the product will always be effective as long as the intestinal flora is stable. Therefore, our product has a great advantage for the elder population and stands out from market competition.</p>
-  </div>
-  <div class="clear extra_space"></div>
-  <h2>Market Analysis</h2>
-  <div class="column half_size">
-    <p>According to the Chinese Dietetic Society "Reference Dietary Nutrient Intakes of Chinese Residents", the calcium requirement for infants and young children increases with age, from 300mg/day to 800mg/day, and the calcium requirement for adolescents reaches 1000mg/day. The amount of calcium adults require is 800mg/day. For those over 50 years of age, the figure reaches 1000mg/day. The amount of calcium required by pregnant women and breastfeeding also increases accordingly. However, several nationwide nutrition surveys have shown that the calcium intake of residents in most areas of China is highly insufficient, only meeting about half of the required intake, with the small exception of some coastal and pastoral areas.</p>
-  </div>
-  <div class="column half_size">
-    <img src="https://2020.igem.org/wiki/images/0/00/T--Fudan--calcium_intake_graph.svg" alt="calcium intake graph">
-  </div>
-  <div class="clear"></div>
-  <div class="column full_size">
-    <p>The target user of our product is the elderly group. The reason why the elderly need calcium is mainly due to changes in hormone levels when they age. Elderly with calcium deficiency are prone to osteoporosis, increasing the risk of fractures. Globally, there are more than 200 million diagnosed with osteoporosis, and Asia has a high incidence rate of osteoporosis. In China alone, about 70 million people over 50 years of age suffer from osteoporosis, and those in their 40’s are also in great risks.</p>
+<div class="clear"></div>
+<div class="column full_size">
+<h2> Product Analysis </h2>
+<p> Our product is a genetically engineered probiotic that can colonize the intestine and secrete a short peptide. This short peptide increases the amount of soluble calcium by binding to calcium ions, thus increasing the absorption rate of calcium in the intestine and achieving calcium supplementation.</p>
+<p> Firstly, the product is designed for oral use, and our main target user is the elderly. We worked to a great extent to ensure the safety of our product:</p>
+<ol>
+<li> The product chassis is probiotic and does not produce substances harmful to the human body;</li>
+<li> The short peptides secreted are natural short peptides in sea cucumber tissues, which are not harmful to the human body;</li>
+<li> The expression level of short peptides has a threshold, preventing any excessive calcium absorption that might lead to hypercalcemia;</li>
+<li> There is a kill switch in the probiotic, and the probiotic will commit suicide upon leaving the human intestinal environment.</li>
+</ol>
+<p> It is expected that our product can increase calcium absorption to over 90%. In this case, the daily calcium absorption of the elderly can reach the level recommended by the Nutrition Society in China.</p>
+<div class="highlight decoration_B_full">
+<h2 style="margin-top:0px;text-align:center;">"Compared with other calcium supplement products such as calcium pills, our product has its unique advantages."</h2>
+</div>
+<p> Calcium pills are still exogenous calcium supplements. The amounts of calcium absorbed from calcium pills differ amongst individuals, making it challenging to ensure the effectiveness of calcium supplementation, and there is a risk of excessive calcium supplementation. Our product takes into account the dietary habits of Chinese people, calculates the amount of calcium absorption required, and sets an absorption threshold value to ensure sufficient calcium absorption while ensuring safety.</p>
+<p> From the user’s perspective, calcium pills need to be taken daily, which is very inconvenient for the elderly who need regular calcium supplementation. At the same time, the experience of consuming many calcium pills is not great; our probiotic colonizes the intestines and functions within it, meaning that our product has a long-term effect. In theory, the product will always be effective as long as the intestinal flora is stable. Therefore, our product has a great advantage for the elderly population and stands out from market competition. A more detailed competitiveness comparison is demonstrated in this figure. It's easy to tell that our product has its unique advantages.</p>
+</div>
+<div class="row">
+  <div class="col s2 m2 l2"> </div>
+  <div class="col s8 m8 l8">
+    <img src="https://2020.igem.org/wiki/images/f/fa/T--Fudan--competition_analysis.png" alt="competitive analysis" style="width:100%"/>
+<i>Figure 2. Competitive analysis </i></div>
+</div>
+
+<div class="column full_size">
+<p> Our products are basically positioned as probiotics health products. The relatively mature probiotics products in the market include probiotics logos, drops, powders, and capsules.
+Among them, there are many additives in probiotics lozenges, many adhesives, sweeteners, etc. The need to warm up during the molding process will damage the activity of the probiotics. This form is highly acceptable among children, but it is not an efficient way for our target group of older people.</p>
+<p> Probiotics drops use edible oil as a carrier to wrap probiotics with high activity. But probiotics are less stable in liquid form, and without hydrocarbons as nutrients, their activity declines. And the cost is high, low-cost performance.</p>
+<p> Probiotics powder is a kind of form with good effect. It can put probiotics into dormancy through processing forms such as rapid temperature drop, which is easy to preserve and has a good effect. However, the cost is relatively high, and the technical requirements are high. The probiotics capsule is the most widely used form of probiotics health care products. </p>
+<p> However, due to the capsule's processing and limitations, its effect is lower than that of freeze-dried powder. Still, its technical requirements are lower, which is convenient for commercialization.</p>
+<p> To solve some hard defects of capsules as far as possible while ensuring strong feasibility, we prefer to use plant capsules at present. Phytocapsule is a kind of capsule shell made of HPMC (hydroxypropyl methylcellulose). The additive is less in traditional capsule, high stability, and easy to store, so the current tendency is to choose this kind of capsule.</p>
+<p> The capsule cost is related to the purchase quantity and type, which needs to be discussed and determined after forming the probiotic principle. Currently, the general price is about RMB 400/10,000</p>
+</div>
+<div class="clear"></div>
+<img src="https://2020.igem.org/wiki/images/a/af/T--Fudan--swot.png" alt="swot analysis" style="width:100%">
+<div class="clear"></div>
+
+<h2> Resources & Accomplishments:</h2>
+<div class="column two_thirds_size">
+<p> We participated in the “Fanhai Bei” youth innovation competition held by the Youth Innovation Centre at Fudan University. We competed with undergraduate, masters, and doctoral students from all fields of study and obtained third-class prize after two rounds of heated competition. The judging panel consists of experienced investors from major investment agencies across the country and alumni who are experts in their respective areas. We presented our business plan to two judging panels of eight and learned about what our plan was missing in the eyes of the biochemistry industry. We were more familiar with how the investors think when they are presented with a project. Investors expressed a great degree of interest in our project, but they desired a more mature project timeline. Hence, we created a detailed timeline highlighting important milestones to clearly illustrate our project’s vision to future investors and partners.</p>
+</div>
+<div class="column third_size">
+</br>
+<img src="https://2020.igem.org/wiki/images/e/e3/T--Fudan--screenshot.png" alt="competition screenshot" />
+<i>Figure 3. Presentation at the Innovation Competition</i>
+</div>
+<div class="column full_size">
+<p> We investigated major manufacturers of pills in China, especially those located in the JiangZheHu area, as this is where our production will be initiated. We reached out to three factories and successfully inquired about the production costs of pill production on different scales. We also gathered more information about the cost of preparation for pill production in labs.</p>
+<p> We later had an in-person meeting and many follow-up conversations online with several experienced investors working at RuiShi Inc. as a senior investment advisor. We pitched our polished business plan, and they expressed a very high interest in our project. They pointed out that we need to dig deeper when it comes to the current market’s “pain point” to better target our user group. They also suggested that we utilize more straightforward wording so that investors without any biology background can understand our project with ease. They recommended that we start drafting a letter of intent with investment agencies and reach out for more potential investment opportunities. They continuously expressed their excitement about our project and gave us extensive advice from a professional perspective.We consulted students from the Fudan School of Management about marketing strategies, and we shaped our business plan to effectively target the middle age and seniors.</p>
+</div>
+<div class="column half_size">
+<embed src="https://2020.igem.org/wiki/images/4/47/T--Fudan--letter_of_intent.pdf" width="90%" height="600px" type="application/pdf">
+</embed>
+<div class="clear"></div>
+<i>File 1. Letter of Intent</i>
+</div>
+<div class="column half_size">
+<embed src="https://2020.igem.org/wiki/images/6/6c/T--Fudan--non-disclosure_agreement.pdf" width="90%" height="600px" type="application/pdf">
+</embed>
+<div class="clear"></div>
+<i>File 2. Non-disclosure agreement</i>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="column full_size">
+<h2>Timeline</h2>
+<img src="https://2020.igem.org/wiki/images/b/b4/T--Fudan--timeline.jpg" alt=" figure” />
+</div>
+<div class="clear extra_space></div>
+<div class="column full_size">
+<h2>Reference</h2>
+  <p>[1] Weibo Xia, et al."Guidelines for diagnosis and treatment of primary osteoporosis(2017)." Chinese Journal of Osteoporosis 25.03(2019):281-309. doi:. (Chinese)</br>
+     [2]."Chinese residents' dietary nutrient reference intake industry standard released." China School Health 38.11(2017):1717. doi:. (Chinese)</br>
+     [3] ."Research Report of China's Calcium Supplement Industry in-depth Investigation and Investment Prospect Forecast 2020-2025."  Chinese Research Institute (2019). doi:. (Chinese)</br>
+  </p>
   </div>
 
   <div class="column full_size"><div id="FudanSignature">
@@ -368,7 +448,7 @@
             <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
             <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
             <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
-            <li><a href="/Team:Fudan-TSI/Heritage">Heritage</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
         </ul></div>
         <div class="col s12 m4">&nbsp;</div>
       </div>
@@ -389,7 +469,7 @@
     <div class="col m2 hide-on-small-only">&nbsp;</div>
     <div class="col s3 m2">
       <a target="_blank" href="https://twitter.com/fudan_igem">
-        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter"></a>
       </div>
     <div class="col s3 m2">
       <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
@@ -401,7 +481,7 @@
       </div>
     <div class="col s3 m2">
       <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
-        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat"></a>
       </div>
   </div>
   <br/><br/>

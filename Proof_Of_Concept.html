@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <script src="/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="/0igem.css">
-  <title>Proof of concept</title>
+  <title>Description</title>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
 <div class="igem_content_wrapper">
@@ -17,3 +17,539 @@
 
 
 
+{{IGEM_TopBar}}
+{{Fudan}}
+<html -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/5/57/T--Fudan--title_proofofconcept.svg" alt="proof of concept" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+  <h1>It is a story about how we achieve our bone appetit</h1>
+  <div class="column full_size">
+    <p>This year, we are focusing on the bone health of the elderly in China. To make the elderly pay more attention to their bone health and cooperate with our project, we carried out education through a series of methods to make more elderly people aware of their possible calcium deficiency and know how to protect their bone health. We used synthetic biology to produce engineering bacteria and secrete peptides in the human intestinal tract to promote calcium absorption to improve the calcium absorption rate of the elderly. Simultaneously, we designed the quorum sensing module and improved related parts to ensure that our bacteria can be stable and exist in the human body for a long time and work normally. We also designed and verified the Kill Switch module to ensure safety, created a relevant measurement project to provide a scheme for the elderly to measure their blood calcium concentration. We also explored entrepreneurship to ensure that our project could be used on a larger scale and design the implement so that everyone can use our project easily. We have achieved good results on entrepreneurship so far.  </p>
+  </div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+
+<h2>Education</h2>
+ <div class="column full_size">
+<p>With the rapid development of science and technology and society, the older generation is gradually falling behind society. Older people face fraud, misinformation, and illness. Lifelong education has become an urgent need for them. However, not everyone can enjoy a good education, so many elderly people in rural areas of China don't even know they are sick. We want the elderly to have a higher quality of life. Although our program can solve many problems, it is not a panacea. We need to educate the elderly to know how to ensure their health. We are committed to exploring more education methods and striving to bring high-quality education to the elderly to prevent diseases and enjoy life.</p>
+
+<p>We use previously untapped educational methods to educate older people about biology. Our primary strategy is to educate the younger generation and teach them how to inform their grandparents. Compared with traditional educational strategy, our approach provides emotional support from the younger generation and makes the elderly feel comfortable. To educate young people, in addition to synthetic biology, which we have been teaching for the past few years, we have an online summer camp for high school students to teach elder care. We have developed an online audio course on the basics of biology for all ages. In short, we have made a brave and convincing attempt to carry out scientific communication between the younger generation and a long-neglected social group, the elderly.<p>
+</div>
+<div class="clear"></div>
+
+<h2>Kill Switch</h2>
+<div class="column full_size">
+<p>Education ensured that the elderly have an essential awareness of calcium health. We began to experiment, hoping to provide a solution to the bone problems of the elderly in China through synthetic biology. We designed an intestinal microflora that consists of two modules, one for calcium absorption and another for regulating the amount of microflora. But before we do that, we need to consider security first and designed a Kill Switch module. </p>
+
+<p>The ultimate goal of our project is to produce a commercial calcium supplementary probiotic colonized in the intestines. An eco-friendly commercial probiotic should avoid the occurrence of modified gene vertical transfer and spread widely in the natural environment when excreted from the human intestine. And gene vertical transfer is directly associated with the survival of bacteria. Therefore, we needed to construct a Kill Switch to deprive of the survivability of engineered <i>E. coli</i> outside human bodies. </p>
+
+<p>According to the special situation this year, we have limited time to work in the wet lab. As the Kill Switch model is relatively independent of our main project, we convert to establish the demonstration of the Kill Switch on pure dry lab work. We find out that our Kill Switch design has a very similar basic idea with BNU-China, so we decide to establish collaboration with them. We adopt their raw wet lab experimental data of RelE/RelB system to construct our model and proved our idea. </p>
+
+<p>We improved the logistic equation, and our model fitted the experimental data from BNU-China well. We performed an efficiency analysis by the adjusted model we had constructed. As our design of BBa_K3606027 employed a more efficient RNA thermometer than that of BNU-China, we changed the properties to simulate the growth curve of our Kill Switch. The result demonstrated that bacteria carrying our Kill Switch were killed more thoroughly in a smaller temperature range, therefore proved that with our Kill Switch, engineered bacteria would have less deleterious effects on the environment (figure 1.). (Click <a target="_blank" href="https://2020.igem.org/Team:Fudan/Model">here</a> to see the model of Kill Switch.)</p>
+</div>
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="https://2020.igem.org/wiki/images/2/25/T--Fudan--model2_6.png" alt="2_6" style="width:100%">
+    </div>
+</div>
+
+<div class="clear"></div>
+<div class="column full_size">
+<h2> CaAP(Calcium Absorption Peptide)</h2>
+<p>We hope that our project can solve the problem of calcium deficiency in the elderly. According to our investigation, due to the diet structure, the calcium absorption of Chinese people is not high, so we found CaAP from the perspective of improving the calcium absorption rate of the elderly.</p>
+
+<p>We have successfully cloned our designed CaAP(Calcium Absorption Peptide) into pFAB plasmid and transformed the construct into <i>E.coli</i>. BL21 strain to demonstrate its expression.</p>
+
+
+<p>We chose to use a set of promoters to drive the expression of the specially designed CaAP(Calcium Absorption Peptide). Thus, the expression intensity of the gene of interest can be quantified and regulated.</p>
+
+<p>P1-P14 is a collection of precisely quantitated constitutive bacterial promoters that vary in strength and effectiveness. These promoters can be used to initiate the expression of the target gene in <i>E. coli</i> in a controlled, reliable way. </p>
+
+
+
+<p>To test the calcium-chelating ability of the designed CaAP, we purified it from the bacterial lysate of our successfully cloned strains(<i>E. coli</i>. BL21 transformed with pFAB-CaAP) using Ni-chelating affinity chromatography(CaAP contains an 6x-His tag at the C terminal). In this way, the effect of CaAP can be demonstrated through the differences of calcium ion concentration in the divalent calcium ion solution with or without CaAP.</p>
+</div>
+
+<div class="clear"></div>
+
+
+<h2> Secretion Peptides guided CaAP</h2>
+
+<div class="column full_size">
+	<p>To promote calcium bioavailability, CaAP needs to be expressed in our probiotics and subsequently secreted into the extracellular space. Therefore, we linked 5 signal peptides which belong to the Type II secretion system in <i>E. coli</i>., to the N terminal of CaAP, respectively.
+The 5 secretion peptides are listed below:</p>
+</div>
+<div class="clear"></div>
+<div class="column full_size">
+<table>
+<tr>
+<th> NSP4</th><td> BBa_K3606042</td>
+</tr>
+<tr>
+<th> OmpA </th><td> BBa_K3606043</td>
+</tr>
+<tr>
+<th> DsbA </th><td> BBa_K3606030</td>
+</tr>
+<tr>
+<th> PelB </th><td> BBa_K208004</td>
+</tr>
+<tr>
+<th> PhoA </th><td> BBa_K808028</td>
+</tr>
+</table>
+</div>
+<div class="clear"></div>
+<p>To test the secretion efficiency of our 5 secretion peptides fused CaAP(Calcium Absorption Peptide) guided by 5 secretion peptides, we cloned the Secretion peptide-CaAP segment into the pGEX vector respectively and transformed into <i>E. coli</i>. BL21 strain. Thus, quantified characterization of these secretion peptides fused with CaAP is expected to be achieved through the differences of calcium ion concentration in bacterial lysate and culture medium.</p>
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="http://parts.igem.org/wiki/images/6/67/T--Fudan--denoted_gel2_signalpeptides.png" alt="2_6" style="width:100%">
+<i>NSP4/PhoA/OmpA-CaAP expression with and without iPTG induction in the bacterial lysate.</i>
+    </div>
+</div>
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="http://parts.igem.org/wiki/images/0/0d/T--Fudan--File-T--Fudan--denoted_gel3_signalpeptides.png" alt="2_6" style="width:100%">
+<i>NSP4/PhoA/OmpA-CaAP expression expression with and without iPTG induction in the culture medium concentrated by TCA.</i>
+    </div>
+</div>
+<div class="clear"></div>
+<div class="column full_size">
+
+
+</div>
+
+<div class="clear"></div>
+<h2> Mcb and quorum sensing </h2>
+<div class="column full_size">
+<p>Due to the phenomenon that the elderly often forget to take medicine, we designed a quorum sensing module so that the flora can exist stably and maintain a certain amount in the intestinal. We also improved the relevant original parts as we found some problems with the system. </p>
+
+<p> McbABCDEFG is a full functional gene cluster that produces microcin B17 ( MccB17 ), a kind of antimicrobial peptide. In order to realize the regulation of its secretion, we divided it into two parts: McbABCD is an antibiotic coding gene cluster responsible for the maturation of MccB17. McbEFG is an immunity system coding gene cluster with efflux and immunity related protein. In our design, when the number of engineered bacteria is low, both McbABCD and McbEFG will be expressed, but when they are high, only McbABCD will be expressed. </p>
+
+<p> We have successfully cloned these two parts into pFAB plasmid. To be more detail, we used a series of constitutive promoters (P1/2/9/11/12/14) to drive McbABCD and ptetR to drive McbEFG, and place them in reverse on the same vector. We have also designed a plasmid with McbABCD (driven by P1/2/9/11/12/14) but without McbEFG in order to figure out the immune effect of McbEFG. These recombinant plasmids were transformed into BL21 for expression and their antibacterial effects were measured. </p>
+</div>
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="https://2020.igem.org/wiki/images/e/ea/T--Fudan--img_mcbabcdefg.png" alt="2_6" style="width:100%">
+    </div>
+</div>
+<div class="column full_size">
+<p>In order to prove that McbABCDEFG does have an effective antibacterial effect as well as McbEFG can protect the engineered bacteria themselves and help the secretion of antimicrobial peptides more effectively, we designed the following experiment:</p>
+<p> We mixed WT <i>E. coli</i> (expressing GFP driven by plac) and <i>E. coli</i> with mcbABCD-mcbEFG-ptetR in different ratios (5:7 20:7 50:7), and measured the OD value of the bacteria two hours after adding an inducer, which can be used to reflect the antibacterial effect of antimicrobial peptides. We followed the same method as above to mix WT <i>E. coli</i> and <i>E. coli</i> with merely mcbABCD, induce and measure the OD value. </p>
+
+<p>Our specific experimental steps are as follows: </p>
+</div>
+<div class="row">
+  <div class="col m2 l2 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l8">
+    <img src="https://2020.igem.org/wiki/images/d/d5/T--Fudan--img_flowchart1.png" alt="img_flowchart1" style="width:100%">
+    </div>
+</div>
+
+
+<div class="column full_size">
+<ol>
+<li> Culture WT(<i>E. coli</i> expressing GFP driven by plac), <i>E. coli</i> expressing mcbABCD (driven by p1\2\9\11\12\13) and <i>E. coli</i> expressing mcbABCD-mcbEFG-ptetR (driven by p1\2\9\11\12\13)  separately at the same time for about.</li>
+<li> When the OD of WT reaches 0.6, mix WT with <i>E. coli</i> expressing driven by mcbABCD (driven by p1\2\9\11\12\13) or <i>E. coli</i> expressing mcbABCD-mcbEFG-ptetR(driven by p1\2\9\11\12\13), with ratio of 1:1, 4:1, 10:1. Induce them with IPTG(1mM/ml) for 2h. (The control group would be merely WT with IPTG and WT without IPTG). The inducer is used to make WT produce GFP. After mixture, immediately put the engineered <i>E. coli</i> on ice to cease the proliferation and measure their OD later for a precise mixture ratio.</li>
+<li> After induction, take 2mL of the culture to centrifugate the cell at 6000 rpm, 1 min.</li>
+<li> Wash with 500uL PBS then centrifugate again at 6000 rpm, 1 min .</li>
+<li> Fix with 400uL PFA for more than 10min, centrifugate again at 6000 rpm, 1 min </li>
+<li> Re-suspend cells with 400uL PBS.</li>
+<li> Distribute into 96-well plates then use plate reader for further data </li>
+<ol>
+</div>
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/1/16/T--Fudan--5mix7.jpeg"  alt="2_3" />
+<p>Figure 1. MEFL/particle for different Px and PxAD when the ratio of mixure(WT:Px=5:7)  </p></div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/b/b6/T--Fudan--20mix7.jpeg"  alt="2_3" />
+<p>Figure 2. MEFL/particle for different Px and PxAD when the ratio of mixure(WT:Px=20:7)    </p></div>
+
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/8/89/T--Fudan--50mix7.jpeg"  alt="2_3" />
+<p>Figure 3. MEFL/particle for different Px and PxAD when the ratio of mixure(WT:Px=50:7) </p></div>
+
+
+
+<div class="clear"></div>
+<div class="column full_size">
+<p> The result shows that <i>E. coli</i> with mcbABCD-mcbEFG-ptetR can more effectively inhibit the metabolism of other bacteria than those merely with mcbABCD in each group. With mcbEFG, <i>E. coli</i> are able to export antimicrobial peptides more effectively and supposed to have better immunity themselves so as to affect the surrounding WT’s metabolism(the expression of GFP), and better survive in the environment. While comparing to the control group, we can also see a significant decrease in the GFP expression result when there are <i>E. coli</i> with mcbABCD-mcbEFG-ptetR or mcbABCD, which indicates that the antimicrobial peptide(mccb17) encoded by mcbABCD does have a strong restraining effect on other microbial. That is to say, we can indeed increase the competitiveness of engineered bacteria by turning on the McbEFG gene, and turn off the McbEFG gene to block the antibacterial effect of antimicrobial peptides. </p>
+
+<p>It is worth noting that when the mixing ratio of WT <i>E. coli</i> and McbABCDEFG-expressing bacteria is 50:7, the OD values of each group are very close to those of the control group (only induced WT <i>E. coli</i>). This shows that when the concentration of the engineered bacteria is very low, the antimicrobial peptides are difficult to exert antibacterial effect and the engineered bacteria have no competitive advantage. This proves the necessity of our quorum sensing system. Because our engineered bacteria must first focus on their own growth and reach a certain number in order to effectively colonize the intestine. </p>
+</div>
+
+<div class="row">
+  <div class="col m2 l2 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l8">
+    <img src="https://2020.igem.org/wiki/images/e/e9/T--Fudan--flowchart_kanamp.png" alt="2_6" style="width:100%">
+    </div>
+</div>
+
+
+<div class="column full_size">
+<p>We also designed experiments to measure the real-time antibacterial effects of McbABCDEFG and McbABCD.In this experiment, we gave WT and our engineered bacteria different antibiotic resistance, so through resistance screening, we can get both the number of WT and the number of engineered bacteria. We measure thier OD value at different times after the two are mixed were mixed at a ratio of 1:1 or 1:4 to plotted their respective growth curves. It simulates the process of the engineering bacteria killing surrounding bacteria in the intestines. </p>
+</div>
+<div class="clear"></div>
+<div class="column full_size">
+<h2>Measurement</h2>
+<p>We hope for the old to make a full range of security for bone health. Based on the early part of the investigation, we found a lack of a proper way for the elderly to assess if their calcium status is healthy. Simultaneously, to evaluate whether our flora functions excessively and prevent absorbing too much calcium, we developed a measurement scheme - CaAsst. It provides for the elderly a parameter to assess their calcium levels - blood calcium concentration. We use the MTB as the key chemical to measurement the calcium. As the figure 1 blow shows, the experiment results show a linear relationship between calcium ion concentration and absorbance within a specific range. We also introduced a variety of interference simultaneously to show that the stability of this kind of measurement scheme. And there is also no apparent difference according to the figure 2. At the same time, CaAsst still has a lot of room for development, and in the future, it could even be widely promoted like a blood sugar test.</p>
+</div>
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/a/a3/T--Fudan--yicunanxian.png"  alt="2_3" />
+<p>Figure 4. The fitting curve of 0-20mmol/L absorbance changes with calcium ions concentration, which conforms to Beale's law within this concentration range.</p>
+</div>
+<div class="column half_size">
+<img src="https://2020.igem.org/wiki/images/8/87/T--Fudan--zongganrao.png"  alt="2_3" />
+<p>Figure 5. The curves of absorbance varying with the concentration of calcium ions and these curves are obtained from all experimental data</p>
+</div>
+<div class="clear"></div>
+
+<h2> Entrepreneurship</h2>
+<div class="column full_size">
+<p> Finally, we designed a thorough business plan for more financial support and promotion opportunities: from marketing research, product design to a feasible timeline for the future. We also consulted with experienced investors with great interest in our project. We communicated back and forth and signed a letter of intent to solidify future cooperation.and you can get more information in <a href="https://2020.igem.org/Team:Fudan/Entrepreneurship">https://2020.igem.org/Team:Fudan/Entrepreneurship</a>
+</p>
+</div>
+
+<div class="clear"></div><!-- 一个章节结束需要clear来留白 因为马上最后一幅，建议extra_space -->
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature: <a href="/Team:Fudan/Attributions#WeiZY" class="z-depth-2">Ziyuan</a>
+                    <a href="/Team:Fudan/Attributions#ZhangZR" class="z-depth-2">Zhenru</a>
+                    <a href="/Team:Fudan/Attributions#ZhangZR" class="z-depth-2">Jingqi</a>
+                    <a href="/Team:Fudan/Attributions#ZhangZR" class="z-depth-2">Gaochen</a>
+        </p>
+  </div></div>
+
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>

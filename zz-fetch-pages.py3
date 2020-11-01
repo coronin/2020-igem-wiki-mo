@@ -23,6 +23,7 @@ pageHead = '''<!DOCTYPE html>
 
 '''
 
+
 def fetch_create(filename):
     system('curl "%s/%s" -o %s.txt' % (baseURL, filename,filename) )
     f = open('%s.txt' % filename, 'r+')
@@ -36,9 +37,6 @@ def fetch_create(filename):
     f.truncate()
     f.close()
     print('%s.txt created' % filename)
-
-
-
 
 
 ff = []

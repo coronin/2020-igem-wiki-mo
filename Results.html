@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <script src="/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="/0igem.css">
-  <title>Results</title>
+  <title>Description</title>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
 <div class="igem_content_wrapper">
@@ -17,3 +17,578 @@
 
 
 
+{{IGEM_TopBar}}
+{{Fudan}}
+<html -->
+<link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media print {
+    #FudanFooter{display:none}
+}
+@media screen {
+    div.bar_button.main_page, div.bar_button.general_menu {
+      height: 40px !important;
+    }
+    #mw-content-text > div.top_bar,
+    #mw-content-text > div.menu_container {
+      z-index: 2;
+    }
+    #FudanLogoWrapper {
+      z-index: 999;
+    }
+    #FudanLogoWrapper img {
+      position: fixed;
+      left: -1%;
+      top: 58px;  /* 18+40 */
+      width: 170px;
+    }
+    #FudanTitleWrapper {
+      display: block;
+      text-align: center;
+      padding-top: 12rem;
+      margin: 0;
+      border: 0;
+      background-image: url('https://2020.igem.org/wiki/images/f/f2/T--Fudan--letterhead.svg');
+      height: 342px;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    #FudanSignature {
+      background-image: url('https://2020.igem.org/wiki/images/e/ee/T--Fudan--sealed_envelope.svg');
+      height: 462.47px;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      margin-bottom: -25px;
+      position: relative;
+      z-index: 0;
+    }
+    #FudanSignature p {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      position: absolute;
+      bottom: 1rem;
+      width: 100%; /* MUST FOR TEXT CENTER */
+      text-align: center;
+    }
+    #FudanSignature a {
+      font-family: Pristina;
+      font-size: 2rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+    #FudanFooter {
+      background-color: #804000;
+      padding-top: 0;
+    }
+    #FudanFooter div {
+      box-sizing: border-box;
+    }
+    #FudanFooter .container {
+      width: 90%;
+    }
+    #FudanFooter ul {
+      margin: 0;
+      padding: 0;
+    }
+    #FudanFooter li {
+      list-style: none;
+    }
+    #FudanFooter a {
+      text-decoration: none;
+    }
+    #FudanFooter h3:before {
+      content: normal;
+      margin: 10px 0 10px 0;
+    }
+    #acknowledgementPhoto span {
+      position: absolute;
+      bottom: 5%;
+      display: none;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.86);
+    }
+    #FudanFooter #footerNavList {
+      color: #ffc86e;
+      padding-left: 1rem;
+      padding-top: 3rem;
+    }
+    #FudanFooter #footerNavList ul {
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 14px;
+      /*border-top: solid 2px;*/
+      color: inherit;
+      text-decoration: none;
+      padding-top: 5px;
+    }
+    #FudanFooter #footerNavList span {
+      /*border-left: solid 4px #fff5e3;
+      padding-left: 2px;*/
+      margin-left: -3px;
+    }
+    #FudanFooter #footerNavList span > a {
+      color: #fff5e3;
+    }
+    #FudanFooter h3 {
+      color: #ffc86e;
+    }
+    #FudanFooter .FudanSocialIcons, #FudanFooter .FudanSponsors {
+      opacity: 0.5;
+    }
+    #FudanFooter img:hover {
+      opacity: 1;
+    }
+    #FudanFooter #footerNavList div:hover {
+      color: white;
+    }
+    #FudanFooter #footerNavList a {
+      color: #ffc86e;
+    }
+    #FudanFooter #footerNavList a:hover {
+      text-decoration: underline;
+    }
+    /*#FudanFooter #footerNavList div.active,
+    #FudanFooter #footerNavList div.active a {
+      color: white;
+    }
+    #FudanFooter #footerNavList div.active ul {
+      border-top: solid white 2px;
+    }*/
+    #FudanFooter #footerNavList li {
+      padding: 3px 0 6px 3px;
+    }
+    #footerNavList span {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    #footerNavList > div > div {
+      padding-left: 1.2rem;
+    }
+    #FudanFooter div.footer-copyright {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    #acknowledgementPhoto {
+      width: 100%;
+      position: relative;
+    }
+    #acknowledgementPhoto > div {
+      width: 100%;
+      position: relative;
+      vertical-align: top;
+    }
+    #acknowledgementPhoto div.row > div {
+      position: relative;
+      padding: 0 10px;
+      margin: 10px 0;
+      overflow: hidden;
+      text-align: center;
+      bottom: 0;
+    }
+    #acknowledgementPhoto img {
+      width: 100%;
+      margin: 5px 0;
+    }
+    #FudanFooter div.row {
+      margin: 5px 0;
+      padding: 0;
+    }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 45.8% }
+  .igem_content_wrapper .igem_column_wrapper .column.half_size img {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .igem_content_wrapper .igem_column_wrapper .column.half_size { width: 96% }
+  }
+}
+</style>
+<header>
+  <div id="FudanLogoWrapper" style="opacity:0.01">
+    <a href="#FudanTitleWrapper" target="_self">
+      <img src="https://2020.igem.org/wiki/images/0/0e/T--Fudan--logo_2.svg" alt="team Fudan color logo" />
+    </a>
+  </div>
+  <div class="row" id="FudanTitleWrapper">
+    <div class="col m2 l3 hide-on-small-only">&nbsp;</div>
+    <div class="col s12 m8 l6">
+      <img src="https://2020.igem.org/wiki/images/5/50/T--Fudan--title_results.svg" alt="results" style="width:100%">
+      </div>
+  </div>
+  <div class="clear"></div>
+</header>
+<article><!-- 此处以下即需要每人进行修改的内容
+              在 /article 之前
+              请详细阅读 https://2020.igem.org/Resources/Template_Documentation 使用大赛内置样式，细看已经有的例子足够做好页面
+              不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
+              html代码不在乎多个空格，仅显示一个
+         -->
+ <h1>Verification and improvement of the antimicrobial peptide expressing system</h1>
+  <div class="column full_size">
+    <p>Here, we tried to improve the former antimicrobial peptide(mccb17) expressing system of 2019 Fudan <a href="http://parts.igem.org/Part:BBa_K3245010 "> BBa_K3245010 </a>.By dividing into the peptide expressing part and the immunity part, we firstly tested whether the polycistron could work properly and separately, then tried to manipulate each of their expression levels with more efficiency an better function.
+ </p>
+  </div>
+
+  <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
+ <h2>Verification of expression</h2>
+  <div class="column full_size">
+    <p>First, to affirm the system could work properly, we started from the very beginning by testing the expression of each gene in the cluster as well as of the polycistrons in each part. We constructed 10 plasmids(with pGEX backbone adapted to perform high level of expression), containing mcbA/ mcbB/ mcbC/ mcbD/ mcbE/ mcbF/ mcbG/ mcbABCD/ mcbBCD/ mcbBC respectively, transformed successfully them into E.coli BL21, then purified the protein products with his-tag via immobilized metal affinity chromatography to check if the basic protein-coding could all be realized correctly as the basis of our design for the system. We have made further confirmation that every part can express successfully due to the correct bands on the SDS-PAGE electrophoresis gel maps.</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h2>Verification of function</h2>
+<div class="column full_size">
+<p>As our design page describes, mcbABCD should show a certain degree of restrain to both the growth and condition of its cocultured cell. While with mcbEFG, engineered E.coli are supposed to have better immunity themselves against the mccb17 coded by mcbABCD, so as to gain advantage, affect the surrounding WT’s metabolism(the expression of GFP), and better survive in the environment.</p>
+<p>We performed 2 different kinds of experiments, rendering verification for both antimicrobial expressing part mcbABCD and immunity part mcbEFG, by testing the effect mccb17 may exert on the metabolism and survival state of microbes they cocultured with.
+</div>
+
+ <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h3> influences on metabolism</h3>
+
+<h4>Methods</h4>
+  <div class="column two_thirds_size">
+<img src="https://2020.igem.org/wiki/images/d/d5/T--Fudan--img_flowchart1.svg" />
+Figure 1. flowchart of this verification experiment
+  </div>
+  <div class="column third_size">
+    <p>We cultured WT(E.coli expressing GFP driven by plac), PxAD(E.coli expressing mcbABCD driven by P1\2\9\11\12\13)and Px(E.coli expressing mcbABCD-mcbEFG-PtetR driven by P1\2\9\11\12\13) separately at the same time.
+</p><p>
+When the OD of WT reaches 0.6, we mixed WT with PxAD or Px, with ratio of 1:1, 4:1, 10:1, then induce them with IPTG for 2h. Here, the control group would be merely WT with IPTG and WT without IPTG.
+</p><p>
+After mixture, we immediately put the engineered E.coli on ice to cease the proliferation and measure their OD later for a precise mixture ratio. Thus the ratio in the graph down below has been adjusted to be more accurate in the ratio of cell number in the mixture, different from the ratio on the left. Finally our data is measured by plate reader.
+</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h4>Result</h4>
+  <div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/1/16/T--Fudan--5mix7.jpeg" />
+
+Figure 2. MEFL/particle for different Px and PxAD when the ratio of mixure(WT:Px=5:7)
+  </div>
+ <div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/b/b6/T--Fudan--20mix7.jpeg" />
+
+Figure 3. MEFL/particle for different Px and PxAD when the ratio of mixure(WT:Px=20:7)
+  </div>
+ <div class="column third_size">
+<img src="https://2020.igem.org/wiki/images/8/89/T--Fudan--50mix7.jpeg" />
+
+Figure 4. MEFL/particle for different Px and PxAD when the ratio of mixure(WT:Px=50:7)
+  </div>
+  <div class="column full_size">
+<p> Our data has been calibrated with the Excel data analysis template provided by the 2019 iGEM, where MEFL stands for the absolute units of Fluorescent Intensity for Green Fluorescent proteins and particle stands for the absolute units of cell count, so that our y axis represents fluorescent intensity per cell under iGEM standard.
+</p>
+<p>We could see an overall decrease of GFP expression in nearly all groups cocultured with Px or PxAD than the control group which only contains WT, indicating that the antimicrobial peptide(MccB17) encoded by mcbABCD does have a negative effect on microbial. In this case, the living status of WT cells and its function in creating GFP is strongly restricted by the toxic environment, proving that our part mcbABCD has worked successfully.
+</p>
+<p>While inside each paired group, there clearly are a better inhibition effect in Px group than PxAD group, as the MEFL/particle is much lower in the Px group than the PxAD group when driven by certain promoters. This shows that the immunity function of mcbEFG is working successfully, as the E.coli expressing mcbEFG can help the engineered strain to survive with efflux exporting the toxic peptide, as well as better killing off other strains to gain survival advantage.
+</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+  <h4>Discussion</h4>
+  <div class="column full_size">
+<p>Among the three graphs, it is also obvious the system works better when the population occupies a larger percentage. When the ratio of WT:Px meets 50：7, nealy all of the groups shows very weak competitiveness or even no survival advantage at all(as in the case of P1), indicating the need of a certain amount of population to get the system working efficiently. This result also affirms it is vital to have the antimicrobial system in our design to gain enough survival advantage for our engineered E.coli to colony in human intestine and further express the desired product.
+</p>
+  <p>Due to the difference in strength of these promoters, we have also screened out the most suitable promoter P2 for our system via this experiment.
+</div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+
+<h3>influnces on survival states</h3>
+<h4>Methods</h4>
+<div class="column two_thirds_size">
+<img src="https://2020.igem.org/wiki/images/6/61/T--Fudan--flowchart_kanamp.svg" />
+Figure 5. flowchart of this verification experiment
+  </div>
+  <div class="column third_size">
+    <p>We cultured WT(E.coli expressing rFP driven by constitutive promoter), PxAD(E.coli expressing mcbABCD driven by P1\2\9\11\12\13)and Px(E.coli expressing mcbABCD-mcbEFG-PtetR driven by P1\2\9\11\12\13) separately at the same time.
+</p><p>
+When the OD of WT reaches 0.6, we mixed WT with PxAD or Px, with ratio of 1:1, 4:1, 10:1, then induce them with IPTG for 2h. Here, the control group would be merely WT with IPTG and WT without IPTG.
+</p><p>
+Meanwhile, we culture plates with different antibiotics(since WT and Px/PxAD possess different resistance) to measure the precise ratio of mixture.
+</p><p>
+Finally our data is measured by plate reader.
+</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <h4>Result</h4>
+  <div class="column full_size">
+<img src="https://2020.igem.org/wiki/images/b/b9/T--Fudan--AUP21.jpeg" />
+
+Figure 6. Calculated Bacteria Counts when the ratio of mixure(Px/PxAD:WT=1:1)
+  </div>
+  <div class="column full_size">
+<p> Our data has been calibrated with the Excel data analysis template provided by the 2019 iGEM. In this chart, Calculated Bacteria Counts stands for the relative increase of OD, which represents the total number of cells, and MERL, which represents the total number of WT cells. As we have screened out P2 in front, here we used the mixture ratio of P2(P2AD):WT=1:1 to find out more detailed effect that antimicrobial peptide expressing system can exert.
+</p>
+<p>We could see the population increase are not significant in total over time, yet WT grows rather fast at first in the P2AD group, indicating its lack of immunity part mcbEFG can lead to the death of engineered E.coli. more, thus shows less restrain on the WT cells. Yet, as mccb17 accumulates, a clear decrease can be observed when time extends in both P2 and P2AD, proving our antimicrobial peptide expressing system are working to help the engineered E.coli. gain better survival advantage.
+</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h2>Improvement in reduced leakage of ptetR</h2>
+<div class="column full_size">
+    <p>We have measured the expression level of PtetO2, PtetO3 along with the original PtetR(BBa_R0040) via plate reader by combining them with GFP, when they were induced by different concentration of hydrotetracycline or not induced.</p>
+  </div>
+  <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/5/51/T--Fudan--aTc_0.jpg" alt="map of calcium intake" />
+    <p>Figure 1.When aTc=0, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.       </p>
+
+    <img src="https://2020.igem.org/wiki/images/d/d3/T--Fudan--aTc_200.jpg" />
+    <p>Figure 3.When aTc=200, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.        </p>
+
+  </div>
+ <div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/0/06/T--Fudan--aTc_100.jpg" alt="map of calcium intake" />
+    <p>Figure 2.When aTc=100, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.       </p>
+    <img src="https://2020.igem.org/wiki/images/4/46/T--Fudan--aTc_400.jpg" />
+    <p>Figure 4.When aTc=400, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.      </p>
+ </div>
+    <div class="column full_size">
+    <p>Under the induction of various concentrations of aTc, the expression level of ptetO2 is very low, but the expression level of ptetO3 is moderate. Although the expression level of ptetO3 is lower than ptetR, it is very suitable for our project design. Since ptetO3 is used to drive McbEFG, if McbEFG translates too much channel protein, then when McbEFG is turned off, the expressed channel protein will be difficult to recover completely, reducing the sensitivity of quorum sensing.</p>
+  </div>
+
+<div class="column third_size">
+    <img src="http://parts.igem.org/wiki/images/7/7a/T--Fudan--rate_100.jpg" alt="map of calcium intake">
+    <p>Figure 5.When aTc=100,fold of increase of promoters   </p>
+     </div>
+<div class="column third_size">
+    <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--rate_200.jpg" alt="map of calcium intake">
+    <p>Figure 6.When aTc=200,fold of increase of promoters   </p>
+     </div>
+<div class="column third_size">
+    <img src="https://2020.igem.org/wiki/images/0/0f/T--Fudan--rate_400.jpg" alt="map of calcium intake">
+    <p>Figure 7.When aTc=400,fold of increase of promoters   </p>
+     </div>
+
+<div class="column full_size">
+    <p>The results show that among the three promoters, ptetO3 has the highest fold of increase. This means that it is the most sensitive to the induction of aTc, which can improve the sensitivity of quorum sensing.
+</p>
+  </div>
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h1>Demonstration of CaAP and signal-peptide guided CaAP secretion system</h1>
+<div class="column full_size">
+<h2> CaAP(Calcium Absorption Peptide)</h2>
+<p>We hope that our project can solve the problem of calcium deficiency in the elderly. According to our investigation, due to the diet structure, the calcium absorption of Chinese people is not high, so we found CaAP from the perspective of improving the calcium absorption rate of the elderly.</p>
+
+<p>We have successfully cloned our designed CaAP(Calcium Absorption Peptide) into pFAB plasmid and transformed the construct into E.coli. BL21 strain to demonstrate its expression.</p>
+
+</div>
+
+<div class="clear"></div>
+
+
+<h2> Secretion Peptides guided CaAP</h2>
+
+<div class="column full_size">
+	<p>To promote calcium bioavailability, CaAP needs to be expressed in our probiotics and subsequently secreted into the extracellular space. Therefore, we linked 5 signal peptides which belong to the Type II secretion system in E.coli., to the N terminal of CaAP, respectively.
+The 5 secretion peptides are listed below:</p>
+</div>
+<div class="clear"></div>
+<div class="column full_size">
+<table>
+<tr>
+<th> NSP4</th><th> BBa_K3606042</th>
+</tr>
+<tr>
+<th> OmpA </th><th> BBa_K3606043</th>
+</tr>
+<tr>
+<th> DsbA </th><th> BBa_K3606030</th>
+</tr>
+<tr>
+<th> PelB </th><th> BBa_K208004</th>
+</tr>
+<tr>
+<th> PhoA </th><th> BBa_K808028</th>
+</tr>
+</table>
+</div>
+<div class="clear"></div>
+<div class="column full_size">
+    <p>To test the secretion efficiency of our 5 secretion peptides and compare their secretion capabilities, we also fused them to MBP(Maltose Binding Protein) that normally expressed in the cytoplasm of E.coli. cells. Driven by an iPTG inducible promoter Ptac, we can achieve quantified characterization of these secretion peptides through differences of the amount of signal-peptide-MBP fusion protein in bacterial lysate and culture medium.</p></div>
+    <p>We have successfully cloned OmpA guided MBP(Maltose Binding Protein) and expressed it in E.coli.BL21. As shown in Figure 8.,the amount of MBP in the lysate shows no difference with or without iPTG induction, suggesting that OmpA has the strong ability to secrete MBP into the extracellular space.As for the relatively low amount of MBP in the culture medium concentrated by TCA than in the cell lysate(shown in Figure 9.), it may be caused by other interference factors during the preparation of protein samples.</p>
+<div class="column half_size">
+<div class="row">
+  <div class="col s2 m3 l2"></div>
+  <div class="col s8 m6 l6">
+    <img src="https://2020.igem.org/wiki/images/0/05/T--Fudan--denoted_gel2_OmpA_MBP.png" alt="1_1" style="width:75%"/>
+    <div class="clear"></div>
+    <i>Figure 8.OmpA-MBP expression with and without iPTG induction in the bacterial lysate.</i>
+    </div>
+</div>
+</div>
+<div class="column half_size">
+<div class="row">
+  <div class="col s2 m3 l2"></div>
+  <div class="col s8 m6 l6">
+    <img src="https://2020.igem.org/wiki/images/3/3b/T--Fudan--denoted_gel3_OmpA_MBP.png" alt="1_1" style="width:100%"/>
+    <i>Figure 9.OmpA-MBP expression with and without iPTG induction in the culture medium  concentrated by TCA.</i>
+    </div>
+</div>
+</div>
+<div class="column full_size">
+    <p>To test the secretion efficiency of our 5 secretion peptides fused CaAP(Calcium Absorption Peptide) guided by 5 secretion peptides, we cloned the Secretion peptide-CaAP segment into the pGEX vector respectively and transformed into E.coli. BL21 strain. Thus, quantified characterization of these secretion peptides fused with CaAP is expected to be achieved through the differences of calcium ion concentration in bacterial lysate and culture medium.</p>
+</div>
+
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="http://parts.igem.org/wiki/images/6/67/T--Fudan--denoted_gel2_signalpeptides.png" alt="2_6" style="width:100%">
+<i>Figure 10.NSP4/PhoA/OmpA-CaAP expression with and without iPTG induction in the bacterial lysate.</i>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col m2 l3 hide-on-small-only">&#160;</div>
+  <div class="col s12 m8 l6">
+    <img src="http://parts.igem.org/wiki/images/0/0d/T--Fudan--File-T--Fudan--denoted_gel3_signalpeptides.png" alt="2_6" style="width:100%">
+<i>Figure 11.NSP4/PhoA/OmpA-CaAP expression expression with and without iPTG induction in the culture medium concentrated by TCA.</i>
+    </div>
+</div>
+<div class="clear extra_space"></div>
+<h2>Reference</h2>
+  <div class="column full_size">
+    <p>[1] Huanna Qiu, et al. Construction of promoters with tight regulation on chromosome of Escherichia coli. Microbiology China,2018,45(08):1693-1704. (Chinese)
+</p>
+  </div>
+
+  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+
+  <div class="column full_size"><div id="FudanSignature">
+      <p>Signature:
+                    <a href="/Team:Fudan/Attributions#ZhangZR" class="z-depth-2">Zhenru</a>
+                    <a href="/Team:Fudan/Attributions#ZhangZR" class="z-depth-2">Gaochen</a>
+        </p>
+  </div></div>
+
+<!-- 此处以上可更改
+     此处以下不需要更改
+     每次active页面将会由js自动判断
+                  -->
+  <div class="clear"></div><!-- MUST HAVE -->
+</article>
+
+<!-- img src="https://2020.igem.org/wiki/images/6/68/T--Fudan--up_arrow.svg" alt="arrow" -->
+
+<footer class="page-footer" id="FudanFooter">
+  <div class="container"><div class="row">
+    <div class="col m3 s12 row"
+         style="margin-top:4rem" >
+      <a href="http://www.yfc.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="Yunfeng Capital" src="https://2020.igem.org/wiki/images/b/ba/T--Fudan--YFcapital.svg"> </a>
+      <a href="http://www.fudan.edu.cn/en/" target="_blank"><img alt="Fudan University" class="col s3 m6 l4 FudanSponsors" src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--sponsor2.svg"> </a>
+      <a href="http://life.fudan.edu.cn/" target="_blank"><img class="col s3 m6 l4 FudanSponsors" alt="School of Life Sciences, Fudan University" src="https://2018.igem.org/wiki/images/1/1d/T--Fudan--schoolOfLifeSciencesIcon.png"> </a>
+      <h3 class="col s12"
+          style="text-align:left;font-size:1rem;margin:0;padding-left:0.68rem">Bone appetite: <i>make calcium supplement sustainable</i></h3>
+    </div>
+    <div id="footerNavList" class="col m9 s12 row">
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Description#Project">Project</a></span>
+          <ul><li><a href="/Team:Fudan/Description">Description</a></li>
+            <li><a href="/Team:Fudan/Sustainable">Sustainable</a></li>
+            <li><a href="/Team:Fudan/Design">Design</a></li>
+            <li><a href="/Team:Fudan/Experiments">Experiments</a></li>
+            <li><a href="/Team:Fudan/Proof_Of_Concept">Proof&nbsp;of&nbsp;concept</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Notebook">Notebook</a></span>
+          <ul><li><a href="/Team:Fudan/Safety">Safety</a></li>
+            <li><a href="/Team:Fudan/Poster">Poster</a></li>
+            <li><a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">Promotion</a></li>
+            <li><a href="#" target="_blank">Presentation</a></li>
+            <li><a href="/Team:Fudan/Entrepreneurship">Entrepreneurship</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Results">Results</a></span>
+          <ul><li><a href="/Team:Fudan/Contribution">Contribution</a></li><!-- replace Judging -->
+            <li><a href="/Team:Fudan/Implementation">Implementation</a></li>
+            <li><a href="/Team:Fudan/Engineering">Engineering</a></li>
+            <li><a href="/Team:Fudan/Measurement">Measurement</a></li>
+            <li><a href="/Team:Fudan/Model">Modeling</a></li>
+        </ul></div>
+      </div>
+      <div class="col s12 l6 row">
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Parts">Parts</a></span>
+          <ul><li><a href="/Team:Fudan/Parts#Basic">Basic&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Parts#Composite">Composite&nbsp;part</a></li>
+            <li><a href="/Team:Fudan/Improve">Improvement</a></li>
+            <li><a href="/Team:Fudan/Part_Collection">Part&nbsp;collection</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Human_Practices">Outreach</a></span>
+          <ul><li><a href="/Team:Fudan/Human_Practices#Integrated">Integrated&nbsp;HP</a></li>
+            <li><a href="/Team:Fudan/Education">Education</a></li>
+            <li><a href="/Team:Fudan/Collaborations">Collaborations</a></li>
+            <li><a href="/Team:Fudan/Inclusion">Inclusion</a></li>
+        </ul></div>
+        <div class="col s12 m4">
+          <span><a href="/Team:Fudan/Team">Team</a></span>
+          <ul><li><a href="/Team:Fudan/Team">Members</a></li>
+            <li><a href="/Team:Fudan/Attributions">Attributions</a></li>
+            <li><a href="/Team:Fudan/Partnership">Partnership</a></li>
+            <li><a href="/Team:Fudan/Acknowledgement">Acknowledgement</a></li>
+            <li><a href="https://2019.igem.org/Team:Fudan-TSI/Heritage" target="_blank">Heritage</a></li>
+        </ul></div>
+        <div class="col s12 m4">&nbsp;</div>
+      </div>
+    </div>
+  </div></div>
+  <!--div class="footer-copyright"><div class="container"><div class="contactUS row">
+    <div class="col s12 m6 l4"><i class="fa fa-location-arrow"></i> Life Sci Bldg, 2005 Songhu Rd, Shanghai</div>
+    <div class="col s12 m6 l2"><i class="fa fa-fax"></i> +86-21-31246727</div>
+    <div class="col s12 m6 l2"><i class="fa fa-envelope-o"></i> igem@fudan.edu.cn</div>
+    <div class="col s12 m6 l4"><i class="fa fa-twitter"></i> <i class="fa fa-wechat"></i> Fudan_iGEM</div>
+  </div></div></div-->
+
+  <div class="row">
+    <div class="col s12 hide-on-small-only">
+      <img src="https://2020.igem.org/wiki/images/2/20/T--Fudan--socials_divider.svg" alt="---- ---- ---- ----">
+      <br/><br/>
+    </div>
+    <div class="col m2 hide-on-small-only">&nbsp;</div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://twitter.com/fudan_igem">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/2/24/T--Fudan--twitter_logo_yellow.svg" alt="twitter @Fudan_iGEM"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://www.instagram.com/igem_fudan2020/">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/3/30/T--Fudan--ig_logo_yellow.svg" alt="instagram"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://weibo.com/u/6299186826">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/c/ca/T--Fudan--weibo_logo_yellow.svg" alt="weibo"></a>
+      </div>
+    <div class="col s3 m2">
+      <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzODQ2MDkzOA==&scene=124#wechat_redirect">
+        <img class="FudanSocialIcons" src="https://2020.igem.org/wiki/images/8/86/T--Fudan--wechat_1.svg" alt="wechat @Fudan_iGEM"></a>
+      </div>
+  </div>
+  <br/><br/>
+</footer>
+
+<!-- .igem_column_wrapper .igem_content_wrapper --></div></div>
+
+<div class="progress" style="position:fixed;top:8px;width:100%;float:left;z-index:999">
+  <div class="determinate" style="width:1%" id="FudanLoader"></div>
+</div>

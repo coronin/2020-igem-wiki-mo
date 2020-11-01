@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <script src="/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="/0igem.css">
-  <title>Model</title>
+  <title>Description</title>
 </head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
 <div class="igem_content_wrapper">
 <div class="igem_column_wrapper">
 <!--
-                      REMOVE THE TEXT RIGHT ARROW
+                      仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
                       ////////////
 
 
@@ -19,7 +19,7 @@
 
 {{IGEM_TopBar}}
 {{Fudan}}
-<html>                -->
+<html -->
 <link rel="stylesheet" href="/wiki/index.php?title=Template:Fudan/materialize.min.css&action=raw&ctype=text/css">
 <style>
 @font-face {
@@ -239,7 +239,7 @@
               不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
               html代码不在乎多个空格，仅显示一个
          -->
-  <h1>Simulate the Bacteria Quorum Sensing Process</h1>
+  <h1>Simulate the Bacteria Quorum Sensing Process and Kill Switch</h1>
   <div class="column full_size">
     <p>
 This year, we constructed two models to simulate the bacteria quorum sensing process and Kill Switch. For the quorum-sensing model, we used the Gillespie algorithm in random simulation to simulate the physiological processes at macro and micro levels. Specifically, we described Acyl-homoserine lactone's concentration accurately by monitoring both production and diffusion, which is first-of-its-kind to reveal details of the process, and developed originally by us. We further improved the model from 19Fudan team to better model the quorum sensing process for various bacteria growing stages. For the stage change caused by the anti-microbial peptide (mcbA), we provided explanations to its observed dynamic stability. For the Kill Switch model, based on the experimental data from 19BNU team, we improved the logistic equation, adjusted the promoter properties according to more suitable literature references, and made sensitivity analysis – and we obtain better and more insightful results. </p>
@@ -261,7 +261,7 @@ In the first model, we describe the quorum sensing process in three parts. In Mo
 In this model, we simulate changes in the number of AHL in a cell. As mentioned above, AHL is generated inside the cell and transported out by free diffusion. In the initial stage, for AHL's concentration outside the bacteria is approximately 0,  free diffusion is basically not inhibited and only related to AHL's concentration inside the cell. We believe that the main physiological processes about AHL are as follows.
 </p>
 <p>
-Firstly, the expression of LuxI and LuxR:
+<b>Gene expression</b>: the expression of LuxI and LuxR:
 </p>
 </div>
 
@@ -274,7 +274,7 @@ Firstly, the expression of LuxI and LuxR:
 
  <div class="column full_size">
 <p>
-Then,the degradation of LuxI and LuxR:
+<b>Protein degradation</b>: The degradation of LuxI and LuxR:
 </p></div>
 
 <div class="row">
@@ -285,7 +285,7 @@ Then,the degradation of LuxI and LuxR:
 </div>
 
 <div class="column full_size"><p>
-The production of AHL and its diffusion outside the cell:
+<b>Changes about AHL</b>: The production of AHL and its diffusion outside the cell:
 </p>
 </div>
 
@@ -297,7 +297,7 @@ The production of AHL and its diffusion outside the cell:
 </div>
 
 <div class="column full_size"><p>
-Lastly, the combination and dissociationof AHL and LuxR:
+<b>Changes about RA</b>: The combination and dissociationof AHL and LuxR (noted as RA):
 </p>
 </div>
 
@@ -311,7 +311,18 @@ Lastly, the combination and dissociationof AHL and LuxR:
 <div class="column full_size">
 <div class="highlight decoration_background decoration_A_top">
   <p>
-    A key point of Gillespie Algorithm is to describe the system in matrix.
+<center><b><h4>Gillespie Algorithm</h4></b></center>
+   <p>The Gillespie algorithm is a mathematical method to simulate biochemical reactions with random processes. The main ideas of this algorithm are as follows:</p>
+</p>
+<p>(a) First, we divide the biochemical reaction process into several elemental reactions. The substances involved and their stoichiometric number are recorded in the form of a matrix.</p>
+<p>
+(b) Due to the rate constant and the concentration of reactants, the probability of different reactions is also different. We calculate the probability that each reaction will occur the next time.
+</p>
+<p>
+(c) The knowledge of probability theory and stochastic processes tells us that the next reaction's time follows an exponential distribution, with the total reaction rate as its parameter. At that time, according to the possibility introduced in (b), a reaction occurs, causing a change in the number of molecules.
+</p>
+<p>
+By repeating the above process, we can simulate the random biochemical reactions within the system.
     </p>
 </div>
 
@@ -328,7 +339,7 @@ In this matrix, each row is one substance, and each column is one reaction. The 
 </div>
 
 <div class="column full_size"><p>
-After each reaction, the https://2020.igem.org/wiki/images/7/70/T--Fudan--model1_2.pngnumber of molecules changes by the number of a column. What column is that? The probability is proportional to the rate of reaction. So let's figure out the rates of all the reactions.
+After each reaction, the number of molecules changes by the number of a column. What column is that? The probability is proportional to the rate of reaction. So let's figure out the rates of all the reactions.
 </p>
 </div>
 
@@ -456,7 +467,7 @@ From the second phase, we can see that the phase change of AHL lags behind the n
 
   <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
 
-<h2>2. Kill Switch</h2>
+<h2 id="killswitch">2. Kill Switch</h2>
 <div class="column full_size"><p>
 In the modeling of kill Switch, we adopted the following ideas: First, we cooperated with the 19BNU team and adopted the data they tested. We found that without kill-switch, the colony number curve was similar to the logistic equation. Through data fitting, we obtained the parameters of the logistic equation. When kill-switch exists, <i>in vitro</i>, the toxin will increase the competitive pressure, causing parameters' change. Due to the improvement of a more efficient promoter, the competitive pressure caused by toxin can further increase when our design is adopted, and we performed sensitivity analysis here. Due to the abnormal part of the experimental data, we also selected the experimental data by referring to the literature and will explain the reasons for these anomalies.
 </p></div>
@@ -514,14 +525,21 @@ Furthermore, with an improvement in RNA thermometer, the toxin-antitoxin system 
 <div class="row">
   <div class="col s2 m3 l4">&#160;</div>
   <div class="col s8 m6 l4">
-    <img src="https://2020.igem.org/wiki/images/5/54/T--Fudan--model2_4.png" alt="2_4 style="width:100%">
+    <img src="https://2020.igem.org/wiki/images/5/54/T--Fudan--model2_4.png" alt="2_4" style="width:100%">
     </div>
 </div>
+<div class="column full_size">
+<p><br/><br/>However, when looking at experiment data, we see some abnormal increase throughout time. Here are some possible reasons.
+                </p>
+                <ol>
+                    <li>Toxin-antitoxin plasmid lost nts</li>
+                    <li>The cellular repair mechanism</li>
+<li>Cell detoxification</li>
 
-<div class="column full_size"><p>
-We visualize it here.
-</p>
-</div>
+                </ol></div>
+<div class="column full_size"><p>So we only use earlier experiment data in fitting.We visualize the results of former and improved kill-switch here.</p></div>
+
+
 
 <div class="row">
   <div class="col m2 l3 hide-on-small-only">&#160;</div>
@@ -533,15 +551,9 @@ We visualize it here.
 <div class="column full_size">
 <div class="highlight decoration_background decoration_B_full">
   <p>The result shows that our Kill Switch reacts stronger in a smaller temperature range. It's clear that our improvement did a good job, thus improve the safety.    </p>
-</div>
-<p><br/><br/>However, when looking at experiment data, we see some abnormal increase throughout time. Here are some possible reasons.
-                </p>
-                <ol>
-                    <li>Toxin-antitoxin plasmid lost nts</li>
-                    <li>The cellular repair mechanism</li>
-<li>Cell detoxification</li>
+<p>We conducted a further sensitivity analysis, finding that RNA thermometer expression level has a continuous and stable impact on the killing rate.</p>
+</div></div>
 
-                </ol></div>
 
 <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
 
@@ -594,18 +606,36 @@ Our models do an excellent job of filling in the gaps when were challenging to i
 <tr>
 <td> k<sub>old</sub> </td> <td> Old RNA thermometer expression rate </td> <td> 0.394639 </td>
 </tr>
-</table>
-  </div>
+</table></div>
+
+<div class="column full_size">
+<p><a target="_blank" href="https://2020.igem.org/wiki/images/c/ca/T--Fudan--data_from_19BNU.xlsx">Data provied by 19BNU-China</a></p></div>
+
 <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
+
+<h2>Reference</h2>
+<div class="column full_size"><p>
+[1] Melke, P., et al., A cell-based model for quorum sensing in heterogeneous bacterial colonies. PLoS Comput Biol, 2010. 6(6): p. e1000819.</p>
+
+<p>[2] A.B.Goryachev,D.J.TohT.Lee, Systems analysis of a quorum sensing network: Design constraints imposed by the functional requirements, network topology and kinetic constants. Biosystems,Volume 83, Issues 2–3, February–March 2006, Pages 178-187</p>
+<p>[3] <a href="https://2019.igem.org/Team:Fudan/Model">https://2019.igem.org/Team:Fudan/Model</a></p>
+<p>[4] Darren J. Wilkinson, Stochastic Modelling for Systems Biology.</p>
+<p>[5] Martin Overgaard, Jonas Borch, and Kenn Gerdes, RelB and RelE of <i>Escherichia coli</i> Form a Tight Complex That Represses Transcription via the Ribbon–Helix–Helix Motif in RelB. J Mol Biol. 2009 Nov 27; 394(2): 183–196.</p>
+<p>[6] <a href="http://parts.igem.org/Part:BBa_K3247005">http://parts.igem.org/Part:BBa_K3247005</a></p>
+<p>[7] <a href="http://parts.igem.org/Part:BBa_K115002">http://parts.igem.org/Part:BBa_K115002</a></p>
+</div>
 
 <div class="column full_size"><p style="text-align:center">
 See our codes at <a href="https://github.com/Isabel-Jiang/2020-model" target="_blank">https://github.com/Isabel-Jiang/2020-model</a>!
 </p></div>
 
-  <div class="column full_size"><div id="FudanSignature">
-      <p>Signature: <a href="/Team:Fudan/Attributions#JiangXH" class="z-depth-2">Xiaohui</a>
-        </p>
-  </div></div>
+<div class="clear"></div>
+
+<div class="column full_size"><div id="FudanSignature">
+    <p>Signature: <a href="/Team:Fudan/Attributions#JiangXH" class="z-depth-2">Xiaohui</a>
+      </p>
+</div></div>
+
 
 <!-- 此处以上可更改
      此处以下不需要更改
