@@ -17,8 +17,10 @@ class MyRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                                 ).replace('/wiki/index.php?title=Template:Fudan/', '/')
             self.path = self.path.replace('&action=raw&ctype=text/javascript', ''
                                 ).replace('/wiki/index.php?title=Template:Fudan/', '/')
+        elif self.path.find('/T--Fudan-index') > 0 and self.path.endswith('.svg'):
+            self.path = '/' + self.path.split('/')[-1]
         elif self.path.startswith('/Team:Fudan/'):
-            self.path = self.path.split('Team:Fudan')[1] + '.html'
+            self.path = '/' + self.path.split('Team:Fudan')[1] + '.html'
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 Handler = MyRequestHandler

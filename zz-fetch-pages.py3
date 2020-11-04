@@ -2,15 +2,18 @@ import bs4
 from os import system, walk
 
 baseURL = 'https://2020.igem.org/wiki/index.php?action=edit&title=Team:Fudan'
-pageHead = '''<!DOCTYPE html>
+
+
+def fetch_create(filename):
+    pageHead = '''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <script src="/jquery-1.11.1.min.js"></script>
   <link rel="stylesheet" href="/0igem.css">
-  <title>Description</title>
+  <title>%s</title>
 </head>
-<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Entrepreneurship skin-igem action-view">
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_%s skin-igem action-view">
 <div class="igem_content_wrapper">
 <div class="igem_column_wrapper">
 <!--
@@ -21,10 +24,7 @@ pageHead = '''<!DOCTYPE html>
 
 
 
-'''
-
-
-def fetch_create(filename):
+''' % ( filename, filename )
     system('curl "%s/%s" -o %s.txt' % (baseURL, filename,filename) )
     f = open('%s.txt' % filename, 'r+')
     page = f.read()
