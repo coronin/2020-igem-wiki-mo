@@ -6,50 +6,7 @@
   <link rel="stylesheet" href="/1igem.css">
   <title>Poster</title>
 </head>
-<script>
-	$(document).ready(function(){
-
-		//clear default settings
-		$("#HQ_page").attr('id','');
-
-
-		//setup
-		// grab .first_text class and append it
-		var d_title = $('.first_text >  .info > .title' ).html();
-		var d_text =  $('.first_text  > .info > .text'  ).html();
-
-
-		//append .first_text
-		$( "#section_title").append(d_title);
-		$( "#section_text").append(d_text);
-
-
-		//variables
-		var clicked_id;
-		var p_title;
-		var p_text;
-
-
-		//when the user clicks on a .section
-		$('.section').click(function() {
-
-			//get id of clicked element
-    		clicked_id = $(this).attr('id');
-
-			//empty display divs
-			$( "#section_title" ).empty();
-			$( "#section_text" ).empty();
-
-			//get the content selected
-			p_title = $('#'+clicked_id+'> .info > .title' ).html();
-			p_text =  $('#'+clicked_id+'> .info > .text'  ).html();
-
-			//append selection
-			$( "#section_title").append(p_title);
-			$( "#section_text").append(p_text);
-
-		});
-	});
+<script>$(document).ready(function(){$("#HQ_page").attr("id","");var t,e,i,n=$(".first_text >  .info > .title").html(),o=$(".first_text  > .info > .text").html();$("#section_title").append(n),$("#section_text").append(o),$(".section").click(function(){t=$(this).attr("id"),$("#section_title").empty(),$("#section_text").empty(),e=$("#"+t+"> .info > .title").html(),i=$("#"+t+"> .info > .text").html(),$("#section_title").append(e),$("#section_text").append(i)})});
 </script>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Poster skin-igem action-view">
 <div class="igem_content_wrapper">
@@ -60,51 +17,37 @@
 
 
 
-
-
 {{Poster}}
 <html -->
-
 <div class="page_wrapper">
 <div class="page_center">
 
 
 <div style="padding: 20px 0px; width:95%; margin:auto; font-size:14px;">
 <h1> Poster: 2020 Fudan </h1>
-<br><br>
-
-<h3> we will use this Poster Template </h3>
-<p> This poster template will let you create an interactive poster! The poster is divided in two parts: the visual overview on the left and the documentation on the right. The visual overview is broken down into sections that the user can click on. When a user clicks on a poster section in the visual overview, the documentation on the right will display the text and graphics associated with this section of the poster. You can find the documentation on how to use this template, as well as an example here: <a href="https://2020.igem.org/Competition/Deliverables/Poster">https://2020.igem.org/Competition/Deliverables/Poster</a></p>
-
-
-
+<h2> Make calcium supplement sustainable </h2>
+<p> 最后这行将要删除 <a href="https://2020.igem.org/Competition/Deliverables/Poster">https://2020.igem.org/Competition/Deliverables/Poster</a></p>
 </div>
-
-
-
-
 
 <!---Place the content of your poster inside this div--->
 <div class="poster_w content">
 
-
 <!--This is the first row of the poster, it contains the title section --->
 <div class="row">
-	<!-- This creates a full width section with the id 'title' ,
-	since it will be the default section loaded, we add the class 'first_text' --->
-	<div class="section full first_text" id="title">
+    <!-- This creates a full width section with the id 'title' --->
+    <div class="section full" id="title">
 
-		<!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
-		<img src="https://2020.igem.org/wiki/images/f/fb/T--Example--Poster_Title.png">
+        <!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
+        <img src="https://2020.igem.org/wiki/images/7/79/T--Fudan--Poster_title.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it
-			since the first_text class is used above, this section will appear by default -->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title"> Sustainable calcium supplement </div>
-			<!--Write the text explaining this section -->
-			<div class="text">
-<ul><li>Team PI: Daru Lu</li>
+        <!--Info: Place the title and text for this section, it will appear when the user clicks on it
+            if the first_text class is used above, this section will appear by default -->
+        <div class="info">
+            <!--Write the title of the section -->
+            <div class="title"> Bone appetite </div>
+            <!--Write the text explaining this section -->
+            <div class="text">
+<ul>
 <li>Student Leader: Shizheng Tian</li>
 <li>Student Members: Shuojin Liang,
 Mingwei Li,
@@ -120,142 +63,161 @@ Xiaohui Jiang,
 Xinran Li,
 Gaochen Zhang</li>
 <li>Advisors: Liang Cai, Yijie Pan, Yuchang Lee, Jingyi Hu</li>
+<li>Team PI: Daru Lu</li>
+<li>Affiliation: <a href="http://life.fudan.edu.cn/" target="_blank">School of Life Sciences</a>, <a href="https://www.fudan.edu.cn/en/" target="_blank">Fudan University</a>; with funding from <a href="http://www.yfc.cn/" target="_blank">YF Capital</a></li>
 </ul>
-<br><br>In Asia, many old people suffer from insufficient calcium intake and related diseases such as osteoporosis. Considering that traditional calcium supplementation is not efficient and user-friendly enough, we intended to develop a kind of engineered bacteria based on E. coli that can colonize in the human intestine and secrete peptides to promote calcium absorption. We introduced the quorum sensing system to colonize bacteria in the intestine. Once the bacteria have successfully colonized the intestinal tract, the luxpR promoter will be activated and a series of short peptides that can bind to calcium and promote calcium absorption of intestinal epithelial cells will be expressed. A kill switch is added accordingly for safety. Our project provides a novel delivery method to provide calcium supplements sustainably. And we are actively seeking commercialization possibilities to expand our project impact, to reach more population, for the elderly's good health and well-being.
+<p>In Asia, many old people suffer from insufficient calcium intake and related diseases such as osteoporosis. Considering that traditional calcium supplementation is not efficient and user-friendly enough, we intended to develop a kind of engineered bacteria based on <i>E. coli</i> that can colonize in the human intestine and secrete peptides to promote calcium absorption.</p>
+<p>We introduced the quorum sensing system to colonize bacteria in the intestine. Once the bacteria have successfully colonized the intestinal tract, the @@@@luxPR promoter will be activated and a series of short peptides that can bind to calcium and promote calcium absorption of intestinal epithelial cells will be expressed. A kill switch is added accordingly for safety.</p>
+<p>Our project provides a novel delivery method to provide calcium supplements sustainably. And we are actively seeking commercialization possibilities to expand our project impact, to reach more population, for the elderly's good health and well-being.</p>
 </div>
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 
-
-<!--This is the second row of the poster, it contains the introduction section --->
 <div class="row">
-	<!-- This creates a full width section with the id 'introduction' --->
-	<div class="section full" id="introduction">
-		<!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
-		<img src="https://2020.igem.org/wiki/images/6/6e/T--Example--Poster_Introduction.png">
+    <div class="section full first_text" id="wikiSummary"><!-- it will be the default section loaded .first_text -->
+        <!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
+        <img src="https://2020.igem.org/wiki/images/3/3f/T--Fudan--Poster_whatwehavedone.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title"> Introduction </div>
-			<!--Write the text explaining this section -->
-			<div class="text"> Introduce your project and your team's goals.</div>
-		</div>
-	</div>
+        <div class="info">
+            <div class="title"> So far, what we have achieved </div>
+            <div class="text">
+<h4>项目缘起，需要HP那四张关于骨质疏松的问卷图，数据不变 重画</h4>
+<p>bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<h4>铜奖满足</h4>
+<ul>
+    <li>We have xxxx bala bala bala ba la ba la </li>
+    <li>We have yyyy bala bala bala ba la ba la </li>
+    <li>We have zzzz bala bala bala ba la ba la </li>
+    <li>We have wxcv bala bala bala ba la ba la </li>
+</ul>
+<h4>银奖满足</h4>
+<ul>
+    <li>We have xxxx bala bala bala ba la ba la </li>
+    <li>We have yyyy bala bala bala ba la ba la </li>
+    <li>We have zzzz bala bala bala ba la ba la </li>
+    <li>We have wxcv bala bala bala ba la ba la </li>
+</ul>
+<h4>金奖满足</h4>
+<ul>
+    <li>We have xxxx bala bala bala ba la ba la </li>
+    <li>We have yyyy bala bala bala ba la ba la </li>
+    <li>We have zzzz bala bala bala ba la ba la </li>
+    <li>We have wxcv bala bala bala ba la ba la </li>
+</ul>
+<p>总结的话</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 
-<!--This is the third row of the poster, it contains the inspiration, problem and idea sections --->
 <div class="row">
+    <!-- This creates a third width section --->
+    <div class="section third" id="sdg3">
+        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/2/21/T--Fudan--Poster_sdg3.png">
 
-	<!-- This creates a third width section with the id 'inspiration' --->
-	<div class="section third" id="inspiration">
-		<!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/f/f3/T--Example--Poster_Inspiration.png">
+        <div class="info">
+            <div class="title"> SDG 3: GOOD HEALTH AND WELL-BEING </div>
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
+            <div class="text">
+<p>描述我们项目如何贡献SDG3；为什么关怀老人，我们完成了什么，后来人继续做什么 bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+            </div>
+        </div>
+    </div>
 
-			<!--Write the title of the section -->
-			<div class="title"> Inspiration </div>
-			<!--Write the text explaining this section -->
-			<div class="text"> What inspired your team? What motivated you to work on this particular project? </div>
-		</div>
-	</div>
+    <div class="section third" id="sdg4">
+        <img src="https://2020.igem.org/wiki/images/7/74/T--Fudan--Poster_sdg4.png">
 
+        <div class="info">
+            <div class="title"> SDG 4: QUALITY EDUCATION </div>
+            <div class="text">
+<p>描述我们项目如何贡献SDG4；我们为什么要教育，完成了什么，后来人继续做什么 bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la What is the problem your team is working to solve? How does it affect the world? </p>
+            </div>
+        </div>
+    </div>
 
-	<!-- This creates a third width section with the id 'problem' --->
-	<div class="section third" id="problem">
-		<!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/c/c5/T--Example--Poster_Problem.png">
+    <div class="section third" id="sdg9">
+        <img src="https://2020.igem.org/wiki/images/e/e5/T--Fudan--Poster_sdg9.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
+        <div class="info">
 
-			<!--Write the title of the section -->
-			<div class="title"> Problem </div>
-			<!--Write the text explaining this section -->
-			<div class="text"> What is the problem your team is working to solve? How does it affect the world? </div>
-		</div>
-	</div>
-
-	<!-- This creates a third width section with the id 'idea' --->
-	<div class="section third" id="idea">
-		<!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/9/90/T--Example--Poster_Idea.png">
-
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-
-			<!--Write the title of the section -->
-			<div class="title"> Design </div>
-			<!--Write the text explaining this section -->
-			<div class="text"> How are you going to solve the problem? Where did the idea come from? </div>
-		</div>
-	</div>
+            <!--Write the title of the section -->
+            <div class="title"> SDG 9: INDUSTRY, INNOVATION AND INFRASTRUCTURE </div>
+            <!--Write the text explaining this section -->
+            <div class="text">
+<p>描述我们项目如何贡献SDG9；我们完成了什么，下一步将要做什么 bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la  How are you going to solve the problem? Where did the idea come from?</p>
+            </div>
+        </div>
+    </div>
 
 </div>
-
 
 <!--This is the fourth row of the poster, it contains the engineering section --->
 <div class="row">
-	<!-- This creates a full width section with the id 'engineering' --->
-	<div class="section full" id="engineering">
-		<img src="https://2020.igem.org/wiki/images/0/02/T--Example--Poster_Engineering.png">
+    <!-- This creates a full width section with the id 'engineering' --->
+    <div class="section full" id="engineering">
+        <img src="https://2020.igem.org/wiki/images/e/e9/T--Fudan--Poster_demo.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title"> Engineering</div>
-			<!--Write the text explaining this section -->
-			<div class="text"> Here you can explain the engineering process behind your project. </div>
-		</div>
-	</div>
+        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
+        <div class="info">
+            <!--Write the title of the section -->
+            <div class="title"> Engineering success summary </div>
+            <!--Write the text explaining this section -->
+            <div class="text"> Here you can explain the engineering process behind your project. </div>
+        </div>
+    </div>
 </div>
 
 <!--This is the fifth row of the poster, it contains the three nameless sections --->
 <div class="row">
-	<!-- This creates a third width section with the id 'section_1' --->
-	<div class="section third" id="section_1">
-		<!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/5/53/T--Example--Poster_Section1.png">
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title"> Section 1 </div>
-			<!--Write the text explaining this section -->
-			<div class="text"> Use this section to explain whatever you would like! Suggestions: Safety, Human Practices, Measurement, etc. </div>
-		</div>
-	</div>
+    <!-- This creates a third width section with the id 'section_1' --->
+    <div class="section third" id="demo_CaAP">
+        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/6/63/T--Fudan--Poster_CaAP.png">
+        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
+        <div class="info">
+            <!--Write the title of the section -->
+            <div class="title"> We invented CaAP </div>
+            <!--Write the text explaining this section -->
+            <div class="text"> Use this section to explain whatever you would like! Suggestions: Safety, Human Practices, Measurement, etc. </div>
+        </div>
+    </div>
 
-	<!-- This creates a third width section with the id 'section_2' --->
-	<div class="section third" id="section_2">
-		<!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/e/ec/T--Example--Poster_Section2.png">
+    <!-- This creates a third width section with the id 'section_2' --->
+    <div class="section third" id="demo_mcbABCD">
+        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/f/f8/T--Fudan--Poster_mcbABCD.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title"> Section 2 </div>
-			<!--Write the text explaining this section -->
-			<div class="text"> Use this section to explain whatever you would like! Suggestions: Safety, Human Practices, Measurement, etc. </div>
-		</div>
-	</div>
+        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
+        <div class="info">
+            <!--Write the title of the section -->
+            <div class="title"> We improved mcbABCD </div>
+            <!--Write the text explaining this section -->
+            <div class="text"> Use this section to explain whatever you would like! Suggestions: Safety, Human Practices, Measurement, etc. </div>
+        </div>
+    </div>
 
-	<!-- This creates a third width section with the id 'section_3' --->
-	<div class="section third" id="section_3">
-		<!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/9/9e/T--Example--Poster_Section3.png">
+    <!-- This creates a third width section with the id 'section_3' --->
+    <div class="section third" id="demo_CaAsst">
+        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/0/00/T--Fudan--Poster_CaAsst.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title"> Section 3 </div>
-			<!--Write the text explaining this section -->
-			<div class="text"> Use this section to explain whatever you would like! Suggestions: Safety, Human Practices, Measurement, etc. </div>
-		</div>
-	</div>
+        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
+        <div class="info">
+            <!--Write the title of the section -->
+            <div class="title"> CaAsst for measuring trace calcium ion </div>
+            <!--Write the text explaining this section -->
+            <div class="text"> Use this section to explain whatever you would like! Suggestions: Safety, Human Practices, Measurement, etc. </div>
+        </div>
+    </div>
 </div>
 
 
@@ -263,34 +225,34 @@ Gaochen Zhang</li>
 
 <!--This is the sixth row of the poster, it contains the results and references sections --->
 <div class="row">
-	<!-- This creates a two thirds width section with the id 'results' --->
-	<div class="section two_thirds" id="results">
-		<!--Here is the image used for the third width section, the size is:  800 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/b/b0/T--Example--Poster_Results.png">
+    <!-- This creates a two thirds width section with the id 'results' --->
+    <div class="section two_thirds" id="results">
+        <!--Here is the image used for the third width section, the size is:  800 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/4/4c/T--Fudan--Poster_useourparts.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title"> Results</div>
-			<!--Write the text explaining this section -->
-			<div class="text"> What did your team achieve? What do you plan to work on moving forward? </div>
-		</div>
+        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
+        <div class="info">
+            <!--Write the title of the section -->
+            <div class="title"> Results</div>
+            <!--Write the text explaining this section -->
+            <div class="text"> What did your team achieve? What do you plan to work on moving forward? </div>
+        </div>
 
-	</div>
+    </div>
 
-	<!-- This creates a third width section with the id 'references' --->
-	<div class="section third" id="references">
-		<!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-		<img src="https://2020.igem.org/wiki/images/f/fa/T--Example--Poster_References.png">
+    <!-- This creates a third width section with the id 'references' --->
+    <div class="section third" id="references">
+        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/0/01/T--Fudan--Poster_acknowledge.png">
 
-		<!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
-		<div class="info">
-			<!--Write the title of the section -->
-			<div class="title">References and Acknowledgements</div>
-			<!--Write the text explaining this section -->
-			<div class="text">If not already cited in other sections of your poster, what literature sources did you reference on this poster? Who helped or advised you? </div>
-		</div>
-	</div>
+        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
+        <div class="info">
+            <!--Write the title of the section -->
+            <div class="title">References and Acknowledgements</div>
+            <!--Write the text explaining this section -->
+            <div class="text">If not already cited in other sections of your poster, what literature sources did you reference on this poster? Who helped or advised you? </div>
+        </div>
+    </div>
 </div>
 
 
@@ -299,9 +261,12 @@ Gaochen Zhang</li>
 
 <!-- This is where the selected content will be displayed - Don't change this section! -->
 <div class="poster_w display">
-	<h3 id="section_title"></h3>
-	<p id="section_text"></p>
+    <h3 id="section_title"></h3>
+    <p id="section_text"></p>
 </div>
 
+<script>
+// 需要点击后定位到标题的动作
+</script>
 
 </div></div><!-- page_center  page_wrapper -->
