@@ -239,37 +239,33 @@
               不要页面内用css魔改，你肯定没有内置样式考虑各种浏览器全面
               html代码不在乎多个空格，仅显示一个
          -->
-  <h1>New fusion: reduced leakage of ptetR promoter</h1>
+  <h1>New fusion: reduced leakage of PtetR promoter</h1>
   <div class="column full_size">
-    <p> We have adopted a new and improved approach to reduce the leakage of ptetR by fusing the upstream sequence of ptetR with PL (a strong promoter in lambda phage). The low-leakage characteristics of the improved promoter will make our quorum sensing system more sensitive. </p>
+    <p> We have adopted a new and improved approach to reduce the leakage of PtetR by fusing the upstream sequence of PtetR with PL (a strong promoter in lambda phage). The low-leakage characteristics of the improved promoter will make our quorum sensing system more sensitive. </p>
   </div>
 
   <div class="clear"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
 
-  <h2>Introduction</h2>
   <div class="column full_size">
-    <p>ptetR (<a href="http://parts.igem.org/Part:BBa_R0040" target="_blank">Part:BBa_R0040</a>) is a promoter constitutively ON and repressed by TetR. In 2018 Team Fudan-CHINA modelled it and in 2019 Team Fudan characterized that promoter. This year, we used ptetR to drive McbEFG in order to regulating the growth of bacteria. We found that ptetR has the problem of leakage (base level expression), so we tried to improve this part to obtain a low-leakage promoter.
-</p>
+    <h4>Introduction</h4>
+    <p>PtetR (<a href="http://parts.igem.org/Part:BBa_R0040" target="_blank">Part:BBa_R0040</a>) is a promoter constitutively ON and repressed by TetR.</p>
+    <p>In 2018 Team Fudan-CHINA modelled it and in 2019 Team Fudan characterized that promoter. This year, we used PtetR to drive the expression of <i>mcbEFG</i> in order to regulating the growth of bacteria. We found that PtetR has the problem of leakage (base level expression), so we tried to improve this part to obtain a low-leakage promoter.</p>
   </div>
   <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
 
-  <h2>Improvement of ptetR</h2>
   <div class="column full_size">
-    <img src="https://2020.igem.org/wiki/images/5/58/T--Fudan--img_pteto3.png" alt="map of calcium intake" />
-  </div>
-  <div class="column full_size">
-    <img src="https://2020.igem.org/wiki/images/e/eb/T--Fudan--img_pteto2.png" alt="map of calcium intake" />
-  </div>
-  <div class="column full_size">
-    <p>As a frequently used promoter, ptetR has been studied thoroughly, so here we adopted another idea of fusion promoter that few people tried: PL promoter is a strong promoter from lambda phage. We used the ptetR regulatory sequence tetO to replace the -35 upstream and -35--10 parts of PL promoter, thus obtained the fusion promoter PtetO2 (<a href="http://parts.igem.org/Part:BBa_K3606006" target="_blank">BBa_K3606006</a>); replace the -35 upstream, -35--10 part and -10 downstream of PL promoter, thus obtained the fusion promoter PtetO3 (<a href="http://parts.igem.org/Part:BBa_K3606007" target="_blank">BBa_K3606007</a>). </p>
+    <h4>Strategy of the Improvement</h4>
+    <img src="https://2020.igem.org/wiki/images/5/58/T--Fudan--img_pteto3.png" alt="map of PtetO3" />
+    <br/>
+    <img src="https://2020.igem.org/wiki/images/e/eb/T--Fudan--img_pteto2.png" alt="map of PtetO2" />
+    <p>As a frequently used promoter, PtetR has been studied thoroughly. Here we adopted another idea of fusion promoter that few people tried: PL promoter is a strong promoter from lambda phage. We used the PtetR regulatory sequence tetO to replace the -35 upstream and -35 ~ -10 parts of PL promoter, thus obtained the fusion promoter PtetO2 (<a href="http://parts.igem.org/Part:BBa_K3606006" target="_blank">BBa_K3606006</a>); replace the -35 upstream, -35 ~ -10 part and -10 downstream of PL promoter, thus obtained the fusion promoter PtetO3 (<a href="http://parts.igem.org/Part:BBa_K3606007" target="_blank">BBa_K3606007</a>). </p>
   </div>
   <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
 
-  <h2>Experimental Procedure</h2>
-   <div class="column full_size"><!-- 全幅面的文字内容，上面是否留白可选 -->
-
+  <div class="column full_size"><!-- 全幅面的文字内容，上面是否留白可选 -->
+    <h4>Experimental Procedure</h4>
                 <ol>
-                    <li>Transform a control plasmid containing ptetR (BBa_R0040) with GFP and an effect plasmid containing PtetO2 / PtetO3 with GFP into BL21.</li>
+                    <li>Transform a control plasmid containing PtetR (BBa_R0040) with GFP and an effect plasmid containing PtetO2 / PtetO3 with GFP into BL21.</li>
                     <li>Pick a single colony by a sterile tip from each of the LB plates for all the experimental and control groups. Add the colony into 3 ml LB with ampicillin at 100 μg/ml. Incubate overnight at 37℃ in a shaker.</li>
                     <li>Measure and keep all groups OD600 reach 1. Inoculate each group with with 1/5000 concentration. Incubate 12 hours at 37℃ in a shaker.</li>
                     <li>Add 100 µl bacteria culture medium into each well of a 96-well plate. One well of LB as blank, one group of wild type DH10B as control. </li>
@@ -279,56 +275,55 @@
   </div>
   <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
 
-<h2>Results</h2>
-<div class="column full_size">
-    <p>We have measured the expression level of PtetO2, PtetO3 along with the original ptetR(BBa_R0040) via plate reader by combining them with GFP, when they were induced by different concentration of hydrotetracycline or not induced.</p>
+  <div class="column full_size">
+    <h4>Results</h4>
+    <p>We have measured the expression level of PtetO2 (<a href="http://parts.igem.org/Part:BBa_K3606006" target="_blank">BBa_K3606006</a>), PtetO3 (<a href="http://parts.igem.org/Part:BBa_K3606007" target="_blank">BBa_K3606007</a>) along with the original PtetR (<a href="http://parts.igem.org/Part:BBa_R0040" target="_blank">BBa_R0040</a>) via plate reader by combining them with GFP, when they were induced by different concentration of anhydrotetracycline (aTc) or not induced.</p>
   </div>
+
   <div class="column half_size">
     <img src="https://2020.igem.org/wiki/images/5/51/T--Fudan--aTc_0.jpg" alt="figure 1" />
-    <p>Figure 1. When aTc=0, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.       </p>
+    <h6>Figure 1. When aTc=0, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.</h6>
 
     <img src="https://2020.igem.org/wiki/images/d/d3/T--Fudan--aTc_200.jpg" alt="figure 3" />
-    <p>Figure 3. When aTc=200, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.        </p>
-
+    <h6>Figure 3. When aTc=200, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.</h6>
   </div>
 
-
- <div class="column half_size">
+  <div class="column half_size">
     <img src="https://2020.igem.org/wiki/images/0/06/T--Fudan--aTc_100.jpg" alt="figure 2" />
-    <p>Figure 2. When aTc=100, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.       </p>
+    <h6>Figure 2. When aTc=100, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.</h6>
     <img src="https://2020.igem.org/wiki/images/4/46/T--Fudan--aTc_400.jpg" alt="figure 4" />
-    <p>Figure 4. When aTc=400, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.      </p>
- </div>
-    <div class="column full_size">
-    <p>Under the induction of various concentrations of aTc, the expression level of PtetO2 is very low, but the expression level of PtetO3 is moderate. Although the expression level of PtetO3 is lower than ptetR, it is very suitable for our project design. Since PtetO3 is used to drive McbEFG, if McbEFG translates too much channel protein, then when McbEFG is turned off, the expressed channel protein will be difficult to recover completely, reducing the sensitivity of quorum sensing.</p>
+    <h6>Figure 4. When aTc=400, the expression level of the promoter and bacterial OD: When OD>0.6, the promoter data is meaningful.</h6>
   </div>
 
+  <div class="column full_size">
+    <p>Under the induction of various concentrations of aTc, the expression level of PtetO2 is very low, but the expression level of PtetO3 is moderate. Although the expression level of PtetO3 is lower than PtetR, it is very suitable for our project design. Since PtetO3 is used to drive McbEFG, if McbEFG translates too much channel protein, then when McbEFG is turned off, the expressed channel protein will take a long time to degrade completely, reducing the sensitivity of quorum sensing.</p>
+  </div>
+
+<div class="clear"></div>
+
 <div class="column third_size">
-    <img src="http://parts.igem.org/wiki/images/7/7a/T--Fudan--rate_100.jpg" alt="map of calcium intake">
-    <p>figure5.When aTc=100,fold of increase of promoters   </p>
+    <img src="http://parts.igem.org/wiki/images/7/7a/T--Fudan--rate_100.jpg" alt="figure 5">
+    <h6>Figure 5. When aTc=100, fold of increase of promoters</h6>
      </div>
 <div class="column third_size">
-    <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--rate_200.jpg" alt="map of calcium intake">
-    <p>figure6.When aTc=200,fold of increase of promoters   </p>
+    <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--rate_200.jpg" alt="figure 6">
+    <h6>Figure 6. When aTc=200, fold of increase of promoters</h6>
      </div>
 <div class="column third_size">
-    <img src="https://2020.igem.org/wiki/images/0/0f/T--Fudan--rate_400.jpg" alt="map of calcium intake">
-    <p>figure7.When aTc=400,fold of increase of promoters   </p>
+    <img src="https://2020.igem.org/wiki/images/0/0f/T--Fudan--rate_400.jpg" alt="figure 7">
+    <h6>Figure 7. When aTc=400, fold of increase of promoters</h6>
      </div>
+
+<div class="clear"></div>
 
 <div class="column full_size">
-    <p>The results show that among the three promoters, PtetO3 has the highest fold of increase. This means that it is the most sensitive to the induction of aTc, which can improve the sensitivity of quorum sensing.
-</p>
-  </div>
-  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
+  <p>The results show that among the three promoters, PtetO3 has the highest fold of increase. This means that it is the most sensitive to the induction of aTc, which can improve the sensitivity of quorum sensing.</p>
+  <p>Due to the limit of time, and we ran our experiments in parallel, we could not implant PtetO3 into our mcbEFG constructs nor try on supression experiments.</p>
 
+  <h4>Reference</h4>
+    <p>[1] Huanna Qiu, et al. Construction of promoters with tight regulation on chromosome of <i>Escherichia coli</i>. Microbiology China, 2018, 45(08):1693-1704. (in Chinese)</p>
+</div>
 
-
-<h2>Reference</h2>
-  <div class="column full_size">
-    <p>[1] Huanna Qiu, et al. Construction of promoters with tight regulation on chromosome of <i>Escherichia coli</i>. Microbiology China,2018,45(08):1693-1704. (Chinese)
-</p>
-  </div>
   <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
 
   <div class="column full_size"><div id="FudanSignature">

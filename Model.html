@@ -310,10 +310,8 @@ In this model, we simulate changes in the number of AHL in a cell. As mentioned 
 
 <div class="column full_size">
 <div class="highlight decoration_background decoration_A_top">
-  <p>
-<center><b><h4>Gillespie Algorithm</h4></b></center>
+<center><h4>Gillespie Algorithm</h4></center>
    <p>The Gillespie algorithm is a mathematical method to simulate biochemical reactions with random processes. The main ideas of this algorithm are as follows:</p>
-</p>
 <p>(a) First, we divide the biochemical reaction process into several elemental reactions. The substances involved and their stoichiometric number are recorded in the form of a matrix.</p>
 <p>
 (b) Due to the rate constant and the concentration of reactants, the probability of different reactions is also different. We calculate the probability that each reaction will occur the next time.
@@ -321,12 +319,11 @@ In this model, we simulate changes in the number of AHL in a cell. As mentioned 
 <p>
 (c) The knowledge of probability theory and stochastic processes tells us that the next reaction's time follows an exponential distribution, with the total reaction rate as its parameter. At that time, according to the possibility introduced in (b), a reaction occurs, causing a change in the number of molecules.
 </p>
-<p>
-By repeating the above process, we can simulate the random biochemical reactions within the system.
+<p>By repeating the above process, we can simulate the random biochemical reactions within the system.
     </p>
 </div>
 
-<p>
+<p><br/>
 In this matrix, each row is one substance, and each column is one reaction. The reactants per molecule are represented by -1, and the products per molecule are represented by 1. Set the order of the reactants to LuxI, LuxR AHLprecursor, AHL, RA, reaction sequence in the order listed above, then the matrix should be:
 </p>
 </div>
@@ -395,7 +392,7 @@ Noted: this is just AHL in a single cell. We should keep in mind that <i>E. coli
 
  <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
 
-  <h3>1.2 RA, the Switch</h3>
+  <h3>1.2 RA (LuxR-AHL), the Switch</h3>
 
   <div class="column full_size">
    <p>In the previous model, we have discussed the rapid emergence and spread of AHL during breeding. When the concentration of AHL is high enough, the net diffusion rate can be almost zero. At this point, the intracellular reaction occurs that is identical to model 1.1 except for diffusion. Therefore, we used the same simulation method and considered the situation before the secretion of antimicrobial peptides. We obtain the changes of RA in a cell number. Since the process is still random, we provide the results of two simulations.</p>
@@ -562,10 +559,8 @@ Furthermore, with an improvement in RNA thermometer, the toxin/antitoxin system 
 Our models do an excellent job of filling in the gaps when were challenging to implement. Firstly, since web-lab experiments cannot be carried out until recently, our model simulates the change of the number of molecules in the engineering bacteria and the process of quorum sensing. Furthermore, we prove that it is feasible to realize the dynamic balance of engineering bacteria quantity through quorum sensing in project design. Our design excellence in the Kill-Switch model is demonstrated by visualizing a better kill rate caused by RNA Thermometer parameters change. As a result, our model fits in well with the project.
 </p></div>
 
-<div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
-
-<h2>Parameters Used for Simulation and Regression</h2>
   <div class="column full_size">
+<h4>Parameters Used for Simulation and Regression</h4>
 <table class="striped">
 <tr>
 <th> Signal </th> <th> Meaning </th> <th> Value. </th>
@@ -611,12 +606,10 @@ Our models do an excellent job of filling in the gaps when were challenging to i
 <div class="column full_size">
 <p><a target="_blank" href="https://2020.igem.org/wiki/images/c/ca/T--Fudan--data_from_19BNU.xlsx">Data provied by 19BNU-China</a></p></div>
 
-<div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 -->
-
-<h2>Reference</h2>
-<div class="column full_size"><p>
+<div class="column full_size">
+<h4>Reference</h4>
+<p>
 [1] Melke, P., et al., A cell-based model for quorum sensing in heterogeneous bacterial colonies. PLoS Comput Biol, 2010. 6(6): p. e1000819.</p>
-
 <p>[2] A.B.Goryachev,D.J.TohT.Lee, Systems analysis of a quorum sensing network: Design constraints imposed by the functional requirements, network topology and kinetic constants. Biosystems,Volume 83, Issues 2–3, February–March 2006, Pages 178-187</p>
 <p>[3] <a href="https://2019.igem.org/Team:Fudan/Model">https://2019.igem.org/Team:Fudan/Model</a></p>
 <p>[4] Darren J. Wilkinson, Stochastic Modelling for Systems Biology.</p>

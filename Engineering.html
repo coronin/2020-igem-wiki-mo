@@ -241,122 +241,126 @@
          -->
   <h1>Achievement in Engineering</h1>
   <div class="column full_size">
-    <p> The design of our new part CaAP (Calcium Absorption Peptide)<a href="http://parts.igem.org/Part:BBa_K3606000" target="_blank">BBa_K3606000</a> and Kill Switches(<a href="http://parts.igem.org/Part:BBa_K3606027" target="_blank">BBa_K3606027</a> and <a href="http://parts.igem.org/Part:BBa_K3606028" target="_blank">BBa_K3606028 </a>)followed a engineering cycle of research and brainstorm, primitive design, debugging through discussion and consultation, further research and altered design, learn and rethink, and final design.</p>
+    <p> The design of our new part CaAP (Calcium Absorption Peptide) <a href="http://parts.igem.org/Part:BBa_K3606000" target="_blank">BBa_K3606000</a> and Kill Switches (<a href="http://parts.igem.org/Part:BBa_K3606027" target="_blank">BBa_K3606027</a> and <a href="http://parts.igem.org/Part:BBa_K3606028" target="_blank">BBa_K3606028</a>) followed a engineering cycle of research and brainstorm, primitive design, debugging through discussion and consultation, further research and improved design, learn and rethink, and final design.</p>
   </div>
-
   <div class="clear extra_space"></div><!-- 一个章节结束需要clear来留白 如果觉得内容间差异大再加上extra_space -->
 
-    <h2> Engineering of our new part CaAP (Calcium Absorption Peptide)</h2>
+<h2>Engineering of our new part CaAP (Calcium Absorption Peptide)</h2>
 
-
- <h4> Research and Brainstorm</h4>
   <div class="column full_size" >
-   <p> To solve the problem of promoting calcium absorption of intestinal epithelial cells, we did a comprehensive dig in literature at first to find out a specific factor that efficiently interacted with calcium in the digestive tract. That was when we came across calcium-binding peptides, a class of oligopeptides capable of chelating calcium, which had been found in hen egg yolk, cow milk casein, whey, soy, wheat germ and tilapia fish, etc. They had drawn a great deal of attention from researchers for their ability to promote calcium uptake in Caco-2 cells, indicating that they could serve as a novel kind of nutritional supplementary with high efficiency to help address the calcium deficiency problem and elevate calcium bioavailability, especially for the elderly. Moreover, the biosafety of the peptides used in our design can be guaranteed as the MTT assay have shown their absence of cytotoxicity.</p>
-   <p> However, calcium-chelating oligopeptides were quite limited while functioning independently. For instance, only a few amino acids were involved in the formation of the calcium-peptide complex. Therefore, their calcium absorption ability was not satisfying. Why not make a combination of different oligopeptides? That was where our idea of building CaAP(Calcium Absorption Peptide) originally came from. </p>
+  <h4> Research and Brainstorm</h4>
+  <p> To solve the problem of promoting calcium absorption of intestinal epithelial cells, we did a comprehensive dig in literature at first to find out a specific factor that efficiently interacted with calcium in the digestive tract. That was when we came across calcium-binding peptides, a class of oligopeptides capable of chelating calcium, which had been found in hen egg yolk, cow milk casein, whey, soy, wheat germ and tilapia fish, <i>etc</i>. They had drawn a great deal of attention from researchers for their ability to promote calcium uptake in Caco-2 cells, indicating that they could serve as a novel kind of nutritional supplementary with high efficiency to help address the calcium deficiency problem and elevate calcium bioavailability, especially for the elderly. Moreover, the biosafety of the peptides used in our design can be guaranteed as the MTT assay have shown their absence of cytotoxicity.</p>
+
+   <p> However, calcium-chelating oligopeptides were quite limited while functioning independently. For instance, only a few amino acids were involved in the formation of the calcium-peptide complex. Therefore, their calcium absorption ability was not satisfying. Why not make a combination of different oligopeptides? That was where our idea of building CaAP (Calcium Absorption Peptide) originally came from. </p>
   </div>
-   <div class="clear"></div>
 
-<h4> Primitive design </h4>
   <div class="column full_size" >
-   <p> After careful research in literature, we decided to create CaAP(Calcium Absorption Peptide) by integrating 5 different calcium-binding peptides: GPAGPHGPVG, FDHIVY, YQEPVIAPKL, NDEELNK, and DHTKE, which have been reported to enhance calcium transport into Caco-2 cell monolayers prominently as compared with the calcium alone. Among these peptides, GPAGPHGPVG, FDHIVY, YQEPVIAPKL and NDEELNK function by forming calcium-peptide complex through Asp and Glu residues As for DHTKE, which also facilitates the calcium influx into the cytoplasm of intestinal epithelial cells through calcium chelation, it interacts with the bivalent calcium ion by carboxyl oxygen and amino nitrogen of Asp and Glu as well as the imidazole nitrogen atoms of His residue.</p>
+  <h4> Primitive design </h4>
+   <p> After careful research in literature, we decided to create CaAP (Calcium Absorption Peptide) by integrating 5 different calcium-binding peptides: GPAGPHGPVG, FDHIVY, YQEPVIAPKL, NDEELNK, and DHTKE, which have been reported to enhance calcium transport into Caco-2 cell monolayers prominently as compared with the calcium alone. Among these peptides, FDHIVY, YQEPVIAPKL and NDEELNK function by forming calcium-peptide complex through Asp and Glu residues. As for DHTKE, which also facilitates the calcium influx into the cytoplasm of intestinal epithelial cells through calcium chelation, it interacts with the bivalent calcium ion by carboxyl oxygen and amino nitrogen of Asp and Glu as well as the imidazole nitrogen atoms of His residue.</p>
   </div>
-   <div class="clear"></div>
 
-<h4> Debugging through discussion and consultation </h4>
   <div class="column full_size" >
+   <h4> Debugging through discussion and consultation </h4>
    <p> During the process of group discussion between our group members and consultation of teachers and advisors, we realized that there are two major problems in our primitive design. </p>
-   <p> Firstly, the one-way design of increasing calcium absorption might lead to some problems. Excessive calcium could possibly interrupt the homeostasis in our gut and bring about some unwanted effects. Therefore, we decided to add a feedback circuit to the original CaAP(Calcium Absorption Peptide) design. </p>
-   <p> Secondly, we did not take the steps after CaAP production into consideration. Besides successful expression in the engineered strains(<i>E. coli</i>), the secretion of CAAP from bacteria to the intestine is of vital importance as well. Only when CAAP is eventually located in the lumen of the digestive tract can it display its robust function of combining calcium. To solve this problem, we attempted to find some secreting peptides to facilitate its secretion. </p>
+   <p> Firstly, the one-way design of increasing calcium absorption might lead to some problems. Excessive calcium could possibly interrupt the homeostasis in our gut and bring some unwanted effects. Therefore, we decided to add a feedback circuit to the original CaAP (Calcium Absorption Peptide) design. </p>
+   <p> Secondly, we did not take the steps after CaAP production into consideration. Besides successful expression in the engineered strains (<i>E. coli</i> Nissle), the secretion of CAAP from bacteria to the intestine is of vital importance as well. Only when CAAP is eventually located in the lumen of the digestive tract can it display its robust function of combining calcium. To solve this problem, we attempted to find some signal peptides to facilitate its secretion. </p>
   </div>
-   <div class="clear"></div>
 
-<h4> Further research and Altered design </h4>
   <div class="column full_size" >
-   <p> Based on the two aforementioned problems, we directed some changes to our CaAP(Calcium Absorption Peptide) design. </p>
+  <h4> Further research and altered design </h4>
+   <p> Based on the two aforementioned problems, we directed some changes to our CaAP (Calcium Absorption Peptide) design. </p>
    <p> As for the feedback circuit of CaAP, we decided to link a feedback factor after the CaAP sequence which is transcribed simultaneously with CaAP. The feedback factor served as a regulator of a feedback promoter. When the feedback factor gradually accumulated and reached a certain threshold, it would activate the feedback promoter and initiate the transcription of the downstream sRNA, which in turn interacted with the mRNA of CaAP and inhibit its translation. As a result, the expression of CaAP was decreased through the feedback circuit. </p></div>
 
 <div class="column full_size">
-<img src="https://2020.igem.org/wiki/images/1/10/T--Fudan--img_engineering_1.svg" alt="cold triggered MazF/MazE Kill Switch outside the body(30℃)" /> </div>
+<img src="https://2020.igem.org/wiki/images/1/10/T--Fudan--img_engineering_1.svg" alt="engineered sRNA feedback to CaAP" /> </div>
 
   <div class="column full_size" >
-   <p> For the second problem, we decided to achieve CaAP secretion via the type II secretion system, which generally contains two steps. The first step involves some signal peptides targeted to the Sec secretory pathways, which are responsible for transporting CaAP across the inner membrane into the periplasm. For Gram-negative bacteria like <i>E. coli</i>, the second step can then take place once CaAP is in the periplasm, as the intrinsic protein complex GspD creates a pore in the outer cell membrane through which CaAP can be secreted out of the bacteria. </p>
+   <p> For the second problem, we decided to achieve CaAP secretion via the type II secretion system, which generally contains two steps. The first step involves some signal peptides targeted to the Sec secretory pathways, which are responsible for transporting CaAP across the inner membrane into the periplasm. For Gram-negative bacteria like <i>E. coli</i>, the second step can then take place once CaAP is in the periplasm, as the intrinsic protein complex GspD creates a pore in the outer cell membrane through which CaAP can leak out of the bacteria. </p>
   </div>
-   <div class="clear"></div>
 
-<h4> Learn and Rethink </h4>
   <div class="column full_size" >
-   <p> When we decided to obtain a more detailed version of the feedback circuit design, we encountered some practical problems. First, it was really not an easy task for us to find a proper feedback promoter featuring a high threshold and low leakage. Otherwise, the sRNA transcription would start as soon as the CaAP and the feedback factor were transcribed, which merely reduced the upper limit of CaAP and did not execute the feedback function. Second, more importantly, the “high threshold” was actually a qualitative concept rather than a quantitative index, since the threshold was theoretically determined by the actual calcium concentration in the digestive tract, which could hardly be measured without another complex calcium-sensing system. Considering the limited lab time in our iGEM project due to the COVID-19 pandemic, the feedback circuit is to some extent, against the engineering principle of pursuing the highest efficiency in the shortest period. </p>
+  <h4> Learn and Rethink </h4>
+   <p> When we decided to obtain a more detailed version of the feedback circuit design, we encountered some practical problems. First, it was really not an easy task for us to find a proper feedback promoter featuring a high threshold and low leakage. Otherwise, the sRNA transcription would start as soon as the CaAP and the feedback factor were transcribed, which merely reduced the upper limit of CaAP and did not execute the feedback function. Second, more importantly, the “high threshold” was actually a qualitative concept rather than a quantitative index, since the threshold was theoretically determined by the actual calcium concentration in the digestive tract, which could hardly be measured without another complex calcium-sensing system. Considering the limited laboratory time we have due to the COVID-19 pandemic, the feedback circuit is to some extent, against the engineering principle of pursuing the highest efficiency in the shortest period. </p>
   </div>
-   <div class="clear"></div>
 
-<h4> Final design </h4>
   <div class="column full_size" >
-   <p> Eventually, we gave up the feedback circuit in the CaAP design and focused on the better expression and secretion of CaAP. </p>
-   <p> To efficiently express CaAP in the engineered strains(<i>E. coli</i>) and allow them to play a role when secreted into the extracellular space, sequences of the 5 mentioned oligopeptides are linked together through FR junctions(Phe-Arg). Hence, they could be expressed in the form of a whole peptide in the engineered bacteria and later cleaved into functional oligopeptides in the presence of digestive enzymes in the intestinal lumen. We also added 6x-His-tag to the C terminal of CaAP for its purification and characterization.</p>
+  <h4> Final design </h4>
+  <p> Eventually, we gave up the feedback circuit in the CaAP design and focused on the better expression and secretion of CaAP. </p>
+   <p> To efficiently express CaAP in the engineered strains(<i>E. coli</i>) and allow them to play a role when secreted into the extracellular space, sequences of the 5 mentioned oligopeptides are linked together through FR junctions (Phe-Arg). Hence, they could be expressed in the form of a whole peptide in the engineered bacteria and later cleaved into functional oligopeptides in the presence of digestive enzymes in the intestinal lumen. We also added 6x His tag to the C terminal of CaAP for its purification and characterization.</p>
    <p> Meanwhile, 5 signal peptides are selected to mediate CAAP translocation through the bacterial inner membrane, including Nsp4, OmpA, DsbA, PelB, PhoA. They are all composed of an N-domain of about two to ten amino acids, a hydrophobic H-domain of about 10–20 amino acids, and a C-domain that allows for the cleavage of the signal peptidase after secretion. </p>
-   <p> Before we get our final design of CaAP, we had experienced many obstacles and setbacks. Our ideas failed to prove themselves many times. However, we had been making constant attempts to use iterative engineering to step back and fix parts of our project that wasn’t working. </p>
+   <p> Before we get our final design of CaAP, we had experienced obstacles and setbacks. Our ideas failed to prove themselves many times. However, we had been making constant attempts to use iterative engineering to step back and fix parts of our project that wasn’t working. </p>
   </div>
-   <div class="clear"></div>
 
+<div class="clear"></div>
 
-  <h2>Engineering of Kill Switch</h2>
+<h2>Engineering of Kill Switch</h2>
 
-
- <h4>Brainstorm</h4>
   <div class="column full_size" >
-   <p>To be responsible for the environment, we considered it is necessary to introduce a Kill Switch to deprive of the survivability of engineered <i>E. coli</i> outside human bodies. Kill Switch is a gene device to eliminate bacteria in a short period of time when engineered bacteria escape from the set conditions. In the context of our project, the set condition is the human intestine and the condition under which we wanted our bacteria to die is the outside environment. Therefore, we first come up with a distinguishing condition in the intestine and in nature – glucose concentration. Glucose concentration is higher than the environment and is a very general condition that may enable the Kill Switch to apply to many situations.</p>
+    <h4>Brainstorm</h4>
+    <p>To be responsible for the environment, we considered it is necessary to introduce a Kill Switch to deprive of the survivability of engineered <i>E. coli</i> outside human bodies. Kill Switch is a gene device to eliminate bacteria in a short period of time when engineered bacteria escape from the set conditions. In the context of our project, the set condition is the human intestine and the condition under which we wanted our bacteria to die is the outside environment. Therefore, we first come up with a distinguishing condition in the intestine and in nature – glucose concentration. Glucose concentration is higher than the environment and is a very general condition that may enable the Kill Switch to apply to many situations.</p>
   </div>
-   <div class="clear"></div>
- <h4>Tentative design</h4>
-  <div class="column full_size" >
-   <p>After searching literature, we learned several special glucose-sensitive promoters could facilitate a different state of expression in the two conditions. We found two glucose-sensitive promoters in the part registry (<a target="_blank" href="http://parts.igem.org/Part:BBa_K3036003"> rpoH P5</a> and<a target="_blank" href="http://parts.igem.org/Part: BBa_K3142012"> PT-αCRP </a>). For example, PT-αCRP can turn on downstream genes precisely and autonomously in response to glucose limitation, and for this reason, it is also called glucose-starvation promoter. So, we imagined our Kill Switch to be a glucose-starvation promoter followed by a toxic protein gene.</p>
-  </div>
-   <div class="clear"></div>
- <h4>Consultant</h4>
-  <div class="column full_size" >
-   <p>We further researched the parameters of the two promoters to forecast the efficiency of the Kill Switch. For one thing, the trigger concentration of them is both 0.01-0.05%, while the glucosuria level of diabetics and pregnant women can be far higher than that<sup>[1]</sup>. However, our target consumer is the elderly who also often have diabetes, glucose-starvation promoter may not be activated effectively in their excrement. For the other thing, the model of rpoH P5 made by BNU-China demonstrated that glucose concentration in the intestine would drop under o.o5% within 2 hours after meals, which impeded persistent calcium supplement function<sup>[2]</sup>. For more practical information, we consulted the designer of rpoH P5 from Beijing Normal University. He didn’t consider glucose concentration as a specific signal to trigger elimination outside the body and also recommended we try toxin/antitoxin systems to enable more flexible regulation. (Click <a href="/Team:Fudan/Human_Practices#Integrated">here</a> to see our Integrated Human Practices page for detailed information.)</p>
-  </div>
-   <div class="clear"></div>
- <h4>Further Research, Consultant and Redesign</h4>
-  <div class="column full_size" >
-   <p>After consultant, we decided to undergo an overhaul of our Kill Switch. Therefore, we traversed most suicide circuits in intestinal probiotics by iGEM teams and the response systems and the killer systems summarized they used. We cataloged biobricks of the killer system and the sponsor system separately and figure out the fittest part in the two groups to compose our Kill Switch. The Kill Switch database made by team 2016 Marburg has incredibly reduced our workload in searching Kill Switches used from 2007 to 2015. (Click <a target="_blank" href="http://2016.igem.org/Team:Marburg/Modeling/Kill_Switch_Database">here</a> to see the database.) For parts of resemble mechanism, only the latest and the most efficient ones are listed. In this way, we can easily figure out the fittest part in the two groups to compose our kill switch, and hopefully offer a reference table for the future iGEM team working on intestinal probiotics to design kill switch and choose parts more conveniently. Click <a href="/Team:Fudan/Contribution">here</a> to see the two tables.</p>
 
-<p>It consists of RelE/RelB toxin/antitoxin system and RNA thermometer NoChill 06 to regulate it. </p> </div>
- <div class="column half_size"> <img src="https://2020.igem.org/wiki/images/9/95/T--Fudan--img_ks2.svg" alt="cold triggered MazF/MazE Kill Switch outside the body(30℃)" /> </div>
- <div class="column half_size">
- <p>The antitoxin MazE is liable and expressed at a relatively high level. The MazF toxin is constitutively co-expressed with the antitoxin under the control of an RNA thermometer NoChill-06. Under the body temperature (37℃)，NoChill-06 unfolds and exposes its ribosome binding site (RBS) to express. MazE and MazF neutralize each other by protein-protein interaction and form a stable complexity in a one-to-two ratio. When the bacteria encounter a cold shock (30℃), MazE is degraded rapidly by an ATP-dependent serine protease ClpAP and releases MazF. The toxin MazF acts as a site-specific endoribonuclease to almost all cellular mRNAs, therefore resulting in cell growth arrest and finally cell death.</p></div>
-   <div class="clear"></div>
- <div class="column half_size"><img src="https://2020.igem.org/wiki/images/f/f2/T--Fudan--model2_5.png"  alt="2_5" /> </div>
-  <div class="column half_size">
- <p> Coincidentally, we found BNU-China has created a similar design in 2019. We had another consultant with BNU-China, they approved our design. This year, we had very limited time in wet lab, so we decided to collaborate with them, obtaining their wet lab experimental data to construct model and verify our design. We improved the logistic equation, and our model fitted the experimental data from BNU-China well. Furthermore, we adjusted the RBS properties to make an efficiency analysis. The result is that our Kill Switch obtained stronger reactions in a smaller temperature range (Figure 1). Click <a href="/Team:Fudan/Model">here</a> to see the model of Kill Switch.</p></div>
+  <div class="column full_size" >
+  <h4>Tentative design</h4>
+   <p>After searching literature, we learned several special glucose-sensitive promoters could facilitate a different state of expression in the two conditions. We found two glucose-sensitive promoters in the part registry (<a target="_blank" href="http://parts.igem.org/Part:BBa_K3036003">rpoH P5</a> and <a target="_blank" href="http://parts.igem.org/Part:BBa_K3142012">PT-αCRP</a>). For example, PT-αCRP can turn on downstream genes precisely and autonomously in response to glucose limitation, and for this reason, it is also called glucose-starvation promoter. So, we imagined our Kill Switch to be a glucose-starvation promoter followed by a toxic protein gene.</p>
+  </div>
 
-<div class="column full_size" ><p>And we ordered DNA fragments from IDT in the case that we have enough time to test our Kill Switch design in wet lab. Our experimental plans to measure the growth curve of two Kill Switch were as follows:
+  <div class="column full_size" >
+  <h4>Consultation</h4>
+   <p>We further researched the parameters of the two promoters to forecast the efficiency of the Kill Switch. For one thing, the trigger concentration of them is both 0.01-0.05%, while the glucosuria level of diabetics and pregnant women can be far higher than that<sup>[1]</sup>. However, our target consumer is the elderly who also often have diabetes, glucose-starvation promoter may not be activated effectively in their excrements. For the other thing, <a href="https://2019.igem.org/Team:BNU-China/Model" target="_blank">the model of rpoH P5</a> made by 19BNU-China demonstrated that glucose concentration in the intestine would drop under 0.05% within 2 hours after meals, which impeded persistent calcium supplement function<sup>[2]</sup>. For more practical information, we consulted the designer of rpoH P5 from Beijing Normal University. He didn’t consider glucose concentration as a specific signal to trigger elimination outside the body and also recommended we try toxin/antitoxin systems to enable more flexible regulation. Please visit our <a href="/Team:Fudan/Human_Practices#Integrated">Integrated Human Practices</a> for detailed information.</p>
+  </div>
+
+  <div class="column full_size" >
+  <h4>Further Research, Consultation and Redesign</h4>
+  <p>After consultation, we decided to undergo a restart of our Kill Switch. Therefore, we traversed most suicide circuits in intestinal probiotics by iGEM teams, and sumarized the Response systems and the Killer systems they used. We cataloged BioBricks of the Killer system and the Response system separately and figure out the fittest part in the two groups to compose our Kill Switch. <a target="_blank" href="http://2016.igem.org/Team:Marburg/Modeling/Kill_Switch_Database">The Kill Switch database</a> made by team 2016 Marburg has incredibly reduced our workload in searching Kill Switches used between 2007 and 2015. For parts of resemble mechanism, only the latest and the most efficient ones are listed. In this way, we can easily figure out the fittest part in the two groups to compose ours, and hopefully offer a reference table for the future iGEM team working on intestinal probiotics to design kill switch and choose parts more conveniently. Click <a href="/Team:Fudan/Contribution#kill_switch_tables">here</a> to see the two tables.</p>
+  <p>It consists of the toxin/antitoxin system and RNA thermometer NoChill-06 to regulate it. </p>
+</div>
+
+<div class="column half_size"> <img src="https://2020.igem.org/wiki/images/9/95/T--Fudan--img_ks2.svg" alt="cold triggered MazF/MazE Kill Switch outside the body" /> </div>
+
+<div class="column half_size">
+  <p>The antitoxin MazE is liable and expressed at a relatively high level. The MazF toxin is constitutively co-expressed with the antitoxin under the control of an RNA thermometer NoChill-06. Under the body temperature (37℃)，NoChill-06 unfolds and exposes its ribosome binding site (RBS) to express. MazE and MazF neutralize each other by protein-protein interaction and form a stable complexity in a one-to-two ratio. When the bacteria encounter a cold shock (30℃), MazE is degraded rapidly by an ATP-dependent serine protease ClpAP and releases MazF. The toxin MazF acts as a site-specific endoribonuclease to almost all cellular mRNAs, therefore resulting in cell growth arrest and finally cell death.</p></div>
+
+<div class="clear"></div>
+
+<div class="column half_size"><img src="https://2020.igem.org/wiki/images/f/f2/T--Fudan--model2_5.png"  alt="model 2_5" /> </div>
+
+<div class="column half_size">
+  <p> Coincidentally, we found BNU-China has created a similar design in 2019. We had another consultant with BNU-China, they confirmed our design. This year, we had very limited time in laboratory, so we decided to collaborate with them, obtaining their wet lab experimental data to construct model and verify our design. We improved the logistic equation, and our model fitted the experimental data from BNU-China well. Furthermore, we adjusted the RBS properties to make an efficiency analysis. The result is that our Kill Switch obtained stronger reactions in a smaller temperature range. Click <a href="/Team:Fudan/Model">here</a> to see the modeling of our Kill Switch.</p>
+</div>
+
+<div class="clear"></div>
+
+<div class="column full_size" ><p>We have ordered DNA fragments from IDT in the case that we have enough time to test our Kill Switch design in wet lab. Our experimental plans to measure the growth curve of two Kill Switch were as follows:
                 <ol>
                     <li>Plasmids construction and transformation: Insert DNA fragments of BBa_K3036004 and BBa_K3606027 ordered from IDT in to pSB1C3. Transform the two kinds of constructed plasmids into DH5α strain as experimental groups and empty pSB1C plasmids as a control group. Culture three groups in 60 mL LB medium (with 50 ng/ μL ampicillin) at 37℃ overnight.</li>
-                    <li>Cold treatment: Divide each group into two test tubes for 30℃-culture groups and 37℃-culture groups. (3 for each temperature)</li>
-                    <li>Measure growth situation: Extract 5 μL bacteria solution from each test tube every 6 hours. Diluted each bacteria solution to 10^7 times and culture them on three LB plates (with 50 ng/ μL ampicillin) at 37℃ for 24 hours. Count the number of colonies in 5 cm^2 per plate after cultured for 24 hours at 37℃. </li>
+                    <li>Cold treatment: Divide each group into two test tubes for 30℃-culture groups and 37℃-culture groups. 3 for each temperature.</li>
+                    <li>Measure growth: Extract 5 μL bacteria solution from each test tube every 6 hours. Diluted each bacteria solution to 10^7 times and culture them on three LB plates (with 50 ng/ μL ampicillin) at 37℃ for 18 hours. Count the number of colonies in 5 cm^2 per plate after cultured for 18 hours at 37℃. </li>
                     <li>Draw the growth curve.</li>
                 </ol></p>
   </div>
-   <div class="clear"></div>
- <h4>Learn and Improve</h4>
-  <div class="column full_size" >
-   <p>To find some detailed parameter to constructing a model of Kill Switch, we found literature that we didn’t notice before<sup>[3]</sup>. From this literature, we found RelE has several characteristics that need to be considered with caution. First of all, RelE is a very rare toxin that has the activity against both prokaryotic and eukaryotic organisms in a similar mechanism. It has been observed that RelE can induce apoptosis in cultured human cell lines. Besides, RelE/RelB module tends to have unexpected enrichment in bacteria that is not observed for other toxin/antitoxin modules such as MazE/MazF and ParD/ParE. Such enrichment may be associated with the formation of the persistence of microbes in the gut. In addition, the divisions of bacteria carrying homologs of the RelE toxin involved in comprising the human gut microbiota. Though all these effects only been observed in artificial mammalian gene expression systems, whether it has a tangible impact on the human gut microbiome has not been verified yet, we should be particularly careful with the safety issues.</p></div>
-   <div class="column half_size">
-    <img src="https://2020.igem.org/wiki/images/2/25/T--Fudan--img_ks4.svg" alt="cold triggered MazF/MazE Kill Switch under body temperature(37℃)" /></div>
-  <div class="column half_size">
-    <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--img_ks3.svg" alt="cold triggered MazF/MazE Kill Switch outside the body(30℃)" />
-  </div>  <div><p>So, we decided to replace the RelE/RelB system with another toxin/antitoxin system. MazF/MazE, an efficient and commonly used toxin/antitoxin module mentioned in that literature, shows no evidence of unexpected enrichment and a health threat to human. Therefore, MazF/MazE may perform better in intestinal Kill Switch. In our minds, every little improvement involving safety is a huge issue. We additionally ordered a new DNA fragment (BBa_K3606028) from IDT, hoping to characterize it following the protocol above in the future. </p> </div>
-   <div class="clear"></div>
 
-
-  <h2>Reference</h2>
   <div class="column full_size" >
-  <p>[1] Cowart SL, Stachura ME. Glucosuria. In: Walker HK, Hall WD, Hurst JW, editors. Clinical Methods: The History, Physical, and Laboratory Examinations. 3rd edition. Boston: Butterworths; 1990. Chapter 139. Available from: https://www.ncbi.nlm.nih.gov/books/NBK245/</br>
-[2] https://2019.igem.org/Team:BNU-China/Model#Glucose</br>
-[3] Jones, Brian V. “The human gut mobile metagenome: a metazoan perspective.” Gut microbes vol. 1,6 (2010): 415-31. doi:10.4161/gmic.1.6.14087
-  </p>
+    <h4>Learn and Improve</h4>
+    <p>To find some detailed parameter to constructing a model of Kill Switch, we found literature that we didn’t notice before<sup>[3]</sup>. From this literature, we found RelE has several characteristics that need to be considered with caution. First of all, RelE is a very rare toxin that has the activity against both prokaryotic and eukaryotic organisms in a similar mechanism. It has been observed that RelE can induce apoptosis in cultured human cell lines. Besides, RelE/RelB module tends to have unexpected enrichment in bacteria that is not observed for other toxin/antitoxin modules such as MazE/MazF and ParD/ParE. Such enrichment may be associated with the formation of the persistence of microbes in the gut. In addition, the divisions of bacteria carrying homologs of the RelE toxin involved in comprising the human gut microbiota. Though all these effects only been observed in artificial mammalian gene expression systems, whether it has a tangible impact on the human gut microbiome has not been verified yet, we should be particularly careful with the safety issues.</p>
   </div>
+
+<div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/2/25/T--Fudan--img_ks4.svg" alt="cold triggered MazF/MazE Kill Switch under body temperature" /></div>
+<div class="column half_size">
+    <img src="https://2020.igem.org/wiki/images/a/a4/T--Fudan--img_ks3.svg" alt="cold triggered MazF/MazE Kill Switch outside the body" />
+  </div>
+<div class="clear"></div>
+
+<div class="column full_size"><p>We decided to replace the RelE/RelB system with another toxin/antitoxin system. MazF/MazE, an efficient and commonly used toxin/antitoxin module mentioned in that literature, shows no evidence of unexpected enrichment and a health threat to human. Therefore, MazF/MazE may perform better in intestinal Kill Switch. In our minds, every little improvement involving safety is a huge issue. We additionally ordered a new DNA fragment from IDT, hoping to characterize it following the protocol above in the future. </p> </div>
+
+<div class="column full_size" >
+  <h4>Reference</h4>
+  <p>[1] Cowart SL, Stachura ME. Glucosuria. In: Walker HK, Hall WD, Hurst JW, editors. Clinical Methods: The History, Physical, and Laboratory Examinations. 3rd edition. Boston: Butterworths; 1990. Chapter 139. Available from: https://www.ncbi.nlm.nih.gov/books/NBK245/<br/>
+[2] https://2019.igem.org/Team:BNU-China/Model#Glucose<br/>
+[3] Jones, Brian V. The human gut mobile metagenome: a metazoan perspective. Gut microbes vol. 1,6 (2010): 415-31. doi:10.4161/gmic.1.6.14087
+  </p>
+</div>
 
   <div class="clear"></div><!-- 一个章节结束需要clear来留白 -->
 
