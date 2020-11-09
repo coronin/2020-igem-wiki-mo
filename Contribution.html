@@ -29,7 +29,7 @@
        url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
        url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
-}https://2020.igem.org/
+}
 @media print {
     #FudanFooter{display:none}
 }
@@ -254,7 +254,7 @@
     <li>For basic parts and composite parts:<br/>
       (1) We combined scattered information in the literature and created our own CaAP (calcium absorption peptide). We showed it could be secreted and has the ability to bind calcium. Then we had it expressed controllably in <i>E. coli </i> to help intestinal cells absorb calcium.<br/>
       (2) We increase the secretion of antimicrobial peptides by adopting a relatively low expression of antimicrobial peptides (mcbABCD) and high expression of the antimicrobial peptide immune portion (mcbEFG), which improved our quorum system efficiency.</li>
-    </li>
+
     <li>For parts collection, we provided a complete set of plasmids we used to optimize circuits for expressing probiotic secreted proteins. Our experiences and results were carefully documented on the Parts Registry, which makes it easy for others to use. Our contribution shows that we are committed to putting ideas of synthetic biology into practice, including engineering and knowledge sharing.</li>
 
     <li>For measurement, we developed a method to measure blood calcium. We also made simple hardware using low-cost LED tubes and an existing mobile phone software, hoping to design a user-friendly detector for the elderly.</li>
@@ -347,17 +347,17 @@
 <td rowspan=3>Temperature (cold shock)</td> <td>Cold-acting promoter</td><td>++</td><td>---</td><td><a target="_blank" href="http://parts.igem.org/Part:BBa_K328001">PcspA</a></td><td>Working efficiently only below the room temperature (20℃).</td>
 </tr>
 <tr>
-<td>cI repressor system</td><td>+++</td><td>---</td><td><a target="_blank"href=" http://parts.igem.org/Part:BBa_C0051">cI repressor</a><br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_R0051">lambda cI regulated promoter</a><br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_K2969022">TCI38</a><br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_K2969021">TCI</a></td><td>Kill bacteria efficiently only when reaching 40℃, so it is not appropriate for our project that expect <i>E. coli</i> to survive at that temperature (fever). Moreover, it requires to express two types of proteins which imposes potential burden to the bacteria.</td>
+<td>cI repressor system</td><td>+++</td><td>---</td><td><a target="_blank" href=" http://parts.igem.org/Part:BBa_C0051">cI repressor</a><br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_R0051">lambda cI regulated promoter</a><br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_K2969022">TCI38</a><br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_K2969021">TCI</a></td><td>Kill bacteria efficiently only when reaching 40℃, so it is not appropriate for our project that expect <i>E. coli</i> to survive at that temperature (fever). Moreover, it requires to express two types of proteins which imposes potential burden to the bacteria.</td>
 </tr>
 <tr>
 <td>RNA thermometer</td> <td>+++++</td><td>----</td><td><a target="_blank" href="http://parts.igem.org/Part:BBa_K115002">FourU</a><br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_K3247005">NoChill-06</a></td><td>Appropriate reaction temperature range, high sensitivity and high efficiency.</td>
 </tr>
-<td rowspan=2>Concentration of essential nutrients in the intestine</td> <td>Glucose-sensitive promoter</td><td>++</td><td>---</td><td><a target="_blank" href="http://parts.igem.org/Part:BBa_K3036003">rpoH P5</a> <br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_K3142012">PT-αCRP</a></td><td>Glucose starvation promoter PT-αCRP initiates transcription efficiently with concentration of glucose lower than 0.05%. The concentration of glucose in small intestine will reduce to 0.05% two hours after dinner and limit the survive of <i>E. coli</i>.</td>
+<tr><td rowspan=2>Concentration of essential nutrients in the intestine</td> <td>Glucose-sensitive promoter</td><td>++</td><td>---</td><td><a target="_blank" href="http://parts.igem.org/Part:BBa_K3036003">rpoH P5</a> <br/><br/><a target="_blank" href="http://parts.igem.org/Part:BBa_K3142012">PT-αCRP</a></td><td>Glucose starvation promoter PT-αCRP initiates transcription efficiently with concentration of glucose lower than 0.05%. The concentration of glucose in small intestine will reduce to 0.05% two hours after dinner and limit the survive of <i>E. coli</i>.</td>
 </tr>
 <tr>
 <td>Fatty acid responsive repression system</td><td>+</td><td>--</td><td><a target="_blank" href="http://parts.igem.org/Part:BBa_K3096046">BBa_K3096046</a></td><td>Metabolites as responding factors, are greatly affected by food intake.</td>
 </tr>
-<td rowspan=3>Other conditions</td> <td>N-Acetyl-Glucosamin-6 phosphate regulated repression system</td><td>+</td><td>--</td><td><a target="_blank" href="http://parts.igem.org/Part:BBa_K3096048">BBa_K3096048</a></td><td>It is not very efficient.</td>
+<tr><td rowspan=3>Other conditions</td> <td>N-Acetyl-Glucosamin-6 phosphate regulated repression system</td><td>+</td><td>--</td><td><a target="_blank" href="http://parts.igem.org/Part:BBa_K3096048">BBa_K3096048</a></td><td>It is not very efficient.</td>
 </tr>
 <tr>
 <td>CO<sub>2</sub> concentration</td><td>++</td><td>----</td><td><a target="_blank" href="https://2019.igem.org/Team:NCKU_Tainan/Design"><i>can</i> gene knock out</a> </td><td>Note 1</td>
