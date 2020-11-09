@@ -9,8 +9,6 @@
 <script>$(document).ready(function(){$("#HQ_page").attr("id","");var t,e,i,n=$(".first_text >  .info > .title").html(),o=$(".first_text  > .info > .text").html();$("#section_title").append(n),$("#section_text").append(o),$(".section").click(function(){t=$(this).attr("id"),$("#section_title").empty(),$("#section_text").empty(),e=$("#"+t+"> .info > .title").html(),i=$("#"+t+"> .info > .text").html(),$("#section_title").append(e),$("#section_text").append(i)})});
 </script>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Team_Fudan_Poster skin-igem action-view">
-<div class="igem_content_wrapper">
-<div class="igem_column_wrapper">
 <!--
                       仅仅复制20行之后的内容，并注意去掉22行末的 右向文本尖头 的三个字符
                       ////////////
@@ -19,10 +17,51 @@
 
 {{Poster}}
 <html -->
-<div class="page_wrapper">
-<div class="page_center">
+<style>
+@font-face {
+  font-family: 'Pristina';
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
+  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
+}
+@media screen {
+  span.bgMenu, i.bgMenu {
+    background-color: #fbc798 !important;
+  }
+  span.span_click {
+    cursor: pointer;
+    border-bottom: 5px solid #9a6944 !important;
+  }
+  .header12 {
+    padding: 20px 0px;
+    width:95%;
+    margin:auto;
+  }
+  .page_wrapper .page_center .column  {
+    float: left;
+    margin: 1% 2%;
+    padding: 0;
+  }
+  .page_wrapper .page_center .column.half_size { width: 45.8% }
+  .page_wrapper .page_center .column.half_size img {
+    margin: 10px auto;
+    width: 100%;
+  }
+  @media only screen and (max-width: 1100px) {
+    .page_wrapper .page_center .column.half_size { width: 96% }
+  }
+  .page_wrapper .page_center .clear {
+    clear:both;
+  }
+}
+</style>
 
-<div style="padding: 20px 0px; width:95%; margin:auto; font-size:14px;">
+<div class="page_wrapper">
+<div class="page_center"><article>
+
+<div class="header12">
 <h1> Poster: 2020 Fudan </h1>
 <h2> Make calcium supplement sustainable </h2>
 </div>
@@ -62,7 +101,7 @@ The expectations for viewing the content will be in a standard web browser on a 
     <div class="section half first_text" id="abstract">
 
         <!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
-        <img src="https://2020.igem.org/wiki/images/1/13/T--Fudan--Poster_bone_appetit3.png">
+        <img src="https://2020.igem.org/wiki/images/1/13/T--Fudan--Poster_bone_appetit3.png" alt="abstract" />
 
         <!--Info: Place the title and text for this section, it will appear when the user clicks on it
             if the first_text class is used above, this section will appear by default -->
@@ -72,8 +111,8 @@ The expectations for viewing the content will be in a standard web browser on a 
             <!--Write the text explaining this section -->
             <div class="text">
 <ul>
-<li>Student Leader: Shizheng Tian</li>
-<li>Student Members: Shuojin Liang,
+<li><span class="bgMenu">Student Leader:</span> Shizheng Tian</li>
+<li><span class="bgMenu">Student Members:</span> Shuojin Liang,
 Mingwei Li,
 Ziyuan Wei,
 Jingqi Zhang,
@@ -86,9 +125,9 @@ Emily Mo,
 Xiaohui Jiang,
 Xinran Li,
 Gaochen Zhang</li>
-<li>Advisors: Liang Cai, Yijie Pan, Yuchang Lee, Jingyi Hu</li>
-<li>Team PI: Daru Lu</li>
-<li>Affiliation: <a href="http://life.fudan.edu.cn/" target="_blank">School of Life Sciences</a>, <a href="https://www.fudan.edu.cn/en/" target="_blank">Fudan University</a>; with funding from <a href="http://www.yfc.cn/" target="_blank">YF Capital</a></li>
+<li><span class="bgMenu">Advisors:</span> Liang Cai, Yijie Pan, Yuchang Lee, Jingyi Hu</li>
+<li><span class="bgMenu">Team PI:</span> Daru Lu</li>
+<li><span class="bgMenu">Affiliation:</span> <a href="http://life.fudan.edu.cn/" target="_blank">School of Life Sciences</a>, <a href="https://www.fudan.edu.cn/en/" target="_blank">Fudan University</a>; with funding from <a href="http://www.yfc.cn/" target="_blank">YF Capital</a></li>
 </ul>
 <p>In Asia, many old people suffer from insufficient calcium intake and related diseases such as osteoporosis. Considering that traditional calcium supplementation is not efficient and user-friendly enough, we intended to develop a kind of engineered bacteria based on <i>E. coli</i> that can colonize in the human intestine and secrete peptides to promote calcium absorption.</p>
 <p>We introduced the quorum sensing system to colonize bacteria in the intestine. Once the bacteria have successfully colonized the intestinal tract, the luxPR promoter will be activated and a series of short peptides that can bind to calcium and promote calcium absorption of intestinal epithelial cells will be expressed. A kill switch is added accordingly for safety.</p>
@@ -99,7 +138,7 @@ Gaochen Zhang</li>
 
     <div class="section half" id="whatwehavedone"><!-- it will be the default section loaded .first_text -->
         <!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
-        <img src="https://2020.igem.org/wiki/images/d/d9/T--Fudan--Poster_todays_special3.png">
+        <img src="https://2020.igem.org/wiki/images/d/d9/T--Fudan--Poster_todays_special3.png" alt="what we have done" />
 
         <div class="info">
             <div class="title"> So far, what we have achieved </div>
@@ -137,36 +176,51 @@ Gaochen Zhang</li>
     <!-- This creates a third width section --->
     <div class="section third" id="sdg3">
         <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-        <img src="https://2020.igem.org/wiki/images/2/21/T--Fudan--Poster_sdg3.png">
+        <img src="https://2020.igem.org/wiki/images/a/a2/T--Fudan--Poster_sdg3e.png" alt="sdg3" />
 
         <div class="info">
             <div class="title"> SDG 3: GOOD HEALTH AND WELL-BEING </div>
 
             <div class="text">
-<p>描述我们项目如何贡献SDG3；为什么关怀老人，我们完成了什么，后来人继续做什么 bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
-<p>Our project aims to provide a holistic solution to the problem of osteoporosis among seniors. Our online general biology course <i>Shengyin</i> and senior-friendly textbooks, are also designed to educate the elderly on the importance of bone health.</p>
-<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
-<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
+<p><i class="bgMenu">Ensure healthy lives and promote well-being for all at all ages.</i></p>
+
+<p>Our project aims to provide a holistic solution to the problem of osteoporosis among seniors. Our online general biology course <i>Shengyin</i> and senior-friendly textbooks, were designed to educate the elderly on the importance of bone health.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" />
+</p>
+
+<p>Since post-menopausal women are more likely to suffer osteoporosis, we paid special attention to them. Chinese women favor traditional art crosstalk, and we combined interesting art with basic synthetic biology knowledge. When we went to the nursing house to visit the elderly, we performed it for them, and they all laughed and enjoyed our performance very much.</p>
+
+<p>Another thing we did is to promote a traditional Chinese sport - Mu'lan'quan to them. Many older women liked the sport because it is both elegant and healthy. The movements of Mu'lan'quan combine dancing and Kungfu and is preferred by many females. It is convenient to practice it - anybody can do it with a fan. We hoped our effect could help the elderly women to strengthen their health and prevent osteoporosis.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" />
+</p>
+
+<p>Members of all age groups are stakeholders of osteoporosis prevention and osteoporosis treatment. Seniors are an integral part of our society, and it is our responsibility to ensure their health and quality of life.</p>
             </div>
         </div>
     </div>
 
     <div class="section third" id="sdg4">
-        <img src="https://2020.igem.org/wiki/images/7/74/T--Fudan--Poster_sdg4.png">
+        <img src="https://2020.igem.org/wiki/images/2/2f/T--Fudan--Poster_sdg4ee.png" alt="sdg4" />
 
         <div class="info">
             <div class="title"> SDG 4: QUALITY EDUCATION </div>
             <div class="text">
-<p>描述我们项目如何贡献SDG4；我们为什么要教育，完成了什么，后来人继续做什么 bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
-<p>Our free online audio course <i>The Voice Of Biology</i> runs on multiple popular platforms with easy access to all age groups. We incorporated graphics to attract younger audiences and provided large font textbooks to accommodate seniors and those with hearing impairment. 上传两个ogg格式的文档</p>
-<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
-<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la What is the problem your team is working to solve? How does it affect the world? </p>
+<p><i class="bgMenu">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</i></p>
+
+<p>With the rapid development of technology and society, the older generation is gradually lagging behind. The elderly is facing fraud, misinformation, and diseases. Lifelong education has become an urgent need for them. We dedicated ourselves to exploring education approaches, trying to bring high-quality education for the elderly and protect them from fraud and misinformation.</p>
+
+<p>We used a previous unexplored education approach to educate the elderly - educating the younger generation and instructing them how to educate their grandparents. Compared with traditional education strategies, our approach offers emotional support from the younger generation and is comfortable for the elderly. In countries like Japan, Korea, Singapore, and China, where the bond between grandparents and grandkids is incredibly tight, our approach is undoubtedly effective.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></p>
+
+<p>To educate the youth, we have held online summer camps for high school students to pass on aged care, in addition to synthetic biology which we have been teaching in the past several years. We developed an online audio course on basic biology knowledge, which could be listened to by both the youth and the elderly.</p>
+
+<p>Our free online audio course <i>The Voice Of Biology</i> runs on multiple popular platforms with easy access to all age groups. We incorporated graphics to attract younger audiences and provided large font textbooks to accommodate seniors and those with hearing impairment. 上传两个ogg格式的音频文件</p>
             </div>
         </div>
     </div>
 
     <div class="section third" id="sdg9">
-        <img src="https://2020.igem.org/wiki/images/e/e5/T--Fudan--Poster_sdg9.png">
+        <img src="https://2020.igem.org/wiki/images/d/d8/T--Fudan--Poster_sdg9e.png" alt="sdg9" />
 
         <div class="info">
 
@@ -174,10 +228,21 @@ Gaochen Zhang</li>
             <div class="title"> SDG 9: INDUSTRY, INNOVATION AND INFRASTRUCTURE </div>
             <!--Write the text explaining this section -->
             <div class="text">
-<p>描述我们项目如何贡献SDG9；我们完成了什么，下一步将要做什么 bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
-<p>We created a thorough business plan for our project and further explored possible innovation in the industry by participating in youth innovation competition, pitching to investors and much more.</p>
-<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la </p>
-<p> bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la bala bala bala ba la ba la  How are you going to solve the problem? Where did the idea come from?</p>
+<p><i class="bgMenu">Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.</i></p>
+
+<p>Our project aims at converting engineered probiotic into a sustainable calcium supplement ready for the market. Our product targets seniors suffering calcium deficiency and strives to lower the risks of osteoporosis amongst seniors. Our product is highly efficient and does not require frequent intake.</p>
+
+<p>Our product is a genetically engineered probiotic that can colonize the intestine and secrete <span class="span_click" onclick="
+    $('#section_title').empty();
+    $('#section_text').empty();
+    var pp_title = $('#demo_CaAP > .info > .title').html();
+    var pp_text =  $('#demo_CaAP > .info > .text').html();
+    $('#section_title').append(pp_title);
+    $('#section_text').append(pp_text);
+">a short peptide - CaAP</span>, which increases the amount of soluble calcium by binding to calcium ions and increasing the absorption of calcium by intestinal epithelium. Compared with other calcium supplement products such as calcium pills, our product has its unique advantages.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></p>
+
+<p>We have outlined a five-year product development plan, and signed a letter of intent with RuiShi Inc.</p>
             </div>
         </div>
     </div>
@@ -189,18 +254,20 @@ Gaochen Zhang</li>
     <!-- This creates a third width section with the id 'section_1' --->
     <div class="section third" id="demo_CaAP">
         <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-        <img src="https://2020.igem.org/wiki/images/6/63/T--Fudan--Poster_CaAP.png">
+        <img src="https://2020.igem.org/wiki/images/8/89/T--Fudan--Poster_caapeend.png" alt="demo CaAP" />
         <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
             <div class="title"> We invented CaAP </div>
             <div class="text">
 <p>CaAP stands for <u>Ca</u>lcium <u>A</u>bsorption <u>P</u>eptide.</p>
 
-<p>According to literature, we selected peptides @@@@GPAGPHGPVG, F<font style="background-color:yellow">D</font>HIVY, YQ<font style="background-color:yellow">E</font>PVIAPKL, N<font style="background-color:yellow">DEE</font>LNK, and <font style="background-color:yellow">DH</font>TK<font style="background-color:yellow">E</font>. All of the first four peptides can form calcium-peptide complex through their Asp and Glu residues, and facilitate cell uptake. DHTKE uses its Asp, Glu and His residues to do the same. Basic part @@@@</p>
+<p><img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" />
+<br/>According to literature, we selected peptides GPAGP<span class="bgMenu">H</span>GPVG, F<span class="bgMenu">D</span>HIVY, YQ<span class="bgMenu">E</span>PVIAPKL, N<span class="bgMenu">DEE</span>LNK, <span class="bgMenu">DH</span>TK<span class="bgMenu">E</span>. All of these peptides can form calcium-peptide complex through their Asp, Glu and His residues, and facilitate uptake by cells. We linked these peptides through Phe-Arg (FR) junctions. When CaAP is released into the intestinal lumen, CaAP could be further cleaved into functional oligopeptides in the presence of digestive enzymes (trypsin and chymotrypsin). We contributed a basic part <a href="http://parts.igem.org/Part:BBa_K3606000" target="_blank">BBa_K3606000</a> to the Registry, which is RFC10 assembly compatible.</p>
 
-<p>We add a signal peptide to the N segment of CaAP to guide its secretion into the periplasmic space of <i>E. coli</i>. Because it is so small, it will then leak out of the cell wall into the outside environment. @@@@ 2 existing parts, 3 new; composite parts </p>
+<p>We added a signal peptide to the N terminus of CaAP to guide its secretion into the periplasmic space of <i>E. coli</i>. Because it is so small, it will then leak out of the cell wall into the outside environment (intestinal lumen). There are 2 existing prokaryotic signal peptides (<a href="http://parts.igem.org/Part:BBa_K208004" target="_blank">PelB</a>, <a href="http://parts.igem.org/Part:BBa_K808028" target="_blank">PhoA</a>) in the Registry, and we contributed 3 more (<a href="http://parts.igem.org/Part:BBa_K3606042" target="_blank">NSP4</a>, <a href="http://parts.igem.org/Part:BBa_K3606043" target="_blank">OmpA</a>, <a href="http://parts.igem.org/Part:BBa_K3606030" target="_blank">DsbA</a>).</p>
 
-<p>We linked these peptides through Phe-Arg (FR) junctions. When CaAP is expressed and secreted by the engineered <i>E. coli</i> in the intestinal environment, CaAP could be further cleaved into functional oligopeptides in the presence of digestive enzymes (trypsin and chymotrypsin) in the intestinal lumen.</p>
+<p>Driven by a quorum sensing promoter, <i>E. coli</i> only express signal peptide linked CaAP after their colonization. We demonstrated <i>in vitro</i> released CaAP by SDS-PAGE, in trichloroacetic acid precipitated bacterial culture media samples.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></p>
 </div>
         </div>
     </div>
@@ -208,32 +275,43 @@ Gaochen Zhang</li>
     <!-- This creates a third width section with the id 'section_2' --->
     <div class="section third" id="demo_mcbABCD">
         <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-        <img src="https://2020.igem.org/wiki/images/f/f8/T--Fudan--Poster_mcbABCD.png">
+        <img src="https://2020.igem.org/wiki/images/2/2c/T--Fudan--Poster_mcbee.png" alt="demo mcbABCD" />
 
         <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
             <!--Write the title of the section -->
-            <div class="title"> We improved mcbABCD </div>
+            <div class="title"> We improved MccB17 expression </div>
             <!--Write the text explaining this section -->
             <div class="text">
+<p>Based on previous work, we use AHL+LuxR, TetR and the antimicrobial peptide microcin B17 (MccB17) to achieve an on/off switch-like controlling of bacterial colonization and <span class="span_click" onclick="
+    $('#section_title').empty();
+    $('#section_text').empty();
+    var pp_title = $('#demo_CaAP > .info > .title').html();
+    var pp_text =  $('#demo_CaAP > .info > .text').html();
+    $('#section_title').append(pp_title);
+    $('#section_text').append(pp_text);
+">CaAP</span> expression.</p>
 
-Based on previous work, We decided to use luxI/luxR and TetR to construct a quorum sensor system with the antimicrobial peptide microcin B17 (MccB17) expression system to achieve the "on" and "off" effects of controlling the growth of engineered bacteria.
-McbABCDEFG jointly completes the expression, processing, and secretion of MccB17.
-Among them, mcbA expresses the main structure of the antimicrobial peptide, and mcbBCD is responsible for the post-translational modification of the antimicrobial peptide. McbEF expresses the channel protein to secrete the peptide antibiotic. McbG is accountable for the immunity against MccB17. McbEFG is all related to E. coli 's immunity while self-producing microcin.
-TldD/tldE is a metalloprotease that is ubiquitous in bacteria. When the surrounding bacteria absorb MccB17 produced by Escherichia coli , TldD/tldE will activate it and kill the bacteria.
+<p>McbA,B,C,D jointly complete the secretion of MccB17. Among them, peptide product from <i>mcbA</i> is the precursor of the antimicrobial peptide, and McbB,C,D is responsible for the post-translational modification of McbA, to produce MccB17. McbG provides the immunity against MccB17, and McbE,F assemble the channel to export McbG. When the surrounding bacteria absorb MccB17 but not McbG, they would die.</p>
 
-In our antimicrobial peptide expressing system, McbABCD is under the control of a constitutive promoter, but PtetR regulates the expression of McbEFG. When the number of engineered bacteria in the intestine is small, few dimers formed cannot activate the luxpR promoter. Thus, TetR and CaAP expression systems are both silent. However, McbEFG is expressed and transports MccB17, which can inhibit the growth of surrounding bacteria.
+<p>We place <i>mcbABCD</i> under the control of a constitutive promoter, and use PtetR drive the expression of McbEFG. After the density of engineered bacteria increases to a certain extent, the heterdimers formed by the products of <i>luxI</i> and <i>luxR</i> will accumulate and activate the luxPR promoter.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced by modeling" /></p>
 
-When the number of bacteria increases to a certain extent, the dimers formed by the products of luxI and luxR will accumulate and activate luxpR. At this time, tetR is turned on, and PtetR is off. As a result, McbEFG stops expressing, and the CaAP system begins to work. Since the population number has reached a certain level, the engineered bacteria can express CaAP more efficiently. Meanwhile, MccB17 is still continuously expressed but cannot be effectively effluxed, which will cause the toxins to gradually accumulate in the engineered bacteria and prevent them from continuously unrestricted proliferation.
+<p>At this time, expressed TetR transcription factor will turn off PtetR. As a result, <i>mcbEFG</i> stops expressing, and <span class="span_click" onclick="
+    $('#section_title').empty();
+    $('#section_text').empty();
+    var pp_title = $('#demo_CaAP > .info > .title').html();
+    var pp_text =  $('#demo_CaAP > .info > .text').html();
+    $('#section_title').append(pp_title);
+    $('#section_text').append(pp_text);
+">CaAP</span> begins to be produced.</p>
 
-To achieve better expression efficiency, we have made an improvement in this system by creating a new promoter fusion. As PtetR has been studied thoroughly and is well-characterized, we created promoter fusion of pl and tetO. Not only is it regulated by tetR and anhydrotetracycline, but it also inherits the expression level of pl. This also allows us to create the desired promoter simpler.
+<p>Improved from last year, we: <span class="bgMenu">(1)</span> use low-copy plasmid backbone pFAB to reduce the expression burden on engineered bacteria; <span class="bgMenu">(2)</span> low expression promoters to drive <i>mcbABCD</i>; <span class="bgMenu">(3)</span> PtetR drives <i>mcbEFG</i> from the reverse strand, to avoid translational readthrough; <span class="bgMenu">(4)</span> validate individual McbA/B/C/D/E/F/G expression in an IPTG induction setting.</p>
 
-
-@@@@
-
-To solve the problem, we have proposed some improvement plans. By researching the literature and talking with Professor Lin from the Fudan University Academy of Sciences, we decided to use low-copy plasmids to reduce the expression burden of engineered bacteria. We tried to keep the main part of MccB17 (McbABCD) a relatively low expression and high express the immune part (McbEFG) to achieve high secretion of MccB17.
-
-The highly expressed channel proteins and immune proteins will export more MccB17 and reduce the accumulation of antimicrobial peptides in the engineered bacteria cells, thereby inducing them to produce more antimicrobial peptides.
+<p>Further, we quantitively showed the antibacterial effect with our compositve part <a href="http://parts.igem.org/Part:BBa_K3606029" target="_blank">BBa_K3606029</a>, which is RFC21 assembly compatible.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /><br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" />
+</p>
 </div>
         </div>
     </div>
@@ -241,48 +319,92 @@ The highly expressed channel proteins and immune proteins will export more MccB1
     <!-- This creates a third width section with the id 'section_3' --->
     <div class="section third" id="demo_CaAsst">
         <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-        <img src="https://2020.igem.org/wiki/images/0/00/T--Fudan--Poster_CaAsst.png">
+        <img src="https://2020.igem.org/wiki/images/d/db/T--Fudan--Poster_measee.png" alt="demo CaAsst" />
 
         <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
             <!--Write the title of the section -->
-            <div class="title"> CaAsst for measuring trace calcium ion </div>
+            <div class="title"> We developed CaAsst for measuring Ca<sup>2+</sup> </div>
             <!--Write the text explaining this section -->
             <div class="text">
-
-Traditional blood calcium testing requires at least 5ml blood. We developed a new measurement technique called CaAsst. We use methylthymol blue to convert the measurement of calcium concentration into the measurement of absorbance. Experiment results show a linear relationship between calcium concentration and absorbance within a specific range. We also introduced some interference substances to showcase the stability of our measurement project. CaAsst has more room for development and may be widely adapted for other tests like the blood sugar test.
-
+<p>Both calcium deficiency or high blood calcium leads to many diseases and severely reduces the quality of life. Using our probiotic product to cure osteoporosis might lead to calcium over supplementation. It is important to monitor blood calcium levels while using our calcium supplement.</p>
+<p>Traditional blood calcium testing requires at least 5 mL blood, and dedicated machines. We developed CaAsst (short from Calcium Assistant) to measure trace calcium ion in the blood. We use methylthymol blue to convert calcium concentration into 620 nm absorbance (A620). Our experimental results showed a linear relationship between calcium concentration and A620, within 20 mM calcium ion in solution, while the concentration of blood calcium ion is around 2-4 mM.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></p>
+<p>In addition, we introduced common interference substances to showcase the robustness of our measurement.<br/>
+<img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></p>
+<p><span class="bgMenu">Further development</span> may focus on improving the stability of application solutions, making glucometer compatible test strips, and low-cost-and-portable measuring hardware.</p>
 </div>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="section two_thirds" id="parts">
-        <!--Here is the image used for the third width section, the size is:  800 x 200 pixels  -->
-        <img src="https://2020.igem.org/wiki/images/4/4c/T--Fudan--Poster_useourparts.png">
+    <div class="section half" id="parts">
+        <!--Here is the image used for the third width section, the size is:  600 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/f/fd/T--Fudan--Poster_how1.png" alt="parts" />
 
         <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
             <!--Write the title of the section -->
             <div class="title"> How to use our parts </div>
             <!--Write the text explaining this section -->
-            <div class="text"> What did your team achieve? What do you plan to work on moving forward? </div>
+            <div class="text">
+<p>Our part collection offers a complete array of parts for future researchers to develop other probiotic secreted proteins/peptides. This year, we have <span class="span_click" onclick="
+    $('#section_title').empty();
+    $('#section_text').empty();
+    var pp_title = $('#demo_mcbABCD > .info > .title').html();
+    var pp_text =  $('#demo_mcbABCD > .info > .text').html();
+    $('#section_title').append(pp_title);
+    $('#section_text').append(pp_text);
+">MccB17</span>, McbG and <span class="span_click" onclick="
+    $('#section_title').empty();
+    $('#section_text').empty();
+    var pp_title = $('#demo_CaAP > .info > .title').html();
+    var pp_text =  $('#demo_CaAP > .info > .text').html();
+    $('#section_title').append(pp_title);
+    $('#section_text').append(pp_text);
+">CaAP</span> secreted and experimentally verified.</p>
+<p>We contributed 3 probiotic signal peptides (<a href="http://parts.igem.org/Part:BBa_K3606042" target="_blank">NSP4</a>, <a href="http://parts.igem.org/Part:BBa_K3606043" target="_blank">OmpA</a>, <a href="http://parts.igem.org/Part:BBa_K3606030" target="_blank">DsbA</a>), 14 low-expression promoters (BBa_K3606008 ~ BBa_K3606023) in a low-copy plasmid backbone, PtetR promoter on the reverse strand (BBa_K3606030), mcbEFG on the reverse strand (BBa_K3606821), luxPR promoter driven various proteins, PlacIq_lacI_Ptac promoter driven various proteins, <a href="http://parts.igem.org/Part:BBa_K3606007" target="_blank">PtetO3</a> (BBa_K3606007, improved from <a href="http://parts.igem.org/Part:BBa_R0040" target="_blank">PtetR</a>), <i>etc</i>.</p>
+<p>We not only provide sequences and references for these parts, but also experimental results and procedures. Most of the parts were assembled together using high-fidelity PCR and ClonExpress ligation reactions. All plasmids were sequencing verified and available upon email request <span class="bgMenu">igem@fudan.edu.cn</span>.</p>
+<p>For more details, please visit:</p>
+<ul>
+    <li><a href="/Team:Fudan/Parts" target="_blank">2020.igem.org/Team:Fudan/Parts</a></li>
+    <li><a href="/Team:Fudan/Part_Collection" target="_blank">2020.igem.org/Team:Fudan/Part_Collection</a></li>
+    <li><a href="/Team:Fudan/Experiments" target="_blank">2020.igem.org/Team:Fudan/Experiments</a></li>
+    <li><a href="/Team:Fudan/Notebook" target="_blank">2020.igem.org/Team:Fudan/Notebook</a></li>
+    <li><a href="http://parts.igem.org/cgi/partsdb/pgroup.cgi?pgroup=iGEM2020&group=Fudan" target="_blank">parts.igem.org/cgi/partsdb/pgroup.cgi</a></li>
+</ul>
+            </div>
         </div>
 
     </div>
 
     <!-- This creates a third width section with the id 'references' --->
-    <div class="section third" id="references">
-        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
-        <img src="https://2020.igem.org/wiki/images/0/01/T--Fudan--Poster_acknowledge.png">
+    <div class="section half" id="references">
+        <!--Here is the image used for the third width section, the size is:  600 x 200 pixels  -->
+        <img src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--Poster_ack1.png" alt="references" />
 
         <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
             <!--Write the title of the section -->
             <div class="title"> Acknowledgements </div>
             <!--Write the text explaining this section -->
-            <div class="text">If not already cited in other sections of your poster, what literature sources did you reference on this poster? Who helped or advised you? </div>
+            <div class="text">
+<p>Our project wouldn’t be complete without the help of many dedicated people. We were fortunate enough to have advisors, experts, stakeholders and senior undergraduate students who participated in the making of <span class="bgMenu">Bone appetite</span>.</p>
+<p>需要煽情的话</p>
+<p>需要煽情的话</p>
+<p>需要煽情的话</p>
+<p>需要煽情的话</p>
+<p>References: 只需要核心文献</p>
+<ul>
+    <li>1ba asdf asffffffweafsa fe waffa e</li>
+    <li>2ba asdf asffffffweafsa fe waffa e</li>
+    <li>3ba asdf asffffffweafsa fe waffa e</li>
+    <li>4ba asdf asffffffweafsa fe waffa e</li>
+    <li>5ba asdf asffffffweafsa fe waffa e</li>
+    <li>6ba asdf asffffffweafsa fe waffa e</li>
+</ul>
+            </div>
         </div>
     </div>
 </div>
@@ -294,42 +416,36 @@ Traditional blood calcium testing requires at least 5ml blood. We developed a ne
 <!-- This is where the selected content will be displayed - Don't change this section! -->
 <div class="poster_w display" tabindex="1">
     <h3 id="section_title"></h3>
-    <p id="section_text"></p>
+    <div id="section_text"></div>
+</div>
+
+<div class="clear"></div>
+<br/><br/><br/><br/><br/><br/>
+<div class="column half_size">
+<p>In our <span class="bgMenu">promotion video</span>, we xxxx yyyy zzzz<br/>
+<a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank"><img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></a>
+</p>
+</div>
+<div class="column half_size">
+<p>In our <span class="bgMenu">team presentation video</span>, we xxxx yyyy zzzz<br/>
+<a href="https://video.igem.org/videos/watch/cb2d852a-e3de-48da-9648-2f1bbc545483" target="_blank"><img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></a>
+</p>
 </div>
 
 <!-- below with js to improve the original - Don't change this section! -->
 <script>
 $(document).ready(function(){
-    var data_id;
-    var pp_title;
-    var pp_text;
-
-    //when the user clicks on a .section
-    $( ".span_section" ).click(function() {
-
-        //get id of clicked element
-        data_id = $(this).attr('data-id');
-
-        //empty display divs
-        $( "#section_title" ).empty();
-        $( "#section_text" ).empty();
-
-        //get the content selected
-        pp_title = $('#'+data_id+'> .info > .title' ).html();
-        pp_text =  $('#'+data_id+'> .info > .text'  ).html();
-
-        //append selection
-        $( "#section_title").append(pp_title);
-        $( "#section_text").append(pp_text);
-    });
-
-    $( ".poster_w" ).click(function() {
+    $( ".row" ).click(function() {
       $( "#section_title" ).focus();
       $('html, body').animate({
-          scrollTop: $('#section_title').offset().top - 20
-        }, 'slow');
+        scrollTop: $('#section_title').offset().top - 20
+        }, 'slow'
+      );
     });
+
+    // @@@@ each click into history for backwards
 });
 </script>
 
-</div></div><!-- page_center  page_wrapper -->
+</article>
+</div></div><!-- .page_center .page_wrapper -->
