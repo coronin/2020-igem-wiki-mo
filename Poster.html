@@ -20,14 +20,6 @@
 {{Poster}}
 <html -->
 <style>
-@font-face {
-  font-family: 'Pristina';
-  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot'); /* IE9 Compat Modes */
-  src: url('https://2020.igem.org/wiki/images/3/3f/T--Fudan--pristina-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
-       url('https://2020.igem.org/wiki/images/3/30/T--Fudan--pristina-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('https://2020.igem.org/wiki/images/f/fa/T--Fudan--pristina-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('https://2020.igem.org/wiki/images/5/5b/T--Fudan--pristina-webfont.svg') format('svg'); /* Legacy iOS */
-}
 @media screen {
   span.bgMenu, i.bgMenu, a.bgMenu {
     background-color: #fbc798 !important;
@@ -41,6 +33,9 @@
     padding: 20px 0px;
     width:95%;
     margin:auto;
+  }
+  .page_wrapper .page_center p:not(:first-child)  {
+    text-indent: 2em;
   }
   .page_wrapper .page_center .column  {
     float: left;
@@ -101,17 +96,14 @@ The expectations for viewing the content will be in a standard web browser on a 
 
 <!--This is the first row of the poster, it contains the title section --->
 <div class="row">
-    <div class="section half first_text" id="abstract">
-
+    <section><div class="section half first_text" id="abstract" tabindex="2">
         <!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
         <img src="https://2020.igem.org/wiki/images/1/13/T--Fudan--Poster_bone_appetit3.png" alt="abstract" />
-
         <!--Info: Place the title and text for this section, it will appear when the user clicks on it
             if the first_text class is used above, this section will appear by default -->
         <div class="info">
-            <!--Write the title of the section -->
             <div class="title"> Bone appetite </div>
-            <!--Write the text explaining this section -->
+
             <div class="text">
 <ul>
 <li><span class="bgMenu">Student Leader:</span> Shizheng Tian</li>
@@ -135,24 +127,24 @@ Gaochen Zhang</li>
 <p>In Asia, many old people suffer from insufficient calcium intake and related diseases such as osteoporosis. Considering that traditional calcium supplementation is not efficient and user-friendly enough, we intended to develop a kind of engineered bacteria based on <i>E. coli</i> that can colonize in the human intestine and secrete peptides to promote calcium absorption.</p>
 <p>We introduced the quorum sensing system to colonize bacteria in the intestine. Once the bacteria have successfully colonized the intestinal tract, the luxPR promoter will be activated and a series of short peptides that can bind to calcium and promote calcium absorption of intestinal epithelial cells will be expressed. A kill switch is added accordingly for safety.</p>
 <p>Our project provides a novel delivery method to provide calcium supplements sustainably. And we are actively seeking commercialization possibilities to expand our project impact, to reach more population, for the elderly's good health and well-being.</p>
-</div>
+            </div>
         </div>
-    </div>
+    </div></section>
 
-    <div class="section half" id="whatwehavedone"><!-- it will be the default section loaded .first_text -->
-        <!--Here is the image used for the full width section, the size is: 1200 x 200 pixels -->
+    <section><div class="section half" id="whatwehavedone" tabindex="3">
         <img src="https://2020.igem.org/wiki/images/d/d9/T--Fudan--Poster_todays_special3.png" alt="what we have done" />
 
         <div class="info">
-            <div class="title"> @@@@ What we have achieved </div>
+            <div class="title"> &#x1F389;&#x1F389; What we have achieved &#x1F389;&#x1F389; </div>
+
             <div class="text">
 <h4>Where we came from</h4>
 <p>A large portion of the elderly Asian population suffers from insufficient calcium intake and related diseases like osteoporosis. Experts recommend that osteoporosis prevention should begin as early as middle age.</p>
 <p>Curious about how calcium deficiency affects the elderly and the middle-aged, we conducted a survey to learn whether/how we are able to help with calcium supplementation. Our overall results indicate that the younger generation has a strong awareness of bone health and has taken action to supplement their calcium intake.<br/>
 <img src="https://2020.igem.org/wiki/images/1/1d/T--Fudan--Poster_survey.png" alt="informgram survey" /><br/>
-More than half of our respondents aged between 40 and 60 replied that they know more than 3 seniors with fractures from falls. We realized that health issues surrounding bone health are no longer figures on paper but tangible challenges in many families. <span class="bgMenu">Calcium deficiency is clearly an urgent issue that requires immediate change.</span> But, the current calcium supplementation approaches are inefficient and not user-friendly, particularly towards the elderly. In early 2020, we initiated <i>Bone Appetit</i>, a project that strives to build efficient, user-friendly and sustainable calcium supplementation for the elderly.</p>
+More than half of our respondents aged between 40 and 60 replied that they know more than 3 seniors with fractures from falls. We realized that health issues surrounding bone health are no longer figures on paper but tangible challenges in many families. <span class="bgMenu">Calcium deficiency is clearly an urgent issue that requires immediate change.</span> However, the current calcium supplementation approaches are inefficient and not user-friendly, particularly towards the elderly. In early 2020, we initiated <i>Bone Appetit</i>, a project that strives to build efficient, user-friendly and sustainable calcium supplementation for the elderly.</p>
 <h4>Where we are now</h4>
-<p>In the past 10 months, we combined work of lab, production, entrepreneurship, education and safety. We developed a thorough proof of our concept involving modeling a kill switch, designing and testing secretion peptides guided calcium absorption peptide (<span class="span_click" onclick="
+<p>In the past 10 months, we combined our work in lab, production, entrepreneurship, education and safety. We developed a thorough proof of our concept involving modeling a kill switch, designing and testing secretion peptides guided calcium absorption peptide (<span class="span_click" onclick="
     $('#section_title').empty();
     $('#section_text').empty();
     var pp_title = $('#demo_CaAP > .info > .title').html();
@@ -166,7 +158,7 @@ More than half of our respondents aged between 40 and 60 replied that they know 
     var pp_text =  $('#demo_mcbABCD > .info > .text').html();
     $('#section_title').append(pp_title);
     $('#section_text').append(pp_text);
-">MccB17</span> based quorum sensing system, and developing a novel measurement scheme (<span class="span_click" onclick="
+">MccB17</span> based quorum sensing system, and developing a robust measurement scheme (<span class="span_click" onclick="
     $('#section_title').empty();
     $('#section_text').empty();
     var pp_title = $('#demo_CaAsst > .info > .title').html();
@@ -180,23 +172,17 @@ More than half of our respondents aged between 40 and 60 replied that they know 
 <img src="https://2020.igem.org/wiki/images/6/62/T--Fudan--Poster_model-RA-counts.jpg" alt="RA counts simulation" /><br/>
 @@@@asdfas dsa fsa dfsaf sa fas df sadf asdf sadf.
 We consulted various experts to improve our project. We <a href="/Team:Fudan/Collaborations" target="_blank">collaborated</a> with BNU-China when designing our Kill Switch.</p>
-<p>
-@@@@
-We believe that developing basic parts and composite parts is an area that we shine. We developed a novel peptide that binds to calcium ion (CaAp), demonstrated that OmpA-CaAP has the best secretion, and Ni-NTA could be used to enrich CaAP via its 6x-His tag. Fourteen different promoters drive CaAP expression are available for future examination and much more.
 
-</p>
-<p>To conduct quality education to the elderly, we started educating the young and instruct them to educate their parents and/or grandparents. We formed <a href="/Team:Fudan/Partnership" target="_blank">partnerships</a> with other iGEM teams to better educate the young and those from the rural areas. We actively reached out to high school students, undergraduates and all age groups with accessible educational opportunities.</p>
+<p>In order to deliver quality education to the elderly, we started educating the young and instruct them to educate their parents and/or grandparents. We formed <a href="/Team:Fudan/Partnership" target="_blank">partnerships</a> with other iGEM teams to better educate the young and those from the rural areas. We actively reached out to high school students, undergraduates and all age groups with accessible educational opportunities.</p>
 <h4>Our contributions to #iGEM</h4>
-<p>To conclude, our team has contributed to the iGEM community in various aspects, from <a href="/Team:Fudan/Inclusion" target="_blank">inclusive</a> <a href="/Team:Fudan/Education" target="_blank">education</a> to contributing <a href="http://parts.igem.org/cgi/partsdb/pgroup.cgi?pgroup=iGEM2020&group=Fudan" target="_blank">new parts to the Registry</a>, from <a href="/Team:Fudan/Model" target="_blank">improved modeling</a> to <a href="/Team:Fudan/Measurement" target="_blank">a novel measurement</a> and <a href="/Team:Fudan/Entrepreneurship" target="_blank">a business plan</a>. We hope that our project is not just limited to providing <span class="bgMenu">solid foundations for future research</span> to build upon, but also contributes to achieving <a class="bgMenu" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">the sustainable development goals</a> outlined by the United Nations.</p>
+<p>To conclude, our team has contributed to the iGEM community in various aspects, from <a href="/Team:Fudan/Inclusion" target="_blank">inclusive</a> <a href="/Team:Fudan/Education" target="_blank">education</a> to contributing <a href="http://parts.igem.org/cgi/partsdb/pgroup.cgi?pgroup=iGEM2020&group=Fudan" target="_blank">new parts to the Registry</a>, from <a href="/Team:Fudan/Model" target="_blank">improved modeling</a> to <a href="/Team:Fudan/Measurement" target="_blank">a robust measurement</a> and <a href="/Team:Fudan/Entrepreneurship" target="_blank">a product development plan</a>. We hope that our project is not just limited to providing <span class="bgMenu">solid foundations for future research</span> to build upon, but also contributes to achieving <a class="bgMenu" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">the sustainable development goals</a> outlined by the United Nations.</p>
             </div>
         </div>
-    </div>
+    </div></section>
 </div>
 
 <div class="row">
-    <!-- This creates a third width section --->
-    <div class="section third" id="sdg3">
-        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+    <section><div class="section third" id="sdg3" tabindex="4">
         <img src="https://2020.igem.org/wiki/images/a/a2/T--Fudan--Poster_sdg3e.png" alt="sdg3" />
 
         <div class="info">
@@ -209,22 +195,23 @@ We believe that developing basic parts and composite parts is an area that we sh
 <img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" />
 </p>
 
-<p>Since post-menopausal women are more likely to suffer osteoporosis, we paid special attention to them. Chinese women favor traditional art crosstalk, and we combined interesting art with basic synthetic biology knowledge. When we went to the nursing house to visit the elderly, we performed it for them, and they all laughed and enjoyed our performance very much.</p>
+<p>We paid special attention to post-menopausal women who are more likely to suffer from osteoporosis. Since Chinese women favor traditional crosstalk, we combined the traditions with basic synthetic biology knowledge to deliver our education in the form they can appreciate with ease. We performed it for them on our nursing home visit. They all laughed and enjoyed our performance while learning something new.</p>
 
-<p>Another thing we did is to promote a traditional Chinese sport - Mu'lan'quan to them. Many older women liked the sport because it is both elegant and healthy. The movements of Mu'lan'quan combine dancing and Kungfu and is preferred by many females. It is convenient to practice it - anybody can do it with a fan. We hoped our effect could help the elderly women to strengthen their health and prevent osteoporosis.<br/>
+<p>Another thing we did is to promote a traditional Chinese sport - Mu'lan'quan to them. Many elder women liked the sport because it is both elegant and healthy. The movements of Mu'lan'quan combine dancing and Kungfu and is preferred by many females. It is convenient to practice - anybody can do it with a fan. We hope our effort could help the elderly women strengthen their bone health and lower the risks of osteoporosis.<br/>
 <img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" />
 </p>
 
 <p>Members of all age groups are stakeholders of osteoporosis prevention and osteoporosis treatment. Seniors are an integral part of our society, and it is our responsibility to ensure their health and quality of life.</p>
             </div>
         </div>
-    </div>
+    </div></section>
 
-    <div class="section third" id="sdg4">
+    <section><div class="section third" id="sdg4" tabindex="5">
         <img src="https://2020.igem.org/wiki/images/2/2f/T--Fudan--Poster_sdg4ee.png" alt="sdg4" />
 
         <div class="info">
             <div class="title"> SDG 4: QUALITY EDUCATION </div>
+
             <div class="text">
 <p><i class="bgMenu">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</i></p>
 
@@ -238,16 +225,14 @@ We believe that developing basic parts and composite parts is an area that we sh
 <p>Our free online audio course <i>The Voice Of Biology</i> runs on multiple popular platforms with easy access to all age groups. We incorporated graphics to attract younger audiences and provided large font textbooks to accommodate seniors and those with hearing impairment. 上传两个ogg格式的音频文件</p>
             </div>
         </div>
-    </div>
+    </div></section>
 
-    <div class="section third" id="sdg9">
+    <section><div class="section third" id="sdg9" tabindex="6">
         <img src="https://2020.igem.org/wiki/images/d/d8/T--Fudan--Poster_sdg9e.png" alt="sdg9" />
 
         <div class="info">
-
-            <!--Write the title of the section -->
             <div class="title"> SDG 9: INDUSTRY, INNOVATION AND INFRASTRUCTURE </div>
-            <!--Write the text explaining this section -->
+
             <div class="text">
 <p><i class="bgMenu">Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.</i></p>
 
@@ -263,46 +248,41 @@ We believe that developing basic parts and composite parts is an area that we sh
 ">a short peptide - CaAP</span>, which increases the amount of soluble calcium by binding to calcium ions and increasing the absorption of calcium by intestinal epithelium. Compared with other calcium supplement products such as calcium pills, our product has its unique advantages.<br/>
 <img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></p>
 
-<p>We have outlined a five-year product development plan, and signed a letter of intent with RuiShi Inc.</p>
+<p>We have outlined a five-year product development plan, and signed <a href="/Team:Fudan/Entrepreneurship" target="_blank">a letter of intent</a> with RuiShi Inc.<br/>
+<img src="https://2020.igem.org/wiki/images/b/be/T--Fudan--Poster_IMG6245.jpg" alt="hand shake after sign" />
+</p>
             </div>
         </div>
-    </div>
-
+    </div></section>
 </div>
 
-<!-- contains the three nameless sections --->
 <div class="row">
-    <!-- This creates a third width section with the id 'section_1' --->
-    <div class="section third" id="demo_CaAP">
-        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+    <section><div class="section third" id="demo_CaAP" tabindex="7">
         <img src="https://2020.igem.org/wiki/images/8/89/T--Fudan--Poster_caapeend.png" alt="demo CaAP" />
-        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
+
         <div class="info">
             <div class="title"> We invented CaAP </div>
-            <div class="text">
-<p>CaAP stands for <u>Ca</u>lcium <u>A</u>bsorption <u>P</u>eptide.</p>
 
-<p><img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" />
-<br/>According to literature, we selected peptides GPAGP<span class="bgMenu">H</span>GPVG, F<span class="bgMenu">D</span>HIVY, YQ<span class="bgMenu">E</span>PVIAPKL, N<span class="bgMenu">DEE</span>LNK, <span class="bgMenu">DH</span>TK<span class="bgMenu">E</span>. All of these peptides can form calcium-peptide complex through their Asp, Glu and His residues, and facilitate uptake by cells. We linked these peptides through Phe-Arg (FR) junctions. When CaAP is released into the intestinal lumen, CaAP could be further cleaved into functional oligopeptides in the presence of digestive enzymes (trypsin and chymotrypsin). We contributed a basic part <a href="http://parts.igem.org/Part:BBa_K3606000" target="_blank">BBa_K3606000</a> to the Registry, which is RFC10 assembly compatible.</p>
+            <div class="text">
+<p>CaAP stands for <u>Ca</u>lcium <u>A</u>bsorption <u>P</u>eptide.<br/>
+<img src="https://2020.igem.org/wiki/images/b/be/T--Fudan--Poster_CaAP-image14.png" alt="luxPR driven CaAP" /></p>
+
+<p>According to literature, we selected peptides GPAGP<span class="bgMenu">H</span>GPVG, F<span class="bgMenu">D</span>HIVY, YQ<span class="bgMenu">E</span>PVIAPKL, N<span class="bgMenu">DEE</span>LNK, <span class="bgMenu">DH</span>TK<span class="bgMenu">E</span>. All of these peptides can form calcium-peptide complex through their Asp, Glu and His residues, and facilitate uptake by cells. We linked these peptides through Phe-Arg (FR) junctions. When CaAP is released into the intestinal lumen, CaAP could be further cleaved into functional oligopeptides in the presence of digestive enzymes (trypsin and chymotrypsin). We contributed a basic part <a href="http://parts.igem.org/Part:BBa_K3606000" target="_blank">BBa_K3606000</a> to the Registry, which is RFC10 assembly compatible.</p>
 
 <p>We added a signal peptide to the N terminus of CaAP to guide its secretion into the periplasmic space of <i>E. coli</i>. Because it is so small, it will then leak out of the cell wall into the outside environment (intestinal lumen). There are 2 existing prokaryotic signal peptides (<a href="http://parts.igem.org/Part:BBa_K208004" target="_blank">PelB</a>, <a href="http://parts.igem.org/Part:BBa_K808028" target="_blank">PhoA</a>) in the Registry, and we contributed 3 more (<a href="http://parts.igem.org/Part:BBa_K3606042" target="_blank">NSP4</a>, <a href="http://parts.igem.org/Part:BBa_K3606043" target="_blank">OmpA</a>, <a href="http://parts.igem.org/Part:BBa_K3606030" target="_blank">DsbA</a>).</p>
 
 <p>Driven by a quorum sensing promoter, <i>E. coli</i> only express signal peptide linked CaAP after their colonization. We demonstrated <i>in vitro</i> released CaAP by SDS-PAGE, in trichloroacetic acid precipitated bacterial culture media samples.<br/>
 <img src="https://2020.igem.org/wiki/images/b/bf/T--Fudan--Poster_filler.jpg" alt="to be replaced" /></p>
-</div>
+            </div>
         </div>
-    </div>
+    </div></section>
 
-    <!-- This creates a third width section with the id 'section_2' --->
-    <div class="section third" id="demo_mcbABCD">
-        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+    <section><div class="section third" id="demo_mcbABCD" tabindex="8">
         <img src="https://2020.igem.org/wiki/images/2/2c/T--Fudan--Poster_mcbee.png" alt="demo mcbABCD" />
 
-        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
-            <!--Write the title of the section -->
             <div class="title"> We improved MccB17 expression </div>
-            <!--Write the text explaining this section -->
+
             <div class="text">
 <p>Based on previous work, we use AHL+LuxR, TetR and the antimicrobial peptide microcin B17 (MccB17) to achieve an on/off switch-like controlling of bacterial colonization and <span class="span_click" onclick="
     $('#section_title').empty();
@@ -333,45 +313,38 @@ We believe that developing basic parts and composite parts is an area that we sh
 <img src="https://2020.igem.org/wiki/images/e/e9/T--Fudan--Poster_mcbABCD-EFG_by_IPTG1.png" alt="Mcb by IPTG1" /><br/>
 In the figures above, <span class="bgMenu">MEFL</span> is the absolute value of total green fluorescence and <span class="bgMenu">particle</span> represents the absolute counts of bacteria, so that Y axis represents green fluorescence per bacteria. In those experiments, we mixed WT <i>E. coli</i> (expressing GFP driven by Plac) with mcbABCD-(mcbEFG-PtetR) at different ratios 5:7, 20:7 and 50:7, then measured <span class="bgMenu">MEFL/particle</span> two hours after adding 1 mM IPTG. We used this assay (experimental flow chart at the bottom of this page) to study the antibacterial effect of MccB17 on protein synthesis.</p>
 
-<p>Similarly, we shown that our antimicrobial peptide suppresses WT bacteria growth (data shown on <a href="/Team:Fudan/Parts#Composite" target="_blank">/Team:Fudan/Parts#Composite</a> and the main page of <a href="http://parts.igem.org/Part:BBa_K3606029" target="_blank">the part in the Registry</a>).</p>
-<p><img src="https://2020.igem.org/wiki/images/f/fb/T--Fudan--Poster_flowchart-IPTG.png" alt="flow chart of MccB17 IPTG experiments" />
+<p>Similarly, we shown that our antimicrobial peptide suppresses WT bacteria growth (data shown on <a href="/Team:Fudan/Parts#Composite" target="_blank">/Team:Fudan/Parts#Composite</a> and the main page of <a href="http://parts.igem.org/Part:BBa_K3606029" target="_blank">the part in the Registry</a>).
+<br/><img src="https://2020.igem.org/wiki/images/f/fb/T--Fudan--Poster_flowchart-IPTG.png" alt="flow chart of MccB17 IPTG experiments" />
 </p>
-</div>
+            </div>
         </div>
-    </div>
+    </div></section>
 
-    <!-- This creates a third width section with the id 'section_3' --->
-    <div class="section third" id="demo_CaAsst">
-        <!--Here is the image used for the third width section, the size is:  400 x 200 pixels  -->
+    <section><div class="section third" id="demo_CaAsst" tabindex="9">
         <img src="https://2020.igem.org/wiki/images/d/db/T--Fudan--Poster_measee.png" alt="demo CaAsst" />
 
-        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
-            <!--Write the title of the section -->
             <div class="title"> We developed CaAsst for measuring Ca<sup>2+</sup> </div>
-            <!--Write the text explaining this section -->
+
             <div class="text">
-<p>Both calcium deficiency or high blood calcium leads to many diseases and severely reduces the quality of life. Using our probiotic product to cure osteoporosis might lead to calcium over supplementation. It is important to monitor blood calcium levels while using our calcium supplement.</p>
+<p>Both calcium deficiency or high blood calcium leads to many diseases and severely reduces the quality of life. Therefore, it is important to monitor blood calcium levels when taking calcium supplements.</p>
 <p>Traditional blood calcium testing requires at least 5 mL blood and dedicated machines. We developed CaAsst (short from Calcium Assistant) to measure trace calcium ion in the blood, as little as 10 microliters. We use methylthymol blue to convert calcium concentration into 620 nm absorbance (A620). Our experimental results showed a linear relationship between calcium concentration and A620, within 20 mM calcium ion in solution, while the concentration of blood calcium ion is around 2-4 mM.<br/>
 <img src="https://2020.igem.org/wiki/images/0/09/T--Fudan--Poster_tiduMarked.jpg" alt="tubes with Ca2+ gradient" /></p>
 <p>In addition, we introduced common interference substances to showcase the robustness of our measurement.<br/>
 <img src="https://2020.igem.org/wiki/images/7/75/T--Fudan--Poster_Ca2withInterfere.png" alt="prism graph of Ca2+ with interference" /></p>
 <p><span class="bgMenu">Further development</span> may focus on improving the stability of application solutions, making glucometer compatible test strips, and low-cost-and-portable measuring hardware.</p>
-</div>
+            </div>
         </div>
-    </div>
+    </div></section>
 </div>
 
 <div class="row">
-    <div class="section half" id="parts">
-        <!--Here is the image used for the third width section, the size is:  600 x 200 pixels  -->
+    <section><div class="section half" id="parts" tabindex="10">
         <img src="https://2020.igem.org/wiki/images/f/fd/T--Fudan--Poster_how1.png" alt="parts" />
 
-        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
-            <!--Write the title of the section -->
             <div class="title"> How to use our parts </div>
-            <!--Write the text explaining this section -->
+
             <div class="text">
 <p>Our part collection offers a complete array of parts for future researchers to develop other probiotic secreted proteins/peptides. This year, we have <span class="span_click" onclick="
     $('#section_title').empty();
@@ -400,25 +373,19 @@ In the figures above, <span class="bgMenu">MEFL</span> is the absolute value of 
 </ul>
             </div>
         </div>
+    </div></section>
 
-    </div>
-
-    <!-- This creates a third width section with the id 'references' --->
-    <div class="section half" id="references">
-        <!--Here is the image used for the third width section, the size is:  600 x 200 pixels  -->
+    <section><div class="section half" id="references" tabindex="12">
         <img src="https://2020.igem.org/wiki/images/9/9d/T--Fudan--Poster_ack1.png" alt="references" />
 
-        <!--Info: Place the title and text for this section, it will appear when the user clicks on it-->
         <div class="info">
-            <!--Write the title of the section -->
             <div class="title"> Acknowledgements </div>
-            <!--Write the text explaining this section -->
+
             <div class="text">
-<p>Our project wouldn’t be complete without the help of many dedicated people. We were fortunate enough to have advisors, experts, stakeholders and senior undergraduate students who participated in the making of <span class="bgMenu">Bone appetite</span>.</p>
-<p>需要煽情的话</p>
-<p>需要煽情的话</p>
-<p>需要煽情的话</p>
-<p>需要煽情的话</p>
+<p>Our project wouldn’t be complete without the help of many dedicated people.</p>
+<p>We give special thanks to the institutions, organizations, professors, experts, key stakeholders who have provided tremendous help to us along the way. Our project wouldn’t be complete without their dedication. </p>
+<p>We were also fortunate enough to have advisors, experts and senior undergraduate students who offered vital advice and contribution in the making of this project.</p>
+<p>We would also like to acknowledge our collaboration with other teams from the iGEM community, including 19Fudan, 19BNU-China, TJUSLS-China, and SCU-China. They have helped us with perfecting education work and guided us through conducting experiments.</p>
 <p>References: 只需要核心文献</p>
 <ul>
     <li>1ba asdf asffffffweafsa fe waffa e</li>
@@ -430,12 +397,10 @@ In the figures above, <span class="bgMenu">MEFL</span> is the absolute value of 
 </ul>
             </div>
         </div>
-    </div>
+    </div></section>
 </div>
 
-
-</div>
-
+</div><!-- .poster_w .content -->
 
 <!-- This is where the selected content will be displayed - Don't change this section! -->
 <div class="poster_w display" tabindex="1">
@@ -455,6 +420,7 @@ In the figures above, <span class="bgMenu">MEFL</span> is the absolute value of 
 <a href="https://video.igem.org/videos/watch/cb2d852a-e3de-48da-9648-2f1bbc545483" target="_blank"><img src="https://2020.igem.org/wiki/images/c/c9/T--Fudan--Poster_team-pre-video.jpg" alt="team pre video" /></a>
 </p>
 </div>
+</article>
 
 <!-- below with js to improve the original - Don't change this section! -->
 <script>
@@ -468,8 +434,15 @@ $(document).ready(function(){
     });
 
     // @@@@ each click into history for backwards
+    function spanClick(e) {
+      $('#section_title').empty();
+      $('#section_text').empty();
+      var pp_title = $('#'+e+' > .info > .title').html();
+      var pp_text =  $('#'+e+' > .info > .text').html();
+      $('#section_title').append(pp_title);
+      $('#section_text').append(pp_text);
+    }
 });
 </script>
 
-</article>
 </div></div><!-- .page_center .page_wrapper -->
