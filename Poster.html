@@ -144,14 +144,7 @@ Gaochen Zhang</li>
 <img src="https://2020.igem.org/wiki/images/1/1d/T--Fudan--Poster_survey.png" alt="informgram survey" /><br/>
 More than half of our respondents aged between 40 and 60 replied that they know more than 3 seniors with fractures from falls. We realized that health issues surrounding bone health are no longer figures on paper but tangible challenges in many families. <span class="bgMenu">Calcium deficiency is clearly an urgent issue that requires immediate change.</span> However, the current calcium supplementation approaches are inefficient and not user-friendly, particularly towards the elderly. In early 2020, we initiated <i>Bone Appetit</i>, a project that strives to build efficient, user-friendly and sustainable calcium supplementation for the elderly.</p>
 <h4>Where we are now</h4>
-<p>In the past 10 months, we combined our work in lab, production, entrepreneurship, education and safety. We developed a thorough proof of our concept involving modeling a kill switch, designing and testing secretion peptides guided calcium absorption peptide (<span class="span_click" onclick="
-    $('#section_title').empty();
-    $('#section_text').empty();
-    var pp_title = $('#demo_CaAP > .info > .title').html();
-    var pp_text =  $('#demo_CaAP > .info > .text').html();
-    $('#section_title').append(pp_title);
-    $('#section_text').append(pp_text);
-">CaAP</span>), designing, modeling and testing a <span class="span_click" onclick="
+<p>In the past 10 months, we combined our work in lab, production, entrepreneurship, education and safety. We developed a thorough proof of our concept involving modeling a kill switch, designing and testing secretion peptides guided calcium absorption peptide (<span class="span_click" onclick="window.location='#demo_CaAP'">CaAP</span>), designing, modeling and testing a <span class="span_click" onclick="
     $('#section_title').empty();
     $('#section_text').empty();
     var pp_title = $('#demo_mcbABCD > .info > .title').html();
@@ -425,25 +418,18 @@ In the figures above, <span class="bgMenu">MEFL</span> is the absolute value of 
 <!-- below with js to improve the original - Don't change this section! -->
 <script>
 $(document).ready(function(){
-    $( ".row" ).click(function() {
-      $( "#section_title" ).focus();
-      $('html, body').animate({
-        scrollTop: $('#section_title').offset().top - 86
-        }, 'slow'
-      );
-    });
 
-    // @@@@ each click into history for backwards
     function sectionUpdate(e) {
       $('#section_title').empty();
       $('#section_text').empty();
       var pp_title = $(e+' > .info > .title').html();
       var pp_text =  $(e+' > .info > .text').html();
       $('#section_title').append(pp_title);
+      $( "#section_title" ).focus();
       $('#section_text').append(pp_text);
       $('html, body').animate({
-        scrollTop: $('#section_title').offset().top - 20
-        }, 'quick'
+        scrollTop: $('#section_title').offset().top - 86
+        }, 'slow'
       );
     }
 
@@ -452,6 +438,11 @@ $(document).ready(function(){
         sectionUpdate(location.hash);
       }
     });
+
+    $('.section').click(function() {
+      window.location = '#' + $(this).attr("id");
+    });
+
 });
 </script>
 
