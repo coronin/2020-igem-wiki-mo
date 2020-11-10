@@ -175,7 +175,7 @@ We consulted various experts to improve our project. We <a href="/Team:Fudan/Col
 
 <p>In order to deliver quality education to the elderly, we started educating the young and instruct them to educate their parents and/or grandparents. We formed <a href="/Team:Fudan/Partnership" target="_blank">partnerships</a> with other iGEM teams to better educate the young and those from the rural areas. We actively reached out to high school students, undergraduates and all age groups with accessible educational opportunities.</p>
 <h4>Our contributions to #iGEM</h4>
-<p>To conclude, our team has contributed to the iGEM community in various aspects, from <a href="/Team:Fudan/Inclusion" target="_blank">inclusive</a> <a href="/Team:Fudan/Education" target="_blank">education</a> to contributing <a href="http://parts.igem.org/cgi/partsdb/pgroup.cgi?pgroup=iGEM2020&group=Fudan" target="_blank">new parts to the Registry</a>, from <a href="/Team:Fudan/Model" target="_blank">improved modeling</a> to <a href="/Team:Fudan/Measurement" target="_blank">a robust measurement</a> and <a href="/Team:Fudan/Entrepreneurship" target="_blank">a product development plan</a>. We hope that our project is not just limited to providing <span class="bgMenu">solid foundations for future research</span> to build upon, but also contributes to achieving <a class="bgMenu" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">the sustainable development goals</a> outlined by the United Nations.</p>
+<p>To conclude, our team has contributed to the iGEM community in various aspects, from <a href="/Team:Fudan/Inclusion" target="_blank">inclusive</a> <a href="/Team:Fudan/Education" target="_blank">education</a> to contributing <a href="/Team:Fudan/Parts" target="_blank">new parts</a> <a href="http://parts.igem.org/cgi/partsdb/pgroup.cgi?pgroup=iGEM2020&group=Fudan" target="_blank">to the Registry</a>, from <a href="/Team:Fudan/Model" target="_blank">improved modeling</a> to <a href="/Team:Fudan/Measurement" target="_blank">a robust measurement</a> and <a href="/Team:Fudan/Entrepreneurship" target="_blank">a product development plan</a>. We hope that our project is not just limited to providing <span class="bgMenu">solid foundations for future research</span> to build upon, but also contributes to achieving <a class="bgMenu" href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">the sustainable development goals</a> outlined by the United Nations.</p>
             </div>
         </div>
     </div></section>
@@ -428,20 +428,30 @@ $(document).ready(function(){
     $( ".row" ).click(function() {
       $( "#section_title" ).focus();
       $('html, body').animate({
-        scrollTop: $('#section_title').offset().top - 20
+        scrollTop: $('#section_title').offset().top - 86
         }, 'slow'
       );
     });
 
     // @@@@ each click into history for backwards
-    function spanClick(e) {
+    function sectionUpdate(e) {
       $('#section_title').empty();
       $('#section_text').empty();
-      var pp_title = $('#'+e+' > .info > .title').html();
-      var pp_text =  $('#'+e+' > .info > .text').html();
+      var pp_title = $(e+' > .info > .title').html();
+      var pp_text =  $(e+' > .info > .text').html();
       $('#section_title').append(pp_title);
       $('#section_text').append(pp_text);
+      $('html, body').animate({
+        scrollTop: $('#section_title').offset().top - 20
+        }, 'quick'
+      );
     }
+
+    $(window).on('hashchange', function(e){
+      if ( $(location.hash) ) {
+        sectionUpdate(location.hash);
+      }
+    });
 });
 </script>
 
