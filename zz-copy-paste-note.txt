@@ -76,7 +76,7 @@ $('.top_bar').click(function(){
 
 $(window).scroll(function(){
   var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height(), winW = $(window).width();
-  if  ((wintop/(docheight-winheight)) > 0.75) {
+  if ((wintop/(docheight-winheight)) > 0.75) {
     active_based_href();
   }
   $('#FudanLoader').width( winW*wintop/(docheight-winheight) );
