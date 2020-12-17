@@ -31,122 +31,271 @@ html, body {
     width:100%;
 }
 
-.skrollr-desktop body {
-    height:100% !important;
+.caption {
+    position: absolute;
 }
+h1 { margin-bottom: 0.2em; }
+p { line-height: 1.333em; }
+/*#slide-4 .caption {
+    right: auto;
+    left: 5%;
+    top: 5%;
+    bottom: auto;
+    color: #47373f;
+}*/
 
-body {
-    font-family:sans-serif;
-}
-
-p {
-    margin:1em 0;
-}
-
-.parallax-image-wrapper {
-    position:fixed;
-    left:0;
-    width:100%;
-    overflow:hidden;
-}
-
-.parallax-image-wrapper-50 {
-    height:50%;
-    top:-50%;
-}
-
-.parallax-image-wrapper-100 {
+/* full width/height container */
+#slides-container {
+    width: 100%;
     height:100%;
-    top:-100%;
+    overflow: hidden;
 }
 
-.parallax-image {
-    display:none;
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-}
-
-.parallax-image-50 {
+/* double the height/width of a viewport */
+#slides {
+    width: 200%;
     height:200%;
-    top:-50%;
+    position: fixed;
+    top: 0;
+    left:0;
 }
-
-.parallax-image-100 {
-    height:100%;
-    top:0;
-}
-
-.parallax-image.skrollable-between {
-    display:block;
-}
-
-.no-skrollr .parallax-image-wrapper {
-    display:none !important;
-}
-
-#skrollr-body {
-    height:100%;
-    overflow:visible;
-    position:relative;
-}
-
-.gap {
-    background:transparent center no-repeat;
-    background-size:cover;
-}
-
-.skrollr .gap {
-    background:transparent !important;
-}
-
-.gap-50 {
+.slide {
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 50%;
     height:50%;
 }
-
-.gap-100 {
-    height:100%;
+#slide-1 {
+    background: url('https://2020.igem.org/wiki/images/8/89/T--Fudan--index01.svg') no-repeat center center;
+    background-size: cover;
+}
+#slide-2 {
+    background: url('https://2020.igem.org/wiki/images/2/2d/T--Fudan--index02.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,0);
+    -ms-transform: translate(100%,0);
+    transform: translate(100%,0);
+}
+#slide-3 {
+    background: url('https://2020.igem.org/wiki/images/2/21/T--Fudan--index03.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,100%);
+    -ms-transform: translate(100%,100%);
+    transform: translate(100%,100%);
+}
+#slide-4 {
+    background: url('https://2020.igem.org/wiki/images/c/cc/T--Fudan--index04.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,200%);
+    -ms-transform: translate(100%,200%);
+    transform: translate(100%,200%);
+}
+#slide-5 {
+    background: url('https://2020.igem.org/wiki/images/7/73/T--Fudan--index05.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,300%);
+    -ms-transform: translate(100%,300%);
+    transform: translate(100%,300%);
+}
+#slide-6 {
+    background: url('https://2020.igem.org/wiki/images/5/50/T--Fudan--index06.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,400%);
+    -ms-transform: translate(100%,400%);
+    transform: translate(100%,400%);
+}
+#slide-7 {
+    background: url('https://2020.igem.org/wiki/images/6/69/T--Fudan--index07.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,500%);
+    -ms-transform: translate(100%,500%);
+    transform: translate(100%,500%);
+}
+#slide-8 {
+    background: url('https://2020.igem.org/wiki/images/f/fc/T--Fudan--index08.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,600%);
+    -ms-transform: translate(100%,600%);
+    transform: translate(100%,600%);
+}
+#slide-9 {
+    background: url('https://2020.igem.org/wiki/images/f/f8/T--Fudan--index09.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,700%);
+    -ms-transform: translate(100%,700%);
+    transform: translate(100%,700%);
+}
+#slide-10 {
+    background: url('https://2020.igem.org/wiki/images/9/9b/T--Fudan--index10.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,800%);
+    -ms-transform: translate(100%,800%);
+    transform: translate(100%,800%);
+}
+/* https://2020.igem.org/wiki/images/6/63/T--Fudan--index11.svg */
+#slide-end {
+    background: url('https://2020.igem.org/wiki/images/5/51/T--Fudan--title_3.svg') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(200%,800%);
+    -ms-transform: translate(200%,800%);
+    transform: translate(200%,800%);
 }
 
-.header, .content {
-    /* background:#fcf5e9; */
-    background:transparent !important;
-    padding:1em;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
+#scrolling-helper {
+    position:absolute;
+    left:0;
+    top: 0;
+    height:1550%;
+    width: 0px;
 }
-
-.content-full {
-    height:100%;
+.marker {
+    height:10%;
+    width: 100%;
 }
-
-#done {
-    height:100%;
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.grey {
+    background-color: grey;
+}
+.yellow {
+    background-color: yellow;
 }
 </style>
 
-<div id="skrollr-body">
-        <img src="https://2020.igem.org/wiki/images/8/89/T--Fudan--index01.svg" alt="bon pill 1" /><br/>
-        <img src="https://2020.igem.org/wiki/images/2/2d/T--Fudan--index02.svg" alt="bon pill 2" /><br/>
-        <img src="https://2020.igem.org/wiki/images/2/21/T--Fudan--index03.svg" alt="bon pill 3" /><br/>
-        <img src="https://2020.igem.org/wiki/images/c/cc/T--Fudan--index04.svg" alt="bon pill 4" /><br/>
-        <img src="https://2020.igem.org/wiki/images/7/73/T--Fudan--index05.svg" alt="bon pill 5" /><br/>
-        <img src="https://2020.igem.org/wiki/images/5/50/T--Fudan--index06.svg" alt="bon pill 6" /><br/>
-        <img src="https://2020.igem.org/wiki/images/6/69/T--Fudan--index07.svg" alt="bon pill 7" /><br/>
-        <img src="https://2020.igem.org/wiki/images/f/fc/T--Fudan--index08.svg" alt="bon pill 8" /><br/>
-        <img src="https://2020.igem.org/wiki/images/f/f8/T--Fudan--index09.svg" alt="bon pill 9" /><br/>
-        <img src="https://2020.igem.org/wiki/images/9/9b/T--Fudan--index10.svg" alt="bon pill 10" /><!--br/>
-        <img src="https://2020.igem.org/wiki/images/6/63/T--Fudan--index11.svg" alt="bon pill 11" / -->
-  </div>
+<body>
+    <div id="slides-container">
+        <div id="slides"
+            data-0="transform:translate(0%,0);"
+            data-133p="transform:translate(-50%,0);"
+            data-200p=""
+            data-250p="transform:translate(-50%,-50%);"
+            data-300p=""
+            data-400p="transform:translate(-50%,-100%);"
+            data-450p=""
+            data-550p="transform:translate(-50%,-150%);"
+            data-600p=""
+            data-700p="transform:translate(-50%,-200%);"
+            data-750p=""
+            data-850p="transform:translate(-50%,-250%);"
+            data-900p=""
+            data-1000p="transform:translate(-50%,-300%);"
+            data-1050p=""
+            data-1150p="transform:translate(-50%,-350%);"
+            data-1200p=""
+            data-1300p="transform:translate(-50%,-400%);"
+            data-1350p=""
+            data-1450p="transform:translate(-100%,-400%);"
+        >
+            <div id="slide-1" class="slide">
+                <div class="caption"
+                    data-40p="opacity: 1; transform:translate(0px,0px);"
+                    data-70p="opacity: 0; transform:translate(0px,-100%);"
+                    data-anchor-target="#scrolling-helper"
+                    style="top:52%;left:62%"
+                >
+                    <p style="color:black">by Team:Fudan &nbsp; #iGEM2020</p>
+                </div>
+            </div>
+            <div id="slide-2" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 2</p>
+                </div>
+            </div>
+            <div id="slide-3" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 3</p>
+                </div>
+            </div>
+            <div id="slide-4" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 4</p>
+                </div>
+            </div>
+            <div id="slide-5" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 5</p>
+                </div>
+            </div>
+            <div id="slide-6" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 6</p>
+                </div>
+            </div>
+            <div id="slide-7" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 7</p>
+                </div>
+            </div>
+            <div id="slide-8" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 8</p>
+                </div>
+            </div>
+            <div id="slide-9" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 9</p>
+                </div>
+            </div>
+            <div id="slide-10" class="slide">
+                <div class="caption"
+                    data-anchor-target="#scrolling-helper"
+                >
+                    <p style="color:#ccc;padding-left:1em">scene 10</p>
+                </div>
+            </div>
+            <div id="slide-end" class="slide">
+                <div class="caption"
+                    style="left:5%;bottom:5%;right:auto"
+                    data-1420p="opacity: 0; transform:translate(0,-200%);"
+                    data-1470p="opacity: 1; transform:translate(0,0);"
+                    data-anchor-target="#scrolling-helper"
+                >
+<h1 style="color:white">We are proud to contribute to the <a style="color:white" href="/Team:Fudan/Sustainable">Sustainable</a> Development.</h1>
+<p style="color:white">To find the quick answer to <a style="color:white" href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">the puzzle</a> above, please visit <a style="color:white" href="/Team:Fudan/Poster">/Team:Fudan/Poster</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<p>To find the quick answer to <a href="https://video.igem.org/videos/watch/7a0fee51-a637-4caf-aa97-a1d9bcafd3ba" target="_blank">the puzzle</a> above, please visit <a href="/Team:Fudan/Poster">/Team:Fudan/Poster</a>.<br/>
-   We are proud to contribute to the <a href="/Team:Fudan/Sustainable">Sustainable</a> Development.
-<br/><img src="https://2020.igem.org/wiki/images/5/51/T--Fudan--title_3.svg" style="width:50%" alt="bone appetite" />
-  </p>
+    <div id="scrolling-helper">
+        <div class="marker red"></div>
+        <div class="marker green"></div>
+        <div class="marker blue"></div>
+        <div class="marker grey"></div>
+        <div class="marker yellow"></div>
+        <div class="marker red"></div>
+        <div class="marker green"></div>
+        <div class="marker blue"></div>
+        <div class="marker grey"></div>
+        <div class="marker yellow"></div>
+    </div>
+    <script src="/wiki/index.php?title=Template:Fudan/skrollr.js&action=raw&ctype=text/javascript"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
 
 </div></div><!-- .igem_column_wrapper .igem_content_wrapper -->
