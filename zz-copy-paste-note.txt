@@ -53,10 +53,10 @@ $(document).ready(function() {
   function active_based_href() {
     $('#footerNavList').find('a').each(function() {
       if ( $(this).attr('href') === '#') {
-        // Video
-$(this).attr('href', 'https://video.igem.org/videos/watch/cb2d852a-e3de-48da-9648-2f1bbc545483');
 // 20-min presentation
+// iGEM Video Universe https://video.igem.org/videos/watch/cb2d852a-e3de-48da-9648-2f1bbc545483
 // recut
+$(this).attr('href', 'https://youtu.be/PafJiyO8IIk');
 $(this).attr('target', '_blank');
       } else if ( $(this).attr('href') === 'https://2019.igem.org/Team:Fudan-TSI/Heritage' ) {
 $(this).attr('href', 'https://2020.igem.org/Team:Fudan/Heritage');
